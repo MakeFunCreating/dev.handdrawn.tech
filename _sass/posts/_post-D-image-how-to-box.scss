@@ -1,0 +1,70 @@
+
+///////////////////////////////////////////////////////
+///////////////////////////////////////////////////////
+////////////////////// HOW TO BOX /////////////////////
+///////////////////////////////////////////////////////
+///////////////////////////////////////////////////////
+
+.how-to-box {
+	position: relative;
+    margin: 3.5rem 0 4rem 0;
+    height: auto;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    @include breakpoint(TP) {
+    	margin: 5rem 0 5rem 0;
+    }
+    @include breakpoint(D) {
+    	margin: 6.5rem 0 6rem 0;
+    }
+}
+
+.how-to-box.noBotMargin {
+	margin-bottom: -5rem;
+	@include breakpoint(ML) {
+		margin-bottom: -2rem;
+	}
+	@include breakpoint(TP) {
+		margin-bottom: -7rem;
+	}
+}
+
+.how-to-box.topOfPage {
+	margin-top: 0rem;
+	@include breakpoint(TP) {
+		margin-top: 0rem;
+	}
+}
+
+.tips-box + p + .how-to-box {
+	.how-to-caption {
+		left: 25%;
+	}
+}
+
+.how-to-box .img-wrapper {
+	width: 100%;
+	padding: 0;
+    display: inline-block;
+    box-sizing: border-box;
+    height: auto;
+    text-align: center;
+    //background: url(../images/loader/loader-body-bg.gif) center center/85px 85px no-repeat;
+    box-shadow: none;
+	@include breakpoint(ML) {
+		//padding: 0px 16px 16px 16px;
+	}
+   @include breakpoint(D) {
+   		//width: 94%;
+   }
+}
+
+.how-to-box .img-wrapper img {
+   width: 100%;
+   display: block;
+}
+
+

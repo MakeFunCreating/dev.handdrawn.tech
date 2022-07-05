@@ -1,0 +1,142 @@
+
+  
+{% assign section-divider = null %}
+{% assign section-class = null %}
+
+{% if include.class contains "pink" or include.class contains "yellow" or include.class contains "grey" or include.class contains "black" or include.class contains "black-medium" or include.class contains "blue" or include.class contains "none" %}
+  {% assign section-class = include.class %}
+{% else%}
+  {% assign section-class = include.class | append: " none" %}
+{% endif %}
+
+{% if include.section-divider == "no-illo" %}
+    {% assign section-class = section-class | append: " " | append: "no-illo strip-top" %}
+    {% assign section-divider = "" %}
+{% elsif include.section-divider == "no-illo-butt" %}
+    {% assign section-class = section-class | append: " " | append: "no-illo-butt strip-top-butt"  %}
+    {% assign section-divider = "" %}
+{% elsif include.section-divider and include.section-divider != empty%}
+    {% assign section-divider = include.section-divider %}
+{% else %}
+    {% assign section-class = section-class | append: " " | append: "no-illo strip-top"  %}
+    {% assign section-divider = "" %}
+{% endif %} 
+
+{% assign section-class = section-class | append: " " | append: include.ani-triggers | replace: "  ", " " %}
+
+
+
+
+  <section {% if include.id and include.id != empty %}id="{{ include.id }}"{% endif %} class="section-nav-block strip-line {{ section-class }}">
+    
+    {% if include.section-divider and include.section-divider != empty %}
+      <div class="sect-illo-wrapper {{ section-divider }}"><div class="sect-illo"></div></div>
+    {% endif %}
+
+      <div class="content-wrapper item-total-{{ item-total }}">
+            {% if include.sect-title and include.sect-title != empty %}
+              <div class="sect-title-wrapper">
+                <h2 class="sect-title">{{ include.sect-title }}</h2>
+                <div class="underline"></div>
+              </div>
+            {% endif %}
+
+
+
+        <div class="col-wrapper col-1">
+            <div class="frame-wrapper">
+
+              <div class="frame show">
+                <div class="top-frame"></div>
+                <div class="left-frame"></div>
+                <div class="right-frame"></div>
+                <div class="bottom-frame"></div>
+              </div>
+
+              <div class="text-wrapper {{ include.box-col }}">
+                <h5 class="title {{ include.card-style }}"><a href="{{ site.baseurl }}{{ include.block-1-butt-url }}" class="">{{ include.block-1-title }}</a></h5>
+                
+                {% unless include.card-style == "title-only" %}
+                  <div class="desc-wrapper"><p class="smallest">{{ include.block-1-text }}</p></div>
+                {% endunless %}
+
+                {% if include.block-1-butt-text and include.block-1-butt-text  != empty %}
+                  <div class="button-wrapper"><a href="{{ site.baseurl }}{{ include.block-1-butt-url }}" class="link-button smaller" >{{ include.block-1-butt-text }} <span class="right-arrow">›</span></a></div> 
+                {% endif %} 
+              </div>
+
+            </div>
+            <div class="bg-texture-wrapper {{ include.box-col }}"><div class="bg-texture"></div><div class="highlight-bar {% if include.hightlight contains "1" %}show{% else %}hide{% endif %}"></div></div>
+        </div>
+
+
+        <div class="col-wrapper col-2">
+            <div class="frame-wrapper">
+
+              <div class="frame show">
+                <div class="top-frame"></div>
+                <div class="left-frame"></div>
+                <div class="right-frame"></div>
+                <div class="bottom-frame"></div>
+              </div>
+
+              <div class="text-wrapper {{ include.box-col }}">
+                <h5 class="title {{ include.card-style }}"><a href="{{ site.baseurl }}{{ include.block-2-butt-url }}" class="">{{ include.block-2-title }}</a></h5>
+                
+                {% unless include.card-style == "title-only" %}
+                  <div class="desc-wrapper"><p class="smallest">{{ include.block-2-text }}</p></div>
+                {% endunless %}
+
+                {% if include.block-2-butt-text and include.block-2-butt-text  != empty %}
+                  <div class="button-wrapper"><a href="{{ site.baseurl }}{{ include.block-2-butt-url }}" class="link-button smaller" >{{ include.block-2-butt-text }} <span class="right-arrow">›</span></a></div> 
+                {% endif %} 
+              </div>
+
+            </div>
+            <div class="bg-texture-wrapper {{ include.box-col }}"><div class="bg-texture"></div><div class="highlight-bar {% if include.hightlight contains "2" %}show{% else %}hide{% endif %}"></div></div>
+        </div>
+
+
+        <div class="col-wrapper col-3">
+            <div class="frame-wrapper">
+
+              <div class="frame show">
+                <div class="top-frame"></div>
+                <div class="left-frame"></div>
+                <div class="right-frame"></div>
+                <div class="bottom-frame"></div>
+              </div>
+
+              <div class="text-wrapper {{ include.box-col }}">
+                <h5 class="title {{ include.card-style }}"><a href="{{ site.baseurl }}{{ include.block-3-butt-url }}" class="">{{ include.block-3-title }}</a></h5>
+                
+                {% unless include.card-style == "title-only" %}
+                  <div class="desc-wrapper"><p class="smallest">{{ include.block-3-text }}</p></div>
+                {% endunless %}            
+
+                {% if include.block-3-butt-text and include.block-3-butt-text  != empty %}
+                  <div class="button-wrapper"><a href="{{ site.baseurl }}{{ include.block-3-butt-url }}" class="link-button smaller" >{{ include.block-3-butt-text }} <span class="right-arrow">›</span></a></div> 
+                {% endif %}              
+              </div>
+
+            </div>
+            <div class="bg-texture-wrapper {{ include.box-col }}"><div class="bg-texture"></div><div class="highlight-bar {% if include.hightlight contains "3" %}show{% else %}hide{% endif %}"></div></div>
+        </div>
+  
+  
+        <div class="bg-texture-wrapper">
+          <div class="frame show"><div class="top-frame"></div><div class="bottom-frame"></div></div>
+          <div class="bg-texture"></div>
+        </div>
+  
+      </div>
+
+  </section>
+
+
+
+
+
+
+
+

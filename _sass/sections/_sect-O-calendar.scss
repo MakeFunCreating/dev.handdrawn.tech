@@ -1,0 +1,215 @@
+
+/////////////////////////////////////////////////////
+/////////////////////////////////////////////////////
+////////////// SECTION - TEXT + IMAGE ///////////////
+/////////////////////////////////////////////////////
+/////////////////////////////////////////////////////
+
+
+.section-calendar {
+  position: relative;
+}
+
+.section-calendar:first-child {
+    margin-top: 0rem;
+}
+
+
+
+
+
+
+////////////////// CONTENT WRAPPER //////////////////
+
+.section-calendar .content-wrapper {
+  position: relative;
+  z-index: 11;
+  display: flex; ////
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center; ////
+  height: 100%;
+  left: 0;
+  width: 100%;
+  @include breakpoint(TL) {
+    justify-content: space-between;
+  }
+}
+
+
+/////////////////////////////////////////////////////
+//////////////////// COLUMN ONE /////////////////////
+/////////////////////////////////////////////////////
+
+.section-calendar .col-1 {
+  position: relative;
+  box-sizing: border-box;
+  order: 1;
+  z-index: 10;
+  text-align: center;
+  width: 94%;
+  @include breakpoint(TP) {
+
+  }
+  @include breakpoint(TL) {
+    text-align: center;
+    width: 100%; 
+  }
+}
+
+
+/////////////////// TEXT WRAPPER ////////////////////
+
+.section-calendar .col-1 .text-wrapper > *:last-child {
+  margin-bottom: 0;
+}
+
+.section-calendar .col-1 .text-wrapper {
+  margin: 0 auto 0 auto;
+  margin-bottom: 7rem;
+  @include breakpoint(TP) {
+    margin-bottom: 2rem;
+  }
+  @include breakpoint(TL) {
+    margin-bottom: 4rem;
+    width: 79%;
+  }
+}
+
+.section-calendar .col-1 .text-wrapper p.text em {
+  color: $pink;
+}
+
+.section-calendar.pink-light .col-1 .text-wrapper p.text em {
+  color: white;
+}
+
+////////////////////// TITLE ////////////////////////
+
+.section-calendar .col-1 .text-wrapper h4:first-child:not(.navi-dot),
+.section-calendar .col-1 .text-wrapper p:first-child:not(.navi-dot) {
+  margin-top: 0;
+}
+
+
+
+/////////////////////////////////////////////////////
+//////////////////// COLUMN TWO /////////////////////
+/////////////////////////////////////////////////////
+
+.section-calendar .col-2 {
+  position: relative;
+  order: 2;
+  z-index: 12;
+  margin: 0 auto;
+  width: 100%;
+  height: 810px;
+  display: flex; ////
+  justify-content: center; ////
+  @include breakpoint(ML) {
+    width: 650px;
+    height: 780px;
+  }
+  @include breakpoint(TP) {
+    width: 650px;
+    height: 920px;
+  }
+  @include breakpoint(TL) {
+    width: 700px;
+    height: 920px;
+  }
+  @include breakpoint(D) {
+    width: 1090px;
+    height: 670px;
+  }
+}
+
+
+
+/////////////////////////////////////////////////////
+///////////////// STYLE OVERIDES ////////////////////
+/////////////////////////////////////////////////////
+
+// class: right, left | pink, blue, black, none | full-image | [lightbulb], clock, printer
+// section-divider: (illo name), no-illo, no-illo-butt
+
+
+/////////////////////// RIGHT ///////////////////////
+
+
+.section-calendar.right .img-top-illo-wrapper,
+.section-calendar.right .video-box .img-top-illo-wrapper {
+  // Image top illo positioned on left side
+  right: auto;
+  left: -148px;
+}
+
+.section-calendar.right .img-top-illo,
+.section-calendar.right .video-box .img-top-illo { // Video
+  transform: rotate(-30deg);
+}
+
+.section-calendar.right .col-1 {
+  @include breakpoint(TL) {
+    order: 3;
+  }
+}
+
+.section-calendar.right .col-2 {
+  @include breakpoint(TL) {
+    order: 2;
+  }
+}
+
+/////////////////////// LEFT ////////////////////////
+
+.section-calendar.left .shavingX {
+  left: 1%;
+  @include breakpoint(TP) {
+    left: 3%;
+    bottom: 7%;
+  }
+  @include breakpoint(D) {
+    left: 6%;
+    bottom: 9%;
+  }
+}
+
+
+//////////////////////// CLOCK ////////////////////////
+
+.section-calendar.clock .img-top-illo {
+  background-image: url(../images/image-top-illo/clock/400px.png);
+  @include breakpoint(D) {
+    background-image: url(../images/image-top-illo/clock/500px.png);
+  }
+}
+
+
+/////////////////////// PRINTER ///////////////////////
+
+// Left
+
+.section-calendar.printer .img-top-illo {
+  background-image: url(../images/image-top-illo/printer/rot-right/400px.png);
+  @include breakpoint(D) {
+    background-image: url(../images/image-top-illo/printer/rot-right/500px.png);
+  }
+}
+
+// Right
+
+.section-calendar.right.printer .img-top-illo {
+  background-image: url(../images/image-top-illo/printer/rot-right/400px.png);
+  @include breakpoint(TL) {
+    background-image: url(../images/image-top-illo/printer/rot-left/400px.png);
+  }
+  @include breakpoint(D) {
+    background-image: url(../images/image-top-illo/printer/rot-left/500px.png);
+  }
+}
+
+
+
+

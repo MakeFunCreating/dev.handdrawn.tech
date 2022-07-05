@@ -1,0 +1,13 @@
+current directory: /Users/scottb/Dropbox/Hand Drawn Tech/- Website/dev.handdrawn.tech/vendor/bundle/ruby/2.6.0/gems/json-2.6.2/ext/json
+/usr/local/opt/ruby/bin/ruby -I /usr/local/lib/ruby/site_ruby/2.6.0 -r ./siteconf20220625-44502-alu1rk.rb extconf.rb
+creating Makefile
+
+current directory: /Users/scottb/Dropbox/Hand Drawn Tech/- Website/dev.handdrawn.tech/vendor/bundle/ruby/2.6.0/gems/json-2.6.2/ext/json
+make "DESTDIR=" clean
+
+current directory: /Users/scottb/Dropbox/Hand Drawn Tech/- Website/dev.handdrawn.tech/vendor/bundle/ruby/2.6.0/gems/json-2.6.2/ext/json
+make "DESTDIR="
+make: Nothing to be done for `all'.
+
+current directory: /Users/scottb/Dropbox/Hand Drawn Tech/- Website/dev.handdrawn.tech/vendor/bundle/ruby/2.6.0/gems/json-2.6.2/ext/json
+make "DESTDIR=" install

@@ -1,0 +1,170 @@
+  
+
+
+<!-- EDITOR'S CHOICE -->
+{% assign slug-str = "how-to-make-a-toy-soldier-bookend-from-an-old-gi-joe" %}
+
+
+<div class="content-wrapper container">
+
+  <!-- LATEST PROJECT -->
+  {% assign cardTitle = null %}
+  {% assign cardUrl = null %}
+  {% assign cardDownload = null %}
+  {% assign imgDirArray = null %}
+  {% assign featImgArray = null %}
+  {% assign src = null %}
+  {% assign file-format = null %}
+
+  {% for post in site.posts limit:1 %}
+    {% assign cardTitle = post.h1 %}
+    {% assign cardUrl = post.url %}
+    {% assign cardDownload = post.download %}
+    {% assign imgDirArray = post.image-dir  %}
+    {% assign featImgArray = post.featured-image | split: "/" %}
+  {% endfor %}
+
+  {% assign img-file-prepend = imgDirArray | split: "/" | last %}
+  {% assign checkForXXXOnly = featImgArray | last | split: "#" | first | size %}
+  {% if featImgArray.size > 1 %}
+    {% if checkForXXXOnly == 0 %}
+        {% assign img-file-prepend = featImgArray | last | split: "#" | first %}
+    {% else %}
+        {% assign img-file-prepend = featImgArray | last | split: "#" | first | append: "-" %}
+    {% endif %}
+    {% assign src = featImgArray | first %}
+    {% assign file-format = featImgArray | last | split: "#" | last %}
+  {% else %}
+    {% assign src = post.featured-image %}
+  {% endif %}
+
+	<div class="posts-wrapper">
+		<div class="col-title small-cap">Latest project</div>
+
+     	<div class="col-wrapper">
+        <a href="{{ site.baseurl }}{{ cardUrl }}">
+        <div class="frame-wrapper">
+
+          <div class="frame small">
+            <div class="top-frame"></div>
+            <div class="left-frame"></div>
+            <div class="right-frame"></div>
+            <div class="bottom-frame"></div>
+          </div>
+
+          <div class="img-wrapper">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="{{ site.url }}{{ site.baseurl }}/images/{{ imgDirArray }}/{{ src }}/{{ img-file-prepend }}1000px.{{ file-format }}">
+              <source media="(min-width: 450px)" srcset="{{ site.url }}{{ site.baseurl }}/images/{{ imgDirArray }}/{{ src }}/{{ img-file-prepend }}1000px.{{ file-format }}">
+              <img src="{{ site.url }}{{ site.baseurl }}/images/{{ imgDirArray }}/{{ src }}/{{ img-file-prepend }}1000px.{{ file-format }}"
+              alt="Image of: {{ cardTitle }}" loading="eager"> 
+            </picture>
+          </div>
+
+        </div>
+        </a>
+
+        {% assign cardTitle = cardTitle | split:'' | reverse | join:'' | replace_first: ' ', ';psbn&'  | split:'' | reverse | join:'' %}
+        <p class="title smallest"><a href="{{ site.baseurl }}{{ cardUrl }}" class="">{{ cardTitle }}</a></p>
+      </div>
+	</div>
+
+
+  <!-- EDITOR'S CHOICE -->
+  {% assign post = site.posts | where: 'slug', slug-str %}
+  {% assign cardTitle = post[0].h1 %}
+  {% assign cardUrl = post[0].url %}
+  {% assign cardCat = post[0].categories %}
+  {% assign imgDirArray = post[0].image-dir  %}
+  {% assign featImgArray = post[0].featured-image | split: "/" %}
+  
+  {% assign img-file-prepend = imgDirArray | split: "/" | last %}
+  {% assign checkForXXXOnly = featImgArray | last | split: "#" | first | size %}
+  {% if featImgArray.size > 1 %}
+      {% if checkForXXXOnly == 0 %}
+          {% assign img-file-prepend = featImgArray | last | split: "#" | first %}
+      {% else %}
+          {% assign img-file-prepend = featImgArray | last | split: "#" | first | append: "-" %}
+      {% endif %}
+      {% assign src = featImgArray | first %}
+      {% assign file-format = featImgArray | last | split: "#" | last %}
+  {% else %}
+      {% assign src = post.featured-image %}
+  {% endif %}
+
+  <div class="posts-wrapper">
+    <div class="col-title small-cap">Editor's Pick</div>
+        <div class="col-wrapper">
+          <a href="{{ site.baseurl }}{{ cardUrl }}">
+          <div class="frame-wrapper">
+
+            <div class="frame small">
+              <div class="top-frame"></div>
+              <div class="left-frame"></div>
+              <div class="right-frame"></div>
+              <div class="bottom-frame"></div>
+            </div>
+
+            <div class="img-wrapper">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="{{ site.url }}{{ site.baseurl }}/images/{{ imgDirArray }}/{{ src }}/{{ img-file-prepend }}1000px.{{ file-format }}">
+                <source media="(min-width: 450px)" srcset="{{ site.url }}{{ site.baseurl }}/images/{{ imgDirArray }}/{{ src }}/{{ img-file-prepend }}1000px.{{ file-format }}">
+                <img src="{{ site.url }}{{ site.baseurl }}/images/{{ imgDirArray }}/{{ src }}/{{ img-file-prepend }}1000px.{{ file-format }}"
+                alt="Image of: {{ cardTitle }}" loading="eager"> 
+              </picture>
+            </div>
+
+          </div>
+          </a>
+
+          {% assign cardTitle = cardTitle | split:'' | reverse | join:'' | replace_first: ' ', ';psbn&'  | split:'' | reverse | join:'' %}
+          <p class="title smallest"><a href="{{ site.baseurl }}{{ cardUrl }}" class="">{{ cardTitle }}</a></p>
+        </div>
+  </div>
+
+
+
+  <!-- CATEGORIES LIST -->
+	<div class="categories-wrapper">
+		<div class="col-title small-cap">Categories</div>
+    <div class="col-wrapper">
+    	<ul>
+      		<!--
+      		{% for item in site.data.navigation.mega-menu-categories %} 
+                  <li class="smallest"><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a></li>
+       		{% endfor %}
+       		-->
+       		{% for cat in site.categories limit:9 %}
+                  <li class="smallest"><a href="{{ site.baseurl }}/crafts/{{ cat[0] | replace:' ','-' }}">{{ cat[0] }}</a></li>
+       		{% endfor %}
+    	</ul>
+    </div>
+	</div>
+
+
+
+
+  <!-- TAGS LIST -->
+	<div class="tags-wrapper">
+		<div class="col-title small-cap">Tags</div>
+    <div class="col-wrapper">
+    	<ul>
+    		<!--
+      		{% for item in site.data.navigation.mega-menu-tags %}
+                  <li class="smallest"><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a></li>
+       		{% endfor %}
+       		-->
+       		{% for tags in site.tags limit:9 %}
+                  <li class="smallest"><a href="{{ site.baseurl }}/crafts/{{ tags[0] | replace:' ','-' }}">{{ tags[0] }}</a></li>
+       		{% endfor %}
+    	</ul>
+    </div>
+	</div>
+
+</div>
+
+
+
+
+
+

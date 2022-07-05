@@ -1,0 +1,74 @@
+
+
+
+{% assign top-bar-class = null %}
+{% if page.top-bar-class and page.top-bar-class != empty %}
+  {% assign top-bar-class = page.top-bar-class %}
+{% else %}
+  {% assign top-bar-class = "none" %}
+{% endif %}
+
+<div class="top-bar {{ top-bar-class | strip }} {% if page.layout-sub-type and page.layout-sub-type != empty %}{{ page.layout-sub-type }}{% endif %}" role="banner">
+
+      <div class="logo-wrapper">
+        <a href="{{site.baseurl}}/">
+          <div class="logo-box"> 
+          </div>
+        </a>
+      </div>
+
+
+      <div class="navigation-wrapper">
+        <nav role="navigation">
+          <ul class="navigation-menu">
+
+              {% for item in site.data.navigation.main-nav %}
+
+                {% assign mega-menu-status = "" %}
+                {% if item["mega-menu"] and item["mega-menu"] != empty %}
+                    {% assign mega-menu-status = "dropdown" %}
+                {% endif %}
+
+                <li class="nav-link {{ mega-menu-status }}"><a href="{{ site.baseurl }}{{ item.url }}" class="smaller"><span>{{ item.title }}</span><span class="dropdown-arrow">›</span></a></li>
+                
+              {% endfor %}
+
+          </ul>
+        </nav>
+      </div>
+
+      <div class="search-outer-wrapper">
+          {% unless page.layout-sub-type contains "no-search" %}
+            {% include build/simple-search.html %}
+          {% endunless %}
+      </div>
+
+      <div class="cart-wrapper">
+        <a href class="cart-link snipcart-checkout">
+          <div class="cart-button-items">
+            <div class="cart-icon"><img src="{{ site.baseurl }}/images/icon-set/cart-white.svg"></div>
+            <div class="cart-text snipcart-items-count">0</div>
+          </div>
+        </a>
+      </div>
+
+
+      <div class="mega-menu-wrapper">
+        {% for item in site.data.navigation.main-nav %}
+          {% assign mega-menu-incl = item["mega-menu"] %}
+          <div class="mega-menu {% if mega-menu-incl and mega-menu-incl != empty %}{{ item["title"] | downcase }}{% endif %}">{% if mega-menu-incl and mega-menu-incl != empty %}{% include {{ mega-menu-incl }} %}{% endif %}</div>
+        {% endfor %}
+      </div>
+
+
+      <div class="bg-texture-wrapper"><div class="frame show"><div class="bottom-frame"></div></div><div class="bg-texture"></div></div>
+
+
+</div>
+
+<div class="fullpage-tint over-nav"></div>
+<div class="fullpage-tint under-nav"></div>
+    
+
+
+

@@ -1,0 +1,84 @@
+
+# Site settings
+title: Hand Drawn Tech
+email: scott@handdrawn.tech
+description: "Hand drawn tech illustrations combine a hand drawn aesthetic with charming low-tech, mechanical elements, they are very on-trend and extremely effective."
+baseurl: #"/dev" # the subpath of your site, e.g. /blog
+url: https://handdrawn.tech
+twitter_username: jekyllrb
+github_username:  jekyll
+
+# 1) gem install bundler
+# 2) bundle install (adds 'Gemfile' file to root)
+# 3) bundle config set --local path 'vendor/bundle' (adds vendor directory)
+# 4) bundle update (updates all gems to latest versions)
+# bundle info <gem name> (find location of files)
+# gem list (list all local gems)
+
+# cd ~/Dropbox/"Hand Drawn Tech"/"- Website"/"dev.handdrawn.tech"
+
+# Deployment
+# JEKYLL_ENV=production bundle exec jekyll build
+
+# Development
+# JEKYLL_ENV=development bundle exec jekyll serve
+
+
+# Destination directory
+source: .
+destination: ../release.handdrawn.tech
+
+# Build settings
+markdown: kramdown
+
+# Set defaults for frontmatter
+defaults: #see here: http://jekyllrb.com/docs/configuration/
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: 
+      theme: notepad
+      author:
+
+# Compress CSS - remove white spaces
+sass:
+  style: compressed
+
+# Kramdown
+kramdown:
+  auto_ids: false
+
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Required for generating tag pages automatically (https://github.com/pattex/jekyll-tagging)
+tag_page_layout: illustration-tags
+tag_page_dir: illustrations/tags
+tag_permalink_style: pretty
+
+# Collections
+collections_dir: collections
+collections:
+  posts:
+    output: true
+    permalink: /illustrations/:title/
+
+
+paginate: 12
+paginate_path: "/illustrations/page:num/"
+
+
+
+
+
+
+
+
+
+
+
+

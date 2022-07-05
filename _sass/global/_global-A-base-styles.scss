@@ -1,0 +1,184 @@
+
+///////////////////////////////////////////////////////
+///////////////////////////////////////////////////////
+///////////////////// BASE STYLES /////////////////////
+///////////////////////////////////////////////////////
+///////////////////////////////////////////////////////
+
+
+/////////////////////// MIXINS ////////////////////////
+
+@mixin breakpoint($point) {
+   @if $point == ML {
+     @media (min-width: 650px) { @content ; }
+  }
+   @else if $point == TP {
+     @media (min-width: 768px) { @content ; }
+  }
+    @else if $point == TL {
+     @media (min-width: 992px) { @content ; }
+  }
+   @else if $point == D {
+     @media (min-width: 1200px)  { @content ; }
+  }
+}
+
+@mixin text-shift(){
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+
+////////////////////  FONT FAMILIES ///////////////////
+
+html {
+	font-size: 62.5%;
+}
+
+html, body {
+	height: 100%;
+}
+
+@font-face {
+  font-family: 'Pro-Draw';
+  src: url(../fonts/pro-draw/Pro-Draw-Fineliner-Italic.woff2) format('woff2'),
+       url(../fonts/pro-draw/Pro-Draw-Fineliner-Italic.woff) format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  font-family: 'Pro-Draw';
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+h2 {
+  //font-family: 'Pro-Draw-Thick'; 
+}
+
+
+///////////////////////  BODY  ////////////////////////
+
+body {
+	background-color: $body-bg;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.page-link {
+	    font-size: 2.5rem;
+}
+
+
+/////////////////  CONTAINER WRAPPER  /////////////////
+
+.container-wrapper {
+	position: relative;
+	padding: 0;
+	overflow: hidden;
+  	padding-top: 137px; // Pushes container down, corresponds to height of .top-bar
+  	@include breakpoint(ML) {
+  	  padding-top: 111px; // Pushes container down, corresponds to height of .top-bar
+  	}
+  	@include breakpoint(D) {
+  	  padding-top: 86px; // Pushes container down, corresponds to height of .top-bar
+  	}
+}
+
+// Overide when search removed (e.g.on project page)
+// - achieved by adding "layout-sub-type: 'no-search'" in front matter of page
+
+body.no-search .container-wrapper {
+  padding-top: 90px; // Shrunk, to allow top bar to be reduced in height on phones
+  @include breakpoint(ML) {
+    padding-top: 111px; // Default, see class above
+  }
+  @include breakpoint(D) {
+    padding-top: 86px; // Default, see class above
+  }  
+}
+
+
+/////////////////////// CONTAINER /////////////////////
+
+$post-MP-container: 92%;
+$post-ML-container: 480px;
+$post-TP-container: 530px;
+$post-TL-container: 620px;
+$post-D-container: 780px;
+
+// N.B If you change these you need to update the SECTION - ILLO DIVIDERS styles...
+// ...in _sect-A-base-styles.scss line 546
+
+$page-MP-container: 94%;
+$page-ML-container: 480px;
+$page-TP-container: 650px;
+$page-TL-container: 800px;
+$page-D-container: 1100px;
+
+
+// This for posts
+.container {
+  position: relative;
+  z-index: 100;
+	margin: 0 auto 0 auto;
+	width: $post-MP-container;
+  @include breakpoint(ML) {
+    max-width: $post-ML-container;
+  }
+	@include breakpoint(TP) {
+		max-width: $post-TP-container;
+    width: auto;
+	}
+	@include breakpoint(TL) {
+		max-width: $post-TL-container;
+	}
+	@include breakpoint(D) {
+		max-width: $post-D-container;
+	}
+}
+
+// This for pages
+
+body.layout-page .container,
+body.layout-product .container,
+body.layout-illustration-details .container,
+body.layout-illustration-tags .container {
+	width: $page-MP-container;
+  @include breakpoint(ML) {
+    max-width: $page-ML-container;
+    width: auto;
+  }
+	@include breakpoint(TP) {
+		max-width: $page-TP-container;
+	}
+	@include breakpoint(TL) {
+		max-width: $page-TL-container;
+	}
+	@include breakpoint(D) {
+		max-width: $page-D-container;
+	}	
+}
+
+
+////////////////////// CONTENT ////////////////////////
+
+.content {
+	position: relative;
+	width: 100%;
+	margin-bottom: 0;
+  // To allow gallery, centred, to extend wider than .content
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+
+
+

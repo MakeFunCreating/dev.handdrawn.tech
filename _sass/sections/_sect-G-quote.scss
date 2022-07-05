@@ -1,0 +1,255 @@
+
+/////////////////////////////////////////////////////
+/////////////////////////////////////////////////////
+///////////////// SECTION - QUOTE ///////////////////
+/////////////////////////////////////////////////////
+/////////////////////////////////////////////////////
+
+
+.section-quote {
+	position: relative;
+}
+
+.section-quote:first-child {
+  margin-top: 0rem;
+}
+
+.section-quote .content-wrapper {
+	position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+	height: 100%;
+  left: 0;
+  width: 100%;
+	z-index: 9;
+  text-align: center;
+}
+
+.section-quote .col-wrapper {
+	position: relative;
+	z-index: 10;
+}
+
+
+/////////////////////// TEXT ////////////////////////
+
+.section-quote .text-wrapper {
+  position: relative;
+  z-index: 10;
+  width: 94%;
+  @include breakpoint(TP) {
+    width: 100%;
+  }
+  @include breakpoint(TL) {
+    width: 80%;
+  }
+}
+
+.section-quote .quote-wrapper,
+.text-wrapper-quote .quote-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  margin: 0 0 2rem 0;
+}
+
+.section-quote .left-ditto,
+.text-wrapper-quote .left-ditto {
+  background: url(../images/icon-set/ditto-left-black.png) left center/30px 30px no-repeat;
+  min-width: 30px;
+  height: 30px;
+  align-self: flex-start;
+  @include breakpoint(TP) {
+    background-size: 40px 40px;
+    min-width: 40px;
+  }
+  @include breakpoint(D) {
+    background-size: 50px 50px;
+    min-width: 50px;
+    height: 37px;
+  }
+}
+
+
+.section-quote .right-ditto,
+.text-wrapper-quote .right-ditto {
+  background: url(../images/icon-set/ditto-right-black.png) left center/30px 30px no-repeat;
+  min-width: 30px;
+  height: 30px;
+  align-self: flex-start;
+  @include breakpoint(TP) {
+    background-size: 40px 40px;
+    min-width: 40px;
+  }
+  @include breakpoint(D) {
+    background-size: 50px 50px;
+    min-width: 50px;
+    height: 37px;
+  }
+}
+
+.section-quote p.quote,
+.text-wrapper-quote p.quote {
+  margin: 0;
+  padding: 0 10px 0 10px;
+}
+
+.section-quote p.author,
+.text-wrapper-quote p.author {
+  margin: 0;
+}
+
+
+////////////////// PROFILE PHOTOS ///////////////////
+
+.section-quote .text-wrapper .profile-photo {
+  width: 105px;
+  height: 105px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 100px;
+  @include breakpoint(TL){
+    width: 115px;
+    height: 115px;
+  }
+}
+
+
+////////////////// RATING WRAPPER ///////////////////
+
+.section-quote .rating-wrapper,
+.text-wrapper-quote .rating-wrapper {
+    position: relative;
+    display: flex; ////
+    flex-direction: row;
+    align-content: center;
+    justify-content: center; ////
+    margin: -10px 0 18px 0;
+    @include breakpoint(TP) {
+      margin: -10px 0 18px 0;
+    }
+    @include breakpoint(D) {
+      margin: -10px 0 23px 0;
+    }
+}
+
+.section-quote .rating-wrapper p,
+.text-wrapper-quote .rating-wrapper p {
+    margin-right: 3px;
+}
+
+.section-quote .rating-star.full,
+.section-quote .rating-star.half,
+.section-quote .rating-star.blank,
+.text-wrapper-quote .rating-star.full,
+.text-wrapper-quote .rating-star.half,
+.text-wrapper-quote .rating-star.blank  {
+    position: relative;
+    margin: 0 1px 0 1px;
+    background: url(../images/icon-set/rating-star/pink/full/35px.png) center center/18px auto no-repeat;
+    width: 18px;
+    height: 23px;
+    @include breakpoint(TP) {
+        margin: 0 2px 0 2px;
+        background-size: 23px auto;
+        width: 23px;
+    }
+    @include breakpoint(D) {
+    }
+}
+
+.section-quote .rating-star.half,
+.text-wrapper-quote .rating-star.half {
+    background-image: url(../images/icon-set/rating-star/pink/half/35px.png);
+}
+
+.section-quote .rating-star.blank,
+.text-wrapper-quote .rating-star.blank {
+    background-image: url(../images/icon-set/rating-star/pink/blank/35px.png);
+}
+
+
+/////////////////////////////////////////////////////
+///////////////// STYLE OVERIDES ////////////////////
+/////////////////////////////////////////////////////
+
+// Colour: pink | blue | black | none
+
+.section-quote.pink .left-ditto,
+.section-quote.blue .left-ditto,
+.section-quote.black .left-ditto,
+.text-wrapper-quote.small.pink .left-ditto,
+.text-wrapper-quote.small.blue .left-ditto,
+.text-wrapper-quote.small.black .left-ditto {
+  background-image: url(../images/icon-set/ditto-left-white.png)
+}
+
+.section-quote.pink .right-ditto,
+.section-quote.blue .right-ditto,
+.section-quote.black .right-ditto,
+.text-wrapper-quote.small.pink .right-ditto,
+.text-wrapper-quote.small.blue .right-ditto,
+.text-wrapper-quote.small.black .right-ditto {
+  background-image: url(../images/icon-set/ditto-right-white.png)
+}
+
+
+.section-quote.blue .rating-star.full,
+.section-quote.pink .rating-star.full  {
+    background-image: url(../images/icon-set/rating-star/white/full/35px.png);
+}
+
+.section-quote.blue .rating-star.half,
+.section-quote.pink .rating-star.half {
+    background-image: url(../images/icon-set/rating-star/white/half/35px.png);
+}
+
+.section-quote.blue .rating-star.blank,
+.section-quote.pink .rating-star.blank {
+    background-image: url(../images/icon-set/rating-star/white/blank/35px.png);
+}
+
+
+// Overide: small
+.section-quote.small .left-ditto,
+.section-quote.small .right-ditto,
+.text-wrapper-quote.small .left-ditto, 
+.text-wrapper-quote.small .right-ditto {
+  background-size: 26px 26px;
+  min-width: 26px;
+  height: 24px;
+  @include breakpoint(TP) {
+    background-size: 26px 26px;
+    min-width: 26px;
+    height: 24px;
+  }
+  @include breakpoint(D) {
+    background-size: 30px 30px;
+    min-width: 30px;
+    height: 28px;
+  }
+}
+
+.section-quote.small .rating-star.full,
+.section-quote.small .rating-star.half,
+.section-quote.small .rating-star.blank,
+.text-wrapper-quote.small .rating-star.full,
+.text-wrapper-quote.small .rating-star.half,
+.text-wrapper-quote.small .rating-star.blank {
+    margin: 0 2px 0 2px;
+    background-size: 17px auto;
+    width: 17px;
+    height: 23px;
+    @include breakpoint(TP) {
+        background-size: 20px auto;
+        width: 20px;
+    }
+}
+
+
+
+

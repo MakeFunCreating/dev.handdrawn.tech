@@ -1,0 +1,670 @@
+
+
+/////////////////////////////////////////////////////
+/////////////////////////////////////////////////////
+///////////// COLLECTION - POST LOOPS ///////////////
+/////////////////////////////////////////////////////
+/////////////////////////////////////////////////////
+
+// 1) Section class: section-collection-post-slug
+// 2) Section class: section-collection-cat-tag
+
+/////////////////////////////////////////////////////
+/////////////////////////////////////////////////////
+/////////////// 1) POSTS BY SLUGS ///////////////////
+/////////////////////////////////////////////////////
+/////////////////////////////////////////////////////
+
+.section-collection-post-slug {
+  position: relative;
+}
+
+.section-collection-post-slug:first-child {
+    margin-top: 0rem;
+}
+
+.section-collection-post-slug .content-wrapper {
+  position: relative;
+  z-index: 9;
+  display: flex; ////
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  align-items: flex-start; ////
+  height: 100%;
+  left: 0;
+  width: 100%;
+  @include breakpoint(TP) {
+    justify-content: space-between;
+  }
+}
+
+/////////////////////////////////////////////////////
+////////////////////// COLUMN ///////////////////////
+/////////////////////////////////////////////////////
+
+.section-collection-post-slug .col-wrapper {
+  position: relative;
+  order: 3;
+  display: flex; ////
+  flex-direction: column;
+  align-self: stretch; ////
+  text-align: center;
+  z-index: 12;
+  width: 93%;
+  @include breakpoint(TP) {
+    width: 47.5%;; //31.5%;
+  }
+  @include breakpoint(TL) {
+    width: 31%;
+  }
+}
+
+.section-collection-post-slug .col-wrapper.col-2,
+.section-collection-post-slug .col-wrapper.col-3 {
+  margin-top: 5rem;
+  @include breakpoint(TP) {
+    margin-top: 0rem;
+  }
+}
+
+.section-collection-post-slug .col-wrapper.col-3 {
+  @include breakpoint(TP) {
+    display: none;
+  }
+   @include breakpoint(TL) {
+    display: initial;
+  } 
+}
+
+
+///////////////////// COL FILLER ////////////////////
+
+// Illo
+.section-collection-post-slug .col-wrapper.col-filler {
+  @include breakpoint(ML) {
+    background: url(../images/section/column-fillers/naked-ui/illo/634px.png) center top / 100% auto no-repeat;
+    height: 500px;
+  }
+}
+
+
+/////////////////// FRAME WRAPPER ///////////////////
+
+.section-collection-post-slug .frame-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    margin-bottom: 2rem;
+    @include breakpoint(TP) {
+      margin-bottom: 2.25rem;
+    }
+    @include breakpoint(D) {
+      margin-bottom: 2.5rem;
+    }
+}
+
+
+// Narrow frame lines to make them more elegant
+
+.section-collection-post-slug .frame .top-frame,
+.section-collection-post-slug .frame .bottom-frame {
+    height: 3px;  
+}
+
+.section-collection-post-slug .frame .left-frame,
+.section-collection-post-slug .frame .right-frame {
+    height: calc(100% - 6px);
+    width: 3px; 
+}
+
+
+// Frame size overides for tablet portrait ONLY (images particulary small on this size!)
+
+.section-collection-post-slug .frame .right-frame {
+    background-image: url(../images/lines/frame/black/right.png);
+    @include breakpoint(TP) {
+      background-image: url(../images/lines/frame/black-small/right.png);
+    }
+    @include breakpoint(TL) {
+      background-image: url(../images/lines/frame/black/right.png);
+    }
+}
+
+.section-collection-post-slug .frame .left-frame {
+    background-image: url(../images/lines/frame/black/left.png);
+    @include breakpoint(TP) {
+      background-image: url(../images/lines/frame/black-small/left.png);
+    }
+    @include breakpoint(TL) {
+      background-image: url(../images/lines/frame/black/left.png);
+    }
+}
+
+.section-collection-post-slug .frame .top-frame {
+    background-image: url(../images/lines/frame/black/top.png);
+    @include breakpoint(TP) {
+      background-image: url(../images/lines/frame/black-small/top.png);
+    }
+    @include breakpoint(TL) {
+      background-image: url(../images/lines/frame/black/top.png);
+    }
+}
+
+.section-collection-post-slug .frame .bottom-frame {
+    background-image: url(../images/lines/frame/black/bottom.png);
+    @include breakpoint(TP) {
+      background-image: url(../images/lines/frame/black-small/bottom.png);
+    }
+    @include breakpoint(TL) {
+      background-image: url(../images/lines/frame/black/bottom.png);
+    }
+}
+
+
+
+//////////////////// IMG WRAPPER ////////////////////
+
+.section-collection-post-slug .col-wrapper .img-wrapper {
+  position: relative;
+  box-sizing: border-box;
+  padding: 8px;
+  height: 100%;
+  width: 100%;
+  background-size: 100% 100%;
+  top: 0px;
+  left: 0px;
+}
+
+.section-collection-post-slug img {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  font-family: 'object-fit: cover;'; // Polyfill fix for IE/EDGE
+}
+
+
+//////////////////////// TEXT ///////////////////////
+
+.section-collection-post-slug .text-wrapper {
+  flex-grow: 1;
+  display: flex; ////
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column; ////
+}
+
+.section-collection-post-slug .category {
+  position: relative;
+  z-index: 12;
+  line-height: 1.4;
+  margin: 1rem 0 1rem 0;
+  @include breakpoint(TP) {
+    margin: 1rem 0 1.2rem 0;
+  }
+  @include breakpoint(D) {
+    margin: 1rem 0 1.25rem 0;
+  }
+}
+
+.section-collection-post-slug .title {
+  position: relative;
+  z-index: 11;
+  margin: 0 10% 10px 10%;
+  @include breakpoint(TP) {
+    margin: 0 0 10px 0;
+  }
+}
+
+.section-collection-post-slug .desc-wrapper {
+  display: none;
+}
+
+.section-collection-post-slug .spacer {
+  display: none;
+  width: 100%;
+  flex-grow: 1;
+  min-height: 10px;
+  @include breakpoint(TP) {
+    min-height: 24px;
+  }
+  @include breakpoint(D) {
+    min-height: 32px;
+  }
+}
+
+.section-collection-post-slug .col-wrapper .button-wrapper {
+  display: none;
+}
+
+/////////////////// IMG TOP ILLO ////////////////////
+
+.section-collection-post-slug .col-wrapper .img-top-illo-wrapper {
+  right: -148px;
+  @include breakpoint(TP) {
+    // Illo positioned on left side
+    left: -148px;
+  }
+}
+
+.section-collection-post-slug .col-wrapper .img-top-illo {
+  @include breakpoint(TP) {
+    transform: rotate(-30deg);
+  }
+}
+
+// Control display, only the first element with .col-wrapper class (a weird CSS ruling!)
+// - means img-top-illo displays on first col even if section title div removed
+
+.section-collection-post-slug .content-wrapper > .col-wrapper ~ .col-wrapper .img-top-illo-wrapper {
+  display: none;
+  @include breakpoint(TP) {
+    display: none;
+  }
+}
+
+
+///////// TEXT WRAPPER (UNDER PRODUCT LOOP) /////////
+
+.section-collection-post-slug .text-wrapper-bottom {
+  position: relative;
+  width: 100%;
+  z-index: 10;
+  text-align: center;
+  margin-top: 60px;
+  order: 4;
+  @include breakpoint(TP) {
+    margin: 70px 5% 0 5%;
+  }
+  @include breakpoint(TL) {
+    margin: 80px 5% 0 5%;
+  }
+  @include breakpoint(D) {
+    margin: 110px 5% 0 5%;
+  }
+} 
+
+.section-collection-post-slug .text-wrapper-bottom div:last-child h3,
+.section-collection-post-slug .text-wrapper-bottom div:last-child h4,
+.section-collection-post-slug .text-wrapper-bottom div:last-child p {
+  margin-bottom: 0;
+}
+
+.section-collection-post-slug .text-wrapper-bottom .title h3,
+.section-collection-post-slug .text-wrapper-bottom .title h4{
+  position: relative;
+  z-index: 102;
+  width: 100%;
+  margin-top: 0;
+}
+
+.section-collection-post-slug .text-wrapper-bottom .text-top p {
+  position: relative;
+  z-index: 12;
+  margin: 0 0 70px 0;
+  width: 100%;
+}
+
+
+/////////////////////////////////////////////////////
+///////////////// STYLE OVERIDES ////////////////////
+/////////////////////////////////////////////////////
+
+//////////////////////// CLOCK ////////////////////////
+
+.section-collection-post-slug.clock .col-wrapper .img-top-illo {
+  background-image: url(../images/image-top-illo/clock/400px.png);
+  @include breakpoint(D) {
+    background-image: url(../images/image-top-illo/clock/500px.png);
+  }
+}
+
+/////////////////////// PRINTER ///////////////////////
+
+.section-collection-post-slug.printer .col-wrapper .img-top-illo {
+  background-image: url(../images/image-top-illo/printer/rot-right/400px.png);
+  @include breakpoint(TP) {
+    background-image: url(../images/image-top-illo/printer/rot-left/400px.png);
+  }
+  @include breakpoint(D) {
+    background-image: url(../images/image-top-illo/printer/rot-left/500px.png);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/////////////////////////////////////////////////////
+/////////////////////////////////////////////////////
+///////////// 2) CATEGORY & TAG LOOP ////////////////
+/////////////////////////////////////////////////////
+/////////////////////////////////////////////////////
+
+.section-collection-cat-tag {
+  position: relative;
+  @include breakpoint(TL) {
+    width: 90vw;
+    max-width: 1400px;
+    align-self: center;
+  }
+}
+
+.section-collection-cat-tag:first-child {
+    margin-top: 0rem;
+}
+
+.section-collection-cat-tag .content-wrapper {
+  position: relative;
+  z-index: 9;
+  display: flex; ////
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  align-items: flex-start; ////
+  height: 100%;
+  left: 0;
+  width: 100%;
+  @include breakpoint(TP) {
+    justify-content: space-between;
+  }
+}
+
+// Coming soon override
+.section-collection-cat-tag .col-wrapper.filler-1 .category,
+.section-collection-cat-tag .col-wrapper.filler-2 .category {
+    background-color: #999;
+    width: 40%;
+    height: 10px;
+    opacity: 0.1;
+    margin: 0rem 0 2.5rem 0;
+}
+
+// Coming soon override
+.section-collection-cat-tag .col-wrapper.filler-1 .title,
+.section-collection-cat-tag .col-wrapper.filler-2 .title {
+    background-color: #999;
+    width: 70%;
+    height: 15px;
+    opacity: 0.2;
+}
+
+/////////////////////////////////////////////////////
+////////////////////// COLUMN ///////////////////////
+/////////////////////////////////////////////////////
+
+.section-collection-cat-tag .content-wrapper .col-wrapper {
+  position: relative;
+  order: 3;
+  display: flex; ////
+  flex-direction: column;
+  align-self: stretch; ////
+  text-align: center;
+  z-index: 12;
+  margin-top: 30px;
+  width: 93%;
+  @include breakpoint(TP) {
+    width: 46.5%;
+  }
+  @include breakpoint(TL) {
+    width: 31.5%;
+  }
+  @include breakpoint(D) {
+    width: 30.5%;
+  }
+}
+
+.section-collection-cat-tag .col-wrapper.col-2,
+.section-collection-cat-tag .col-wrapper.col-3 {
+  //margin-top: 5rem;
+  @include breakpoint(TP) {
+    //margin-top: 0rem;
+  }
+}
+
+.section-collection-cat-tag .content-wrapper .col-wrapper:nth-of-type(1) {
+  margin-top: 0px;
+}
+
+.section-collection-cat-tag .content-wrapper .col-wrapper:nth-of-type(2) {
+  @include breakpoint(TP) {
+    margin-top: 0px;
+  }
+}
+
+.section-collection-cat-tag .content-wrapper .col-wrapper:nth-of-type(3) {
+  @include breakpoint(TL) {
+    margin-top: 0px;
+  }
+}
+
+// Hide cols to make rows even across devices
+
+.section-collection-cat-tag .col-wrapper.filler-1,
+.section-collection-cat-tag .col-wrapper.filler-2 {
+  display: none;
+  @include breakpoint(TP) {
+    display: initial;
+  }
+}
+
+///////////////////// COL FILLER ////////////////////
+.section-collection-cat-tag .col-wrapper.filler-1 .img-wrapper,
+.section-collection-cat-tag .col-wrapper.filler-2 .img-wrapper {
+    opacity: 0.6;
+}
+
+.section-collection-cat-tag .col-wrapper.two-col-1.filler-1 {
+
+  display: none;
+}
+
+.section-collection-cat-tag .col-wrapper.two-col-1.filler-2 {
+  display: none;
+}
+
+.section-collection-cat-tag .col-wrapper.two-col-2.filler-1 {
+  @include breakpoint(TL) {
+    display: none;
+  }
+}
+
+.section-collection-cat-tag .col-wrapper.two-col-2.filler-2 {
+  display: none;
+}
+
+// 3 col
+.section-collection-cat-tag .col-wrapper.three-col-3.filler-1 {
+  @include breakpoint(TL) {
+    display: initial;
+  }
+}
+
+.section-collection-cat-tag .col-wrapper.three-col-2.filler-1 {
+  @include breakpoint(TL) {
+    display: initial;
+  }
+}
+
+.section-collection-cat-tag .col-wrapper.three-col-3.filler-2 {
+  @include breakpoint(TL) {
+    display: initial;
+  }
+}
+
+
+/////////////////// FRAME WRAPPER ///////////////////
+
+.section-collection-cat-tag .frame-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    margin-bottom: 2rem;
+    @include breakpoint(TP) {
+      margin-bottom: 2.25rem;
+    }
+    @include breakpoint(D) {
+      margin-bottom: 2.5rem;
+    }
+}
+
+
+
+// Hide frame
+.section-collection-cat-tag .col-wrapper .frame-wrapper .top-frame,
+.section-collection-cat-tag .col-wrapper .frame-wrapper .bottom-frame,
+.section-collection-cat-tag .col-wrapper .frame-wrapper .left-frame,
+.section-collection-cat-tag .col-wrapper .frame-wrapper .right-frame {
+  display: none;
+}
+
+
+
+//////////////////// IMG WRAPPER ////////////////////
+
+.section-collection-cat-tag .col-wrapper .img-wrapper {
+  position: relative;
+  box-sizing: border-box;
+  padding: 1px;
+  width: 100%;
+  background-size: 100% 100%;
+  top: 0px;
+  left: 0px;
+}
+
+.section-collection-cat-tag img {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  font-family: 'object-fit: cover;'; // Polyfill fix for IE/EDGE
+}
+
+
+//////////////////////// TEXT ///////////////////////
+
+.section-collection-cat-tag .text-wrapper {
+  flex-grow: 1;
+  display: flex; ////
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column; ////
+  width: 100%;
+  min-height: auto;
+}
+
+.section-collection-cat-tag .category {
+  position: relative;
+  z-index: 12;
+  line-height: 1.4;
+  margin: 1rem 0 1rem 0;
+  @include breakpoint(TP) {
+    margin: 1rem 0 1.2rem 0;
+  }
+  @include breakpoint(D) {
+    margin: 1rem 0 1.25rem 0;
+  }
+}
+
+.section-collection-cat-tag .title {
+  position: relative;
+  z-index: 11;
+  margin: 0;
+  margin: 0 0 10px 0;
+}
+
+.section-collection-cat-tag .desc-wrapper {
+  display: none;
+}
+
+.section-collection-cat-tag .spacer {
+  width: 100%;
+  flex-grow: 1;
+  min-height: 10px;
+  @include breakpoint(TP) {
+    min-height: 24px;
+  }
+  @include breakpoint(D) {
+    min-height: 32px;
+  }
+}
+
+.section-collection-cat-tag .text-wrapper .button-wrapper {
+  display: none;
+}
+
+
+/////////////////// IMG TOP ILLO ////////////////////
+
+.section-collection-cat-tag .col-wrapper .img-top-illo-wrapper {
+  display: none;
+  right: -148px;
+  @include breakpoint(TP) {
+    // Illo positioned on left side
+    left: -148px;
+  }
+}
+
+.section-collection-cat-tag .col-wrapper .img-top-illo {
+  @include breakpoint(TP) {
+    transform: rotate(-30deg);
+  }
+}
+
+// Control display, only the first element with .col-wrapper class (a weird CSS ruling!)
+// - means img-top-illo displays on first col even if section title div removed
+
+.section-collection-cat-tag .content-wrapper > .col-wrapper ~ .col-wrapper .img-top-illo-wrapper {
+  display: none;
+  @include breakpoint(TP) {
+    display: none;
+  }
+}
+
+
+/////////////////////////////////////////////////////
+///////////////// STYLE OVERIDES ////////////////////
+/////////////////////////////////////////////////////
+
+//////////////////////// CLOCK ////////////////////////
+
+.section-collection-cat-tag.clock .col-wrapper .img-top-illo {
+  background-image: url(../images/image-top-illo/clock/400px.png);
+  @include breakpoint(D) {
+    background-image: url(../images/image-top-illo/clock/500px.png);
+  }
+}
+
+/////////////////////// PRINTER ///////////////////////
+
+.section-collection-cat-tag.printer .col-wrapper .img-top-illo {
+  background-image: url(../images/image-top-illo/printer/rot-right/400px.png);
+  @include breakpoint(TP) {
+    background-image: url(../images/image-top-illo/printer/rot-left/400px.png);
+  }
+  @include breakpoint(D) {
+    background-image: url(../images/image-top-illo/printer/rot-left/500px.png);
+  }
+}
+
+
+
+
+
+
+
+
+

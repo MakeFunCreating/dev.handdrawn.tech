@@ -1,0 +1,122 @@
+
+
+/////////////////////////////////////////////////////
+/////////////////////////////////////////////////////
+/////////////////////// LOGOS ///////////////////////
+/////////////////////////////////////////////////////
+/////////////////////////////////////////////////////
+
+
+.section-logos {
+	position: relative;
+}
+
+.section-logos .content-wrapper {
+	position: relative;
+  display: flex; ////
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center; ////
+	height: 100%;
+  left: 0;
+  width: 100%;
+	z-index: 9;
+  text-align: center;
+  @include breakpoint(TP) {
+    //justify-content: space-between;
+  }
+}
+
+/////////////////// TEXT WRAPPER ////////////////////
+
+.section-logos .text-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.section-logos .text-wrapper {
+  @include breakpoint(TL) {
+    padding: 0px 10%;
+  }
+}
+
+
+// Top text-wrapper
+
+.section-logos .text-wrapper:not(.bottom) div:last-child h3,
+.section-logos .text-wrapper:not(.bottom) div:last-child h4,
+.section-logos .text-wrapper:not(.bottom) div:last-child p {
+  margin-bottom: 60px;
+}
+
+
+// Bottom text-wrapper
+
+.section-logos .text-wrapper.bottom {
+  margin-top: 30px;
+  @include breakpoint(TP) {
+    margin-top: 50px;
+  }
+} 
+
+.section-logos .text-wrapper.bottom div:last-child h3,
+.section-logos .text-wrapper.bottom div:last-child h4,
+.section-logos .text-wrapper.bottom div:last-child p {
+  margin-bottom: 0;
+}
+
+.section-logos .title h3,
+.section-logos .title h4{
+  position: relative;
+  z-index: 102;
+  width: 100%;
+  margin-top: 0;
+}
+
+.section-logos .text-top p {
+  position: relative;
+  z-index: 12;
+  margin: 0 0 70px 0;
+  width: 100%;
+}
+
+.section-logos .text-bottom p {
+  position: relative;
+  z-index: 14;
+  margin: 0 0 0 0;
+  width: 100%;
+}
+
+.end-caption {
+  position: relative;
+  z-index: 10;
+}
+
+
+//////////////////// IMG WRAPPER ////////////////////
+
+.section-logos .img-wrapper {
+  position: relative;
+  z-index: 12;
+}
+
+.section-logos picture {
+  display: inline-block;
+}
+
+.section-logos img {
+  width: auto;
+  height: 40px;
+  margin: 7px 15px 7px 15px;
+  @include breakpoint(TP) {
+    height: 50px;
+  }
+  @include breakpoint(D) {
+    height: 54px;
+  }
+}
+
+
+
+

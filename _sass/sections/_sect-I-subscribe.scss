@@ -1,0 +1,257 @@
+
+/////////////////////////////////////////////////////
+/////////////////////////////////////////////////////
+///////////// SUBSCRIBE - TEXT + IMAGE //////////////
+/////////////////////////////////////////////////////
+/////////////////////////////////////////////////////
+
+
+.section-subscribe {
+  position: relative;
+}
+
+.section-subscribe:first-child {
+    margin-top: 0rem;
+}
+
+
+////////////////// CONTENT WRAPPER //////////////////
+
+.section-subscribe .content-wrapper {
+  position: relative;
+  z-index: 9; ////
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  align-items: flex-start; ////
+  height: 100%;
+  left: 0;
+  width: 100%;
+  @include breakpoint(TP) {
+  }
+  @include breakpoint(TL) {
+    justify-content: space-evenly;
+  }
+}
+
+
+/////////////////// COL-WRAPPER /////////////////////
+
+.section-subscribe .col-wrapper {
+    position: relative;
+    z-index: 10;
+    display: flex; ////
+    flex-wrap: wrap;
+    justify-content: center; ////
+    margin-bottom: 20px;
+}
+
+
+////////////////////// TITLE ////////////////////////
+
+.section-subscribe .title {
+  line-height: 1.35;
+  margin: 0 0 3rem 0;
+  @include breakpoint(TP) {
+  }
+  @include breakpoint(D) {
+    margin: 0 0 4rem 0;
+  }
+}
+
+.section-subscribe .title em {
+}
+
+
+/////////////////////// TEXT ////////////////////////
+
+.section-subscribe .text-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  margin: -0.25rem 0 3rem 0;
+  width: 94%;
+  @include breakpoint(ML) {
+    width: 100%;
+  }
+  @include breakpoint(D) {
+    width: 80%;
+    line-height: 1.6;
+  }
+}
+
+.section-subscribe .text-wrapper .desc {
+  width: 100%;
+  text-align: center;
+  margin: 0rem 0 0.5rem;
+  @include breakpoint(TP) {
+    margin: 0.5rem 0 1rem;
+  }
+  @include breakpoint(D) {
+    margin: 0.5rem 0 2rem;
+  }
+}
+
+
+///////////////// TICK ITEM WRAPPER /////////////////
+
+.section-subscribe .tick-item-wrapper {
+  text-align: center;
+  width: 100%;
+  margin: 20px 0 5px 0;
+  @include breakpoint(TP) {
+    margin: 15px 0 3px 0;
+  }
+  @include breakpoint(D) {
+    margin: 10px 0 5px 0;
+  }
+}
+
+.section-subscribe .tick-item-wrapper p {
+  margin: 0rem 0 1rem 0;
+  @include breakpoint(TP) {
+    margin: 0rem 0 1.1rem 0;
+  }
+  @include breakpoint(D) {
+    margin: 0rem 0 1.25rem 0;
+  }
+}
+
+.section-subscribe .tick-item-wrapper p:last-child {
+  margin-bottom: 0;
+}
+
+.section-subscribe .tick-item-wrapper em {
+  color: $pink;
+}
+
+
+
+///////////////// CUSTOM CHECKBOX ///////////////////
+
+// The container
+
+.checkbox-wrapper {
+  display: block;
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  @include breakpoint(TP) {
+    padding-left: 35px;
+  }
+}
+
+// Hide the browser's default checkbox
+
+.checkbox-wrapper input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+// Create a custom checkbox
+
+.checkbox-wrapper .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border-radius: 6px;
+  @include breakpoint(TP) {
+    height: 22px;
+    width: 22px;
+  }
+}
+
+// On mouse-over, add a grey background color
+
+.checkbox-wrapper:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+// When the checkbox is checked, add a pink background
+
+.checkbox-wrapper input:checked ~ .checkmark {
+  background-color: $pink;
+}
+
+.checkbox-wrapper input:checked:disabled ~ .checkmark {
+  background-color: #bdbdbd;
+}
+
+// Create the checkmark/indicator (hidden when not checked)
+
+.checkbox-wrapper .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+// Show the checkmark when checked
+.checkbox-wrapper input:checked ~ .checkmark:after {
+  display: block;
+}
+
+// Style the checkmark/indicator
+
+.checkbox-wrapper .checkmark:after {
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  @include breakpoint(TP) {
+    left: 7px;
+    top: 3px;
+  }
+}
+
+
+// Checkbox wrapper spacing overides
+
+.checkbox-wrapper {
+  margin: 15px 0 0 0;
+  @include breakpoint(TP) {
+    margin: 10px 0 0 0;
+  }
+}
+
+.checkbox-wrapper:nth-of-type(1) {
+  margin-right: 0px;
+  @include breakpoint(ML) {
+    margin-right: 35px;
+  }
+}
+
+.checkbox-wrapper:nth-of-type(2) {
+  margin-bottom: 15px;
+  @include breakpoint(ML) {
+    margin-bottom: 15px;
+  }
+}
+
+.checkbox-wrapper p {
+  margin: 0;
+  white-space: nowrap;  
+}  
+
+
+
+
+

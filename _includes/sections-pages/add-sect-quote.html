@@ -1,0 +1,86 @@
+
+
+{% assign section-divider = null %}
+{% assign section-class = null %}
+{% assign profile-type = null %}
+
+
+{% if include.class contains "pink" or include.class contains "yellow" or include.class contains "grey" or include.class contains "black" or include.class contains "black-medium" or include.class contains "blue" or include.class contains "none" %}
+  {% assign section-class = include.class %}
+{% else%}
+  {% assign section-class = include.class | append: " none" %}
+{% endif %}
+
+{% if include.section-divider == "no-illo" %}
+    {% assign section-class = section-class | append: " " | append: "no-illo" %}
+    {% assign section-class = section-class | append: " " | append: "strip-top"  %}
+    {% assign section-divider = "" %}
+{% elsif include.section-divider == "no-illo-butt" %}
+    {% assign section-class = section-class | append: " " | append: "no-illo-butt"  %}
+    {% assign section-class = section-class | append: " " | append: "strip-top-butt"  %}
+    {% assign section-divider = "" %}
+{% elsif include.section-divider and include.section-divider != empty%}
+    {% assign section-divider = include.section-divider %}
+{% else %}
+    {% assign section-class = section-class | append: " " | append: "no-illo"  %}
+    {% assign section-class = section-class | append: " " | append: "strip-top"  %}
+    {% assign section-divider = "" %}
+{% endif %} 
+
+{% assign section-class = section-class | append: " " | append: include.ani-triggers | replace: "  ", " "  %}
+
+
+<section {% if include.id and include.id != empty %}id="{{ include.id }}"{% endif %} class="section-quote strip-line {{ section-class | strip }}">
+    
+    {% if include.section-divider and include.section-divider != empty %}
+      <div class="sect-illo-wrapper {{ section-divider }}"><div class="sect-illo"></div></div>
+    {% endif %} 
+    
+    <div class="content-wrapper">
+
+      {% if include.sect-title and include.sect-title != empty %}
+
+        <div class="sect-title-wrapper">
+          <h2 class="sect-title">{{ include.sect-title }}</h2>
+          <div class="underline"></div>
+        </div>
+
+      {% endif %}
+
+        <div class="text-wrapper">
+            {% if include.avatar-src and include.avatar-src != empty %}
+              <div class="profile-photo"><img src="{{ include.avatar-src }}" width="100%" height="auto"></div>
+            {% endif %} 
+            {% if include.rating and include.rating != empty %}
+              <div class="rating-wrapper">
+                {% assign star-total = include.rating | split: "/" | last %}
+                {% assign star-rating = include.rating | split: "/" | first | plus: 0 %}
+                {% assign star-rating-round = star-rating | round %}
+                {% for i in (1..star-total) %}
+                  {% if i <= star-rating %}
+                    <div class="rating-star full"></div>
+                  {% elsif i > star-rating and i == star-rating-round %}
+                    <div class="rating-star half"></div>
+                  {% elsif i > star-rating-round %}
+                    <div class="rating-star blank"></div>
+                  {% endif %}
+                {% endfor %}
+              </div>
+            {% endif %}
+
+          <div class="quote-wrapper"><div class="left-ditto"></div><p class="quote {% unless include.class contains "small" %}biggest{% endunless %}">{{ include.text }}</p><div class="right-ditto"></div></div>
+          <p class="author smaller">{{ include.author }}</p>
+        </div>
+
+      <div class="bg-texture-wrapper">
+        <div class="frame show"><div class="top-frame"></div><div class="bottom-frame"></div></div>
+        <div class="bg-texture"></div>
+      </div>
+      
+    </div>
+
+</section>
+
+
+
+

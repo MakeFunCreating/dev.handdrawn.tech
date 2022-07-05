@@ -1,0 +1,188 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    {% include build/head-illustration-tags.html %}
+  </head>
+
+
+  {% assign body-class-1 = null %}
+  {% assign body-class-2 = null %}
+  {% if page.layout-sub-type and page.layout-sub-type != empty %}
+    {% assign body-class-1 = page.layout-sub-type %}
+  {% endif %}
+  {% if page.tidio-show-on-scroll == false %}
+    {% assign body-class-2 = "TidioOnLoad" %}
+  {% endif %}
+
+  <body class="layout-illustration-tags {{ body-class-1 }} {{ body-class-2 }}">
+
+    
+    {% include build/top-bar.html %}
+
+
+    <div class="container-wrapper">
+
+      {% include build/header-page.html %}
+
+      <div class="container">
+        <div class="content">
+
+          <!-- BASED ON: SECTION TEXT -->
+          <section class="section-text grey squeeze no-illo-butt strip-top-butt strip-bottom">
+              {% assign tag-name = page.tag | downcase %}
+              {% assign illo-num = site.tags[tag-name].size %} 
+              {% assign words = tag-name | split: ' ' %}
+                {% capture page-title %}
+                 {% for word in words %}
+                   {{ word | capitalize | strip}}
+                 {% endfor %}{% endcapture %}
+
+              <div class="content-wrapper">
+                  <div class="sect-title-wrapper">
+                    <h2 class="sect-title">Keyword: {{ page-title }}</h2>
+                    <div class="underline"></div>
+                  </div>
+                <div class="text-wrapper ticklist"> 
+                  <!--<h4 class="caps"></h4>-->
+                  <p class="smallest stretch-cap">{{ illo-num }} illustrations</p>
+                  <p>If you can't see exactly what you want, request a bespoke illustration, I'd be happy to help.</p>
+                  
+                </div>
+                <div class="bg-texture-wrapper">
+                  <div class="frame show"><div class="top-frame"></div><div class="bottom-frame"></div></div>
+                  <div class="bg-texture"></div>
+                </div>
+              </div>
+          </section>
+
+
+          <div class="breadcrumb tag-page smallest"><a href="{{ site.baseurl }}/illustrations/">/illustrations/</a><a href="{{ site.baseurl }}/illustrations/tags/">tags/</a>{{ page.tag | slugify }}</div> 
+
+
+          <!-- BUILD COLLECTION TAG LOOP -->
+          {% include build/gallery-loop-for-single-tag.html
+            class = "squeeze"
+            tag-name = ""
+          %}
+
+
+
+          <!-- SECTION TEXT -->
+          {% include sections-pages/add-sect-text.html
+            class = "black join"
+            section-divider = ""
+            ani-triggers = ""
+          
+            sect-title = "How Do You Get Them?"
+            
+            h1 = "<span class=\"smallest stretch-cap\">TWO SIMPLE OPTIONS</span>"
+            p1 = ""
+          
+            h2 = "Licensing & Commissioning"
+            p2 = "To use one of my illustrations, you can either <a href=\"/how-to-licence-hand-drawn-tech-illustrations/\">license</a> an existing illustration, or <a href=\"/how-to-commission-new-hand-drawn-tech-illustrations/\">commission</a> a totally new illustration. To get a quote, or to discuss a project, please use the chat feature to get in touch."
+            
+            link-text = "Start chat"
+            link-url = "open-chat"
+          %}
+
+
+          <!-- SECTION TEXT -->
+          {% include sections-pages/add-sect-text.html
+            class = "black no-top-gap"
+            section-divider = ""
+            ani-triggers = ""
+          
+            sect-title = ""
+            
+            h1 = "Book a Free Consultation"
+            p1 = "For impartial advice on how to maximise your brand, marketing or content using my illustrations book a meeting. I'd love to help, and no, you won't be wasting my time."
+          
+            h2 = ""
+            p2 = ""
+            
+            link-text = "View calendar"
+            link-url = "/contact"
+          %}
+          
+          
+          
+          <!-- SECTION TEXT -->
+          {% include sections-pages/add-sect-text.html
+            class = "announcement join black"
+            section-divider = ""
+            ani-triggers = ""
+          
+            sect-title = ""
+            
+            h1 = ""
+            p1 = "You'll also find me at the following places."
+            
+            h2 = ""
+            p2 = ""
+            
+            link-text = ""
+            link-url = ""
+          %}
+          
+
+          <!-- SECTION NAV BLOCKS -->
+          {% include sections-pages/add-sect-nav-blocks.html
+            class = "plain-button black"
+            box-col = ""
+            section-divider = ""
+            ani-triggers = ""
+          
+            sect-title = ""
+          
+            hightlight = ""
+            
+            block-1-title = "Make Fun Creating"
+            block-1-text = "Webby Award Winning craft blog"
+            block-1-butt-text = "Visit blog"
+            block-1-butt-url = "https://makefuncreating.com"
+          
+            block-2-title = "Creative Market"
+            block-2-text = "Awesome templates and fonts"
+            block-2-butt-text = "Visit store"
+            block-2-butt-url = "https://creativemarket.com/MakeFunCreating"
+          
+            block-3-title = "Dribble"
+            block-3-text = "Snapshots of latest illustrations"
+            block-3-butt-text = "Visit playbook"
+            block-3-butt-url = "makefuncreating.dribbble.com"
+          %} 
+
+
+
+          <div class="footer-wrapper">
+            {% if page.footer %}
+              {% include {{ page.footer }} %}
+            {% endif %}
+            {% include build/global-footer.html %}
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    {% include build/subscribe-modal-newsletter-ML.html class="black" %}
+
+    {% include animations/burglar.html class="burglar" %}
+    {% include animations/pointy-hand.html class="hand" %}
+    {% include animations/robot.html class="robot" %}
+    {% include animations/telescope.html class="telescope" %}
+
+    {% include build/footer-scripts.html %}
+
+  </body>
+
+</html>
+
+
+

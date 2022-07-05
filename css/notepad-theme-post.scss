@@ -1,0 +1,51 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+@import "themes/notepad-theme";
+
+@import "global/global-A-base-styles";
+@import "global/global-B-text";
+@import "global/global-C-elements";
+@import "global/global-D-top-bar";
+@import "global/global-E-mega-menu";
+@import "global/global-F-header";
+@import "global/global-G-content";
+@import "global/global-H-footer";
+@import "global/global-I-subscribe-modal";
+
+
+@import "posts/post-A-download-box";
+@import "posts/post-B-tips-box";
+@import "posts/post-C-image-photo-box";
+@import "posts/post-D-image-how-to-box";
+@import "posts/post-E-video-box";
+
+
+@import "product/product-A-elements";
+
+
+@import "illustration/illustration-A-elements";
+
+
+@import "sections/sect-A-base-styles.scss";
+@import "sections/sect-B-text.scss";
+@import "sections/sect-C-text-image.scss";
+@import "sections/sect-D-collection-posts.scss";
+@import "sections/sect-E-collection-products.scss";
+@import "sections/sect-F-links.scss";
+@import "sections/sect-G-quote.scss";
+@import "sections/sect-H-search.scss";
+@import "sections/sect-I-subscribe.scss";
+@import "sections/sect-K-tags.scss";
+@import "sections/sect-L-logos.scss";
+@import "sections/sect-M-divider.scss";
+@import "sections/sect-N-full-bleed-images.scss";
+@import "sections/sect-O-calendar.scss";
+
+
+@import "global/3rd-Party-cookiehub";
+@import "global/3rd-Party-mailerlite";
+@import "global/3rd-Party-fotorama";
+@import "global/3rd-Party-Tidio";
+

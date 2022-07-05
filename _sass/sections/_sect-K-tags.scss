@@ -1,0 +1,86 @@
+
+/////////////////////////////////////////////////////
+/////////////////////////////////////////////////////
+/////////////////////// TEXT ////////////////////////
+/////////////////////////////////////////////////////
+/////////////////////////////////////////////////////
+
+
+.section-tags {
+	position: relative;
+}
+
+.section-tags .content-wrapper {
+	position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+	height: 100%;
+  left: 0;
+  width: 100%;
+	z-index: 9;
+  text-align: center;
+}
+
+.section-tags .col-wrapper {
+	position: relative;
+	z-index: 10;
+}
+
+
+/////////////////////// TEXT ////////////////////////
+
+.section-tags .text-wrapper {
+  position: relative;
+  z-index: 101;
+  width: 96%;
+  @include breakpoint(TP) {
+    width: 100%;
+  }
+}
+
+.section-tags .text-wrapper p:first-child,
+.section-tags .text-wrapper h4:first-child {
+  margin-top: 0rem;
+}
+
+.section-tags .text-wrapper > *:last-child {
+  margin-bottom: 2rem;
+  @include breakpoint(TP) {
+    margin-bottom: 6rem;
+  }
+}
+
+
+/////////////////////// TAGS ////////////////////////
+
+.section-tags .tags-wrapper ul {
+  list-style: none;
+}
+
+.section-tags .tags-wrapper li {
+  display: inline-block;
+}
+
+// When .smaller class applied to li
+
+.section-tags .tags-wrapper li.smaller {
+  margin: 6px 2px 6px 3px;
+} 
+
+// When .smallest class applied to li
+
+.section-tags .tags-wrapper li.smallest {
+  margin: 6px 2px 6px 3px;
+} 
+
+
+
+
+
+
+
+
+
+

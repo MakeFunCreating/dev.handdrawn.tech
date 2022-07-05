@@ -1,0 +1,146 @@
+
+///////////////////////////////////////////////////////
+///////////////////////////////////////////////////////
+////////////////////// SNIPCART ///////////////////////
+///////////////////////////////////////////////////////
+///////////////////////////////////////////////////////
+
+#snipcart {
+    position: relative;
+    z-index: 9999999999 !important;
+}
+
+#snipcart * {
+    font-family: Open Sans,sans-serif;
+    outline: none;
+}
+
+#snipcart .snipcart-cart-header {
+    margin-top: 2rem;
+}
+
+#snipcart .snipcart-cart-button--highlight {
+  color: #fff;
+  background-color: $pink;
+  border-radius: $radius;
+  background-image: none;
+}
+
+#snipcart .snipcart__box--badge-highlight {
+  color: #fff;
+  background-color: $pink;
+  background-image: none;
+}
+
+#snipcart .snipcart__box--badge {
+    border: white;
+}
+
+#snipcart .snipcart-modal,
+#snipcart .snipcart-cart-header,
+#snipcart .snipcart-cart__content,
+#snipcart .snipcart-featured-payment-methods__title,
+#snipcart .snipcart-modal__container,
+#snipcart .snipcart-cart-summary {
+    background-color: #f5f6f5;
+}
+
+#snipcart .snipcart-modal__container.snipcart-cart-summary-side {
+    box-shadow: -10px -10px 20px rgba(55,55,55,0.3);
+}
+
+#snipcart .snipcart__font--bold {
+    font-weight: 600;
+}
+
+// Badge and sub-title
+#snipcart .snipcart-payment__header {
+    margin-bottom: -3px;
+}
+
+#snipcart .snipcart__box--badge {
+    margin-left: 0px;
+    margin-right: 0px;
+    @include breakpoint(TL) {
+        margin-left: -54px;
+        margin-right: 15px;
+    }
+}
+
+#snipcart .snipcart-billing-completed__header .snipcart__box--badge {
+    background-color: #2ae088;
+    path {
+        fill: white;
+    }
+}
+
+
+
+.del {
+
+#snipcart .snipcart__font--subtitle,
+#snipcart .snipcart-cart-header__title,
+#snipcart .snipcart-cart__secondary-header-title {
+    font-family: 'Pro-Draw';
+    letter-spacing: 0;
+    font-weight: 400; 
+    font-size: 2rem; 
+    background: url(../images/lines/rules/short/black/short-line.png) center 23px/100% 3px no-repeat;
+    height: 27px;
+    text-transform: capitalize;
+}
+
+#snipcart .snipcart-layout__content--side .snipcart-cart__secondary-header-title {
+   background-size: 100px 3px; 
+   background-position: 8px 23px;
+   text-transform: capitalize;
+}
+
+#snipcart .snipcart-modal__close-title {
+    font-family: 'Pro-Draw';
+    letter-spacing: 0;
+    font-weight: 400;    
+}
+
+}
+
+#snipcart .snipcart-featured-payment-methods--no-background {
+    border-top: 1px solid #d9dfe0;
+}
+
+// Mid grey background
+#snipcart .snipcart__box--gray {
+    background-color: #fafafa;
+}
+
+#snipcart .snipcart-form__field {
+    padding: 18px 0;
+}
+
+
+#snipcart .snipcart-item-line__title {
+    font-size: 1.7rem;
+    margin-left: 7px;
+    @include breakpoint(TP) {
+        margin-left: 7px;
+        flex-grow: 1;
+    }
+    @include breakpoint(TL) {
+        margin-left: 0px;
+        font-size: 1.7rem;
+    }  
+}
+
+#snipcart .snipcart-input,
+#snipcart .snipcart-form__select,
+#snipcart .snipcart-item-quantity__quantity {
+    border: 1px solid #d9dfe0;
+}
+
+
+
+
+
+
+
+

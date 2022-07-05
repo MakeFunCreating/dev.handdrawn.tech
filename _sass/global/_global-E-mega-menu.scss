@@ -1,0 +1,268 @@
+
+/////////////////////////////////////////////////////
+/////////////////////////////////////////////////////
+///////////////////  MEGA-MENU  /////////////////////
+/////////////////////////////////////////////////////
+/////////////////////////////////////////////////////
+
+///////////////  MEGA-MENU WRAPPER  /////////////////
+
+.mega-menu-wrapper {
+  display: none;
+  position: relative;
+  order: 5;
+  width: 100%;
+  left: 0;
+  z-index: 130;
+  //background-color: red;
+  opacity: 0;
+  height: 0px;
+  overflow: hidden;
+}
+
+.mega-menu-wrapper.show {
+  display: block;
+}
+
+.mega-menu-wrapper .container {
+  max-width: 1040px;
+}
+
+///////////////////  MEGA-MENU  /////////////////////
+
+.mega-menu-wrapper .mega-menu {
+  position: relative;
+  display: none;
+  margin-top: 45px;
+  width: 100%;
+  height: 100%;
+}
+
+.mega-menu-wrapper .mega-menu.show {
+  display: block;
+}
+
+
+/////////////////////////////////////////////////////
+////////////////  CONTENT WRAPPER  //////////////////
+/////////////////////////////////////////////////////
+
+.mega-menu-wrapper .content-wrapper.container {
+    display: flex; ////
+    flex-wrap: wrap;
+    justify-content: space-between; //space-around;
+    align-items: flex-start; ////
+}
+
+
+//////////////////// COLUMN TITLE ////////////////////
+
+// Latest posts / Categories / Tags etc.
+
+.mega-menu-wrapper .col-title {
+    flex-basis: 100%;
+    margin: 0 0 10px 0;
+}
+
+// Black bg overide
+
+.top-bar.black .mega-menu-wrapper .col-title,
+.top-bar.black-dark .mega-menu-wrapper .col-title {
+  color: white;
+}
+
+
+/////////////////////////////////////////////////////
+/////////////////// POSTS WRAPPER ///////////////////
+/////////////////////////////////////////////////////
+
+.mega-menu-wrapper .posts-wrapper {
+    position: relative;
+    z-index: 9;
+    display: flex; ////
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between; ////
+    height: 100%;
+    left: 0;
+    flex-basis: 30%;
+}
+
+
+//////////////////// COL-WRAPPER /////////////////////
+
+.mega-menu-wrapper .posts-wrapper .col-wrapper {
+    position: relative;
+    order: 3;
+    text-align: center;
+    z-index: 12;
+    width: 100%;
+}
+
+/////////////////// PHOTO WRAPPER ///////////////////
+
+.mega-menu-wrapper .photo-wrapper {
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+//////////////////// IMG WRAPPER ////////////////////
+
+.mega-menu-wrapper .col-wrapper .img-wrapper {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    background-size: 100% 100%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 227px;
+    margin-bottom: 0;
+    padding: 1px;
+}
+
+.mega-menu-wrapper img {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  font-family: 'object-fit: cover;'; // Polyfill fix for IE/EDGE
+}
+
+//////////////////////// TEXT ///////////////////////
+
+.mega-menu-wrapper .title {
+  text-align: left;
+  position: relative;
+  z-index: 11;
+  margin: 10px 0 0 0;
+  width: 90%;
+}
+
+// Pnk, blue bg overide
+
+.top-bar.pink .mega-menu-wrapper .title a,
+.top-bar.blue .mega-menu-wrapper .title a {
+  color: white;
+  &:hover {
+    color: $black;
+    text-decoration: none;
+    background-image: none;
+  }
+}
+
+// Black overide
+
+.top-bar.black .mega-menu-wrapper .title a,
+.top-bar.black-dark .mega-menu-wrapper .title a {
+  color: white;
+  text-decoration: none;
+  &:hover {
+    color: $pink;
+    background-image: none;
+  }
+}
+
+/////////////////////////////////////////////////////
+////////////// CATEGORIES /TAGS WRAPPER /////////////
+/////////////////////////////////////////////////////
+
+.mega-menu-wrapper .categories-wrapper,
+.mega-menu-wrapper .tags-wrapper {
+  flex-basis: 13%;
+  text-transform: capitalize;
+}
+
+.mega-menu-wrapper .col-wrapper ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.mega-menu-wrapper .col-wrapper li:nth-of-type(1) {
+  padding-top: 5px;
+}
+
+.mega-menu-wrapper .col-wrapper li {
+    margin-bottom: 1rem;
+}
+
+.mega-menu-wrapper .col-wrapper li:last-of-type {
+    margin-bottom: 0;
+}
+
+// Pink and blue bg overide
+
+.top-bar.pink .mega-menu-wrapper .col-wrapper li a,
+.top-bar.blue .mega-menu-wrapper .col-wrapper li a {
+  color: white;
+  &:hover {
+    color: $black;
+    text-decoration: none;
+    background-image: none;
+  }
+}
+
+// Black bg overide
+
+.top-bar.black .mega-menu-wrapper .col-wrapper li a,
+.top-bar.black-dark .mega-menu-wrapper .col-wrapper li a {
+  color: white;
+  &:hover {
+    color: $pink;
+    text-decoration: none;
+    background-image: none;
+  }
+}
+
+
+
+
+
+
+/////////////////////////////////////////////////////
+//////////////// PRO-DRAW OVERDIDES /////////////////
+/////////////////////////////////////////////////////
+
+.mega-menu.pro-draw .posts-wrapper {
+  flex-basis: 30%;
+}
+
+.mega-menu.pro-draw .posts-wrapper:not(:nth-of-type(1)) .col-title {
+  opacity: 0;
+}
+
+.mega-menu.pro-draw .posts-wrapper .col-wrapper {
+  order: initial;
+}
+
+.mega-menu.pro-draw .home-link {
+  width: 100%;
+  margin-top: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,522 @@
+
+
+/////////////////////////////////////////////////////
+/////////////////////////////////////////////////////
+/////////////// HEADER - IMAGE + TITLE //////////////
+/////////////////////////////////////////////////////
+/////////////////////////////////////////////////////
+
+/////////////////////// HEADER //////////////////////
+
+// The header top margin is equal to the top-bar height
+
+header {
+  position: relative;
+  z-index: 10;
+}
+
+
+////////////////// CONTENT WRAPPER //////////////////
+
+// This controls the overall height of header
+
+header .content-wrapper {
+  position: relative;
+  z-index: 1;
+  display: flex; ////
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start; ////
+  @include breakpoint(D) {
+
+  }
+}
+
+/////////////////// CLASS OVERIDES //////////////////
+
+// default [tall]
+header .content-wrapper,
+header.tall .content-wrapper {
+  height: calc(89vh - 137px);
+  @include breakpoint(ML) {
+    min-height: 540px;
+  }
+  @include breakpoint(TP) {
+    height: calc(88vh - 111px);
+  }
+  @include breakpoint(TL) {
+    height: calc(88vh - 111px);
+  }
+  @include breakpoint(D) {
+    height: calc(100vh - 86px); // 86px is size of top bar
+  }
+}
+
+
+// default [tall] + announcement (reduce height a little!)
+
+header:not(.no-image):not(.narrow).announcement .content-wrapper,
+header:not(.no-image):not(.narrow).announcement.tall .content-wrapper {
+  height: calc(89vh - 195px);
+  @include breakpoint(ML) {
+    min-height: 540px;
+  }
+  @include breakpoint(TP) {
+    height: calc(100vh - 169px);
+  }
+  @include breakpoint(D) {
+    height: calc(100vh - 143px);
+  }
+}
+
+
+// narrow
+
+header.narrow .content-wrapper {
+  height: calc(65vh - 86px); // 86px is size of top bar
+  @include breakpoint(ML) {
+    min-height: 540px;
+  }
+  @include breakpoint(TP) {
+    height: calc(75vh - 86px); // 86px is size of top bar
+  } 
+}
+
+// no-image
+
+header.no-image .content-wrapper {
+  min-height: initial;
+  height: auto;
+}
+
+
+// center
+
+header.center .content-wrapper .title-card-wrapper {
+    align-self: center;
+    bottom: auto;
+    @include breakpoint(D) {
+      padding-bottom: 5vh;
+    }
+}
+
+header:not(.no-image).none .content-wrapper > .bg-texture-wrapper .bg-texture {
+  background-color: #e9e9e9; //#dbdeda;
+}
+
+//////////////////// IMG WRAPPER ////////////////////
+
+header .img-wrapper {
+	position: relative;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+}
+
+
+headerX:not(.center) .img-wrapper picture::after { // Bottom gradient over image
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  content: '';
+  //background-image: linear-gradient(to bottom, RGBA(55,55,55,0) 0%, RGBA(55,55,55,0) 50%, RGBA(55,55,55,0.4) 100%);
+  background-image: linear-gradient(to bottom, RGBA(245,246,245,0) 0%, RGBA(245,246,245,0) 60%, RGBA(245,246,245,0.7) 80%, RGBA(245,246,245,0.95) 95%, RGBA(245,246,245,1) 100%);
+}
+
+
+///////////////////////// IMG ///////////////////////
+
+header .img-wrapper img {
+	object-fit: cover;
+	font-family: 'object-fit: cover;'; // Polyfill fix for IE/EDGE
+	position: relative;
+	background: url(../images/loader/loader-body-bg.gif) center 30%/55px 55px no-repeat;
+	width: 100%;
+	height: 100%;
+}
+
+header .title-card .bg-texture-wrapper {
+    padding: 2px;
+    z-index: 2;
+}
+
+header .title-card .bg-texture-wrapper .bg-texture {
+  //background-color: white;
+}
+
+// When there's no overlay but with an image
+header:not(.overlay):not(.no-image) .title-card .bg-texture-wrapper .bg-texture {
+  box-shadow: 0px 0px 25px rgba(0,0,0,0.4);
+}
+
+// When there's no overlay and there's no image
+header:not(.overlay) .title-card .bg-texture-wrapper .bg-texture {
+  box-shadow: 0px 0px 25px rgba(0,0,0,0.15);
+}
+
+// Overlay: not ever really used, but added just in case!
+header.overlay .overlay {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  opacity: 0.3;
+  background-color: $black;
+  height: 100%;
+}
+
+
+/////////////////////////////////////////////////////
+///////////// HEADER SKETCH LINE (BOTTOM) ///////////
+/////////////////////////////////////////////////////
+
+// Sketched line for Posts with header image only
+
+header .content-wrapper > .bg-texture-wrapper .frame {
+  display: none;
+}
+
+header:not(.no-image) .content-wrapper > .bg-texture-wrapper .frame,
+body.layout-post header.no-image .content-wrapper > .bg-texture-wrapper .frame {
+  display: initial;
+  z-index: 130;
+}
+
+header:not(.no-image) .content-wrapper > .bg-texture-wrapper .frame .bottom-frame {
+  bottom: -1px;
+  position: absolute;
+  background-repeat: repeat;
+  background-size: 800px 100%;
+}
+
+body.layout-post header.no-image .content-wrapper > .bg-texture-wrapper .frame .bottom-frame {
+  display: none;  
+}
+
+
+/////////////////////////////////////////////////////
+///////////////////// TITLE CARD ////////////////////
+/////////////////////////////////////////////////////
+
+///////////////// TITLE CARD WRAPPER ////////////////
+
+// Default [bottom]
+
+header .title-card-wrapper {
+  position: absolute;
+  z-index: 140;
+  max-width: 70%;
+  bottom: 0px;
+  padding-bottom: 100px;
+	@include breakpoint(ML) {
+		max-width: 480px;
+	}
+	@include breakpoint(TP) {
+    max-width: 490px;
+    padding-bottom: 100px;
+	}
+  @include breakpoint(TL) {
+    max-width: 600px;
+    padding-bottom: 100px;
+  }
+	@include breakpoint(D) {
+    max-width: 780px;
+    min-width: 480px;
+    padding-bottom: 110px;
+	}
+}
+
+// Layout:post overides
+.layout-post header .title-card-wrapper {
+  @include breakpoint(TP) {
+    max-width: 530px;
+  }
+  @include breakpoint(TL) {
+    max-width: 620px;
+  }
+  @include breakpoint(D) {
+    max-width: 780px;
+  }
+}
+
+
+// no-image
+
+header.no-image .content-wrapper .title-card-wrapper {
+  position: relative;
+  padding-top: 70px;
+  padding-bottom: 25px;
+  bottom: 0px;
+  @include breakpoint(TP) {  
+    padding-top: 70px;
+    padding-bottom: 42px;
+  }
+  @include breakpoint(D) {
+    padding-top: 75px;
+    padding-bottom: 42px;
+  }
+}
+
+header.no-image .content-wrapper .img-wrapper {
+  display: none;
+}
+
+header.no-image .content-wrapper .title-card-wrapper .title-card {
+  overflow: visible;
+}
+
+
+//////////////////// TITLE CARD /////////////////////
+
+header .title-card {
+  position: relative;
+  display: flex; ////
+  flex-direction: column;
+  justify-content: center; ////
+  text-align: center;
+  @include breakpoint(D) {
+    justify-content: flex-start;
+  }
+}
+
+
+/////////////////// TEXT WRAPPER ////////////////////
+
+header .title-card .text-wrapper.card {
+  position: relative;
+  z-index: 100;
+  padding: 24px 25px 23px 25px;
+  @include breakpoint(TP) {
+    padding: 25px 42px 24px 42px;
+  }
+  @include breakpoint(TL) {
+    padding: 24px 42px 24px 42px;
+  }
+  @include breakpoint(D) {
+    padding: 38px 50px 36px 50px;
+  }
+}
+
+//////////////////// PAGE TITLE /////////////////////
+
+header .page-title {
+  //line-height: 1.4;
+}
+
+///////////////////// SUB TITLE /////////////////////
+
+header .page-sub-title {
+  position: relative;
+  z-index: 99;
+  padding: 14px 0 0 0;
+  width: 100%;
+  margin: 0;
+  @include breakpoint(TP) {
+    padding: 14px 0 0 0;
+  }
+  @include breakpoint(TL) {
+  }
+  @include breakpoint(D) {
+    padding: 12px 0 0 0;
+    font-size: 2.3rem;
+  }
+}
+
+// Add underline (on cards only)
+header:not(.no-card) .page-sub-title {
+ background: url(../images/lines/rules/short/black/short-line.png) no-repeat;
+ background-position: center 5px;
+ background-size: 150px 2px;
+  @include breakpoint(TP) {
+    background-position: center 3px;
+    background-size: 150px 3px;
+  }
+  @include breakpoint(D) {
+    background-position: center 12px;
+    background-size: 150px 5px;
+    padding: 30px 0 0 0px;
+  }
+}
+
+/////////////////////////////////////////////////////
+//////////////////////  ILLOS  //////////////////////
+/////////////////////////////////////////////////////
+
+//////////////////////  WINGS  //////////////////////
+
+header .left-wing-wrapper {
+  position: absolute;
+  z-index: 101;
+  width: 270px;
+  left: -270px;
+  height: 160px;
+}
+
+header .left-wing {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  right: -17px;
+  background: url(../images/title-card-illos/wings/left/500px.png) center right/48% no-repeat;
+  @include breakpoint(ML) {
+    background-image: url(../images/title-card-illos/wings/left/677px.png);
+  }
+  @include breakpoint(TP) {
+    background-size: 58%;
+    right: -21px;
+  }
+  @include breakpoint(D) {
+    background-image: url(../images/title-card-illos/wings/left/775px.png);
+    background-size: 77%;
+    right: -27px;
+  }
+}
+
+header .right-wing-wrapper {
+  position: absolute;
+  z-index: 101;
+  width: 270px;
+  right: -270px;
+  height: 160px;
+}
+
+header .right-wing {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  left: -17px;
+  background: url(../images/title-card-illos/wings/right/500px.png) center left/48% no-repeat;
+  @include breakpoint(ML) {
+    background-image: url(../images/title-card-illos/wings/right/677px.png);
+  }
+  @include breakpoint(TP) {
+    background-size: 58%;
+    left: -21px;
+  }
+  @include breakpoint(D) {
+    background-image: url(../images/title-card-illos/wings/right/775px.png);
+    background-size: 77%;
+    left: -27px;
+  }
+}
+
+
+////////////////////  DOWN ARROW  ///////////////////
+
+header.down-arrow .title-card-wrapper .down-arrow {
+    //display: none;
+    position: absolute;
+    background: url(../images/title-card-illos/arrow/arrow.png) center bottom/43px no-repeat;
+    z-index: 101;
+    width: 100%;
+    height: 70px;
+    bottom: -24px;
+    @include breakpoint(TP) {
+      background-size: 58px;
+      bottom: -40px;
+    }
+    @include breakpoint(D) {
+      background-size: 68px;
+      bottom: -44px;
+    } 
+}
+
+header.arrow .title-card-wrapper .down-arrow {
+    display: initial;
+}
+
+
+/////////////////////////////////////////////////////
+///////////////// NO-CARD OVERIDES //////////////////
+/////////////////////////////////////////////////////
+
+header.no-card .title-card-wrapper {
+  max-width: 83%;
+  @include breakpoint(ML) {
+    max-width: 480px;
+  }
+  @include breakpoint(TP) {
+    //max-width: 490px;
+  }
+  @include breakpoint(TL) {
+    //max-width: 600px;
+  }
+  @include breakpoint(D) {
+    max-width: 740px;
+  }
+}
+
+header.no-card .left-wing-wrapper,
+header.no-card .right-wing-wrapper,
+header.no-card .title-card-wrapper .down-arrow,
+header.no-card .title-card .frame,
+header.no-card .title-card .bg-texture-wrapper {
+  display:none;
+}
+
+header.no-card .title-card .text-wrapper.card {
+  padding: 0;
+}
+
+header.no-card .page-title {
+ background: url(../images/lines/rules/short/black/short-line.png) no-repeat;
+ background-position: center 73px;
+ background-size: 150px 4px;
+ font-size: 2.5rem; // Base h1 style 2.3rem*1.08=2.48
+ padding: 0px 0 30px 0;
+  @include breakpoint(TP) {
+    font-size: 3.2rem; // Base h1 style 3rem*1.08=3.24
+    background-position: center 90px;
+    background-size: 150px 4px;
+  }
+  @include breakpoint(D) {
+    font-size: 4.1rem; // Base h1 style 3.9rem*1.08=4.21
+    background-position: center 124px;
+    background-size: 150px 5px;
+  }
+}
+
+header.no-card .page-sub-title {
+  padding: 0px;
+  @include breakpoint(D) {
+    font-size: 2.3rem;
+    padding: 21px 0 0 0;
+  }
+}
+
+// Posts (not pages) without a header image
+body.layout-post header.no-image .content-wrapper {
+  padding-bottom: 45px;
+  padding-top: 10px;
+  @include breakpoint(TP) {
+    padding-top: 5px;
+  }
+  @include breakpoint(D) {
+    padding-bottom: 85px;
+    padding-top: 40px;
+  }
+}
+
+// Not really used: white-text/black-text colour options
+
+header.white-text .page-sub-title,
+header.white-text .page-title  {
+  color: white;
+}
+
+header.black-text .page-sub-title,
+header.black-text .page-title  {
+  color: $black;
+}
+
+header.white-text .page-title {
+ background-image: url(../images/lines/rules/short/white/short-line.png);
+}
+
+
+
+
+

@@ -1,0 +1,384 @@
+
+
+/////////////////////////////////////////////////////
+/////////////////////////////////////////////////////
+///////////////// SUBSCRIBE MODAL ///////////////////
+/////////////////////////////////////////////////////
+/////////////////////////////////////////////////////
+
+.subscribe-modal {
+	position: fixed;
+	z-index: 1000;
+  display: flex; ////
+  flex-direction: column;
+  justify-content: flex-start;
+  //flex-wrap: wrap;
+  align-items: center; ////
+  width: 100vw;
+  height: 610px;
+  bottom: -612px;
+  box-shadow: -5px -5px 11px rgba(0,0,0,0.2);
+  transition: bottom 0.4s ease;
+  @include breakpoint(ML) {
+    height: 345px;
+    bottom: -347px;
+  }
+  @include breakpoint(TP) {
+  }
+  @include breakpoint(TL) {
+  }
+  @include breakpoint(D) {
+    height: 335px;
+    bottom: -337px;
+  }
+}
+
+
+////////////////// CONTENT WRAPPER //////////////////
+
+.subscribe-modal .content-wrapper {
+  position: relative;
+  z-index: 100;
+  display: flex; ////
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center; ////
+  left: 0;
+  width: 100%;
+  @include breakpoint(ML) {
+    justify-content: space-between;
+    width: 80%;
+  }
+  @include breakpoint(TP) {
+    width: 75%;
+  }
+  @include breakpoint(TL) {
+    width: 67%;
+  }
+  @include breakpoint(D) {
+    width: 780px;
+  }
+}
+
+
+/////////////////////////////////////////////////////
+/////////////////// STRIP-WRAPPER ///////////////////
+/////////////////////////////////////////////////////
+
+.subscribe-modal .strip-wrapper {
+  position: relative;
+  z-index: 100;
+  display: flex; ////
+  justify-content: center;
+  align-items: center; ////
+  overflow: hidden;
+  width: 100%;
+  height: 47px; 
+}
+
+.subscribe-modal .strip-text {
+    position: relative;
+    top: 45px;
+    white-space: nowrap;
+}
+
+.subscribe-modal .strip-text.show {
+    top: 0px;
+    transition: top 0.3s ease 0.3s;
+}
+
+.subscribe-modal .strip-wrapper p {
+  margin: 0;
+  color: white;
+  padding: 0 0 3px 0;
+  transition: all 0.3s ease;
+  @include breakpoint(D) {
+      padding: 2px 0 0 0;
+  }
+  &:hover {
+    cursor: pointer;
+    color: $black;
+  }
+}
+
+.subscribe-modal .strip-wrapper p span {
+  margin: 0;
+  color: inherit;
+  font-size: inherit;
+  position: relative;
+  font-size: 2rem;
+  top: 5px;
+}
+
+.subscribe-modal .close-button {
+  color: white;
+  position: absolute;
+  right: 20px;
+  z-index: 120;
+  margin: 0;
+  transition: opacity 0.4s ease;
+  &:hover {
+    cursor: pointer;
+    color: $pink;
+  }
+}
+
+.subscribe-modal .close-button.hide {
+  opacity: 0;
+}
+
+.subscribe-modal .close-button span {
+  color: inherit;
+  font-size: inherit;
+  font-size: 2rem;
+  position: relative;
+  top: -3px;
+}
+
+
+
+/////////////////////////////////////////////////////
+/////////////////// FORM WRAPPER ////////////////////
+/////////////////////////////////////////////////////
+
+.subscribe-modal .form-wrapper {
+  position: relative;
+  z-index: 100;
+  flex-grow: 1;
+  order: 2;
+  text-align: center;
+  @include breakpoint(ML) {
+    order: 1;
+    text-align: left;
+    flex-grow: 0.5;
+    width: 280px;
+  }
+  @include breakpoint(TP) {
+    flex-grow: 0.25;
+    width: 360px;
+    margin-top: -2.5rem;
+  }
+  @include breakpoint(D) {
+    width: 570px;
+  }
+}
+
+.subscribe-modal .form-wrapper h4 {
+  color: white;  
+  margin: 0 0 1rem 0;
+  @include breakpoint(ML) {
+    margin: 0 0 1.5rem 0;
+  }
+  @include breakpoint(TL) {
+    margin: 0 0 2rem 0;
+  }
+}
+
+
+.subscribe-modal .form-wrapper p,
+.subscribe-modal .form-wrapper p em {
+  color: white;  
+  margin: 0.5rem 0 0.5rem 0;
+  @include breakpoint(ML) {
+    margin: 0.75rem 0 0.75rem 0;
+  }
+}
+
+.subscribe-modal .form-wrapper p em {
+  color: $pink;
+}
+
+.subscribe-modal .form-wrapper .text-wrapper {
+  margin: 13px 0 2rem 0;
+  @include breakpoint(ML) {
+    margin: 0rem 0 2rem 0;
+  }
+  @include breakpoint(TL) {
+    margin: 0rem 0 3.5rem 0;
+  }
+}
+
+.subscribe-modal .form-wrapper .text-wrapper p:last-child {
+  margin-bottom: 0;
+}
+
+
+
+// MAILERLITE - overides
+
+.subscribe-modal .form-wrapper {
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  @include breakpoint(ML) {
+    height: 100%;
+  }
+  @include breakpoint(TP) {
+    justify-content: left;
+    height: 100%;
+  }
+}
+
+.subscribe-modal .form-wrapper .crafts,
+.subscribe-modal .form-wrapper .hire-me-sample {
+    height: 95px;
+    @include breakpoint(ML) {
+        height: 95px;
+    }
+    @include breakpoint(TP) {
+        height: auto;
+    }
+}
+
+
+.subscribe-modal .form-wrapper .text-wrapper {
+  text-align: center;
+  width: 100%;
+  @include breakpoint(TP) {
+    text-align: left;
+  } 
+}
+
+
+/////////////////////////////////////////////////////
+/////////////////// IMAGE-WRAPPER ///////////////////
+/////////////////////////////////////////////////////
+
+.subscribe-modal .image-wrapper {
+  position: relative;
+  z-index: 100;
+  width: 175px;
+  order: 1;
+  @include breakpoint(ML) {
+    order: 2;
+  }
+}
+
+
+///////////////////////////////////////////////////////
+//////////////////////// FOTORAMA /////////////////////
+///////////////////////////////////////////////////////
+
+
+.subscribe-modal .fotorama {
+    width: 100%;
+}
+
+.subscribe-modal .fotorama__stage {
+  background-color: $body-bg;
+}
+
+//////////////////////// ARROWS ///////////////////////
+
+.subscribe-modal .fotorama__arr {
+    background: url(../images/icon-set/chevron/single/black/right/119px.png) 14px center / 35% auto no-repeat;
+    height: 30px;
+    width: 25px;
+    background-position: 8px center;
+    top: calc(54% - 15px);
+    box-shadow: 0 0 24px rgba(0,0,0,0.2);
+}
+
+.subscribe-modal .fotorama__arr--next {
+    right: 0px;
+    transition: all 0.3s ease !important;
+    border-radius: $radius 0 0 $radius; //9px 0 0 9px;
+    background-color: white;
+    &:hover{
+        background-image: url(../images/icon-set/chevron/single/white/right/119px.png);
+        background-color: $pink;
+        box-shadow: 0 0 10px rgba(0,0,0,0);
+    }
+}
+
+.subscribe-modal .fotorama__arr--prev {
+    background-image: url(../images/icon-set/chevron/single/black/left/119px.png);
+    left: 0px;
+    transition: all 0.3s ease !important;
+    border-radius: $radius 0 0 $radius; //9px 0 0 9px;
+    background-color: white; 
+    &:hover{
+        background-image: url(../images/icon-set/chevron/single/white/left/119px.png);
+        background-color: $pink;
+        box-shadow: 0 0 10px rgba(0,0,0,0);
+    }
+}
+
+//////////////////////// FRAME ////////////////////////
+
+.subscribe-modal .right-frame,
+.subscribe-modal .left-frame {
+    position: absolute;
+    z-index: 10;
+    top: 3px;
+    height: 88.3%;
+}
+
+.subscribe-modal .right-frame {
+    right: -2px;
+}
+
+.subscribe-modal .left-frame {
+    left: -2px;
+}
+
+.subscribe-modal .top-frame {
+    position: absolute;
+    top: -2px;
+    left: 0px;
+    width: 100%;
+    z-index: 10;
+}
+
+.subscribe-modal .bottom-frame {
+    position: absolute;
+    bottom: 28px;
+    left: 0px;
+    width: 100%;
+    z-index: 10;
+}
+
+/////////////////////// NAV DOTS //////////////////////
+
+.subscribe-modal .fotorama__nav__frame--dot .fotorama__dot {
+    width: 6px;
+    height: 6px;
+}
+
+.subscribe-modal .fotorama__nav__frame.fotorama__active .fotorama__dot {
+    border-width: 3px;
+}
+
+
+/////////////////////////////////////////////////////
+///////////////// TEXTURE WRAPPER ///////////////////
+/////////////////////////////////////////////////////
+
+.subscribe-modal .bg-texture-wrapper {
+  position: absolute;
+  top: 0px;
+  height: 100%;
+  width: 170vw;
+  left: -50vw;
+  z-index: 1;
+  transition: opacity 0.4s linear 0.2s;
+}
+
+.subscribe-modal .bg-texture-wrapper.pink {
+  z-index: 2;
+  opacity: 0;
+}
+
+// Sketched line
+
+.subscribe-modal > .bg-texture-wrapper .frame .top-frame {
+    top: -2px;
+    position: absolute;
+}
+
+
+

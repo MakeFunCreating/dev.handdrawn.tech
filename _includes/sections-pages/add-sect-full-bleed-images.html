@@ -1,0 +1,322 @@
+ 
+
+{% assign section-divider = null %}
+{% assign section-class = null %}
+{% assign col-class = null %}
+
+{% assign classTemp =  include.class | downcase %}
+{% if classTemp contains "pink" %}
+   {% assign bg-col =  "pink" %}
+{% elsif classTemp contains "blue" %}
+  {% assign bg-col =  "blue" %}
+{% elsif classTemp contains "black" %}
+  {% assign bg-col =  "black" %}
+{% elsif classTemp contains "black-medium" %}
+  {% assign bg-col =  "black-medium" %}
+{% elsif classTemp contains "grey" %}
+  {% assign bg-col =  "grey" %}
+{% elsif classTemp contains "yellow" %}
+  {% assign bg-col =  "yellow" %}
+{% elsif classTemp contains "none" %}
+  {% assign bg-col =  "none" %}
+{% endif %}
+
+{% if include.class contains "pink" or include.class contains "yellow" or include.class contains "grey" or include.class contains "black" or include.class contains "black-medium" or include.class contains "blue" or include.class contains "none" %}
+  {% assign section-class = include.class %}
+{% else%}
+  {% assign section-class = include.class | append: " none" %}
+{% endif %}
+
+{% if include.class contains "tall" %}
+  {% assign col-class = "tall" %}
+{% elsif include.class contains "narrow" %}
+  {% assign col-class = "narrow" %}
+{% endif %}
+
+
+{% if include.section-divider == "no-illo" %}
+    {% assign section-class = section-class | append: " " | append: "no-illo strip-top" %}
+{% elsif include.section-divider == "no-illo-butt" %}
+    {% assign section-class = section-class | append: " " | append: "no-illo-butt strip-top-butt" %}
+{% elsif include.section-divider and include.section-divider != empty %}
+    {% assign section-divider = include.section-divider %}
+{% else %}
+    {% assign section-class = section-class | append: " " | append: "no-illo strip-top" %}
+{% endif %} 
+
+{% unless include.sect-title and include.sect-title != empty %}
+  {% assign section-class = section-class | append: " " | append: "no-sect-title" %}
+{% endunless %} 
+
+{% assign section-class = section-class | append: " " | append: include.ani-triggers | replace: "  ", " "  %}
+
+
+
+
+<section {% if include.id and include.id != empty %}id="{{ include.id }}"{% endif %} class="section-full-bleed-images strip-line {{ section-class | strip }}">
+
+    {% if include.section-divider and include.section-divider != empty %}
+      <div class="sect-illo-wrapper {{ section-divider }}"><div class="sect-illo"></div></div>
+    {% endif %}
+
+    <div class="content-wrapper {% if include.bg-image == "true" or include.bg-image == true %}bg-image-tall{% endif %}">
+
+
+      {% if include.sect-title and include.sect-title != empty %}
+        <div class="sect-title-wrapper">
+          <h2 class="sect-title">{{ include.sect-title }}</h2>
+          <div class="underline"></div>
+        </div>
+      {% endif %}
+
+
+
+      {% assign image-array = include.image-array | split: "," %}
+      {% assign image-array-length = image-array | size %}
+      {% assign image-src-string = include.img-src-1 | append: "," | append: include.img-src-2 | append: "," | append: include. img-src-3 | append: "," | append: include. img-src-4 | append: "," | append: include. img-src-5 | append: "," | append: include. img-src-6 %}
+      {% assign image-src-array = image-src-string | split: "," %}
+      {% assign image-text-string = include.img-txt-1 | append: "," | append: include.img-txt-2 | append: "," | append: include. img-txt-3 | append: "," | append: include. img-txt-4 | append: "," | append: include. img-txt-5 | append: "," | append: include. img-txt-6 %}
+      {% assign image-text-array = image-text-string | split: "," %}
+
+
+      {% if image-array-length == 1 %}
+        {% assign D-size = "3200" %}
+        {% assign TL-size = "3200" %}
+        {% assign TP-size = "1900" %}
+        {% assign ML-size = "1000" %}
+        {% assign MP-size = "1000" %}
+      {% elsif image-array-length == 2 %}
+        {% assign D-size = "1900" %}
+        {% assign TL-size = "1900" %}
+        {% assign TP-size = "1900" %}
+        {% assign ML-size = "1000" %}
+        {% assign MP-size = "1000" %}
+      {% elsif image-array-length == 3 %}
+        {% assign D-size = "1000" %}
+        {% assign TL-size = "1000" %}
+        {% assign TP-size = "1900" %}
+        {% assign ML-size = "1000" %}
+        {% assign MP-size = "1000" %}
+      {% endif %}
+
+
+
+      {% for i in (1..image-array-length) %}
+        {% assign loop-num = i | minus: 1 %}
+
+        <div class="col-wrapper col-{{ image-array-length }} {{ col-class }}">
+
+           {% assign show-hide = "show" %}
+           {% assign curr-text = image-array[loop-num] | minus: 1 %}
+           {% assign curr-text = image-text-array[curr-text] %}
+           {% if curr-text.size > 0 %}
+               {% assign show-hide = "hide" %}
+           {% endif %}
+
+
+           {% assign curr-src = image-array[loop-num] | minus: 1 %}
+           {% assign src = image-src-array[curr-src] %}
+            
+
+
+          {% if src contains "vimeo.com" %}
+              {% assign controls-string = "" %}
+              {% assign controls = "" %}
+
+              {% if src contains "|" %}
+                {% assign src = src | split: "|" %}
+                {% assign controls = src[0] %}
+                {% assign src = src[1] %}
+              {% endif %}
+
+              {% capture vimeo-src %}{{ src }}{% endcapture %}
+              {% capture last-five-nums %}{{ src | slice: -5, 5 }}{% endcapture %}
+              
+
+              {% if controls contains "autoplay" %}
+                {% assign controls-string = "&autoplay=1&muted=1&autopause=0" %}
+              {% endif %}
+              {% if controls contains "loop" %}
+                {% assign controls-string = controls-string | append: "&loop=1" %}             
+              {% endif %}
+              {% if controls contains "mute" %}
+                {% assign controls-string = controls-string | append: "&muted=1" %}             
+              {% endif %}
+
+              {% capture controls-string %}{{ controls-string }}{% endcapture %}
+
+
+              {% include sections-posts/add-video.html
+                src=vimeo-src
+                extra-controls=controls-string
+                uniqueID=last-five-nums
+                type="vimeo-full-bleed"
+                class="sixteen-nine"
+              %}
+          {% elsif src contains "/videos/" %}
+
+              {% assign controls-string = "" %}
+              {% assign controls = "" %}
+              {% assign local-video = "local" %}
+
+              {% if src contains "|" %}
+                {% assign src = src | split: "|" %}
+                {% assign controls = src[0] %}
+                {% assign src = src[1] %}
+              {% endif %}
+
+
+              {% if controls contains "controls" %}
+                {% assign controls-string = "controls" %}             
+              {% endif %}
+              {% if controls contains "autoplay" %}
+                {% assign controls-string = controls-string | append: " autoplay" %}
+              {% endif %}
+              {% if controls contains "loop" %}
+                {% assign controls-string = controls-string | append: " loop" %}             
+              {% endif %}
+              {% if controls contains "mute" %}
+                {% assign controls-string = controls-string | append: " muted" %}             
+              {% endif %}
+
+
+              <div class="video-box">
+              
+                  <div class="img-top-illo-wrapper"><div class="img-top-illo"></div></div>
+              
+                  <div class="frame-wrapper">
+              
+                    <div class="frame">
+                      <div class="top-frame"></div>
+                      <div class="left-frame"></div>
+                      <div class="right-frame"></div>
+                      <div class="bottom-frame"></div>
+              
+                      <div class="video-wrapper {{ local-video }}">
+                        <div class="aspect-ratio sixteen-nine">
+
+                          <video class="video-box" playsinline {{ controls-string }}>
+                            <source src="{{ src }}" type="video/mp4">
+                              Your browser does not support the video tag.
+                          </video>
+              
+                        </div>
+                      </div>
+              
+                    </div>
+              
+                  </div>
+              </div>
+
+
+          {% else %}
+
+            <div class="frame-wrapper">
+                <div class="top-frame"></div>
+                <div class="left-frame"></div>
+                <div class="right-frame"></div>
+                <div class="bottom-frame"></div>
+
+                <div class="bg-img-wrapper {{ show-hide }}">
+                    {% if include.bg-image-overlay == true %}<div class="overlay"></div>{% endif %}
+                    {% assign imgDirArray = page.image-dir | split: "/" %}
+                    {% assign img-file-prepend = null %}
+                    {% assign curr-src = image-array[loop-num] | minus: 1 %}
+                    {% assign src = image-src-array[curr-src] %}
+                    {% assign new-src = null %}
+                    {% assign hypenYesNo = null %}
+                    {% assign noHash = null %}
+                    {% assign file-format = null %}
+                    
+                    {% if include.format and include.format != empty %}
+                      {% assign file-format = include.format %}
+                    {% else %}
+                      {% assign file-format = "jpg" %}
+                    {% endif %}
+                    
+                    {% assign srcArray = src | split: "/" %}
+                    
+                    {% if srcArray.size > 1 %}
+                      {% if src contains "#" %}
+                        {% assign file-format = srcArray | last | split: "#" | last %} 
+                        {% assign hashSplitArray = srcArray | last | split: "#" %}  
+                        {% assign tempVar = hashSplitArray | first %} 
+                        {% if tempVar == empty %}
+                          {% assign img-file-prepend = "" %}
+                          {% assign whereIsHash = "ONLY-FILE-FORMAT" %}
+                        {% else%}
+                          {% assign img-file-prepend = srcArray | last | split: "#" | first | append: "-" %}
+                          {% assign whereIsHash = "FILE-FORMAT-PREPEND" %}
+                        {% endif %}
+                      {% else %}
+                        {% assign whereIsHash = "NO-HASH" %}
+                        {% assign img-file-prepend = imgDirArray | last | append: "" %}
+                        {% assign file-format = "jpg" %}
+                      {% endif %}
+                            
+                      {% for item in srcArray %}
+                        {% if whereIsHash == "ONLY-FILE-FORMAT" %}
+                        {% if forloop.first == true %}
+                          {% assign new-src = new-src | append: item %}
+                        {% else %}
+                          {% if forloop.last != true %}
+                            {% assign new-src = new-src | append: "/" |  append: item %}
+                          {% endif %}
+                        {% endif %}
+                      {% elsif whereIsHash == "FILE-FORMAT-PREPEND" %}
+                        {% if forloop.last != true %}
+                          {% if forloop.first == true %}
+                            {% assign new-src = new-src | append: item %}
+                          {% elsif forloop.first != true %}
+                            {% assign new-src = new-src  | append: "/"| append: item %}
+                          {% endif %}
+                        {% endif %}
+                      {% elsif whereIsHash == "NO-HASH" %}
+                          {% assign new-src = new-src | append: item %}
+                          {% if forloop.last != true %}
+                            {% assign new-src = new-src | append: "/" %}
+                          {% endif %}
+                      {% endif %}
+                      {% endfor %}
+                    {% else %}
+                      {% assign new-src = src | remove: "/" %}
+                      {% assign img-file-prepend = imgDirArray | last | append: "-" %}
+                      {% assign whereIsHash = "NO-HASH" %}
+                    {% endif %}
+  
+                    <picture>
+                      <source media="(min-width: 1200px)" srcset="{{ site.url }}{{ site.baseurl }}/images/{{ new-src }}/{{ img-file-prepend }}{{ D-size }}px.{{ file-format }}">
+                      <source media="(min-width: 992px)" srcset="{{ site.url }}{{ site.baseurl }}/images/{{ new-src }}/{{ img-file-prepend }}{{ TL-size }}px.{{ file-format }}">
+                        <source media="(min-width: 768px)" srcset="{{ site.url }}{{ site.baseurl }}/images/{{ new-src }}/{{ img-file-prepend }}{{ TP-size }}px.{{ file-format }}">
+                          <source media="(min-width: 650px)" srcset="{{ site.url }}{{ site.baseurl }}/images/{{ new-src }}/{{ img-file-prepend }}{{ ML-size }}px.{{ file-format }}">
+                      <img src="{{ site.url }}{{ site.baseurl }}/images/{{ new-src }}/{{ img-file-prepend }}{{ MP-size }}px.{{ file-format }}"
+                      alt="{% if include.alt %}{{ include.alt }}{% endif %}" loading="lazy">
+                    </picture>
+                </div>
+              </div>
+            {% endif %}
+          
+
+        </div>
+
+      {% endfor %}
+
+      
+      <div class="bg-texture-wrapper">
+        <div class="bg-texture"></div>
+      </div>
+
+      <div class="top-frame"></div>
+
+    </div>
+      
+
+</section>
+
+
+
+
+
+
+
+

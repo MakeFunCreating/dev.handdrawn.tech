@@ -1,0 +1,623 @@
+
+/////////////////////////////////////////////////////
+/////////////////////////////////////////////////////
+////////////// SECTION - TEXT + IMAGE ///////////////
+/////////////////////////////////////////////////////
+/////////////////////////////////////////////////////
+
+
+.section-text-image {
+  position: relative;
+}
+
+.section-text-image:first-child {
+    margin-top: 0rem;
+}
+
+
+////////////////// CONTENT WRAPPER //////////////////
+
+.section-text-image .content-wrapper {
+  position: relative;
+  z-index: 11;
+  display: flex; ////
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center; ////
+  height: 100%;
+  left: 0;
+  width: 100%;
+  @include breakpoint(TL) {
+    justify-content: space-between;
+  }
+}
+
+
+/////////////////////////////////////////////////////
+//////////////////// COLUMN ONE /////////////////////
+/////////////////////////////////////////////////////
+
+.section-text-image .col-1 {
+  position: relative;
+  box-sizing: border-box;
+  order: 3;
+  z-index: 10;
+  text-align: center;
+  width: 94%;
+  @include breakpoint(TP) {
+
+  }
+  @include breakpoint(TL) {
+    order: 2;
+    text-align: left;
+    width: 35%;
+  }
+}
+
+/////////////////// TEXT WRAPPER ////////////////////
+
+.section-text-image .col-1 .text-wrapper > *:last-child {
+  margin-bottom: 0;
+}
+
+.section-text-image .col-1 .text-wrapper {
+  margin-top: 2.5rem;
+  @include breakpoint(TP) {
+    margin-top: 3.5rem;
+  }
+  @include breakpoint(TL) {
+    margin-top: 0rem;
+  }
+}
+
+.section-text-image .col-1 .text-wrapper p.text em {
+  color: $pink;
+}
+
+.section-text-image.pink-light .col-1 .text-wrapper p.text em {
+  color: white;
+}
+
+////////////////////// TITLE ////////////////////////
+
+.section-text-image .col-1 .text-wrapper h4:first-child:not(.navi-dot),
+.section-text-image .col-1 .text-wrapper p:first-child:not(.navi-dot) {
+  margin-top: 0;
+}
+
+//////////////////// NAVI-DOTS //////////////////////
+
+.section-text-image .col-1 .navi-dots-wrapper {
+  display: flex; ////
+  flex-wrap: wrap;
+  justify-content: space-around;
+  justify-content: center; ////
+}
+
+.section-text-image .col-1 .navi-dots-wrapper .navi-dot {
+  border: 1px solid white;
+  margin: 4px;
+  width: 7px;
+  height: 7px;
+  border-radius: 30px;
+  cursor: pointer;
+  @include breakpoint(TP) {
+    width: 7px;
+    height: 7px;
+  }
+  @include breakpoint(D) {
+    width: 7px;
+    height: 7px;
+  }
+}
+
+.section-text-image.strip-bottom .col-1 .navi-dots-wrapper {
+  position: relative;
+  top: 30px;
+  @include breakpoint(TP) {
+    top: 30px;
+  }
+  @include breakpoint(D) {
+    top: 30px;
+  }
+}
+
+.section-text-image .col-1 .navi-dots-wrapper .navi-dot.dot-1 {
+  background-color: white;
+}
+
+/////////////////////////////////////////////////////
+//////////////////// COLUMN TWO /////////////////////
+/////////////////////////////////////////////////////
+
+.section-text-image .col-2 {
+  position: relative;
+  order: 2;
+  z-index: 12;
+  margin: 0 auto;
+  width: 100%;
+  display: flex; ////
+  justify-content: center; ////
+  @include breakpoint(TP) {
+    width: 93%;
+  }
+  @include breakpoint(TL) {
+    margin: 0;
+    order: 3;
+    width: 60%;
+  }
+}
+
+
+////////////////// IMAGE WRAPPER ////////////////////
+
+.section-text-image .col-2 .img-wrapper {
+  position: relative;
+  box-sizing: border-box;
+  padding: 7px;
+  @include breakpoint(TP) {
+    padding: 7px;
+  }
+  @include breakpoint(D) {
+    padding: 10px;
+  }
+}
+
+// Overide: remove padding between frame and image
+.section-text-image .col-2 .img-wrapper {
+  padding: 1px;
+}
+
+.section-text-image img {
+  display: block;
+  max-width: 100%;
+  box-sizing: border-box;
+  object-fit: contain;
+  font-family: 'object-fit: contain;'; // Polyfill fix for IE/EDGE
+  @include breakpoint(TP) {
+    border-width: 5px;
+    max-height: 600px;
+  }
+  @include breakpoint(TL) {
+    max-height: 480px;
+  }
+  @include breakpoint(D) {
+    border-width: 10px;
+    max-height: 550px;
+  }
+}
+
+.section-text-image.full-image.large-image img {
+  @include breakpoint(D) {
+    max-height: 630px;
+  }
+}
+
+// Video wrapper sizing
+
+.section-text-image .video-wrapper-constrain {
+  width: 100%;
+  //max-width: 100%;
+  @include breakpoint(TP) {
+    //max-height: 600px;
+  }
+  @include breakpoint(TL) {
+    //max-height: 480px;
+  }
+  @include breakpoint(D) {
+    //max-height: 550px;
+  } 
+}
+
+.section-text-image.full-image .video-wrapper-constrain.sixteen-nine {
+  width: 100%;
+  @include breakpoint(TP) {
+    width: 93%;
+  }
+  @include breakpoint(TL) {
+    width: 90%;
+  }
+  @include breakpoint(D) {
+    width: 76%;
+  } 
+}
+
+
+.section-text-image.full-image .video-wrapper-constrain.max-height {
+  width: auto;
+}
+
+.section-text-image .video-box {
+  margin: 0;
+}
+
+.section-text-image .video-box .video-local {
+  @include breakpoint(TP) {
+    max-height: 600px;
+  }
+  @include breakpoint(TL) {
+    max-height: 480px;
+  }
+  @include breakpoint(D) {
+    max-height: 550px;
+  }
+}
+
+// large-image override
+
+.section-text-image.full-image .video-box .video-local {
+  @include breakpoint(D) {
+    max-height: 650px;
+  }
+}
+
+.section-text-image .video-wrapper {
+  //box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+}
+
+////////// BG-SLIDER BACKGROUND CLASSES /////////////
+
+section .bg-texture-wrapper .bg-texture.bg-slider.pink,
+section .bg-texture-wrapper .bg-texture.bg-slider.blue,
+section .bg-texture-wrapper .bg-texture.bg-slider.yellow,
+section .bg-texture-wrapper .bg-texture.bg-slider.grey,
+section .bg-texture-wrapper .bg-texture.bg-slider.black,
+section .bg-texture-wrapper .bg-texture.bg-slider.pink-light {
+  position: absolute;
+  top: 0;
+  left: 150vw;
+}
+
+
+
+///////////////////////////////////////////////////////
+//////////////////////// FOTORAMA /////////////////////
+///////////////////////////////////////////////////////
+
+.section-text-image .fotorama-box {
+  position: relative;
+    // margin: 0rem 0 4rem 0;
+    width: 100%;
+    @include breakpoint(TP) {
+      // margin: 0rem 0 5rem 0;
+      width: 93%;
+    } 
+    @include breakpoint(TL) {
+      width: 90%;
+    }
+    @include breakpoint(D) {
+      // margin: 0rem 0 5rem 0;
+      width: 76%;
+    }    
+}
+
+.section-text-image.fotorama {
+    width: 100%;
+}
+
+
+//////////////////////// ARROWS ///////////////////////
+
+.section-text-image .fotorama-box .fotorama__arr {
+    background: url(../images/icon-set/chevron/single/black/right/119px.png) 14px center / 40% auto no-repeat;
+    height: 55px;
+    width: 40px;
+    top: calc(50% - 15px);
+    box-shadow: 0 0 24px rgba(0,0,0,0.2);
+    @include breakpoint(TP) {
+        height: 70px;
+        width: 50px;
+        background-size: 40% auto;
+        background-position: 15px center;
+    } 
+    @include breakpoint(D) {
+        background-size: 40% auto;
+        background-position: 15px center;
+    }
+}
+
+.section-text-image .fotorama-box  .fotorama__arr--next {
+    right: 0px;
+    transition: all 0.3s ease !important;
+    background-color: white;
+    border-radius: $radius 0 0 $radius;
+    &:hover{
+        background-image: url(../images/icon-set/chevron/single/white/right/119px.png);
+        background-color: $pink;
+    }
+}
+
+.section-text-image .fotorama-box  .fotorama__arr--prev {
+    background-image: url(../images/icon-set/chevron/single/black/left/119px.png);
+    left: 0px;
+    transition: all 0.3s ease !important;
+    background-color: white;
+    border-radius: 0 $radius $radius 0;
+    &:hover{
+        background-image: url(../images/icon-set/chevron/single/white/left/119px.png);
+        background-color: $pink;
+    }
+}
+
+
+/////////////////// THUMBNAIL STRIP ///////////////////
+
+.section-text-image .fotorama-box .fotorama__nav-wrap {
+    margin-top: 14px;
+    //background-color: rgba(55,55,55,0.05);
+    border-radius: $radius;
+}
+
+.section-text-image .fotorama-box  .fotorama__nav--thumbs .fotorama__nav__frame {
+    //padding: 4px;
+}
+
+.section-text-image .fotorama-box  .fotorama__thumb-border {
+    border-color: $pink;
+}
+
+
+/////////////////////// NAVI DOTS /////////////////////
+
+.section-text-image .fotorama-box .fotorama__dot {
+    width: 7px;
+    height: 7px;
+}
+
+.section-text-image .fotorama-box .fotorama__nav__frame.fotorama__active .fotorama__dot {
+    width: 7px;
+    height: 7px;
+    background-color: #7f7f7f;
+}
+
+.section-text-image.blue .fotorama-box .fotorama__nav__frame.fotorama__active .fotorama__dot,
+.section-text-image.pink .fotorama-box .fotorama__nav__frame.fotorama__active .fotorama__dot,
+.section-text-image.black .fotorama-box .fotorama__nav__frame.fotorama__active .fotorama__dot {
+    background-color: #fff;
+}
+
+//////////////////////// FRAME ////////////////////////
+
+
+.section-text-image .fotorama-box .frame-wrapper {
+    overflow: hidden;
+    @include breakpoint(ML) {
+        overflow: visible;
+    }
+}
+
+
+.section-text-image .fotorama-box .right-frame,
+.section-text-image .fotorama-box .left-frame {
+    position: absolute;
+    z-index: 10;
+    top: 0px;
+    height: 84%;
+    @include breakpoint(ML) {
+        height: 79%;
+    }
+    @include breakpoint(TP) {
+        height: 89%;
+    }
+    @include breakpoint(TL) {
+        height: 91.5%;
+    }
+    @include breakpoint(D) {
+        height: 92.5%;
+    }
+}
+
+.section-text-image .fotorama-box .right-frame {
+    right: -1px;
+}
+
+.section-text-image .fotorama-box .left-frame {
+    left: 0px;
+}
+
+.section-text-image .fotorama-box .top-frame {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 10;
+}
+
+.section-text-image .fotorama-box .bottom-frame {
+    position: absolute;
+    left: 0px;
+    bottom: 43px;
+    width: 100%;
+    z-index: 10;
+}
+
+
+/////////////////////////////////////////////////////
+////////////// BG (FULL WIDTH) IMAGE ////////////////
+/////////////////////////////////////////////////////
+
+
+/////////////////// IMAGE-WRAPPER ///////////////////
+
+.section-text-image .content-wrapper.bg-image-tall {
+  height: 775px;
+}
+
+
+.section-text-image .bg-img-wrapper {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  height: 100%;
+  width: 100vw;
+  left: calc( (100vw - 94vw) / -2 ); // [container-width]/2
+  @include breakpoint(ML) {
+    left: calc( (100vw - 480px) / -2 ); // [container-width]/2
+  }
+  @include breakpoint(TP) {
+    left: calc( (100vw - 650px) / -2 ); // [container-width]/2
+  }
+  @include breakpoint(TL) {
+    left: calc( (100vw - 800px) / -2 ); // [container-width]/2
+  }
+  @include breakpoint(D) {
+    left: calc( (100vw - 1100px) / -2 ); // [container-width]/2
+  }
+}
+
+
+////////////////////// OVERLAY //////////////////////
+
+.section-text-image .bg-img-wrapper .overlay {
+  position: absolute;
+  z-index: 20;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, RGB(55,55,55,0.5) 0%, RGBA(55,55,55,0.5) 100%);
+}
+
+//////////////////////// IMG ////////////////////////
+.section-text-image .bg-img-wrapper img {
+  position: relative;
+  object-fit: cover;
+  font-family: 'object-fit: cover;';
+  //background: url(../images/loader/loader-body-bg.gif) center center/85px 85px no-repeat;
+  width: 100%;
+  height: 100%;
+  max-height: none;
+  @include breakpoint(TP) {
+    //max-height: 600px;
+  }
+  @include breakpoint(TL) {
+    //max-height: 480px;
+  }
+  @include breakpoint(D) {
+    //max-height: 775px;
+  }
+}
+
+
+
+/////////////////////////////////////////////////////
+///////////////// STYLE OVERIDES ////////////////////
+/////////////////////////////////////////////////////
+
+// class: right, left | pink, blue, black, none | full-image | [lightbulb], clock, printer
+// section-divider: (illo name), no-illo, no-illo-butt
+
+
+/////////////////////// VIDEO ///////////////////////
+
+.section-text-image.no-frame .video-box .frame-wrapper .frame .top-frame,
+.section-text-image.no-frame .video-box .frame-wrapper .frame .bottom-frame,
+.section-text-image.no-frame .video-box .frame-wrapper .frame .left-frame,
+.section-text-image.no-frame .video-box .frame-wrapper .frame .right-frame,
+.section-text-image.no-frame .video-box .img-top-illo-wrapper {
+  display: none;
+}
+
+
+/////////////////////// RIGHT ///////////////////////
+
+
+.section-text-image.right .img-top-illo-wrapper,
+.section-text-image.right .video-box .img-top-illo-wrapper {
+  // Image top illo positioned on left side
+  right: auto;
+  left: -148px;
+}
+
+.section-text-image.right .img-top-illo,
+.section-text-image.right .video-box .img-top-illo { // Video
+  transform: rotate(-30deg);
+}
+
+.section-text-image.right .col-1 {
+  @include breakpoint(TL) {
+    order: 3;
+  }
+}
+
+.section-text-image.right .col-2 {
+  @include breakpoint(TL) {
+    order: 2;
+  }
+}
+
+/////////////////////// LEFT ////////////////////////
+
+.section-text-image.left .shavingX {
+  left: 1%;
+  @include breakpoint(TP) {
+    left: 3%;
+    bottom: 7%;
+  }
+  @include breakpoint(D) {
+    left: 6%;
+    bottom: 9%;
+  }
+}
+
+
+///////////////////// FULL-IMAGE //////////////////////
+
+.section-text-image.full-image .col-1 {
+  @include breakpoint(TL) {
+    order: 3;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.section-text-image.full-image .col-2 {
+  @include breakpoint(TL) {
+    order: 2;
+    width: 100%;
+  }
+}
+
+.section-text-image.full-image .col-1 .text-wrapper {
+  @include breakpoint(TL) {
+    margin: 4rem auto 0 auto;
+    width: 79%;
+  }
+}
+
+
+//////////////////////// CLOCK ////////////////////////
+
+.section-text-image.clock .img-top-illo {
+  background-image: url(../images/image-top-illo/clock/400px.png);
+  @include breakpoint(D) {
+    background-image: url(../images/image-top-illo/clock/500px.png);
+  }
+}
+
+
+/////////////////////// PRINTER ///////////////////////
+
+// Left
+
+.section-text-image.printer .img-top-illo {
+  background-image: url(../images/image-top-illo/printer/rot-right/400px.png);
+  @include breakpoint(D) {
+    background-image: url(../images/image-top-illo/printer/rot-right/500px.png);
+  }
+}
+
+// Right
+
+.section-text-image.right.printer .img-top-illo {
+  background-image: url(../images/image-top-illo/printer/rot-right/400px.png);
+  @include breakpoint(TL) {
+    background-image: url(../images/image-top-illo/printer/rot-left/400px.png);
+  }
+  @include breakpoint(D) {
+    background-image: url(../images/image-top-illo/printer/rot-left/500px.png);
+  }
+}
+
+
+
+

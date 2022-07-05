@@ -1,0 +1,49 @@
+
+
+main-nav:
+- title: Home
+  url: /
+  mega-menu:
+- title: Crafts
+  url: /crafts
+  mega-menu: #"build/mega-menu-crafts.html"
+- title: Books
+  url: /books
+  mega-menu:
+- title: Products
+  url: /products
+  mega-menu: #"build/mega-menu-pro-draw.html"
+- title: Illustration
+  url: /illustration
+  mega-menu:
+
+
+footer-nav:
+- heading: General
+  subfolderitems:
+    - title: Home
+      url: /
+    - title: About
+      url: /about
+    - title: Contact
+      url: /contact
+- heading: Products
+  subfolderitems:
+    - title: Books
+      url: /books
+    - title: Digital Products
+      url: /products
+    - title:
+      url:
+- heading: Services
+  subfolderitems:
+    - title: Hire Me
+      url: /hire-me
+    - title: 
+      url:
+    - title: 
+      url:
+
+
+
+

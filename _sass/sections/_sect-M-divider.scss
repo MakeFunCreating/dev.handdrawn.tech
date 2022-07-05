@@ -1,0 +1,42 @@
+
+/////////////////////////////////////////////////////
+/////////////////////////////////////////////////////
+//////////////////// DIVIDER ////////////////////////
+/////////////////////////////////////////////////////
+/////////////////////////////////////////////////////
+
+
+.section-divider {
+	position: relative;
+}
+
+.section-divider > .content-wrapper {
+	position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+	height: 100%;
+  left: 0;
+  width: 100%;
+	z-index: 9;
+  text-align: center;
+  //padding: 10px 0 10px 0 !important; 
+}
+
+/////////////////////// TEXT ////////////////////////
+
+.section-divider.announcement .content-wrapper .line-wrapper.long-line {
+  position: relative;
+  z-index: 101;
+  width: 100%;
+  margin: 0;
+}
+
+.section-divider .content-wrapper .line-wrapper.long-line {
+  background: url(../images/lines/frame/black/top.png) left top/760px 100% repeat;
+}
+
+.section-divider.white-line .content-wrapper .line-wrapper.long-line {
+  background-image: url(../images/lines/frame/white/top.png);
+}

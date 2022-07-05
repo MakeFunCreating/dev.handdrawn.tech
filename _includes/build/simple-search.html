@@ -1,0 +1,73 @@
+
+
+<!-- Html Elements for Search -->
+<div id="search-wrapper">
+
+  <div id="search-container">
+    
+    <div class="search-text-wrapper">
+      <div class="search-text smallest">Look for an illustration...</div>
+    </div>
+    <div class="search-icon-wrapper">
+      <div class="search-icon">
+        <img src="{{ site.baseurl }}/images/icon-set/search.png">
+      </div>
+    </div>
+
+    <input type="text" id="search-input" class="smallest" placeholder="" autocomplete="off">
+    
+    <ul id="results-container"></ul>
+
+  </div>
+  
+</div>
+
+
+
+<script type="text/javascript">
+
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    limit: 6,
+    json: '{{ site.baseurl }}/search.json'
+  })
+  
+  // The two functions below remove '.results' class from '#search-input'
+  // when user clicks on area outside of '#search-wrapper'
+  
+  // This checks for click, and ignores it if it's on the '#search-wrapper'
+  $(document).click(function(){
+    if( $('#results-container').hasClass('results' ) == true ){
+      $('#search-container .search-text-wrapper').show();
+      $('#search-input').val('');
+      $('#results-container').hide(); // Makes '#results-container' display:none
+    }
+    $('#search-input').removeClass('results'); // Add '.results' class to   '#search-input'
+  });
+
+  // This prevents clicks on search wrapper registering
+  $('#search-wrapper').click(function(e){
+    e.stopPropagation();
+  });
+
+  
+  $('#search-container .search-text-wrapper').click(function() {
+    // Hide text overlaying search input (smaller than 16px, input set at 16px, so mobile doesn't zoom)
+    $('#search-container .search-text-wrapper').hide();
+    $('#search-input').focus();
+    // If '#results-container' is display:none then
+    // adds '.results' class to the search-input (to flatten bottom radius)
+    // and also makes '#results-container' display: block
+    var x = document.getElementById('results-container');
+    if (window.getComputedStyle(x).display === "none") {
+      document.getElementById('search-input').classList.add('results');
+      document.getElementById('results-container').style.display='block';
+    }
+  });
+
+</script>
+
+
+
+

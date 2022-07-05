@@ -1,0 +1,16 @@
+
+
+{% if include.class and include.class != empty %}
+  {% assign class = include.class %}
+{% else %}
+  {% assign class = "" %}
+{% endif %}
+
+<div class="{{ class }}">
+	<picture>
+	  <source media="(min-width: 1150px)" srcset="/images/animated-illos/robot/right/1600px.png">
+	  <source media="(min-width: 450px)" srcset="/images/animated-illos/robot/right/1200px.png">
+	  <img src="/images/animated-illos/robot/right/1200px.png" alt="" width="100%" height="auto"  loading="lazy">
+	</picture>
+</div>
+

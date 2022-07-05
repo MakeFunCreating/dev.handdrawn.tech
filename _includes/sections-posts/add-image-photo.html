@@ -1,0 +1,103 @@
+
+
+{% assign imgDirArray = page.image-dir | split: "/" %}
+{% assign img-file-prepend = null %}
+{% assign src = include.src %}
+{% assign new-src = null %}
+{% assign hypenYesNo = null %}
+{% assign noHash = null %}
+{% assign file-format = null %}
+
+{% if include.format and include.format != empty %}
+	{% assign file-format = include.format %}
+{% else %}
+	{% assign file-format = "jpg" %}
+{% endif %}
+
+{% assign srcArray = src | split: "/" %}
+
+{% if srcArray.size > 1 %}
+	{% if src contains "#" %}
+		{% assign file-format = srcArray | last | split: "#" | last %} 
+		{% assign hashSplitArray = srcArray | last | split: "#" %}	
+		{% assign tempVar = hashSplitArray | first %} 
+		{% if tempVar == empty %}
+			{% assign img-file-prepend = "" %}
+			{% assign whereIsHash = "ONLY-FILE-FORMAT" %}
+		{% else%}
+			{% assign img-file-prepend = srcArray | last | split: "#" | first | append: "-" %}
+			{% assign whereIsHash = "FILE-FORMAT-PREPEND" %}
+		{% endif %}
+	{% else %}
+		{% assign whereIsHash = "NO-HASH" %}
+		{% assign img-file-prepend = imgDirArray | last | append: "" %}
+		{% assign file-format = "jpg" %}
+	{% endif %}
+
+    {% for item in srcArray %}
+    	{% if whereIsHash == "ONLY-FILE-FORMAT" %}
+			{% if forloop.first == true %}
+				{% assign new-src = new-src | append: item %}
+			{% else %}
+				{% if forloop.last != true %}
+					{% assign new-src = new-src | append: "/" |  append: item %}
+				{% endif %}
+			{% endif %}
+		{% elsif whereIsHash == "FILE-FORMAT-PREPEND" %}
+			{% if forloop.last != true %}
+				{% if forloop.first == true %}
+					{% assign new-src = new-src | append: item %}
+				{% elsif forloop.first != true %}
+					{% assign new-src = new-src  | append: "/"| append: item %}
+				{% endif %}
+			{% endif %}
+		{% elsif whereIsHash == "NO-HASH" %}
+				{% assign new-src = new-src | append: item %}
+				{% if forloop.last != true %}
+					{% assign new-src = new-src | append: "/" %}
+				{% endif %}
+		{% endif %}
+    {% endfor %}
+{% else %}
+	{% assign new-src = src | remove: "/" %}
+	{% assign img-file-prepend = imgDirArray | last | append: "-" %}
+	{% assign whereIsHash = "NO-HASH" %}
+{% endif %}
+
+{% if page.image-dir and page.image-dir != empty %}
+	{% assign new-src = new-src | prepend: "/" %}
+	{% assign new-src = new-src | prepend: page.image-dir %}
+{% endif %}
+
+<figure class="image-box {{ include.class }}">
+
+    {% if include.side-illo != "none" %}<div class="side-illo"></div>{% endif %}
+	
+	<div class="frame-wrapper">
+		<div class="frame show">
+			<div class="top-frame"></div>
+			<div class="left-frame"></div>
+			<div class="right-frame"></div>
+			<div class="bottom-frame"></div>
+		</div>
+
+		<div class="img-wrapper">
+			<div class="img-top-illo-wrapper"><div class="img-top-illo"></div></div>
+
+				<picture>
+					  <source media="(min-width: 1150px)" srcset="{{ site.url }}{{ site.baseurl }}/images/{{ new-src }}/{{ img-file-prepend }}2000px.{{ file-format }}">
+					  <source media="(min-width: 450px)" srcset="{{ site.url }}{{ site.baseurl }}/images/{{ new-src }}/{{ img-file-prepend }}1500px.{{ file-format }}">
+					  <img src="{{ site.url }}{{ site.baseurl }}/images/{{ new-src }}/{{ img-file-prepend }}1000px.{{ file-format }}"
+					alt="{% if include.alt %}{{ include.alt }}{% endif %}" loading="lazy">
+				</picture>
+
+		</div>
+
+	</div>
+
+	{% if include.caption and include.caption != empty %}
+		<figcaption class="image-box-caption smaller">{{ include.caption }}</figcaption>
+	{% endif %}
+
+</figure>
+

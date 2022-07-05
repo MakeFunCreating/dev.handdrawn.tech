@@ -1,0 +1,163 @@
+
+
+{% assign section-divider = null %}
+{% assign section-class = null %}
+
+{% if include.class contains "pink" or include.class contains "yellow" or include.class contains "grey" or include.class contains "black" or include.class contains "black-medium" or include.class contains "blue" or include.class contains "none" %}
+  {% assign section-class = include.class %}
+{% else%}
+  {% assign section-class = include.class | append: " none" %}
+{% endif %}
+
+{% if include.section-divider == "no-illo" %}
+    {% assign section-class = section-class | append: " " | append: "no-illo" %}
+    {% assign section-class = section-class | append: " " | append: "strip-top"  %}
+    {% assign section-divider = "" %}
+{% elsif include.section-divider == "no-illo-butt" %}
+    {% assign section-class = section-class | append: " " | append: "no-illo-butt"  %}
+    {% assign section-class = section-class | append: " " | append: "strip-top-butt"  %}
+    {% assign section-divider = "" %}
+{% elsif include.section-divider and include.section-divider != empty%}
+    {% assign section-divider = include.section-divider %}
+{% else %}
+    {% assign section-class = section-class | append: " " | append: "no-illo"  %}
+    {% assign section-class = section-class | append: " " | append: "strip-top"  %}
+    {% assign section-divider = "" %}
+{% endif %} 
+
+{% if include.img-src and include.img-src != empty %}
+    {% assign section-class = section-class | append: " " | append: "bg-image"  %}
+{% endif %}
+
+{% assign section-class = section-class | append: " " | append: include.ani-triggers | replace: "  ", " "  %}
+
+
+
+<section {% if include.id and include.id != empty %}id="{{ include.id }}"{% endif %} class="section-search strip-line {{ section-class | strip }}">
+
+    {% if include.section-divider and include.section-divider != empty %}
+      <div class="sect-illo-wrapper {{ section-divider }}"><div class="sect-illo"></div></div>
+    {% endif %}
+
+    <div class="content-wrapper">
+
+      {% if include.sect-title and include.sect-title != empty %}
+        <div class="sect-title-wrapper">
+          <h2 class="sect-title">{{ include.sect-title }}</h2>
+          <div class="underline"></div>
+        </div>
+      {% endif %}
+
+        <div class="search-outer-wrapper">
+            {% include build/simple-search.html %}
+        </div>
+
+        <div class="text-wrapper">
+        
+        {% if include.h1 and include.h1 != empty %}
+          <h4>{{ include.h1 }}</h4>
+        {% endif %}
+        {% if include.p1 and include.p1 != empty %}
+          <p>{{ include.p1 }}</p>
+        {% endif %}
+        {% if include.h2 and include.h2 != empty %}
+          <h4>{{ include.h2 }}</h4>
+        {% endif %}
+        {% if include.p2 and include.p2 != empty %}
+          <p>{{ include.p2 }}</p>
+        {% endif %}
+
+        </div>
+
+    </div>
+
+
+  {% if include.img-src and include.img-src != empty%}
+    <div class="img-wrapper">
+
+      {% if include.overlay == true %}<div class="overlay"></div>{% endif %}
+
+        {% assign imgDirArray = page.image-dir | split: "/" %}
+        {% assign img-file-prepend = null %}
+        {% assign src = include.img-src %}
+        {% assign new-src = null %}
+        {% assign hypenYesNo = null %}
+        {% assign noHash = null %}
+        {% assign file-format = null %}
+        
+        {% if include.format and include.format != empty %}
+          {% assign file-format = include.format %}
+        {% else %}
+          {% assign file-format = "jpg" %}
+        {% endif %}
+        
+        {% assign srcArray = src | split: "/" %}
+        
+        {% if srcArray.size > 1 %}
+          {% if src contains "#" %}
+            {% assign file-format = srcArray | last | split: "#" | last %} 
+            {% assign hashSplitArray = srcArray | last | split: "#" %}  
+            {% assign tempVar = hashSplitArray | first %} 
+            {% if tempVar == empty %}
+              {% assign img-file-prepend = "" %}
+              {% assign whereIsHash = "ONLY-FILE-FORMAT" %}
+            {% else%}
+              {% assign img-file-prepend = srcArray | last | split: "#" | first | append: "-" %}
+              {% assign whereIsHash = "FILE-FORMAT-PREPEND" %}
+            {% endif %}
+          {% else %}
+            {% assign whereIsHash = "NO-HASH" %}
+            {% assign img-file-prepend = imgDirArray | last | append: "" %}
+            {% assign file-format = "jpg" %}
+          {% endif %}
+                
+          {% for item in srcArray %}
+            {% if whereIsHash == "ONLY-FILE-FORMAT" %}
+            {% if forloop.first == true %}
+              {% assign new-src = new-src | append: item %}
+            {% else %}
+              {% if forloop.last != true %}
+                {% assign new-src = new-src | append: "/" |  append: item %}
+              {% endif %}
+            {% endif %}
+          {% elsif whereIsHash == "FILE-FORMAT-PREPEND" %}
+            {% if forloop.last != true %}
+              {% if forloop.first == true %}
+                {% assign new-src = new-src | append: item %}
+              {% elsif forloop.first != true %}
+                {% assign new-src = new-src  | append: "/"| append: item %}
+              {% endif %}
+            {% endif %}
+          {% elsif whereIsHash == "NO-HASH" %}
+              {% assign new-src = new-src | append: item %}
+              {% if forloop.last != true %}
+                {% assign new-src = new-src | append: "/" %}
+              {% endif %}
+          {% endif %}
+          {% endfor %}
+      {% else %}
+        {% assign new-src = src | remove: "/" %}
+        {% assign img-file-prepend = imgDirArray | last | append: "-" %}
+        {% assign whereIsHash = "NO-HASH" %}
+      {% endif %}
+  
+      <picture>
+        <source media="(min-width: 1150px)" srcset="{{ site.url }}{{ site.baseurl }}/images/{{ new-src }}/{{ img-file-prepend }}3200px.{{ file-format }}">
+        <source media="(min-width: 450px)" srcset="{{ site.url }}{{ site.baseurl }}/images/{{ new-src }}/{{ img-file-prepend }}2200px.{{ file-format }}">
+        <img src="{{ site.url }}{{ site.baseurl }}/images/{{ new-src }}/{{ img-file-prepend }}1200px.{{ file-format }}"
+        alt="{% if include.alt %}{{ include.alt }}{% endif %}" loading="lazy">
+      </picture>
+    </div>
+  {% endif %}
+
+
+      <div class="bg-texture-wrapper">
+        <div class="frame show"><div class="top-frame"></div><div class="bottom-frame"></div></div>
+        <div class="bg-texture"></div>
+      </div>
+
+</section>
+
+
+
+
