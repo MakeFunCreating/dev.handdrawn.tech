@@ -550,12 +550,12 @@ meta-description: Hand Drawn Tech is the place to find, commission and license S
   block-2-title = "Creative Market"
   block-2-text = "Awesome templates and fonts"
   block-2-butt-text = "Visit store"
-  block-2-butt-url = "https://creativemarket.com/MakeFunCreating"
+  block-2-butt-url = "https://creativemarket.com/HandDrawnTech"
 
   block-3-title = "Dribble"
   block-3-text = "Snapshots of latest illustrations"
   block-3-butt-text = "Visit playbook"
-  block-3-butt-url = "makefuncreating.dribbble.com"
+  block-3-butt-url = "https://dribbble.com/HandDrawnTech"
 %} 
 
 
