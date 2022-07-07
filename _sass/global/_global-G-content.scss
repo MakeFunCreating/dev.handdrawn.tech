@@ -1,0 +1,362 @@
+
+
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+////////////// META BOX (START OF POST) //////////////
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+
+.meta-box {
+	position: relative;
+	z-index: 2;
+	width: 100%;
+	padding: 0 0.5% 0 1%;
+	margin: 4.5rem 0 3rem 0;
+	@include breakpoint(ML) {
+		padding: 0;
+	}
+	@include breakpoint(TP) {
+		margin: 7rem 0 5rem 0;
+	}
+	@include breakpoint(D) {
+		margin: 8rem 0 6.5rem 0;
+	}
+}
+
+
+//////////////////// CONTENT WRAPPER ///////////////////
+
+.meta-box .content-wrapper {
+  position: relative;
+  z-index: 9;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  @include breakpoint(TL) {
+  	align-items: center;
+  }
+}
+
+
+//////////////////// PHOTO WRAPPER ////////////////////
+
+.meta-box .photo-wrapper {
+	flex-basis: 48px;
+	@include breakpoint(TP) {
+		flex-basis: 54px;
+	}
+	@include breakpoint(D) {
+		flex-basis: 58px;
+	}
+}
+
+.meta-box .photo-wrapper img {
+	display: block;	
+	width: 100%;
+	border: none;
+	outline: none;
+	border-radius: 100%;
+	@include text-shift(); // My mixin: _svg-sprite-mixin.scss
+}
+
+
+//////////////////// TEXT WRAPPER /////////////////////
+
+.meta-box .text-wrapper {
+    flex-grow: 1;
+    display: inline-block;
+    padding: 8px 0 0 10px;
+    height: 48px;
+    @include breakpoint(TP) {
+    	height: 54px;
+    	padding: 9px 0 0 12px;
+    }
+    @include breakpoint(D) {
+    	height: 58px;
+    	padding: 9px 0 0 16px;
+   	}
+}
+
+
+//////////////////////// TITLE ////////////////////////
+
+.author-box .author-title { // "Written By" title not author name
+	padding: 0;
+	margin: 0;
+}
+
+
+///////////////////// AUTHOR NAME /////////////////////
+
+.meta-box .author-name {
+	font-weight: 400;
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+	border-width: 1px;
+	text-decoration: none;
+	@include breakpoint(D) {
+	}
+}
+
+//////////////////// TAG WRAPPER /////////////////////
+
+.meta-box .tags-wrapper {
+	flex-basis: 100%;
+    position: relative;
+    display: flex; ////
+    align-items: center;
+    justify-content: flex-start; ////
+    height: 48px;
+    padding-left: 0;
+    @include breakpoint(TP) {
+        flex-grow: 1;
+        justify-content: flex-end; 
+    	flex-basis: 240px;
+    	height: 54px;
+    }
+    @include breakpoint(D) {
+    	height: 58px;
+    	padding-left: 18px;
+   	}
+}
+
+.meta-box .tags-wrapper a {
+	white-space: nowrap;
+	display: inline-block;
+	border-radius: $radius; //20px;
+    padding: 6px 12px 6px 12px;
+    margin: 0 8px 0 0;
+    @include breakpoint(TP) {
+    	margin: 0 0 0 10px;
+    	padding: 6px 15px 6px 15px
+    }
+    @include breakpoint(D) {
+		padding: 8px 17px 8px 17px;
+	}
+}
+
+
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+////////////// AUTHOR BOX (END OF POST) //////////////
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+
+.author-box {
+	position: relative;
+	z-index: 2;
+	width: 100%;
+	padding: 0 0.5% 0 1%;
+	margin: 7rem 0 12rem 0;
+	@include breakpoint(ML) {
+		padding: 0;
+	}
+	@include breakpoint(TP) {
+		margin: 9rem 0 16rem 0;
+	}
+	@include breakpoint(D) {
+		margin: 15rem 0 27rem 0;
+	}
+}
+
+body.wide .author-box {
+	display: none;
+}
+
+
+////////////////////// SIDE LINE //////////////////////
+
+.author-box .side-line {
+	display: none; // I don't like the side line any more!
+	position: relative;
+    width: 3px;
+    height: 95px;
+    background: url(../images/line-sketch/side/black/side-line.png) left top/100% 100% no-repeat;
+    margin-right: 13px;
+ 	height: 85px;
+	@include breakpoint(TP) {
+		height: 95px;
+		margin-right: 20px;
+	}
+	@include breakpoint(D) {
+		height: 150px;
+		margin-right: 30px;
+	}
+}
+
+
+/////////////////// CONTENT WRAPPER ///////////////////
+
+.author-box .content-wrapper {
+  position: relative;
+  z-index: 9;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  @include breakpoint(TL) {
+  	align-items: center;
+  }
+}
+
+
+///////////////////// PROFILE PIC /////////////////////
+
+.author-pic {
+	flex-basis: 85px;
+	@include breakpoint(TP) {
+		flex-basis: 95px;
+	}
+	@include breakpoint(D) {
+		flex-basis: 120px;
+	}
+}
+
+.author-pic  img {
+	display: block;	
+	width: 100%;
+	border: none;
+	outline: none;
+	border-radius: 100%;
+	@include text-shift(); // My mixin: _svg-sprite-mixin.scss
+}
+
+
+//////////////////// TEXT WRAPPER /////////////////////
+
+.author-box .text-wrapper {
+	flex-basis: 60%;
+    flex-grow: 1;
+    display: flex; /////
+    flex-direction: column;
+    justify-content: center; /////
+    padding-left: 15px;
+    @include breakpoint(TP) {
+    	padding-left: 20px;
+    }
+    @include breakpoint(D) {
+    	padding-left: 25px;
+   	}
+}
+
+//////////////////////// TITLE ////////////////////////
+
+.author-box .author-title { // "Written By" title not author name
+	padding: 0;
+}
+
+
+///////////////////// AUTHOR NAME /////////////////////
+
+.author-box .author-name,
+.author-box .author-name a {
+	font-weight: 400;
+	padding: 2px 0 1px;
+	display: inline-block;
+	border-width: 1px;
+	text-decoration: none;
+	@include breakpoint(TP) {
+		padding: 2px 0 1px;
+	}
+	@include breakpoint(D) {
+		padding: 3px 0 2px;
+	}
+}
+
+
+///////////////////// DESCRIPTION /////////////////////
+
+.author-box .author-desc {
+	font-weight: 300;
+	padding-top: 1px;
+	color: $black;
+	@include breakpoint(TP) {
+		padding-top: 1px;
+	}
+}
+
+.author-box .author-desc p {
+	margin-bottom: 0px;
+	margin-top: 5px;
+}
+
+
+
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+/////////////////// AUTHOR BOOKS) ////////////////////
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+
+.author-books {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.author-books .book {
+	width: 33.3%;
+}
+
+.author-books .book p {
+	text-align: center;
+	margin: 0;
+}
+
+.author-books .book:nth-child(1) p {
+	padding: 0 10px 0 0;
+	@include breakpoint(TP) {
+		padding: 0 20px 0 0;
+	}
+	@include breakpoint(D) {
+		padding: 0 30px 0 0;
+	}	
+}
+
+.author-books .book:nth-child(2) p {
+	padding: 0 5px 0 5px;
+	@include breakpoint(TP) {
+		padding: 0 10px 0 10px;
+	}
+	@include breakpoint(D) {
+		padding: 0 15px 0 15px;	
+	}
+}
+
+.author-books .book:nth-child(3) p {
+	padding: 0 0 0 10px;
+	@include breakpoint(TP) {
+		padding: 0 0 0 20px;
+	}
+	@include breakpoint(D) {
+		padding: 0 0 0 30px;
+	}	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,146 @@
+
+
+///////////////////////////////////////////////////////
+///////////////////////////////////////////////////////
+////////////////////// COOKIE HUB /////////////////////
+///////////////////////////////////////////////////////
+///////////////////////////////////////////////////////
+
+
+#ch2-dialog-title,
+#ch2-dialog-description,
+.ch2-learn-more {
+  color: white;
+}
+
+.ch2-dialog {
+  border-radius: 15px;
+}
+
+#ch2-dialog-description {
+  font-size: 1.3rem; 
+  @include breakpoint(TP) {
+    font-size: 1.4rem; 
+  }
+}
+
+#ch2-dialog-title {
+  margin-bottom: 6px;
+  strong {
+    font-weight: 500;
+  }
+}
+
+.ch2 .ch2-btn {
+  border-radius: 15px;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 1.4rem;
+  height: 19px;
+  @include breakpoint(TP) {
+    font-size: 1.5rem;
+  }
+  @include breakpoint(D) {
+    font-size: 1.6rem;
+  }
+}
+
+.ch2 .ch2-settings-tab-container .ch2-btn,
+.ch2 .ch2-settings-actions .ch2-btn, 
+.ch2 .ch2-dialog-actions .ch2-btn {
+  padding: 14px 20px;
+}
+
+.ch2-settings * {
+  font-family: sans-serif;
+}
+
+.ch2-settings p,
+.ch2-settings p strong {
+  color: white;  
+}
+
+.ch2 .ch2-settings-tabs .ch2-select-tab ul li.active a {
+  border-width: 2px;
+}
+
+.ch2 .ch2-style-dark.ch2-icon a:hover {
+  background-color: $pink;
+}
+
+.ch2 .ch2-icon a span {
+  margin-left: -6px;
+  text-transform: capitalize;
+}
+
+.ch2 .ch2-icon a svg {
+  transition: none;
+}
+
+
+
+
+
+
+
+.del {
+
+.cc-dialog .cc-message p {
+  font-size: 1.4rem !important; // Main 'warning' text
+  @include breakpoint(TP) { 
+    font-size: 1.6rem !important;
+  }
+}
+
+.cc-dialog .cc-message {
+  width: 17em !important;
+  @include breakpoint(TP) { 
+    width: 21em !important;
+  }
+}
+
+.cc-dialog .cc-actions {
+  width: 11em !important;
+}
+
+.cc-dialog .cc-actions a.cc-primary-btn { // 'Allow all cookies' button
+  padding: 1em .9em .7em .9em !important;
+  color: #333 !important;
+  color: #fff !important;
+  background-color: $pink !important;
+  font-size: 1.5rem !important;
+  @include breakpoint(TP) { 
+    font-size: 1.6rem !important;
+  }
+}
+
+.cc-dialog .cc-actions a.cc-settings-btn { // 'Cookie settings' link
+    font-size: 1.25rem !important;
+}
+
+a.cc-save-btn { // Left sidebar 'Save settings' button
+  font-size: 1.4rem !important;
+  color: #333 !important;
+  color: #fff !important;
+  background-color: $pink !important;
+}
+
+p.cc-heading { // Left sidebar heading text
+  font-size: 1.6rem !important;
+}
+
+a.cc-close { // Left sidebar 'x' button
+  font-size: .75em !important;
+}
+
+}
+
+.ch2-dialog.ch2-dialog-bottom.ch2-visible {
+  bottom: 140px !important;
+  @include breakpoint(TL) { 
+    bottom: 120px !important;
+  }
+}
+
+
+

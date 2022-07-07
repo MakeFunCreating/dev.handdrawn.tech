@@ -1,0 +1,64 @@
+
+
+{% assign img-1 = "/content/collections/presentations/business-presentation-template/cover/1000px.jpg" %}
+{% assign txt-1 = "Pro-Draw Products" %}
+{% assign link-1 = "/pro-draw/products" %}
+
+{% assign img-2 = "/content/pages/pro-draw/on-demand/section-images/illustrations/mega-menu/1000px.jpg" %}
+{% assign txt-2 = "Pro-Draw On-Demand" %}
+{% assign link-2 = "/pro-draw/on-demand" %}
+
+{% assign img-3 = "/content/pages/pro-draw/video/white-swan/white-swan.gif" %}
+{% assign txt-3 = "Pro-Draw Video" %}
+{% assign link-3 = "/pro-draw/video" %}
+
+{% assign img-array = img-1 | append: "," | append: img-2 | append: "," | append: img-3 | split: "," %}
+{% assign txt-array = txt-1 | append: "," | append: txt-2 | append: "," | append: txt-3 | split: "," %}
+{% assign link-array = link-1 | append: "," | append: link-2 | append: "," | append: link-3 | split: "," %}
+
+<div class="content-wrapper container">
+
+  {% for i in (0..2) %}
+    {% assign curr-img = img-array[i] %}
+    {% assign curr-txt = txt-array[i] %}
+    {% assign curr-link = link-array[i] %}
+
+  	<div class="posts-wrapper">
+  		<div class="col-title small-cap">The Pro-Draw Range</div>
+  
+         	<div class="col-wrapper">
+
+            <a href="{{ site.baseurl }}{{ curr-link }}">
+            <div class="frame-wrapper">
+  
+              <div class="frame small">
+                <div class="top-frame"></div>
+                <div class="left-frame"></div>
+                <div class="right-frame"></div>
+                <div class="bottom-frame"></div>
+              </div>
+  
+              <div class="img-wrapper">
+                <picture>
+                  <source media="(min-width: 1150px)" srcset="{{ site.url }}{{ site.baseurl }}/images{{ curr-img }}">
+                  <source media="(min-width: 450px)" srcset="{{ site.url }}{{ site.baseurl }}/images{{ curr-img }}">
+                  <img src="{{ site.url }}{{ site.baseurl }}/images/{{ curr-img }}"
+                  alt="Image representing {{ curr-txt }}" loading="eager"> 
+                </picture>
+              </div>
+  
+            </div>
+            </a>
+            <p class="title smallest"><a href="{{ site.baseurl }}{{ curr-link }}" class="">{{ curr-txt }} <span class="right-arrow">›</span></a></p>
+        	</div>
+  	</div>
+  
+  {% endfor %}
+  <p class="title home-link smallest"><a href="{{ site.baseurl }}/pro-draw">Learn more about Pro-Draw Products & Services <span class="right-arrow">›</span></a></p>
+
+</div>
+
+
+
+
+

@@ -1,0 +1,821 @@
+
+
+/////////////////////////////////////////////////////
+/////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////
+/////////////////////////////////////////////////////
+//////////// COLLECTION - PRODUCT LOOPS /////////////
+/////////////////////////////////////////////////////
+/////////////////////////////////////////////////////
+
+// Styles for product [collection] loops
+
+.section-collection-product {
+  position: relative;
+}
+
+.section-collection-product:first-child {
+    margin-top: 0rem;
+}
+
+.section-collection-product .content-wrapper {
+  position: relative;
+  z-index: 9;
+  display: flex; ////
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  align-items: stretch; ////
+  height: 100%;
+  left: 0;
+  width: 100%;
+  @include breakpoint(TP) {
+    justify-content: space-between;
+  }
+}
+
+
+/////////////////////////////////////////////////////
+////////////////////// COLUMN ///////////////////////
+/////////////////////////////////////////////////////
+
+.section-collection-product .col-wrapper {
+  position: relative;
+  z-index: 12;
+}
+
+
+//////////////////// COL WRAPPER ////////////////////
+
+.section-collection-product .col-wrapper {
+  text-align: center;
+  width: 94%;
+  @include breakpoint(TP) {
+    width: 47.5%;
+  }
+  @include breakpoint(TL) {
+    width: 100%;
+  }
+}
+
+.section-collection-product .col-wrapper.col-threes-1.col-twos-1.first-row.last {
+  width: 94%;
+  @include breakpoint(TP) {
+    width: 100%;
+  }
+  @include breakpoint(TL) {
+    width: 100%;
+  }
+}
+
+.section-collection-product .col-wrapper.col-threes-2,
+.section-collection-product .col-wrapper.col-threes-3 {
+  @include breakpoint(TL) {
+    width: 47.5%;
+  }
+}
+
+
+///////////////////////////////////////////////////
+// One-row - remove col-3 on tablets
+///////////////////////////////////////////////////
+
+.section-collection-product.one-row .col-wrapper {
+  margin-bottom: 50px;
+  @include breakpoint(TP) {
+    margin-bottom: 0px;
+  }
+}
+
+///////////////////////////////////////////////////
+// First row overides
+///////////////////////////////////////////////////
+
+.section-collection-product .col-wrapper {
+  margin-top: 0px;
+}
+
+// Phones - MP
+
+.section-collection-product .col-wrapper:not(.col-threes-1.first-row) {
+  margin-top: 55px;
+  @include breakpoint(ML) {
+    margin-top: 0px;
+  }
+}
+
+// Phones - ML
+
+.section-collection-product .col-wrapper:not(.col-threes-1.first-row):not(.col-threes-2.first-row) {
+  @include breakpoint(ML) {
+    margin-top: 55px;
+  }
+}
+
+// Tablet - TP
+
+.section-collection-product .col-wrapper:not(.col-threes-1.first-row):not(.col-threes-2.first-row) {
+  @include breakpoint(TP) {
+    margin-top: 55px;
+  }
+}
+
+// Tablet & Desktop - TL & D
+
+.section-collection-product .col-wrapper:not(.col-threes-1.first-row) {
+  @include breakpoint(TL) {
+    margin-top: 55px;
+  } 
+}
+
+
+//////////////////// COL-FILLER /////////////////////
+
+// Col-filler text-wrapper
+
+.section-collection-product .text-wrapper-quote {
+  position: relative;
+  z-index: 100;
+  display: flex; ////
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  flex-direction: column; ////
+  margin: 0;
+  height: 100%;
+}
+
+.section-collection-product .text-wrapper-quote p.quote {
+  padding: 0 5px 0 5px;
+}
+
+// Profile photos
+
+.section-collection-product .text-wrapper-quote .profile-photo {
+  width: 105px;
+  height: 105px;
+  background-color: red;
+  margin-bottom: 30px;
+  border-radius: 100px;
+  @include breakpoint(TL){
+    width: 115px;
+    height: 115px;
+  }
+}
+
+.section-collection-product .text-wrapper-quote .profile-photo.man {
+  background: url(../images/content/pages/pro-draw/mugshots/man.jpg) center center / 100% 100% no-repeat;
+}
+
+.section-collection-product .text-wrapper-quote .profile-photo.woman {
+  background: url(../images/content/pages/pro-draw/mugshots/woman.jpg) center center / 100% 100% no-repeat;
+}
+
+
+// Col-filler - when multiples of 3 (3 free col space)
+
+.section-collection-product .col-wrapper.filler.col-threes-1.col-twos-2 {
+  width: 94%;
+  display: none;
+  @include breakpoint(TP){
+    width: 47.5%;
+    display: initial;
+  }
+  @include breakpoint(TL){
+    width: 100%;
+    display: none;
+  }
+}
+
+.section-collection-product .col-wrapper.filler.col-threes-1.col-twos-2 .text-wrapper-quote {
+  @include breakpoint(D){
+    padding: 35px 30px 37px 30px;
+  }
+}
+
+.section-collection-product .col-wrapper.filler.col-threes-1.col-twos-2 .quote-wrapper {
+  width: 85%;
+  @include breakpoint(TL) {
+    width: 80%;
+  }
+}
+
+// Every 3 (3,9,15 etc.)
+
+.section-collection-product:not(.one-row) .col-wrapper.filler.col-threes-1.col-twos-1 {
+  display: none;
+  @include breakpoint(TP){
+    width: 100%;
+    display: none;
+  }
+  @include breakpoint(TL) {
+    display: none;
+  }
+}
+
+.section-collection-product .col-wrapper.filler.col-threes-1.col-twos-1 .text-wrapper-quote {
+  @include breakpoint(TL){
+    padding: 35px 30px 37px 30px;
+  }
+  @include breakpoint(D){
+    padding: 45px 30px 37px 40px;
+    margin: 0;
+  }
+}
+
+.section-collection-product .col-wrapper.filler.col-threes-1.col-twos-1 .quote-wrapper {
+  width: 85%;
+  @include breakpoint(TL) {
+    width: 80%;
+  }
+}
+
+
+// Col-filler - when multiples of 3 + 2 (1 free col space)
+
+.section-collection-product .col-wrapper.filler.col-threes-3.col-twos-2 {
+  width: 94%;
+  display: none;
+  @include breakpoint(TP){
+    display: initial;
+    width: 47.5%;
+  }
+  @include breakpoint(TL){
+    width: 47.5%;
+  }
+  @include breakpoint(D){
+    width: 47.5%;
+  } 
+}
+
+.section-collection-product .col-wrapper.filler.col-threes-3.col-twos-2 .text-wrapper-quote {
+  margin: 60px 0 50px 0;
+  @include breakpoint(TP){
+    margin: 0;
+  }
+}
+
+.section-collection-product .col-wrapper.filler.col-threes-3.col-twos-2 .quote-wrapper {
+  width: 85%;
+  @include breakpoint(TL) {
+    width: 90%;
+  }
+  @include breakpoint(D) {
+    width: 80%;
+  }
+}
+
+// Every 3 (0+2,6+2,12+2 etc.)
+
+.section-collection-product .col-wrapper.filler.col-threes-3.col-twos-1 {
+  display: none;
+  @include breakpoint(TP){
+    width: 100%;
+    display: none;
+  }
+  @include breakpoint(TL){
+    width: 47.5%;
+    display: initial;
+  }
+}
+
+.section-collection-product .col-wrapper.filler.col-threes-3.col-twos-1 .text-wrapper-quote {
+  margin: 50px 0 50px 0;
+  @include breakpoint(D){
+    margin: 55px ​0 60px 0;
+  }
+}
+
+.section-collection-product .col-wrapper.filler.col-threes-3.col-twos-1 .quote-wrapper {
+  width: 85%;
+  @include breakpoint(TL) {
+    width: 80%;
+  }
+}
+
+
+// Col-filler - when multiples of 3 + 1 (2 free col space)
+
+.section-collection-product .col-wrapper.filler.col-threes-2.col-twos-1 {
+  width: 94%;
+  display: none;
+  @include breakpoint(TP){
+    width: 100%;
+    display: none;
+  }
+  @include breakpoint(TL){
+    width: 100%;
+    display: none;
+  }
+}
+
+.section-collection-product .col-wrapper.filler.col-threes-2.col-twos-1 .text-wrapper-quote {
+  margin: 60px 0 50px 0;
+  @include breakpoint(TL){
+    margin: 70px 0 60px 0;
+    padding: 35px 30px 37px 30px;
+  }
+  @include breakpoint(D){
+    margin: 0;
+  }
+}
+
+.section-collection-product .col-wrapper.filler.col-threes-2.col-twos-1 .quote-wrapper {
+  width: 85%;
+  @include breakpoint(TL) {
+    width: 85%;
+  }
+  @include breakpoint(D) {
+    width: 80%;
+  }
+}
+
+// Every 3 (0+1,6+1,12+1 etc.)
+
+.section-collection-product .col-wrapper.filler.col-threes-2.col-twos-2 {
+  width: 94%;
+  display: none;
+  @include breakpoint(TP){
+    width: 47.5%;
+    display: initial;
+  }
+  @include breakpoint(TL){
+    width: 100%;
+    display: none;
+  }
+}
+
+.section-collection-product .col-wrapper.filler.col-threes-2.col-twos-2.first-row {
+  display: none;
+}
+
+.section-collection-product .col-wrapper.filler.col-threes-2.col-twos-2 .text-wrapper-quote {
+  margin: 60px 0 50px 0;
+  @include breakpoint(TL){
+    margin: 70px 0 60px 0;
+    padding: 35px 30px 37px 30px;
+  }
+  @include breakpoint(D){
+    margin: 0;
+  }
+}
+
+.section-collection-product .col-wrapper.filler.col-threes-2.col-twos-2 .quote-wrapper {
+  width: 85%;
+  @include breakpoint(TL) {
+    width: 85%;
+  }
+  @include breakpoint(D) {
+    width: 80%;
+  }
+}
+
+
+/////////////////// FRAME WRAPPER ///////////////////
+
+.section-collection-product .frame-wrapper {
+    position: relative;
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
+}
+
+//////////////////// IMG WRAPPER ////////////////////
+
+.section-collection-product .col-wrapper .img-wrapper {
+  position: relative;
+  box-sizing: border-box;
+  padding: 1px;
+  height: 100%;
+  width: 100%;
+  background-size: 100% 100%;
+  top: 0px;
+  left: 0px;
+}
+
+.section-collection-product img {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  font-family: 'object-fit: cover;'; // Polyfill fix for IE/EDGE
+}
+
+
+/////////////////// IMG TOP ILLO ////////////////////
+
+.section-collection-product .col-wrapper .img-top-illo-wrapper {
+  //right: -148px;
+  left: -148px;
+  @include breakpoint(TP) {
+    // Illo positioned on left side
+    left: -148px;
+  }
+}
+
+.section-collection-product .col-wrapper .img-top-illo {
+  transform: rotate(-30deg);
+  @include breakpoint(TP) {
+    transform: rotate(-30deg);
+  }
+}
+
+.section-collection-product .col-wrapper .text-wrapper .sales-wrapper {
+  display: none;
+}
+
+
+////////////// TEXT WRAPPER (IN COLUMN) /////////////
+
+.section-collection-product .col-wrapper .text-wrapper {
+  position: relative;
+  z-index: 100;
+  display: flex; ////
+  flex-direction: column;
+  flex-grow: 1; ////
+  text-align: center;
+  top: 0px;
+  min-height: 250px;
+  @include breakpoint(TL) {
+    width: 50%;
+    text-align: left;
+  }
+}
+
+// Text wrapper overides
+
+.section-collection-product .col-wrapper .text-wrapper {
+  padding: 27px 10px 33px 10px;
+  @include breakpoint(TP) {
+    padding: 27px 17px 33px 17px;
+  }
+  @include breakpoint(TL) {
+    padding: 28px 40px 28px 40px;
+  }
+  @include breakpoint(D) {
+    padding: 62px 65px 63px 65px;
+  }
+}
+
+.section-collection-product .col-wrapper.col-threes-1.col-twos-1.first-row.last .text-wrapper {
+  @include breakpoint(TP) {
+    padding: 36px 65px 43px 65px;
+  }
+  @include breakpoint(TL) {
+    padding: 28px 40px 28px 40px;
+  }
+  @include breakpoint(D) {
+    padding: 62px 65px 63px 65px;
+  }
+}
+
+.section-collection-product .col-wrapper.col-threes-2 .text-wrapper,
+.section-collection-product .col-wrapper.col-threes-3 .text-wrapper {
+  @include breakpoint(TP) {
+    width: 100%;
+    text-align: center;
+    padding: 27px 17px 33px 17px;
+  }
+  @include breakpoint(TL) {
+    padding: 25px 40px 35px 40px;
+  }
+  @include breakpoint(D) {
+    padding: 36px 65px 47px 65px;
+  }
+}
+
+
+.section-collection-product .col-wrapper .text-wrapper .category {
+  width: 100%;
+  margin: 0 0 5px 0;
+}
+
+.section-collection-product .col-wrapper .text-wrapper .title {
+  width: 100%;
+  flex-grow: 1;
+  margin: 0 0 10px 0;
+}
+
+.section-collection-product .col-wrapper .text-wrapper .desc-wrapper {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0 0 10px 0;
+}
+
+.section-collection-product .col-wrapper .text-wrapper .desc-wrapper p {
+  margin: 0;
+}
+
+// Learn more CTA
+
+.section-collection-product .col-wrapper .text-wrapper .desc-wrapper p a {
+  display: none;
+}
+
+.section-collection-product .col-wrapper .text-wrapper .spacer {
+  display: none;
+  height: 0px;
+  width: 100%;
+  display: initial;
+}
+
+.section-collection-product .col-wrapper .text-wrapper .price-button-wrapper {
+  width: 100%;
+  display: flex; ////
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; ////
+  height: auto;
+  //height: 75px;
+  @include breakpoint(TP) {
+    //height: 90px;
+  }
+  @include breakpoint(TL) {
+    align-items: flex-start; ////
+    //height: 100px;
+  }
+}
+
+.section-collection-product .col-wrapper .text-wrapper .price-button-wrapper p {
+  margin: 0px 0px 10px 0px;
+}
+
+.section-collection-product .col-wrapper .text-wrapper .price-button-wrapper .price-wrapper {
+  flex-grow: 1;
+}
+
+
+// Product 2 and 3 overides TL & D
+
+.section-collection-product .col-wrapper.col-threes-2 .text-wrapper,
+.section-collection-product .col-wrapper.col-threes-3 .text-wrapper {
+
+}
+
+.section-collection-product .col-wrapper.col-threes-2 .text-wrapper .price-button-wrapper,
+.section-collection-product .col-wrapper.col-threes-3 .text-wrapper .price-button-wrapper {
+  @include breakpoint(TL) {
+    align-items: center; ////
+  }  
+}
+
+
+/////////////////// IMAGE WRAPPER ///////////////////
+
+.section-collection-product .col-wrapper .img-wrapper {
+  width: 100%;
+  //height: 222px;
+  height: auto;
+  @include breakpoint(TP) {
+    //height: 207px;
+  }
+  @include breakpoint(TL) {
+    width: 50%;
+    height: 100%;
+  }
+}
+
+.section-collection-product .col-wrapper.col-threes-1.col-twos-1.first-row.last .img-wrapper {
+  //height: 222px;
+  @include breakpoint(TP) {
+    //height: 435px;
+  }
+  @include breakpoint(TL) {
+    //height: 100%;
+  }
+}
+
+// Product 2 and 3 overides TL & D
+
+.section-collection-product .col-wrapper.col-threes-2 .img-wrapper,
+.section-collection-product .col-wrapper.col-threes-3 .img-wrapper {
+   @include breakpoint(TL) {
+    width: 100%;
+    //height: 260px;
+    height: auto;
+  }
+  @include breakpoint(D) {
+    //height: 348px;
+  } 
+}
+
+
+/////////////////////// FRAME ///////////////////////
+
+.section-collection-product .col-wrapper .frame-wrapper {
+  display: flex; ////
+  flex-direction: column; ////
+  @include breakpoint(TL) {
+    flex-direction: row; ////
+  }
+}
+
+
+///////////////////// PAD-RATIO /////////////////////
+
+// Padding ratio trick to push middle bar down on mobile (mobile not fixed width so position can't be fixed)
+
+.section-collection-product .col-wrapper .frame-wrapper .pad-ratio {
+  position: absolute;
+  width: 100%;
+  padding-top: 66.75%;
+  @include breakpoint(TL) {
+    width: 50%;
+    padding-top: 33.25%;
+  }
+}
+
+
+/////////////////// CLICK OVERLAY ///////////////////
+
+.section-collection-product .col-wrapper .frame-wrapper .click-overlay {
+  position: absolute;
+  z-index: 120;
+  height: 222px;
+  width: 100%;
+  @include breakpoint(TP) {
+    height: 207px;
+  }
+  @include breakpoint(TL) {
+    height: 100%;
+    width: 50%;
+  }
+}
+
+/////////////////// FRAME ELEMENTS ///////////////////
+
+.section-collection-product .col-wrapper .frame-wrapper .right-frame.middle {
+  display: none;
+  @include breakpoint(TL) {
+    display: initial;
+  }
+}
+
+.section-collection-product .col-wrapper .frame-wrapper .bottom-frame.middle {
+  position: absolute;
+  margin-top: -3px;
+  left: 0px;
+  @include breakpoint(TL) {
+    display: none;
+  }
+}
+
+// Overide for when just one product
+
+.section-collection-product .col-wrapper.col-threes-1.col-twos-1.first-row.last .frame-wrapper .bottom-frame.middle {
+  @include breakpoint(TL) {
+    display: none;
+  }
+}
+
+.section-collection-product .col-wrapper.col-threes-1.col-twos-1.first-row.last .frame-wrapper .bottom-frame.middle {
+  @include breakpoint(TL) {
+    display: none;
+  }
+}
+
+// Overides for 2nd and 3rd products across different devices
+
+.section-collection-product .col-wrapper.col-threes-2 .pad-ratio,
+.section-collection-product .col-wrapper.col-threes-3 .pad-ratio {
+  width: 100%;
+  padding-top: 66.75%;
+  @include breakpoint(TP) {
+    width: 100%;
+    padding-top: 66.75%;
+  }
+}
+
+.section-collection-product .col-wrapper.col-threes-2 .frame-wrapper,
+.section-collection-product .col-wrapper.col-threes-3 .frame-wrapper {
+  @include breakpoint(TL) {
+    flex-direction: column; ////
+  } 
+}
+
+.section-collection-product .col-wrapper.col-threes-2 .frame-wrapper .bottom-frame.middle,
+.section-collection-product .col-wrapper.col-threes-3 .frame-wrapper .bottom-frame.middle {
+  //top: initial;
+  @include breakpoint(TL) {
+    //top: 260px;
+    display: initial;
+  }
+  @include breakpoint(D) {
+    //top: 348px;
+  }
+}
+
+.section-collection-product .col-wrapper.col-threes-2 .frame-wrapper .right-frame.middle,
+.section-collection-product .col-wrapper.col-threes-3 .frame-wrapper .right-frame.middle {
+  display: none;
+  @include breakpoint(TL) {
+    display: none;
+  }
+}
+
+.section-collection-product .col-wrapper.col-threes-2 .frame-wrapper .click-overlay,
+.section-collection-product .col-wrapper.col-threes-3 .frame-wrapper .click-overlay {
+  height: 222px;
+  @include breakpoint(TP) {
+    height: 207px;
+  }
+  @include breakpoint(TL) {
+    height: 260px;
+    width: 100%;
+  }
+  @include breakpoint(D) {
+    height: 348px;
+  }
+}
+
+
+///////// TEXT WRAPPER (UNDER PRODUCT LOOP) /////////
+
+.section-collection-product .text-wrapper-bottom {
+  position: relative;
+  width: 100%;
+  z-index: 10;
+  text-align: center;
+  margin-top: 50px;
+  @include breakpoint(TP) {
+    margin: 70px 5% 0 5%;
+  }
+  @include breakpoint(TL) {
+    margin: 80px 5% 0 5%;
+  }
+  @include breakpoint(D) {
+    margin: 110px 5% 0 5%;
+  }
+} 
+
+.section-collection-product .text-wrapper-bottom div:last-child h3,
+.section-collection-product .text-wrapper-bottom div:last-child h4,
+.section-collection-product .text-wrapper-bottom div:last-child p {
+  margin-bottom: 0;
+}
+
+.section-collection-product .text-wrapper-bottom .title h3,
+.section-collection-product .text-wrapper-bottom .title h4{
+  position: relative;
+  z-index: 102;
+  width: 100%;
+  margin-top: 0;
+}
+
+.section-collection-product .text-wrapper-bottom .text-top p {
+  position: relative;
+  z-index: 12;
+  margin: 0 0 70px 0;
+  width: 100%;
+}
+
+// Chat button - cookie block text
+
+.section-collection-product .button-wrapper.open-chat.disable a {
+  pointer-events: none;
+}
+
+.section-collection-product .cookie-block-wrapper {
+  margin-top: 15px;
+}
+
+.section-collection-product .cookie-block-wrapper p {
+  color: $pink;
+}
+
+
+/////////////////////////////////////////////////////
+///////////////// STYLE OVERIDES ////////////////////
+/////////////////////////////////////////////////////
+
+//////////////////////// CLOCK ////////////////////////
+
+.section-collection-product.clock .col-wrapper .img-top-illo {
+  background-image: url(../images/image-top-illo/clock/400px.png);
+  @include breakpoint(D) {
+    background-image: url(../images/image-top-illo/clock/500px.png);
+  }
+}
+
+
+/////////////////////// PRINTER ///////////////////////
+
+.section-collection-product.printer .col-wrapper .img-top-illo {
+  background-image: url(../images/image-top-illo/printer/rot-right/400px.png);
+  @include breakpoint(TP) {
+    background-image: url(../images/image-top-illo/printer/rot-left/400px.png);
+  }
+  @include breakpoint(D) {
+    background-image: url(../images/image-top-illo/printer/rot-left/500px.png);
+  }
+}
+
+
+
+

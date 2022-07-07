@@ -1,0 +1,160 @@
+
+
+///////////////////////////////////////////////////////
+/////////////////// VIDEO EMBED CODE //////////////////
+///////////////////////////////////////////////////////
+///////////////////////////////////////////////////////
+
+.video-box {
+	position: relative;
+	margin: 4rem 0 4rem 0;
+	@include breakpoint(TP) {
+		margin: 5.5rem 0 5.5rem 0;
+	}
+	@include breakpoint(D) {
+		margin: 8.5rem 0 8.5rem 0;
+	}
+}
+
+///////////////////// OVERIDES ////////////////////////
+
+// Remove some space when video comes after an H3 and H4 heading
+
+h3 + div.video-box,
+h4 + div.video-box {
+	margin-top: 4rem;
+	@include breakpoint(TP) {
+		margin-top: 3.5rem;
+	}
+	@include breakpoint(D) {
+		margin-top: 5rem;
+	}
+}
+
+.video-box.no-illo .image-top-illo {
+	display: none;
+}
+
+
+///////////////////////////////////////////////////////
+//////////////////// VIDEO WRAPPER ////////////////////
+///////////////////////////////////////////////////////
+
+.video-wrapper:not(.local) {
+	position: relative;
+	z-index: 40;
+	margin: 2px;
+	background: url(../images/test-pattern/test-pattern.jpg) no-repeat center / cover;
+	width: 100%;
+}
+
+.video-box .frame {
+	position: relative;
+}
+
+.video-box .top-frame {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 50;
+}
+
+.video-box .left-frame {
+	position: absolute;
+    z-index: 51;
+    left: 0px;
+    height: calc(100% - 8px);
+    top: 4px;
+}
+
+.video-box .right-frame {
+	position: absolute;
+    z-index: 52;
+    right: -1px;
+    height: calc(100% - 8px);
+    top: 4px;
+}
+
+.video-box .bottom-frame {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    z-index: 53;
+}
+
+
+///////////////////////////////////////////////////////
+//////////////////// ASPECT RATIO /////////////////////
+///////////////////////////////////////////////////////
+
+.aspect-ratio {
+    position: relative;
+}
+
+.aspect-ratio.sixteen-nine { //* 16:9 * //
+	padding-top: 56.25%; 
+}
+
+.video-box.sixteen-nine .bottom-frame {
+    bottom: -1px;
+}
+
+// You Tube adjustment
+
+.video-box.youtube .aspect-ratio.sixteen-nine { //* 16:9 * //
+	padding-top: 54.25%; 
+}
+
+.aspect-ratio.five-four { //* 5:4 * //
+	padding-top: 71%; 
+}
+
+.aspect-ratio.four-three { //* 4:3 * //
+	padding-top: 75%; 
+}
+
+// Local video adj
+
+.video-wrapper.local .aspect-ratio.sixteen-nine {
+	padding: 0; 	
+}
+
+
+/////////////////// PLAYER CONTAINER //////////////////
+
+.video-box iframe,
+.video-box .vimeo-player {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.video-box .video-local {
+	width: 100%;
+	display: block;
+	padding: 1px; 
+}
+
+///////////////////// TEST PATTERN ////////////////////
+
+#noTestPatternBg {
+	background-image: none;
+}
+
+#noTestPatternBg {
+	margin: 2px;
+}
+
+
+
+
+
+
+
+
+
+

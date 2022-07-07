@@ -1,0 +1,918 @@
+
+/////////////////////////////////////////////////////
+/////////////////////////////////////////////////////
+/////////////// SECTION - BASE STYLES ///////////////
+/////////////////////////////////////////////////////
+/////////////////////////////////////////////////////
+
+
+//////////////////// FIRST PARA /////////////////////
+
+body.wide .content > p:nth-of-type(1),
+body.wide .content > p {
+  text-align: center;
+}
+
+
+/////////////////////////////////////////////////////
+////////////// SECTION - GLOBAL STYLES //////////////
+/////////////////////////////////////////////////////
+
+////////////////// CONTENT WRAPPER //////////////////
+
+// Default extra padding for section divider illos
+
+.content > section .content-wrapper {
+  padding-top: 210px;
+  padding-bottom: 210px; // 190px + 10%
+  @include breakpoint(TP) {
+    padding-top: 255px;
+    padding-bottom: 255px; // 330px + 10%
+  }
+  @include breakpoint(D) {
+    padding-top: 350px;
+    padding-bottom: 350px; // 330px + 10%
+  }
+}
+
+////////// FIRST SECTION SPACE ADJUSTMEMNTS /////////
+
+// N.B. Extra top padding for FIRST section is at bottom of this style sheet
+
+/////////////////////////////////////////////////////
+///////////// STRIP-TOP / STRIP-BOTTOM //////////////
+//////// STRIP-TOP-BUTT / STRIP-BOTTOM-BUTT /////////
+/////////////// SQUEEZE / ANNOUNCEMENT //////////////
+////////////////// JOIN / JOIN-UP ///////////////////
+////////////////////// BOT-PAD //////////////////////
+/////////////////////////////////////////////////////
+
+// Reduced bottom padding when [strip-bottom] (for adjacent sections with different backgrounds)
+
+section + section:last-of-type .content-wrapper,
+section.strip-bottom .content-wrapper { 
+  padding-bottom: 70px;
+  @include breakpoint(TP) {
+    padding-bottom: 110px;
+  }
+  @include breakpoint(D) {
+    padding-bottom: 150px;
+  }
+}
+
+// Reduce padding-bottom even more when [strip-bottom-butt] class added to section element
+// - (for adjacent sections with same background, so pushed closer to balance visually)
+
+section.strip-bottom-butt .content-wrapper { 
+  padding-bottom: 50px;
+  @include breakpoint(TP) {
+    padding-bottom: 70px;
+  }
+  @include breakpoint(D) {
+    padding-bottom: 110px;
+  }
+}
+
+
+// Reduce padding-bottom even more when [join] class added to section element
+// - (for adjacent sections with same background, to join them visually)
+
+section.join .content-wrapper { 
+  padding-bottom: 35px;
+  @include breakpoint(TP) {
+    padding-bottom: 40px;
+  }
+  @include breakpoint(D) {
+    padding-bottom: 50px;
+  }
+}
+
+
+// Reduced top padding when [strip-top] (for adjacent sections with different backgrounds)
+
+section.strip-top .content-wrapper {
+  padding-top: 70px;
+  @include breakpoint(TP) {
+    padding-top: 110px;
+  }
+  @include breakpoint(D) {
+    padding-top: 150px;
+  }
+}
+
+// Reduce padding-top even more when [strip-top-butt] class added to section element
+// - (for adjacent sections with same background, so pushed closer to balance visually)
+
+section.strip-top-butt .content-wrapper { 
+  padding-top: 50px;
+  @include breakpoint(TP) {
+    padding-top: 70px;
+  }
+  @include breakpoint(D) {
+    padding-top: 110px;
+  }
+}
+
+
+// Reduce padding-top even more when [join-top] class added to section element
+// - (for adjacent sections with same background, to join them visually)
+
+section.join-top .content-wrapper { 
+  padding-top: 35px;
+  @include breakpoint(TP) {
+    padding-top: 40px;
+  }
+  @include breakpoint(D) {
+    padding-top: 50px;
+  }
+}
+
+// When quote has profile image, adjust for lopsidedness (reduce gap at top)
+
+section.join.man .content-wrapper,
+section.join.woman .content-wrapper { 
+  padding-top: 25px;
+  @include breakpoint(TP) {
+    padding-top: 30px;
+  }
+  @include breakpoint(D) {
+    padding-top: 35px;
+  }
+}
+
+
+// Squeeze class
+
+section.strip-top.strip-bottom.squeeze .content-wrapper,
+section.strip-top.strip-bottom-butt.squeeze .content-wrapper,
+section.strip-top-butt.strip-bottom.squeeze .content-wrapper,
+section.strip-top-butt.strip-bottom-butt.squeeze .content-wrapper {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  @include breakpoint(TP) {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+  @include breakpoint(D) {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }  
+}
+
+// Reduce padding-bottom even more when [join] class added (had to repeat this css from line 77 to make it more specific)
+
+section.strip-top.strip-bottom.squeeze.join .content-wrapper,
+section.strip-top.strip-bottom-butt.squeeze.join .content-wrapper,
+section.strip-top-butt.strip-bottom.squeeze.join .content-wrapper,
+section.strip-top-butt.strip-bottom-butt.squeeze.join .content-wrapper { 
+  padding-bottom: 35px;
+  @include breakpoint(TP) {
+    padding-bottom: 40px;
+  }
+  @include breakpoint(D) {
+    padding-bottom: 50px;
+  }
+}
+
+
+// Announcement class
+
+section.strip-top.strip-bottom.announcement .content-wrapper,
+section.strip-top.strip-bottom-butt.announcement .content-wrapper,
+section.strip-top-butt.strip-bottom.announcement .content-wrapper,
+section.strip-top-butt.strip-bottom-butt.announcement .content-wrapper {
+  padding-top: 13px;
+  padding-bottom: 13px;
+  @include breakpoint(TP) {
+    padding-top: 17px;
+    padding-bottom: 17px;
+  }
+  @include breakpoint(D) {
+    padding-top: 18px;
+    padding-bottom: 17px;
+  }
+}
+
+
+// Nav-blocks - reduce padding when first section
+
+section:nth-of-type(1).section-nav-block .content-wrapper {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  @include breakpoint(TP) {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+  @include breakpoint(D) {
+    padding-top: 80px;
+    padding-bottom: 20px;
+  }  
+}
+
+// Bot-pad - section before full-bleed, add extra gap at bottom
+
+section.bot-pad .content-wrapper {
+  padding-bottom: 100px;
+  @include breakpoint(TP) {
+    padding-bottom: 120px;
+  }
+  @include breakpoint(D) {
+    padding-bottom: 200px;
+  }  
+}
+
+
+
+/////////////////////////////////////////////////////
+//////////////// SECTIONS IN FOOTER /////////////////
+/////////////////////////////////////////////////////
+
+// Adjust section when it is in footer-wrapper
+
+.footer-wrapper section.footer {
+    margin-bottom: 0rem;
+    margin-top: 0rem;
+}
+
+.footer-wrapper section.footer .content-wrapper {
+  padding: 95px 0 50px 0;
+  @include breakpoint(TP) {
+    padding: 105px 0 5px 0;
+  }
+  @include breakpoint(D) {
+    padding: 170px 0 40px 0;
+  }
+}
+
+.footer-wrapper section.footer .sect-title-wrapper {
+    display: none;
+}
+
+
+/////////////////////////////////////////////////////
+//////////////// FRAME (WHITE/BLACK) ////////////////
+/////////////////////////////////////////////////////
+
+
+///////////// SECTION DIVIDER LINES (TOP) ///////////
+
+// Sketched line
+section .bg-texture-wrapper .frame .top-frame {
+  top: -2px;
+  position: absolute;
+  background-repeat: repeat;
+  background-size: 760px 100%;
+}
+
+// .strip-line class override
+
+section.strip-line .content-wrapper .bg-texture-wrapper .frame .bottom-frame {
+  display: none;
+}
+
+
+
+body.layout-page header .bg-texture-wrapper .frame .bottom-frame {
+  display: none;
+}
+
+section .bg-texture-wrapper .frame .bottom-frame {
+  display: none;
+  bottom: -2px;
+  position: absolute;
+  background-repeat: repeat;
+  background-size: 760px 100%;
+}
+
+
+///////////////// FRAME FOR IMAGES //////////////////
+
+// Change colour of frame to white
+
+.delete {
+
+  .footer-wrapper section.footer .frame .top-frame,
+  .content section.black .frame .top-frame {
+      background-image: url(../images/frame/white/top.png);
+  }
+  
+  .footer-wrapper section.footer .frame .bottom-frame,
+  .content section.black .frame .bottom-frame {
+      background-image: url(../images/frame/white/bottom.png);
+  }
+  
+  .footer-wrapper section.footer .frame .left-frame,
+  .content section.black .frame .left-frame {
+      background-image: url(../images/frame/white/left.png);
+  }
+  
+  .footer-wrapper section.footer .frame .right-frame,
+  .content section.black .frame .right-frame {
+      background-image: url(../images/frame/white/right.png);
+  }
+
+}
+
+
+/////////////////////////////////////////////////////
+/////////////////// TEXT WRAPPER ////////////////////
+/////////////////////////////////////////////////////
+
+section .text-wrapper p:first-child {
+  margin-top: 0;
+}
+
+
+/////////////////////////////////////////////////////
+//////////////////// TEXT & FONTS ///////////////////
+/////////////////////////////////////////////////////
+
+///////////////////// SECT TITLE ////////////////////
+
+section .sect-title-wrapper {
+  position: relative;
+  z-index: 102;
+  width: 100%;
+  margin: 0 0 6rem 0;
+  @include breakpoint(TP) {
+    margin: 0 0 7.5rem 0;
+  }
+  @include breakpoint(D) {
+    margin: 0 0 9rem 0;
+  }
+}
+
+// tight-title overide
+section .sect-title-wrapper {
+  margin: 0 0 3rem 0;
+  @include breakpoint(TP) {
+    margin: 0 0 3.25rem 0;
+  }
+  @include breakpoint(D) {
+    margin: 0 0 4rem 0;
+  }
+}
+
+section .sect-title {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+
+section .underline {
+  background: url(../images/lines/rules/short/black/short-line.png) center center / 120px 4px no-repeat;
+  height: 5px;
+  width: 150px;
+  margin: 10px auto 0 auto;
+  @include breakpoint(D) {
+      background-size: 150px 5px;
+  }
+}
+
+section.pink .underline,
+section.pink-light .underline,
+section.blue .underline,
+section.black .underline,
+section.black-dark .underline {
+  background-image: url(../images/lines/rules/short/white/short-line.png);
+}
+
+
+/////////////////// COLOR OVERIDES //////////////////
+
+section .sect-title em,
+section p em {
+  //color: inherit;
+}
+
+// Default / None
+
+section .sect-title {
+  color: $black;
+}
+
+section p,
+section a,
+section h1,
+section h2,
+section h3,
+section h4,
+section h5 {
+  color: $black;
+}
+
+section h1 a,
+section h2 a,
+section h3 a,
+section h4 a,
+section h5 a {
+  &:hover {
+    color: $pink;
+  }
+}
+
+
+// Pink
+
+section.pink .sect-title {
+  color: white;
+}
+
+section.pink p,
+section.pink h1,
+section.pink h2,
+section.pink h3,
+section.pink h4,
+section.pink h5 {
+  color: white;
+}
+
+section.pink a,
+section.pink p a,
+section.pink h1 a,
+section.pink h2 a,
+section.pink h3 a,
+section.pink h4 a,
+section.pink h5 a {
+  color: white;
+  &:hover {
+    color: $black;
+  }
+}
+
+section.pink p > a {
+  color: white;
+  background-image: linear-gradient(to right, white 50%, transparent 50%);
+  &:hover {
+    color: $black;
+    background-image: linear-gradient(to right, $black 50%, transparent 50%);
+  }  
+}
+
+
+// Pink-light
+
+section.pink-light .sect-title {
+  color: white;
+}
+
+section.pink-light p,
+section.pink-light h1,
+section.pink-light h2,
+section.pink-light h3,
+section.pink-light h4,
+section.pink-light h5 {
+  color: white;
+}
+
+section.pink-light a,
+section.pink-light p a,
+section.pink-light h1 a,
+section.pink-light h2 a,
+section.pink-light h3 a,
+section.pink-light h4 a,
+section.pink-light h5 a {
+  color: white;
+  &:hover {
+    color: $black;
+  }
+}
+
+section.pink-light p > a {
+  color: white;
+  background-image: linear-gradient(to right, white 50%, transparent 50%);
+  &:hover {
+    color: $black;
+    background-image: linear-gradient(to right, $black 50%, transparent 50%);
+  }  
+}
+
+
+// Blue
+
+section.blue .sect-title {
+  color: white;
+}
+
+section.blue p,
+section.blue h1,
+section.blue h2,
+section.blue h3,
+section.blue h4,
+section.blue h5 {
+  color: white;
+}
+
+section.blue a,
+section.blue p a,
+section.blue h1 a,
+section.blue h2 a,
+section.blue h3 a,
+section.blue h4 a,
+section.blue h5 a {
+  color: white;
+  &:hover {
+    color: $black;
+  }
+}
+
+section.blue p > a {
+  background-image: linear-gradient(to right, white 50%, transparent 50%);
+  &:hover {
+    color: $black;
+    background-image: linear-gradient(to right, $black 50%, transparent 50%);
+  }  
+}
+
+
+// Black
+
+section.black .sect-title,
+section.black-dark .sect-title {
+  color: white;
+}
+
+section.black p,
+section.black p span,
+section.black h1,
+section.black h2,
+section.black h3,
+section.black h4,
+section.black h5,
+section.black-dark p,
+section.black-dark h1,
+section.black-dark h2,
+section.black-dark h3,
+section.black-dark h4,
+section.black-dark h5,
+section.black-medium p,
+section.black-medium h1,
+section.black-medium h2,
+section.black-medium h3,
+section.black-medium h4,
+section.black-medium h5 {
+  color: white;
+}
+
+section.black a,
+section.black p a,
+section.black p span a,
+section.black h1 a,
+section.black h2 a,
+section.black h3 a,
+section.black h4 a,
+section.black h5 a,
+section.black h1 span,
+section.black h2 span,
+section.black h3 span,
+section.black h4 span,
+section.black h5 span,
+section.black-dark a,
+section.black-dark p a,
+section.black-dark h1 a,
+section.black-dark h2 a,
+section.black-dark h3 a,
+section.black-dark h4 a,
+section.black-dark h5 a,
+section.black-medium a,
+section.black-medium p a,
+section.black-medium h1 a,
+section.black-medium h2 a,
+section.black-medium h3 a,
+section.black-medium h4 a,
+section.black-medium h5 a  {
+  color: white;
+  &:hover {
+    color: $pink;
+  }
+}
+
+section.black p > a,
+section.black-dark p > a {
+  background-image: linear-gradient(to right, white 50%, transparent 50%);
+  &:hover {
+    color: $pink;
+    background-image: linear-gradient(to right, $pink 50%, transparent 50%);
+  }  
+}
+
+
+// footer
+
+section.global-footer.black a,
+section.global-footer.black-dark a {
+  background-image: none;
+  text-decoration: none; 
+  color: white;
+  &:hover {
+    color: $pink;
+    text-decoration: none; 
+    background-image: none;
+  }  
+}
+
+
+/////////////////////////////////////////////////////
+////////////////// TEXTURE WRAPPER //////////////////
+/////////////////////////////////////////////////////
+
+section .content-wrapper > .bg-texture-wrapper {
+  position: absolute;
+  z-index: 1;
+  top: 0px;
+  height: 100%;
+  width: 170vw;
+  left: -50vw;
+}
+
+
+/////////////////////////////////////////////////////
+////////////// SECTION - ILLO DIVIDERS //////////////
+/////////////////////////////////////////////////////
+
+.sect-illo-wrapper {
+  left: calc( (100vw - 94vw) / -2);
+  width: 100vw;
+  position: absolute;
+  z-index: 12;
+  height: 250px;
+  top: -125px;
+  @include breakpoint(ML) {
+    left: calc( (100vw - 480px) / -2);
+  }
+  @include breakpoint(TP) {
+    left: calc( (100vw - 650px) / -2);
+    height: 318px;
+    top: -159px;
+  }
+  @include breakpoint(TL) {
+    left: calc( (100vw - 800px) / -2);
+    height: 380px;
+    top: -165px;
+  }
+  @include breakpoint(D) {
+    left: calc( (100vw - 1100px) / -2);
+    height: 450px;
+    top: -225px;
+  }
+}
+
+.sect-illo-wrapper .sect-illo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: center center;
+  @include breakpoint(TP) {
+    background-size: auto 100%;
+  }
+}
+
+
+////////////////// EARTH BORER /////////////////
+
+.sect-illo-wrapper.earth-borer .sect-illo {
+  background-image: url(../images/content/section-dividers/earth-borer/700px.png);
+  @include breakpoint(TP) {
+    background-image: url(../images/content/section-dividers/earth-borer/1200px.png);
+  }
+}
+
+
+//////////////// TOILET COPTER /////////////////
+
+.sect-illo-wrapper.toilet-copter .sect-illo {
+  background-image: url(../images/content/section-dividers/toilet-copter/700px.png);
+  @include breakpoint(TP) {
+    background-image: url(../images/content/section-dividers/toilet-copter/1200px.png);
+  }
+}
+
+
+////////////////// PING PONG ///////////////////
+
+.sect-illo-wrapper.ping-pong .sect-illo {
+  background-image: url(../images/content/section-dividers/ping-pong/700px.png);
+  @include breakpoint(TP) {
+    background-image: url(../images/content/section-dividers/ping-pong/1200px.png);
+  }
+}
+
+
+////////////////// TOUGH NUT ///////////////////
+
+.sect-illo-wrapper.tough-nut .sect-illo {
+  background-image: url(../images/content/section-dividers/tough-nut/700px.png);
+  @include breakpoint(TP) {
+    background-image: url(../images/content/section-dividers/tough-nut/1200px.png);
+  }
+}
+
+
+///////////////// EARTH PIPES //////////////////
+
+.sect-illo-wrapper.earth-pipes .sect-illo {
+  background-image: url(../images/content/section-dividers/earth-pipes/700px.png);
+  @include breakpoint(TP) {
+    background-image: url(../images/content/section-dividers/earth-pipes/1200px.png);
+  }
+}
+
+
+///////////////// HOUSE PIPES //////////////////
+
+.sect-illo-wrapper.house-pipes .sect-illo {
+  background-image: url(../images/content/section-dividers/house-pipes/700px.png);
+  @include breakpoint(TP) {
+    background-image: url(../images/content/section-dividers/house-pipes/1200px.png);
+  }
+}
+
+
+/////////////////// EYEBALL ////////////////////
+
+.sect-illo-wrapper.eyeball .sect-illo {
+  background-image: url(../images/content/section-dividers/eyeball/700px.png);
+  @include breakpoint(TP) {
+    background-image: url(../images/content/section-dividers/eyeball/1200px.png);
+  }
+}
+
+
+/////////////////// FUN SIGN ///////////////////
+
+.sect-illo-wrapper.fun-sign .sect-illo {
+  background-image: url(../images/content/section-dividers/fun-sign/700px.png);
+  @include breakpoint(TP) {
+    background-image: url(../images/content/section-dividers/fun-sign/1200px.png);
+  }
+}
+
+
+////////////////// PIPE-PLAIN //////////////////
+
+.sect-illo-wrapper.pipe-plain .sect-illo {
+  background-image: url(../images/content/section-dividers/pipe-plain/700px.png);
+  @include breakpoint(TP) {
+    background-image: url(../images/content/section-dividers/pipe-plain/1200px.png);
+  }
+}
+
+
+///////////////// PIPE WHISTLE /////////////////
+
+.sect-illo-wrapper.pipe-whistle .sect-illo {
+  background-image: url(../images/content/section-dividers/pipe-whistle/700px.png);
+  @include breakpoint(TP) {
+    background-image: url(../images/content/section-dividers/pipe-whistle/1200px.png);
+  }
+}
+
+
+////////////////// PIPE GAUGE //////////////////
+
+.sect-illo-wrapper.pipe-gauge .sect-illo {
+  background-image: url(../images/content/section-dividers/pipe-gauge/700px.png);
+  @include breakpoint(TP) {
+    background-image: url(../images/content/section-dividers/pipe-gauge/1200px.png);
+  }
+}
+
+//////////////////// HOW-TO ////////////////////
+
+.sect-illo-wrapper.how-to .sect-illo {
+  background-image: url(../images/content/section-dividers/how-to/700px.png);
+  @include breakpoint(TP) {
+    background-image: url(../images/content/section-dividers/how-to/1200px.png);
+  }
+}
+
+//////////////////// VOLCANO ///////////////////
+
+.sect-illo-wrapper.volcano .sect-illo {
+  background-image: url(../images/content/section-dividers/volcano/700px.png);
+  @include breakpoint(TP) {
+    background-image: url(../images/content/section-dividers/volcano/1200px.png);
+  }
+}
+
+
+
+
+
+
+/////////////////////////////////////////////////////
+/////////////////////////////////////////////////////
+/////////////////////////////////////////////////////
+////////// FIRST SECTION SPACE ADJUSTMEMNTS /////////
+/////////////////////////////////////////////////////
+/////////////////////////////////////////////////////
+/////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////
+/////////// STOP ILLO OVERLAPPING HEADER ////////////
+/////////////////////////////////////////////////////
+/////// When header & first section has illo ////////
+/////////////////////////////////////////////////////
+
+header.pad-for-overlap .content-wrapper {
+  padding-bottom: 150px;
+  @include breakpoint(TP) {
+    padding-bottom: 200px //180px;
+  }
+  @include breakpoint(D) {
+    padding-bottom: 280px //250px;
+  }
+}
+
+
+/////////////////////////////////////////////////////
+///////// STOP ILLO OVERLAPPING TOP OF PAGE /////////
+/////////////////////////////////////////////////////
+////// When no header & first section has illo //////
+/////////////////////////////////////////////////////
+
+// - not: no-illo, no-illo-butt... i.e. it DOES have an illo
+// - not: overlap... i.e. there's NO header (added by JQuery when there's header with no-image)
+
+// Add padding to top of content wrapper
+
+.container:not(:first-child) .content > section:nth-of-type(1):not(.no-illo):not(.no-illo-butt):not(.overlap) .content-wrapper,
+.container:first-child .content > section:nth-of-type(1):not(.no-illo):not(.no-illo-butt):not(.overlap) .content-wrapper {
+  padding-top: calc(190px + 190px);
+  @include breakpoint(TP) {
+    padding-top: calc(230px + 230px);
+  }
+  @include breakpoint(D) {
+    padding-top: calc(330px + 330px);
+  } 
+}
+
+// Move section-illo down
+
+.container:not(:first-child) .content > section:nth-of-type(1):not(.no-illo):not(.no-illo-butt):not(.overlap) .sect-illo-wrapper,
+.container:first-child .content > section:nth-of-type(1):not(.no-illo):not(.no-illo-butt):not(.overlap) .sect-illo-wrapper  {
+  top: 70px;
+  @include breakpoint(TP) {
+    top: 90px; //75px;
+  }
+  @include breakpoint(D) {
+    top: 120px; //100px;
+  }
+}
+
+
+/////////////////////////////////////////////////////
+// When first section followed by section with illo, reduce padding at top
+/////////////////////////////////////////////////////
+
+// - no-illo, no-illo-but... i.e. it does NOT have an illo itself
+// - not: strip-bottom, strip-bottom-butt... i.e. there IS an illo in following section
+
+// When there IS a header
+.container:not(:first-child) .content > section:nth-of-type(1).no-illo:not(.strip-bottom):not(.strip-bottom-butt) .content-wrapper,
+.container:not(:first-child) .content > section:nth-of-type(1).no-illo-butt:not(.strip-bottom):not(.strip-bottom-butt) .content-wrapper {
+  padding-top: 50px;
+  @include breakpoint(TP) {
+    padding-top: 70px;
+  }
+  @include breakpoint(D) {
+    padding-top: 110px;
+  }
+}
+
+// When there's NO header
+.container:first-child .content > section:nth-of-type(1).no-illo:not(.strip-bottom):not(.strip-bottom-butt) .content-wrapper,
+.container:first-child .content > section:nth-of-type(1).no-illo-butt:not(.strip-bottom):not(.strip-bottom-butt) .content-wrapper,
+.container:first-child .content > section.announcement + section:nth-of-type(2).no-illo:not(.strip-bottom):not(.strip-bottom-butt) .content-wrapper,
+.container:first-child .content > section.announcement + section:nth-of-type(2).no-illo-butt:not(.strip-bottom):not(.strip-bottom-butt) .content-wrapper {
+  padding-top: 50px;
+  @include breakpoint(TP) {
+    padding-top: 70px;
+  }
+  @include breakpoint(D) {
+    padding-top: 110px;
+  }
+}
+
+
+/////////////////////////////////////////////////////
+// When header is 'no-to-gap'
+/////////////////////////////////////////////////////
+
+section.no-top-gap .content-wrapper {
+  padding-top: 10px !important;
+  @include breakpoint(TP) {
+    padding-top: 20px !important;
+  }
+  @include breakpoint(D) {
+    padding-top: 25px !important;
+  }
+}
+
+
+
+

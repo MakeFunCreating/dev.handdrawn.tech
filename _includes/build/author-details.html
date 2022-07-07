@@ -1,0 +1,51 @@
+
+
+
+{% assign author = site.data.people[page.author] %}
+
+<div class="author-box" itemscope itemtype="http://data-vocabulary.org/Person">
+
+	<div class="content-wrapper">
+
+		<div class="side-line"></div>
+
+		<div itemprop="photo" class="author-pic" >
+			<a href="{{ author.url | prepend: site.baseurl }}">
+	
+				<picture>
+					<source media="(min-width: 1150px)" srcset="{{ site.url }}{{ site.baseurl }}/images/{{ author.pic }}/large.jpg">
+					<source media="(min-width: 450px)" srcset="{{ site.url }}{{ site.baseurl }}/images/{{ author.pic }}/large.jpg">
+					<img src="{{ site.url }}{{ site.baseurl }}/images/{{ author.pic }}/large.jpg"
+					alt="Photo of {{ author.name }}">
+				</picture>
+	
+			</a>
+		</div>
+	
+		<div class="text-wrapper">
+			<div class="author-title small-cap">{{ author.title }}</div>
+			<div itemprop="name" class="author-name"><a  href="{{ author.url | prepend: site.baseurl }}" class="stand-alone-link">{{ author.name }}</a></div>
+			<div class="author-desc"><p class="smaller">{{ author.desc }}</p></div> 
+
+		</div>
+	</div>
+
+<div class="author-books">
+	<div class="book">
+		<a href="https://www.amazon.com/Made-Dad-Scott-Bedford/dp/0761171479"><img src="/images/scott-books/made-by-dad.jpg" width="100%" height="auto"></a>
+		<div><a href="https://www.amazon.com/Made-Dad-Scott-Bedford/dp/0761171479"><p class="smallest">Extraordinary, custom-designed projects for DIY parents everywhere</p></a></div>
+	</div>
+	<div class="book">
+		<a href="https://www.amazon.de/-/en/Scott-Bedford/dp/3772446132/ref=sr_1_1?crid=3JTBIBRFPT4LM&keywords=made+by+papa+outdoor&qid=1653163676&s=books&sprefix=%2Cstripbooks%2C120&sr=1-1"><img src="/images/scott-books/made-by-papa-outdoor.jpg" width="100%" height="auto"></a>
+		<div><a href="https://www.amazon.de/-/en/Scott-Bedford/dp/3772446132/ref=sr_1_1?crid=3JTBIBRFPT4LM&keywords=made+by+papa+outdoor&qid=1653163676&s=books&sprefix=%2Cstripbooks%2C120&sr=1-1"><p class="smallest">Follow-up to Made by Papa, the best selling German version of Made by Dad</p></a></div>
+	</div>
+	<div class="book">
+		<a href="https://www.amazon.com/Mega-Maze-Adventure-Journey-Through-Longest/dp/1523507446/ref=sr_1_1?crid=1SEOUVLUK6GV9&keywords=mega+maze+adventure&qid=1653163604&s=books&sprefix=mega+maze+adve%2Cstripbooks%2C173&sr=1-1"><img src="/images/scott-books/mega-maze.jpg" width="100%" height="auto"></a>
+		<div><a href="https://www.amazon.com/Mega-Maze-Adventure-Journey-Through-Longest/dp/1523507446/ref=sr_1_1?crid=1SEOUVLUK6GV9&keywords=mega+maze+adventure&qid=1653163604&s=books&sprefix=mega+maze+adve%2Cstripbooks%2C173&sr=1-1"><p class="smallest">Ingenious die-cut portals help make this the world's longest maze in a book</p></a></div>
+	</div>	
+
+</div>
+
+</div>
+
+

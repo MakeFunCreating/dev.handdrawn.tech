@@ -1,0 +1,267 @@
+
+
+{% if include.button-text and include.button-text != empty %}
+  {% assign link-text = include.button-text %}
+{% else %}
+  {% assign link-text = "Add to cart" %}
+{% endif %}
+
+{% assign desc-link = "Learn more" %}
+
+
+{% assign section-divider = null %}
+{% assign section-class = null %}
+
+{% if include.class contains "pink" or include.class contains "yellow" or include.class contains "grey" or include.class contains "black" or include.class contains "blue" or include.class contains "none" %}
+  {% assign section-class = include.class %}
+{% else%}
+  {% assign section-class = include.class | append: " none" %}
+{% endif %}
+
+{% if include.section-divider == "no-illo" %}
+    {% assign section-class = section-class | append: " " | append: "no-illo strip-top" %}
+    {% assign section-divider = "" %}
+{% elsif include.section-divider == "no-illo-butt" %}
+    {% assign section-class = section-class | append: " " | append: "no-illo-butt strip-top-butt"  %}
+    {% assign section-divider = "" %}
+{% elsif include.section-divider and include.section-divider != empty%}
+    {% assign section-divider = include.section-divider %}
+{% else %}
+    {% assign section-class = section-class | append: " " | append: "no-illo strip-top"  %}
+    {% assign section-divider = "" %}
+{% endif %} 
+
+{% if include.one-row == "true" %}
+  {% assign loop-limit = 3 %}
+  {% assign section-class = section-class | append: " " | append: "one-row" %}
+{% else %}
+  {% assign loop-limit = 1000 %}
+{% endif %}
+
+
+{% assign section-class = section-class | append: " " | append: include.ani-triggers | replace: "  ", " " %}
+
+{% assign collection-name = include.collection-name %}
+
+{% assign cardTitle = null %}
+{% assign cardUrl = null %}
+{% assign cardDownload = null %}
+{% assign imgDirArray = null %}
+{% assign featImgArray = null %}
+{% assign src = null %}
+{% assign file-format = null %}
+{% assign lastLoopNum = null %}
+
+{% assign counter-threes = 0 %}
+{% assign counter-twos = 0 %}
+
+
+{% for product in site[collection-name] limit:loop-limit %}
+
+  {% if forloop.first %}
+  <section {% if include.id and include.id != empty %}id="{{ include.id }}"{% endif %} class="section-collection-product strip-line {{ section-class }}">
+    
+    {% if include.section-divider and include.section-divider != empty %}
+      <div class="sect-illo-wrapper {{ section-divider }}"><div class="sect-illo"></div></div>
+    {% endif %}
+
+      <div class="content-wrapper item-total-{{ item-total }}">
+        {% if forloop.first %}
+          {% if include.sect-title and include.sect-title != empty %}
+            <div class="sect-title-wrapper">
+              <h2 class="sect-title">{{ include.sect-title }}</h2>
+              <div class="underline"></div>
+            </div>
+          {% endif %}
+        {% endif %}
+  {% endif %}
+
+      {% assign product-title = product.product-name %}
+      {% assign product-url = product.url %}
+      {% assign file-format = "jpg" %}
+      {% assign products-dir = "/images/content/collections/" %}
+      {% assign product-dir = product.product-dir %}
+      {% assign product-cover-dir = products-dir | append: product-dir | append: "/cover/" %}
+      
+      {% assign counter-threes = counter-threes | plus: 1 %}
+      {% assign counter-twos = counter-twos | plus: 1 %}
+
+       <div class="col-wrapper col-threes-{{ counter-threes }} col-twos-{{ counter-twos }}{% if forloop.index <= 3 %} first-row{% endif %}{% if forloop.last %} last{% endif %}">
+          <div class="frame-wrapper">
+            <a href="{{ site.baseurl }}{{ product-url }}" class="click-overlay"></a>
+            <div class="frame show">
+              <div class="top-frame"></div>
+              <div class="left-frame"></div>
+              <div class="right-frame middle"></div>
+              <div class="right-frame"></div>
+              <div class="pad-ratio"><div class="bottom-frame middle"></div></div>
+              <div class="bottom-frame"></div>
+            </div>
+
+            <div class="img-wrapper">
+              {% if forloop.first %}
+              <div class="img-top-illo-wrapper"><div class="img-top-illo"></div></div>
+              {% endif %}
+              <picture>
+                <source media="(min-width: 1150px)" srcset="{{ site.url }}{{ site.baseurl }}{{ product-cover-dir }}2000px.{{ file-format }}">
+                <source media="(min-width: 450px)" srcset="{{ site.url }}{{ site.baseurl }}{{ product-cover-dir }}1500px.{{ file-format }}">
+                <img src="{{ site.url }}{{ site.baseurl }}{{ product-cover-dir }}1000px.{{ file-format }}"
+                alt="{{ img-file-prepend }}" loading="lazy">
+              </picture>
+            </div>
+              
+          <div class="text-wrapper">
+            
+            {% if product.sub-cat and product.sub-cat != empty %}
+              <p class="category small-cap">{{ product.sub-cat }}</p>
+            {% else %}
+              <p class="category small-cap">{{ product.collection }}</p>
+            {% endif %}
+
+            <h5 class="title"><a href="{{ site.baseurl }}{{ product-url }}" class="">{{ product-title }}</a></h5>
+            <div class="desc-wrapper"><p class="smallest-skew">{{ product.product-desc }} <a href="{{ site.baseurl }}{{ product.permalink }}">{{ desc-link }}</a></p></div>
+            <div class="spacer"></div>
+            <div class="sales-wrapper"><p class="small-cap">{{ product-sales }}</p></div>
+
+            <div class="price-button-wrapper">
+                <div class="price-wrapper">
+                  {% assign price-split = product.product-price:[0]['value'] | round: 2 | split: "." %}
+                  {% assign integral = price-split[0] %}
+                  {% assign fractional = price-split[1] | append: "00" | truncate: 2, "" %}
+                  <p class="currency main bigger">{{ product.product-price:[0]['currency'] }}{{ integral }}.{{ fractional }}</p>
+                </div>
+                {% if product.store-mode[0]['external-link'] == true and product.external-store[0]['link-from-section-not-details-page'] == true %}
+                  {% for item in product.external-store %}
+                    <div class="button-wrapper"><a href="{{ item.link }}" class="link-button smaller" >{{ item.button-text }} ❯</a></div>
+                  {% endfor %}
+                {% elsif product.store-mode[1]['not-available'] == true %}
+                  <div class="button-wrapper disable"><a class="link-button smaller" >Not Available ❯</a></div> 
+                {% elsif product.store-mode[2]['add-to-cart'] == true %}
+                  {% if include.cart-or-details == "cart" %}
+                    <div class="button-wrapper"><a 
+                      class="snipcart-add-item link-button smaller"
+                      data-item-id="{{ product.product-ID }}"
+                      data-item-name="{{ product.product-name }}"
+                      data-item-price="{{ integral }}.{{ fractional }}"
+                      data-item-url="{{ site.url }}{{ site.baseurl }}{{ page.url }}"
+                      data-item-description="{{ product.product-desc }}"
+                      data-item-image="{{ site.url }}{{ site.baseurl }}{{ product-cover-dir }}/1500px.{{ file-format }}"
+                      data-item-custom1-name="{{ product.custom1-field-name }}"
+                      data-item-custom1-options="{{ product.custom1-field-options }}"
+                      >{{ link-text }} ❯</a></div>
+                  {% elsif include.cart-or-details == "details" %}
+                      <div class="button-wrapper"><a href="{{ site.baseurl }}{{ product-url }}" class="link-button smaller">{{ link-text }} <span class="right-arrow">›</span></a></div>
+                  {% endif %}
+                {% elsif include.cart-or-details == "details" %}
+                    <div class="button-wrapper"><a href="{{ site.baseurl }}{{ product-url }}" class="link-button smaller">{{ link-text }} <span class="right-arrow">›</span></a></div>
+                {% endif %}
+            </div>
+
+          </div>
+          {% assign product-sales = null %}
+          {% if product.product-sales and product.product-sales != empty %}
+            {% assign product-sales = product.product-sales | append: " Sales" %}
+            {% if product.product-type and product.product-type != empty%}
+              {% assign product-sales = product.product-sales | prepend: " | Sales " %}
+            {% endif %}
+          {% endif %}
+          {% if product.product-type and product.product-type != empty%}
+            {% assign product-sales = product-sales | prepend: " Product" | prepend: product.product-type %}
+          {% endif %}
+          {% assign cardTitleX = cardTitle | split:'' | reverse | join:'' | replace_first: ' ', ';psbn&'  | split:'' | reverse | join:'' %}
+
+          </div>
+      </div>
+
+
+  {% if forloop.last and include.one-row != "true" %}
+    {% if counter-threes == 3 %}{% assign counter-threes = 0 %}{% endif %}
+    {% if counter-twos == 2 %}{% assign counter-twos = 0 %}{% endif %}
+    {% assign counter-threes = counter-threes | plus: 1 %}
+    {% assign counter-twos = counter-twos | plus: 1 %}
+    <div class="col-wrapper filler col-threes-{{ counter-threes }} col-twos-{{ counter-twos }} {% if forloop.index < 3 %}first-row{% endif %}">
+      <div class="frame-wrapper">
+        <div class="frame show">
+          <div class="top-frame"></div>
+          <div class="left-frame"></div>
+          <div class="right-frame"></div>
+          <div class="bottom-frame"></div>
+        </div>
+        <div class="text-wrapper-quote small">
+          <div class="profile-photo woman"></div>
+          <div class="rating-wrapper">
+            {% assign star-rating = "5/5" %}
+            {% assign star-total = star-rating | split: "/" | last %}
+            {% assign star-rating = star-rating | split: "/" | first | plus: 0 %}
+            {% assign star-rating-round = star-rating | round %}
+            {% for i in (1..star-total) %}
+              {% if i <= star-rating %}
+                <div class="rating-star full"></div>
+              {% elsif i > star-rating and i == star-rating-round %}
+                <div class="rating-star half"></div>
+              {% elsif i > star-rating-round %}
+                <div class="rating-star blank"></div>
+              {% endif %}
+            {% endfor %}
+          </div>
+
+          <div class="quote-wrapper">
+            <div class="left-ditto"></div>
+              <p class="quote smaller">
+                And….drumroll please…. It’s amazing. There are so many ready to take and adjust options, I can edit EVERYTHING – It’s perfect.
+              </p>
+            <div class="right-ditto"></div>
+          </div>
+          
+          <p class="author smallest">Science Educator, Poland</p>
+        
+        </div>
+      </div>       
+    </div>
+  {% endif %}
+
+{% if counter-threes == 3 %}
+  {% assign counter-threes = 0 %}
+{% endif %}
+
+{% if counter-twos == 2 %}
+  {% assign counter-twos = 0 %}
+{% endif %}
+
+
+{% if forloop.last  %}
+      {% if include.h3-sub-title-bot and include.h3-sub-title-bot != empty or include.h4-sub-title-bot and include.h4-sub-title-bot != empty or include.text-bot and include.text-bot != empty %}
+        <div class="text-wrapper-bottom">
+          {% if include.h3-sub-title-bot and include.h3-sub-title-bot != empty %}
+            <div class="title"><h3>{{ include.h3-sub-title-bot }}</h3></div>
+          {% elsif include.h4-sub-title-bot and include.h4-sub-title-bot != empty %}
+            <div class="title"><h4>{{ include.h4-sub-title-bot }}</h4></div>
+          {% endif %}
+          {% if include.text-bot and include.text-bot != empty %}
+            <div class="text-bottom"><p>{{ include.text-bot }}</p></div>
+          {% endif %}
+          {% if include.link-text and include.link-text != empty %}
+            <div class="button-wrapper {% if include.link-url == "open-chat" %}open-chat disable{% endif %}"><a {% if include.link-url == "open-chat" %}onclick="tidioChatApi.open()"{% else %} href="{{ site.baseurl }}{{ include.link-url }}"{% endif %} class="link-button smaller" >{{ include.link-text }} <span class="right-arrow">›</span></a></div> 
+            {% if include.link-url == "open-chat" %}<div class="cookie-block-wrapper"><p class="cookie-block-text smallest">Please allow cookies to enable chat</p></div>{% endif %} 
+          {% endif %} 
+        </div>
+      {% endif %}
+
+      <div class="bg-texture-wrapper">
+        <div class="frame show"><div class="top-frame"></div><div class="bottom-frame"></div></div>
+        <div class="bg-texture"></div>
+      </div>
+    </div>
+  </section>
+{% endif %}
+
+
+{% endfor %}
+
+
+
+
+
+
+
+

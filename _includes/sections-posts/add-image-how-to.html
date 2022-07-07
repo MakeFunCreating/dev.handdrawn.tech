@@ -1,0 +1,96 @@
+
+
+
+{% assign imgDirArray = page.image-dir | split: "/" %}
+{% assign img-file-prepend = null %}
+{% assign src = null %}
+{% assign hypenYesNo = null %}
+{% assign noHash = null %}
+{% assign file-format = null %}
+
+{% if include.format and include.format != empty %}
+	{% assign file-format = include.format %}
+{% else %}
+	{% assign file-format = "jpg" %}
+{% endif %}
+
+
+{% assign srcArray = include.src | split: "/" %}
+
+
+{% if srcArray.size > 1 %}
+
+	{% if include.src contains "#" %}
+		{% assign file-format = srcArray | last | split: "#" | last %}
+		{% assign hashSplitArray = srcArray | last | split: "#" %}	
+		{% assign tempVar = hashSplitArray | first %}
+		{% if tempVar == empty %}
+			{% assign img-file-prepend = "" %}
+			{% assign whereIsHash = "ONLY-FILE-FORMAT" %}
+		{% else%}
+			{% assign img-file-prepend = srcArray | last | split: "#" | first | append: "-" %}
+			{% assign whereIsHash = "FILE-FORMAT-PREPEND" %}
+		{% endif %}
+	{% else %}
+		{% assign whereIsHash = "NO-HASH" %}
+		{% assign img-file-prepend = "" %}
+		{% assign file-format = "jpg" %}
+	{% endif %}
+
+    {% for item in srcArray %}
+    	{% if whereIsHash == "ONLY-FILE-FORMAT" %}
+			{% if forloop.first == true %}
+				{% assign src = src | append: item %}
+			{% else %}
+				{% if forloop.last != true %}
+					{% assign src = src | append: "/" |  append: item %}
+				{% endif %}
+			{% endif %}
+		{% elsif whereIsHash == "FILE-FORMAT-PREPEND" %}
+			{% if forloop.last != true %}
+				{% if forloop.first == true %}
+					{% assign src = src | append: item %}
+				{% elsif forloop.first != true %}
+					{% assign src = src  | append: "/"| append: item %}
+				{% endif %}
+			{% endif %}
+		{% elsif whereIsHash == "NO-HASH" %}
+				{% assign src = src | append: item %}
+				{% if forloop.last != true %}
+					{% assign src = src | append: "/" %}
+				{% endif %}
+		{% endif %}
+    {% endfor %}
+
+{% else %}
+	{% assign img-file-prepend = "" %}
+	{% assign src = include.src %}
+	{% assign whereIsHash = "NO-HASH" %}
+{% endif %}
+
+
+<figure class="how-to-box {{ include.class }}">
+
+	{% if include.caption and include.caption != empty %}
+		<figcaption class="how-to-caption bigger">{{ include.caption }}</figcaption>
+	{% endif %}
+
+	<div class="img-wrapper">
+
+	<picture>
+		<source media="(min-width: 1150px)" srcset="{{ site.url }}{{ site.baseurl }}/images/{{ page.image-dir }}/{{ src }}/{{ img-file-prepend }}2000px.{{ file-format }}">
+		<source media="(min-width: 450px)" srcset="{{ site.url }}{{ site.baseurl }}/images/{{ page.image-dir }}/{{ src }}/{{ img-file-prepend }}1500px.{{ file-format }}">
+		<img src="{{ site.url }}{{ site.baseurl }}/images/{{ page.image-dir }}/{{ src }}/{{ img-file-prepend }}1000px.{{ file-format }}"
+		alt="{% if include.alt %}{{ include.alt }}{% endif %}" loading="lazy">
+	</picture>
+
+	</div>
+	
+</figure>
+
+
+
+
+
+
+

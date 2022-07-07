@@ -1,0 +1,26 @@
+
+
+<div class="tips-box {{ include.class }}">
+	<div class="img-top-illo-wrapper"><div class="img-top-illo"></div></div>
+	<div class="long-line-black top"></div>
+
+	<div class="content-wrapper">
+
+		<div class="text-wrapper">
+			{% if include.title and include.title != empty %}<h4 class="tips-title">{{ include.title }}</h4>{% endif %}
+			{% if include.tip and include.tip != empty %}<p class="smaller">{{ include.tip }}</p>{% endif %}
+			
+			{% if include.link-text and include.link-text != empty %}
+				{% if include.link-url and include.link-url != empty %}
+					<p class="smallest"><a href="{{ include.link-url }}">{{ include.link-text }} ❯</a></p>
+				{% else %}
+					<p class="smallest">{{ include.link-text }}</p>
+				{% endif %}
+			{% endif %}
+		</div>
+    	
+	</div>
+
+	<div class="long-line-black bot"></div>
+
+</div>

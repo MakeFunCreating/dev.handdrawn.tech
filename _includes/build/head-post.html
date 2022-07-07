@@ -1,0 +1,150 @@
+
+
+{% if site.baseurl.size > 0 %}
+    <meta name="robots" content="noindex">
+{% elsif page.noindex == true %}
+    <meta name="robots" content="noindex">
+{% endif %}
+
+{% if page.product-title and page.product-title != empty %}
+  {% assign title = page.product-title %}
+{% else if page.title and page.title != empty %}
+  {% assign title = page.title %}
+{% endif %}
+
+<title>{{ title }}</title>
+
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<meta name="description" content="{%if page.meta-description %}{{ page.meta-description }}{% else %}{{ site.description }}{% endif %}"/>
+
+
+{% assign finalSrcString = null %}
+{% if page.featured-image == "header" %} 
+  {% assign img-file-prepend = page.image-dir | split: "/" | last | append: "-" %}
+  {% assign new-src = page.image-dir | append: "/header"  %}
+  {% assign file-format = "jpg" %}
+  {% assign finalSrcString = new-src | append: "/" | append: img-file-prepend  | append: "2200px." | append: file-format %}
+{% elsif page.featured-image != empty and page.featured-image != null %}
+  {% assign src = page.featured-image %}
+  {% assign srcArray = src | split: "/" %}
+  
+  {% assign new-src = null %}
+  {% assign img-file-prepend = null %}
+  {% assign hypenYesNo = null %}
+  {% assign noHash = null %}
+  {% assign file-format = "jpg" %}
+            
+  {% if src contains "#" %}
+    {% assign file-format = srcArray | last | split: "#" | last %} 
+    {% assign hashSplitArray = srcArray | last | split: "#" %}  
+    {% assign tempVar = hashSplitArray | first %} 
+    {% if tempVar == empty %}
+      {% assign img-file-prepend = "" %}
+      {% assign whereIsHash = "ONLY-FILE-FORMAT" %}
+    {% else%}
+      {% assign img-file-prepend = srcArray | last | split: "#" | first | append: "-" %}
+      {% assign whereIsHash = "FILE-FORMAT-PREPEND" %}
+    {% endif %}
+  {% else %}
+    {% assign whereIsHash = "NO-HASH" %}
+    {% assign img-file-prepend = imgDirArray | last | append: "" %}
+    {% assign file-format = "jpg" %}
+  {% endif %}
+            
+    {% for item in srcArray %}
+      {% if whereIsHash == "ONLY-FILE-FORMAT" %}
+        {% if forloop.first == true %}
+          {% assign new-src = new-src | append: item %}
+        {% else %}
+          {% if forloop.last != true %}
+            {% assign new-src = new-src | append: "/" |  append: item %}
+          {% endif %}
+        {% endif %}
+      {% elsif whereIsHash == "FILE-FORMAT-PREPEND" %}
+        {% if forloop.last != true %}
+          {% if forloop.first == true %}
+            {% assign new-src = new-src | append: item %}
+          {% elsif forloop.first != true %}
+            {% assign new-src = new-src  | append: "/"| append: item %}
+          {% endif %}
+        {% endif %}
+      {% elsif whereIsHash == "NO-HASH" %}
+          {% assign new-src = new-src | append: item %}
+          {% if forloop.last != true %}
+            {% assign new-src = new-src | append: "/" %}
+          {% endif %}
+      {% endif %}
+    {% endfor %}
+    {% assign finalSrcString = page.image-dir | append: "/" | append: new-src | append: "/" | append: img-file-prepend  | append: "2000px." | append: file-format %}
+{% endif %}
+
+
+<!-- Twittter/Open Graph Card-->
+<meta name="twitter:card" content="{% if page.featured-image %}summary_large_image{% else %}summary{% endif %}"/>
+<meta name="twitter:site" content="@HandDrawnTech"/>
+<meta name="twitter:creator" content="@HandDrawnTech" />
+
+<meta property="og:url" content="{{page.url | prepend: site.baseurl | prepend: site.url }}" />
+<meta property="og:title" content="{{page.title}}" />
+<meta property="og:site_name" content="{{site.title}}"/>
+<meta property="og:description" content="{{page.meta-description}}" />
+{% if finalSrcString != null %}
+    <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/images/{{ finalSrcString }}"/>
+{% endif %}
+<meta property="og:type" content="website" />
+<meta property="fb:app_id" content="1408548566330012" />
+<meta property="article:publisher" content="https://www.facebook.com/handdrawntech">
+
+
+<!-- Fav Icon -->
+<link rel="apple-touch-icon" sizes="180x180" href="/images/fav-icon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/fav-icon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/fav-icon/favicon-16x16.png">
+
+<!-- No localhost cache -->
+{% if site.url == "http://localhost:4000" %}
+    <meta http-equiv="CACHE-CONTROL" content="NO-CACHE">
+{% endif %}
+
+<!-- Stylesheet -->
+<link rel="stylesheet" href="{{site.baseurl}}/css/{% if site.global-theme-override %}{{ site.global-theme-override }}{% else %}{{ page.theme }}{% endif %}-theme-post.css"/>
+<!--
+<link rel="preconnect" href="https://app.snipcart.com">
+<link rel="preconnect" href="https://cdn.snipcart.com">
+<link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.30/default/snipcart.css" />
+-->
+
+<!-- Scripts -->
+<script>
+    // Picture element HTML5 shiv
+    document.createElement( "picture" );
+</script>
+
+
+{% if jekyll.environment == "production" %}
+  <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KPB7V5FCP2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-KPB7V5FCP2');
+  </script>
+{% else %}
+  <!-- JQuery -->
+  <script src="/js/jQueryv3.4.1.min.js"></script>
+{% endif %}
+
+<script src="{{site.baseurl}}/js/bundle.js"></script>
+
+
+
+
+

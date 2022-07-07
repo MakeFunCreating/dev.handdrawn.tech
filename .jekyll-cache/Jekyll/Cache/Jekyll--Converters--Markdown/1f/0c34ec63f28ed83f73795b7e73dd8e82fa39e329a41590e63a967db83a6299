@@ -1,0 +1,373 @@
+I"m#<!-- SECTION TEXT & IMAGE -->
+
+<section class="section-text-image strip-line full-image join large-image squeeze no-frame right none no-illo strip-top no-sect-title">
+
+    
+
+    <div class="content-wrapper ">
+
+      
+
+        <div class="col-wrapper col-1">
+        
+        
+        </div>
+
+
+        <div class="col-wrapper col-2">
+
+          
+            <div class="video-wrapper-constrain max-height">
+
+              
+
+                  
+                  
+                  
+                  
+    
+                  
+    
+    
+                  
+                  
+                  
+                  
+
+                <div class="video-box vimeo max-height">
+                    <div class="img-top-illo-wrapper"><div class="img-top-illo"></div></div>
+                    <div class="frame-wrapper">
+                      <div class="frame">
+                        <div class="top-frame"></div>
+                        <div class="left-frame"></div>
+                        <div class="right-frame"></div>
+                        <div class="bottom-frame"></div>
+                        <div class="video-wrapper local">
+                          <div class="aspect-ratio sixteen-nine">
+                            <video class="video-local" playsinline="" autoplay="" loop="" muted=""><source src="/videos/mfc-sq-col-720p.mp4" type="video/mp4" />
+                                Your browser does not support the video tag.
+                            </video>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+              
+
+
+            </div>
+          
+
+        </div>
+
+      
+      <div class="bg-texture-wrapper">
+        <div class="frame show"><div class="top-frame"></div><div class="bottom-frame"></div></div>
+          
+          
+            
+              <div class="bg-texture"></div>
+            
+      </div>
+      
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+<!-- SECTION TEXT -->
+
+<section class="section-text strip-line no-top-gap none no-illo strip-top">
+
+    
+
+    <div class="content-wrapper">
+
+      
+
+        <div class="sect-title-wrapper">
+          <h2 class="sect-title">Send a Message</h2>
+          <div class="underline"></div>
+        </div>
+
+      
+  
+      <div class="text-wrapper">    
+        
+        
+          <p>Use the chat function to leave a message, if I am not available you'll be asked to leave an email address. Normally, I reply within 12 hours, often much sooner.</p>
+        
+
+        
+        
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+
+
+         
+
+        
+          <div class="button-wrapper open-chat disable"><a onclick="tidioChatApi.open()" class="link-button smaller">Start chat <span class="right-arrow">›</span></a></div> 
+          <div class="cookie-block-wrapper"><p class="cookie-block-text smallest">Please allow cookies to enable chat</p></div> 
+         
+
+      </div>
+
+      <div class="bg-texture-wrapper">
+        <div class="frame show"><div class="top-frame"></div><div class="bottom-frame"></div></div>
+        <div class="bg-texture"></div>
+      </div>
+
+    </div>
+    
+</section>
+
+<!-- SECTION CALENDAR -->
+
+<section class="section-calendar strip-line black no-illo strip-top">
+
+    
+
+    <div class="content-wrapper ">
+
+      
+        <div class="sect-title-wrapper">
+          <h2 class="sect-title">Book a Free Consultation</h2>
+          <div class="underline"></div>
+        </div>
+      
+
+        <div class="col-wrapper col-1">
+        
+        
+          <div class="text-wrapper">
+            
+            
+            
+              <p class="text uniq-ID-ABC">For impartial advice on how to maximise your brand, marketing or content using my illustrations book a meeting. I'd love to help, and no, you won't be wasting my time.</p>
+            
+            
+
+          </div>
+        
+        </div>
+
+
+        <div class="col-wrapper col-2">
+          <!-- Calendly inline widget begin -->
+          <div class="calendly-inline-widget" data-url="https://calendly.com/handdrawntech/30min?hide_gdpr_banner=1&amp;background_color=f5f6f5&amp;text_color=373737&amp;primary_color=eb2a85" style="width:100%;min-width:320px;height:100%;"></div>
+          <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async=""></script>
+          <!-- Calendly inline widget end -->
+        </div>
+
+      
+      <div class="bg-texture-wrapper">
+        <div class="frame show"><div class="top-frame"></div><div class="bottom-frame"></div></div>
+          
+          
+            
+              <div class="bg-texture"></div>
+            
+      </div>
+      
+
+    </div>
+
+
+
+
+
+
+
+
+</section>
+
+<!-- SECTION TEXT -->
+
+<section class="section-text strip-line announcement join black no-illo strip-top">
+
+    
+
+    <div class="content-wrapper">
+
+      
+  
+      <div class="text-wrapper">    
+        
+        
+          <p class="smaller">You'll also find me at the following places.</p>
+        
+
+        
+        
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+
+
+         
+
+         
+
+      </div>
+
+      <div class="bg-texture-wrapper">
+        <div class="frame show"><div class="top-frame"></div><div class="bottom-frame"></div></div>
+        <div class="bg-texture"></div>
+      </div>
+
+    </div>
+    
+</section>
+
+<!-- SECTION NAV BLOCKS -->
+
+<section class="section-nav-block strip-line plain-button black no-illo strip-top ">
+    
+    
+
+      <div class="content-wrapper item-total-">
+            
+
+
+
+        <div class="col-wrapper col-1">
+            <div class="frame-wrapper">
+
+              <div class="frame show">
+                <div class="top-frame"></div>
+                <div class="left-frame"></div>
+                <div class="right-frame"></div>
+                <div class="bottom-frame"></div>
+              </div>
+
+              <div class="text-wrapper ">
+                <h5 class="title "><a href="https://makefuncreating.com" class="">Make Fun Creating</a></h5>
+                
+                
+                  <div class="desc-wrapper"><p class="smallest">Webby Award Winning craft blog</p></div>
+                
+
+                
+                  <div class="button-wrapper"><a href="https://makefuncreating.com" class="link-button smaller">Visit blog <span class="right-arrow">›</span></a></div> 
+                 
+              </div>
+
+            </div>
+            <div class="bg-texture-wrapper "><div class="bg-texture"></div><div class="highlight-bar hide"></div></div>
+        </div>
+
+
+        <div class="col-wrapper col-2">
+            <div class="frame-wrapper">
+
+              <div class="frame show">
+                <div class="top-frame"></div>
+                <div class="left-frame"></div>
+                <div class="right-frame"></div>
+                <div class="bottom-frame"></div>
+              </div>
+
+              <div class="text-wrapper ">
+                <h5 class="title "><a href="https://creativemarket.com/HandDrawnTech" class="">Creative Market</a></h5>
+                
+                
+                  <div class="desc-wrapper"><p class="smallest">Awesome templates and fonts</p></div>
+                
+
+                
+                  <div class="button-wrapper"><a href="https://creativemarket.com/HandDrawnTech" class="link-button smaller">Visit store <span class="right-arrow">›</span></a></div> 
+                 
+              </div>
+
+            </div>
+            <div class="bg-texture-wrapper "><div class="bg-texture"></div><div class="highlight-bar hide"></div></div>
+        </div>
+
+
+        <div class="col-wrapper col-3">
+            <div class="frame-wrapper">
+
+              <div class="frame show">
+                <div class="top-frame"></div>
+                <div class="left-frame"></div>
+                <div class="right-frame"></div>
+                <div class="bottom-frame"></div>
+              </div>
+
+              <div class="text-wrapper ">
+                <h5 class="title "><a href="https://dribbble.com/HandDrawnTech" class="">Dribble</a></h5>
+                
+                
+                  <div class="desc-wrapper"><p class="smallest">Snapshots of latest illustrations</p></div>
+                            
+
+                
+                  <div class="button-wrapper"><a href="https://dribbble.com/HandDrawnTech" class="link-button smaller">Visit playbook <span class="right-arrow">›</span></a></div> 
+                              
+              </div>
+
+            </div>
+            <div class="bg-texture-wrapper "><div class="bg-texture"></div><div class="highlight-bar hide"></div></div>
+        </div>
+  
+  
+        <div class="bg-texture-wrapper">
+          <div class="frame show"><div class="top-frame"></div><div class="bottom-frame"></div></div>
+          <div class="bg-texture"></div>
+        </div>
+  
+      </div>
+
+  </section>
+
+:ET

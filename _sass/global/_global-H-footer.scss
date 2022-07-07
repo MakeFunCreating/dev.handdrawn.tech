@@ -1,0 +1,179 @@
+
+
+/////////////////////////////////////////////////////
+/////////////////////////////////////////////////////
+////////////////// GLOBAL FOOTER ////////////////////
+/////////////////////////////////////////////////////
+/////////////////////////////////////////////////////
+
+// Default spacing above footer, beneath content
+
+.footer-wrapper {
+	width: 100%;
+	margin-top: 9rem;
+	@include breakpoint(TP) {
+		margin-top: 12rem;
+	}
+	@include breakpoint(D) {
+		margin-top: 20rem;
+	}
+}
+
+// Remove space at bottom when a section before
+
+section + div.footer-wrapper {
+	margin-top: 0;
+}
+
+.global-footer {
+	position: relative;
+    z-index: 103;
+    margin-top: 0px;
+    margin-bottom: 0px;
+	@include breakpoint(TP) {
+	}
+	@include breakpoint(D) {	
+   	}
+}
+
+.global-footer:first-child {
+    margin-top: 0rem;
+}
+
+
+///////////////// CONTENT WRAPPER ///////////////////
+
+.global-footer .content-wrapper {
+	position: relative;
+	display: flex;
+  	flex-wrap: wrap;
+ 	justify-content: space-between;
+  	flex-direction: row;
+  	align-items: flex-start;
+  	left: 0;
+  	width: 100%;
+    padding: 65px 2% 5.5rem 2%;
+    box-sizing: border-box;
+ 	@include breakpoint(ML) {
+ 	}
+ 	@include breakpoint(TP) {
+ 		padding: 75px 0 6rem 0;
+ 	}
+	@include breakpoint(D) {
+   		padding: 90px 0 7rem 0;
+   	}
+}
+
+.global-footer .col-wrapper {
+	position: relative;
+	z-index: 10;
+	@include breakpoint(D) {
+		margin-top: 0px;
+	}
+}
+
+.global-footer .col-wrapper p {
+	color: white;
+	white-space: nowrap;
+	//display: none;
+	@include breakpoint(ML) {
+		margin-bottom: 2rem;
+		//display: inherit;
+	}
+	@include breakpoint(TP) {
+		margin-bottom: 2.5rem;
+	}
+	@include breakpoint(D) {
+	    margin-bottom: 3rem;
+	}
+}
+
+
+/////////////////////// LIST ////////////////////////
+
+.global-footer ul {
+	list-style-type: none;
+}
+
+.global-footer ul li {
+	white-space: nowrap;
+	margin-top: 0;
+	margin-bottom: 1rem;
+    font-size: 1.3rem; // Based on .smaller class size (1.3rem)
+	@include breakpoint(TP) {
+		font-size: 1.7rem; // Based on .smaller class size (1.7rem)
+		margin-bottom: 1.5rem;
+	}
+	@include breakpoint(D) {
+		font-size: 1.9rem; // Based on .smaller class size (1.9rem)
+		margin-bottom: 2rem;
+	}
+}
+
+.global-footer .content-wrapper p {
+	//color: $black;
+}
+
+.global-footer .content-wrapper a {
+	//color: $blue;
+	&:hover {
+		//color: $pink;
+	}
+}
+
+// Overides for different color bgs
+
+.global-footer.pink .long-line,
+.global-footer.blue .long-line,
+.global-footer.black .long-line,
+.global-footer.black-dark .long-line {
+    background-image: url(../images/lines/rules/long/white/long-line.png);
+}
+
+
+////////////////// PRIVACY/TERMS ////////////////////
+
+.global-footer .privacy .long-line {
+	margin: 0;
+	padding: 0;
+}
+
+.global-footer .privacy {
+	position: relative;
+	z-index: 11;
+	width: 100%;
+	margin-top: 3rem;
+	margin-bottom: 0;
+	@include breakpoint(TP) {
+		margin-top: 2rem;
+    }
+	@include breakpoint(D) {
+		margin-top: 4rem;
+    }
+}
+
+.global-footer .privacy p {
+	margin: 0;
+	width: 100%;
+	@include breakpoint(ML) {
+		width: 100%;
+	}
+}
+
+.global-footer .privacy p,
+.global-footer .privacy p a {
+	padding-top: 25px;
+	font-size: 1rem;
+	padding-left: 0;
+	@include breakpoint(ML) {
+		font-size: 1.2rem;
+	}
+}
+
+
+
+
+
+
+
+

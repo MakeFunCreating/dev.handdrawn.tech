@@ -1,0 +1,423 @@
+
+
+
+
+
+.del{
+
+
+/////////////////////////////////////////////////////
+/////////////////////////////////////////////////////
+/////////////////////////////////////////////////////
+/////////// COLLECTION [3 COLS + FILLERS] ///////////
+/////////////////////////////////////////////////////
+/////////////////////////////////////////////////////
+/////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////
+////////////////// THREE ITEMS & ////////////////////
+//////////////////// NO FILLERS /////////////////////
+/////////////////////////////////////////////////////
+
+// Default is 3 products, 1 & 2 products overidded below
+
+.section-collection.three-cols .col-wrapper {
+  text-align: left;
+  position: relative;
+  width: 93%; // 1 col
+  @include breakpoint(TP) {
+    width: 46.5%; // 2 cols
+  }
+  @include breakpoint(TL) {
+    width: 31.5%; // 3 cols
+  }
+  @include breakpoint(D) {
+    width: 30.5%;
+  }
+}
+
+// Col-3: stretched across 2 cols on (TP)
+// and then back to 1 col on (TL) and above
+.section-collection.three-cols .col-wrapper.col-3 {
+  width: 93%;
+  @include breakpoint(TP) {
+    flex-direction: row; ////
+    justify-content: space-between; ////
+    width: 100%;
+    height: auto;
+    margin-top: 95px;
+  }
+  @include breakpoint(TL) {
+    width: 30.5%;
+    display: flex; ////
+    flex-direction: column;
+    align-self: stretch; ////
+    margin-top: 0px;
+  }
+}
+
+
+/////////////// FRAME WRAPPER (IMG) /////////////////
+
+.section-collection.three-cols .col-wrapper .frame-wrapper {
+    width: 100%;
+    margin-bottom: 2rem;
+    @include breakpoint(TP) {
+      margin-bottom: 1.5rem;
+    }
+    @include breakpoint(D) {
+      margin-bottom: 2rem;
+    }
+}
+
+// Col-3: stretched across 2 cols on (TP)
+// and then back to 1 col on (TL) and above
+.section-collection.three-cols .col-wrapper.col-3 .frame-wrapper {
+  @include breakpoint(TP) {
+    margin: 0;
+    width: 47%;
+  }
+  @include breakpoint(TL) {
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+}
+
+////////////////// TEXT WRAPPER /////////////////////
+
+.section-collection.three-cols .text-wrapper {
+  flex-grow: 1;
+}
+
+// Col-3: stretched across 2 cols on (TP)
+// and then back to 1 col on (TL) and above
+.section-collection.three-cols .col-wrapper.col-3 .text-wrapper {
+  @include breakpoint(TP) {
+    width: 49%;
+    flex-grow: 0;
+    align-items: flex-start;
+    text-align: left;
+  } 
+  @include breakpoint(TL) {
+    width: 100%;
+    flex-grow: 1;
+    align-items: center;
+    text-align: center;
+  } 
+}
+
+
+
+// Items-products overide
+// - moves all the text and buttons to the left and removes category
+
+.section-collection.three-cols.items-products .text-wrapper {
+  align-items: flex-start;  
+}
+
+.section-collection.three-cols.items-products .category {
+  display: none;
+}
+
+.section-collection.three-cols.items-products .title {
+  margin: 0 0 10px 0;
+  min-height: 0;
+  line-height: 1.3;
+  @include breakpoint(D) {
+    margin: 0 0 15px 0;
+  }
+}
+
+.section-collection.three-cols.items-products .title a {
+  line-height: inherit;
+}
+
+.section-collection.three-cols.items-products p {
+  margin: 0;
+  line-height: 1.3;
+}
+
+
+
+
+
+
+
+
+
+.section-collection.three-cols .desc-wrapper {
+  margin: 0 0 10px 0;
+  display: initial;
+}
+
+.section-collection.three-cols .desc-wrapper p {
+  font-size: 1.2rem; // 1.2 - default smallest size
+  @include breakpoint(TP) {
+    font-size: 1.35rem; // 1.36 - default smallest size
+  }
+  @include breakpoint(D) {
+    font-size: 1.5rem; // 1.52 - default smallest size
+  }
+}
+
+.section-collection.three-cols .sales-wrapper {
+  display: none;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+////////////////// PRICE WRAPPER ////////////////////
+
+.section-collection.three-cols .price-wrapper {
+    margin: 0 0 5px 0;
+    position: absolute;
+    display: flex; ////
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-direction: column-reverse; ////
+    right: 0px;
+    bottom: 0px;
+    width: 20%;
+    text-align: right;
+    @include breakpoint(TP) {
+        margin: 0 0 4px 0;
+    }
+    @include breakpoint(TL) {
+    }
+    @include breakpoint(D) {
+        margin: 0 0 5px 0;
+    }
+}
+
+.section-collection.three-cols.price-wrapper .currency.main {
+    margin: 0;
+    font-size: 1.9rem; // default H4 size
+    @include breakpoint(TP) {
+        font-size: 2.4rem; // default H4 size
+    }
+    @include breakpoint(D) {
+        font-size: 2.9rem; // default H4 size
+    }
+}
+
+.section-collection.three-cols .price-wrapper .currency.alt {
+    display: none;
+    margin: 0;
+    margin-bottom: 2px;
+    font-size: 1.2rem; // 1.2 - smallest, sizes
+    @include breakpoint(TP) {
+        font-size: 1.25rem; // .36 - smallest, sizes
+        margin-bottom: 2px;
+    }
+    @include breakpoint(TL) {
+        margin-bottom: 4px;
+        font-size: 1.35rem; // 1.52 - smallest, sizes
+    }
+    @include breakpoint(D) {
+      
+    }
+}
+
+.section-collection.three-cols .button-wrapper .link-button {
+    @include breakpoint(TP) {
+      font-size: 1.35rem;
+      padding: 8px 13px;
+    }
+    @include breakpoint(D) {
+      font-size: 1.7rem;
+      padding: 9px 17px;
+    }
+}
+
+/////////////////////////////////////////////////////
+///////////////////// ONE ITEM //////////////////////
+//////////////// STRETCHES TWO COLS /////////////////
+//////////////// + ONE FILLER SPACE /////////////////
+/////////////////////////////////////////////////////
+
+// Stretch col-wrapper across two columns
+
+.section-collection.three-cols .content-wrapper.item-total-1 .col-1 {
+  width: 93%;
+  @include breakpoint(TP) {
+    flex-direction: row; ////
+    justify-content: space-between; ////
+    width: 100%;
+    height: auto;
+  }
+  @include breakpoint(TL) {
+    width: 65.25%;
+  }
+}
+
+.section-collection.three-cols .content-wrapper.item-total-1 .col-1 .frame-wrapper {
+  width: 100%;
+  @include breakpoint(TP) {
+    margin: 0;
+    width: 47%;
+  }
+}
+
+.section-collection.three-cols .content-wrapper.item-total-1 .col-1 .text-wrapper {
+  flex-grow: 0;
+  width: 100%;
+  height: auto;
+  @include breakpoint(TP) {
+    width: 49%;
+  } 
+}
+
+.section-collection.three-cols .content-wrapper.item-total-1 .col-1 .spacer{
+  min-height: 0px;
+}
+
+.section-collection.three-cols .content-wrapper.item-total-1 .col-1 .desc-wrapper {
+}
+
+
+//////////////////// COL FILLER /////////////////////
+
+// Text across all col fillers (one and two products)
+// Default: white text
+.section-collection.three-cols .content-wrapper .col-filler h5,
+.section-collection.three-cols .content-wrapper .col-filler p {
+  color: white;
+}
+
+// Overide: black text on none bg
+.section-collection.three-cols .content-wrapper .col-filler.none h5,
+.section-collection.three-cols .content-wrapper .col-filler.none p {
+  color: $black;
+}
+
+
+/////////////////////////////////////////////////////
+/////////////////// TWO ITEMS - /////////////////////
+//////////// PRODUCT STRETCHES TWO COLS /////////////
+//////////////// + ONE FILLER SPACE /////////////////
+/////////////////////////////////////////////////////
+
+//////////////////// COL FILLER /////////////////////
+
+.section-collection.three-cols .content-wrapper.item-total-2 .col-filler .message-wrapper h5 {
+  height: 130px;
+  @include breakpoint(TP) {
+    height: 90px;
+     margin-bottom: 1.5rem;
+  }
+  @include breakpoint(D) {
+    height: 136px;
+    margin-bottom: 2.5rem;
+  }
+}
+
+// Default [returns]
+.section-collection.three-cols .content-wrapper.item-total-2 .col-filler .message-wrapper h5 {
+  background: url(../images/icon-set/returns/black/300px.png) center bottom / 52% auto no-repeat;
+  @include breakpoint(TP) {
+    background-size: 52% auto;
+  }
+  @include breakpoint(D) {
+    background-size: 52% auto;
+  }
+}
+
+// [returns] on colour bg
+.section-collection.three-cols .content-wrapper.item-total-2 .col-filler:not(.none) .message-wrapper.returns h5 {
+  background-image: url(../images/icon-set/returns/white/300px.png);
+}
+
+// [quality] on none bg
+.section-collection.three-cols .content-wrapper.item-total-2 .col-filler.none .message-wrapper.quality h5 {
+  background-image: url(../images/icon-set/quality/black/300px.png);
+}
+
+// [quality] on colour bg
+.section-collection.three-cols .content-wrapper.item-total-2 .col-filler:not(.none) .message-wrapper.quality h5 {
+  background-image: url(../images/icon-set/quality/white/300px.png);
+}
+
+// [requests] on none bg
+.section-collection.three-cols .content-wrapper.item-total-2 .col-filler.none .message-wrapper.requests h5 {
+  background-image: url(../images/icon-set/requests/black/300px.png);
+}
+
+// [requests] on colour bg
+.section-collection.three-cols .content-wrapper.item-total-2 .col-filler:not(.none) .message-wrapper.requests h5 {
+  background-image: url(../images/icon-set/requests/white/300px.png);
+}
+
+
+///////////////////// ONE ITEM /////////////////////
+
+.section-collection.three-cols .content-wrapper .col-filler {
+  background-image: none;
+  height: 200px;
+  margin-top: 5rem;
+  display: none;
+  @include breakpoint(TP) {
+    margin-top: 0rem;
+    height: auto;
+  }
+  @include breakpoint(TL) {
+    display: initial;
+  }
+}
+
+.section-collection.three-cols .content-wrapper .col-filler .frame-wrapper {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0;
+  display: flex; ////
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around; ////
+}
+
+
+////////////////// MESSAGE WRAPPER //////////////////
+
+.section-collection.three-cols .content-wrapper .col-filler .message-wrapper {
+  position: relative;
+  color: white;
+  text-align: center;
+  z-index: 200;
+  width: 80%;
+}
+
+.section-collection.three-cols .content-wrapper .col-filler .message-wrapper h5 {
+    margin-top: -6%;
+    @include breakpoint(TP) {
+      margin-bottom: 1rem;
+    }
+    @include breakpoint(D) {
+      margin-bottom: 2rem;
+    }
+}
+
+.section-collection.three-cols .content-wrapper .col-filler .message-wrapper p {
+    line-height: inherit;
+    @include breakpoint(TP) {
+      line-height: 1.3;
+    }
+    @include breakpoint(D) {
+      line-height: 1.4;
+    }
+}
+
+
+////////////////// TEXTURE FILLER ///////////////////
+
+.section-collection.three-cols .content-wrapper .col-filler .bg-texture-wrapper {
+  position: absolute;
+  z-index: 1;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  padding: 1px;
+}
+
+}
+
+

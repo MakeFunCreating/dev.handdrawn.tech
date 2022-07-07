@@ -1,0 +1,46 @@
+
+
+main-nav:
+- title: Home ›
+  url: /
+  mega-menu:
+- title: About ›
+  url: /about
+  mega-menu: #"build/mega-menu-crafts.html"
+- title: Illustration Gallery ›
+  url: /illustrations
+  mega-menu: #"build/mega-menu-pro-draw.html"
+- title: Contact ›
+  url: /contact
+  mega-menu:
+
+
+footer-nav:
+- heading: General Info
+  subfolderitems:
+    - title: Home
+      url: /
+    - title: About
+      url: /about
+    - title: Contact
+      url: /contact
+- heading: Find Illustrations
+  subfolderitems:
+    - title: Illustration Gallery
+      url: /illustrations
+    - title: Tag Cloud
+      url: /illustrations/tags
+    - title:
+      url:
+- heading: Get Illustrations
+  subfolderitems:
+    - title: Licensing
+      url: /how-to-licence-illustrations
+    - title: Commissioning
+      url: /how-to-commission-new-illustrations
+    - title: Book Consultation
+      url: /contact
+
+
+
+

@@ -1,0 +1,183 @@
+
+
+{% assign link-text = "Show me more" %}
+{% assign section-divider = null %}
+{% assign section-class = null %}
+
+{% if include.class contains "pink" or include.class contains "black" or include.class contains "blue" or include.class contains "none" %}
+  {% assign section-class = include.class %}
+{% else%}
+  {% assign section-class = include.class | append: " none" %}
+{% endif %}
+
+{% assign section-class = section-class | append: " no-illo strip-top strip-line" %}
+{% assign sect-title = null %}
+
+
+{% assign illoTitle = null %}
+{% assign illoUrl = null %}
+{% assign illoCat = null %}
+{% assign imgDirArray = null %}
+{% assign featImgArray = null %}
+{% assign src = null %}
+{% assign file-format = null %}
+{% assign lastLoopNum = null %}
+
+{% assign count-2 = 0 %}
+{% assign count-3 = 0 %}
+
+{% if include.tag-name and include.tag-name != empty %}
+  {% assign tag-name = include.tag-name %}
+{% else %}
+  {% assign tag-name = page.tag %}
+{% endif %}
+
+
+{% for post in site.tags[tag-name] %}
+  {% assign counter = counter | plus: 1 %} 
+
+  {% assign count-2 = count-2 | plus: 1 %} 
+  {% assign count-3 = count-3 | plus: 1 %} 
+
+  {% if forloop.first %}
+  <section class="section-collection-cat-tag {{ section-class }}">
+      <div class="content-wrapper item-total-{{ item-total }}">
+        {% if forloop.first %}{% if include.sect-title %}<div class="sect-title-wrapper">
+              <h2 class="sect-title">{{ include.sect-title }}</h2>
+              <div class="underline"></div>
+          </div>
+          {% endif %}
+        {% endif %}
+  {% endif %}
+
+      {% assign illoTitle = post.title %}
+      {% assign illoUrl = post.url %}
+      {% assign illoCat = post.categories %}
+
+      {% assign image-base-url = site.url | append: site.baseurl | append: "/images/illustrations/" %}
+      {% if post.img-name contains "slug" %}
+        {% assign image-name = "/" | append: post.slug %}
+      {% else %}
+        {% assign image-name = "/" | append: post.img-name %}
+      {% endif %}
+      {% assign image-format = "." | append: post.img-format %}
+      {% assign variationsArray = null %}
+      {% assign variationsArray = post.colour-variations[0]['dropdown-options'] | split: "|" %}
+
+      {% for item in variationsArray %}
+        {% if item contains "[selected]" %}
+          {% assign image-colour = item | remove: "[selected]" | slugify  %}
+        {% endif %}
+      {% endfor %}
+      
+       <div class="col-wrapper three-col-{{ count-3 }} two-col-{{ count-2 }}">
+
+          <div class="frame-wrapper">
+            <a href="{{ site.baseurl }}{{ illoUrl }}">
+            <div class="frame show">
+              <div class="top-frame"></div>
+              <div class="left-frame"></div>
+              <div class="right-frame"></div>
+              <div class="bottom-frame"></div>
+            </div>
+
+            <div class="img-wrapper">
+              {% if forloop.first %}
+              <div class="img-top-illo-wrapper"><div class="img-top-illo"></div></div>
+              {% endif %}
+                <picture class="{{image-colour}}">
+                  <source media="(min-width: 1150px)" srcset="{{ image-base-url }}{{ image-colour }}{{ image-name }}-1000px{{ image-format }}">
+                  <source media="(min-width: 450px)" srcset="{{ image-base-url }}{{ image-colour }}{{ image-name }}-1000px{{ image-format }}">
+                  <img src="{{ image-base-url }}{{ image-colour }}{{ image-name }}-1000px{{ image-format }}"
+                  width="100%" height="auto" alt="{% if page.img-alt %}{{ page.img-alt }}{% endif %}" loading="lazy">
+                </picture>
+            </div>
+            </a>
+          </div>
+
+          <div class="text-wrapper">
+            <p class="category small-cap">{{ variationsArray.size }} Colour Options</p>
+            {% assign illoTitle = illoTitle | split:'' | reverse | join:'' | replace_first: ' ', ';psbn&'  | split:'' | reverse | join:'' %}
+            <h5 class="title"><a href="{{ site.baseurl }}{{ illoUrl }}" class="">{{ illoTitle }}</a></h5>
+            <div class="desc-wrapper"><p>{{ include.desc-1 }}</p></div>
+            <div class="spacer"></div>
+            <div class="button-wrapper"><a href="{{ site.baseurl }}{{ illoUrl }}" class="link-button smaller" >{{ link-text }} ❯</a></div> 
+          </div>
+      </div>
+
+
+
+      {% if forloop.last == true %}
+        {% for i in (1..2) %}
+            {% if count-3 == 3 %}
+              {% assign count-3 = 0 %}
+            {% endif %}
+            {% assign count-3 = count-3 | plus: 1 %}
+
+            {% if count-2 == 2 %}
+              {% assign count-2 = 0 %}
+            {% endif %}
+            {% assign count-2 = count-2 | plus: 1 %}
+
+             <div class="col-wrapper three-col-{{ count-3 }} two-col-{{ count-2 }} filler-{{ i }}">
+
+                <div class="frame-wrapper">
+                  <div class="frame show">
+                    <div class="top-frame"></div>
+                    <div class="left-frame"></div>
+                    <div class="right-frame"></div>
+                    <div class="bottom-frame"></div>
+                  </div>
+
+                  <div class="img-wrapper">
+                    <picture>
+                      <source media="(min-width: 1150px)" srcset="{{ site.url }}{{ site.baseurl }}/images/gallery/coming-soon-{{ i }}/2000px.jpg">
+                      <source media="(min-width: 450px)" srcset="{{ site.url }}{{ site.baseurl }}/images/gallery/coming-soon-{{ i }}/1500px.jpg">
+                      <img src="{{ site.url }}{{ site.baseurl }}/images/gallery/coming-soon-{{ i }}/1000px.jpg"
+                      width="100%" height="auto" alt="{{ img-file-prepend }}" loading="lazy">
+                    </picture>
+                  </div>
+                </div>
+
+                <div class="text-wrapper">
+                  <p class="category small-cap"></p>
+                  <h5 class="title"></h5>
+                  <div class="spacer"></div>
+                  <div class="button-wrapper"><a class="link-button smaller" >{{ link-text }} ❯</a></div> 
+                </div>
+            </div>
+        {% endfor %}
+      {% endif %}
+
+
+{% if count-2 == 2 %}
+  {% assign count-2 = 0 %}
+{% endif %}
+
+{% if count-3 == 3 %}
+  {% assign count-3 = 0 %}
+{% endif %}
+
+{% if forloop.last  %}
+      <div class="bg-texture-wrapper">
+        <div class="frame show"><div class="top-frame"></div><div class="bottom-frame"></div></div>
+        <div class="bg-texture"></div>
+      </div>
+    </div>
+  </section>
+{% endif %}
+
+
+{% endfor %}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,210 @@
+
+
+
+{% if include.type == "youtube" %}
+<div class="video-box youtube {{ include.class }}">
+
+		<div class="img-top-illo-wrapper"><div class="img-top-illo"></div></div>
+
+		<div class="frame-wrapper">
+			
+			<div class="frame">
+				<div class="top-frame"></div>
+				<div class="left-frame"></div>
+				<div class="right-frame"></div>
+				<div class="bottom-frame"></div>
+			
+
+				<div class="video-wrapper" id="testPatternBg{{ include.uniqueID }}">
+					<div class="aspect-ratio {{ include.class }}">
+						<iframe
+						width="560"
+						height="315"
+						src="{{ include.src }}"
+						frameborder="0"
+						allowfullscreen>
+						</iframe>
+					</div>
+				</div>
+			</div>
+
+		</div>
+</div>
+
+<script type="text/plain" data-consent="analytics">
+// Scott- change id to remove test pattern when cookies allowed
+
+if ( document.getElementById("testPatternBg{{ include.uniqueID }}").id  !== null ) {
+	var videoBox{{ include.uniqueID }} = document.getElementById("testPatternBg{{ include.uniqueID }}");
+	videoBox{{ include.uniqueID }}.style.background = "none";
+}
+</script>
+{% endif %}
+
+
+
+
+
+
+
+
+{% if include.type == "vimeo" %}
+<div class="video-box vimeo {{ include.class }}">
+
+		<div class="img-top-illo-wrapper"><div class="img-top-illo"></div></div>
+
+		<div class="frame-wrapper">
+
+			<div class="frame">
+				<div class="top-frame"></div>
+				<div class="left-frame"></div>
+				<div class="right-frame"></div>
+				<div class="bottom-frame"></div>
+			
+
+				<div class="video-wrapper" id="testPatternBg{{ include.uniqueID }}">
+					<div class="aspect-ratio {{ include.class }}">
+						<div class="vimeo-player" id="vimeo-player{{ include.uniqueID }}"></div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+</div>
+	
+
+<script src="https://player.vimeo.com/api/player.js"></script>
+
+<script type="text/plain" data-consent="analytics">
+
+	// Cookiehub - blocks vimeo embed until analytic cokkies allowed
+
+	var tag = document.createElement('iframe');
+	tag.src = "{{ include.src }}";
+	tag.width = 640;
+	tag.height = 360;
+	tag.frameBorder = 0;
+	tag.allow = "autoplay";
+	tag.setAttribute('webkitallowfullscreen', '');
+	tag.setAttribute('mozallowfullscreen', '');	
+	tag.setAttribute('allowfullscreen', '');
+	
+	var el = document.getElementById('vimeo-player{{ include.uniqueID }}');
+	el.appendChild(tag);
+	
+	// Change id to remove test pattern when cookies allowed
+	
+	if ( document.getElementById("testPatternBg{{ include.uniqueID }}").id  !== null ) {
+		var videoBox{{ include.uniqueID }} = document.getElementById("testPatternBg{{ include.uniqueID }}");
+		videoBox{{ include.uniqueID }}.style.background = "none";
+	}
+
+</script>
+
+{% endif %}
+
+
+
+
+
+
+{% if include.type == "vimeo-full-bleed" %}
+<div class="video-box vimeo {{ include.class }}">
+
+		<div class="img-top-illo-wrapper"><div class="img-top-illo"></div></div>
+
+		<div class="frame-wrapper">
+
+			<div class="frame">
+				<div class="top-frame"></div>
+				<div class="left-frame"></div>
+				<div class="right-frame"></div>
+				<div class="bottom-frame"></div>
+			
+
+				<div class="video-wrapper" id="testPatternBg{{ include.uniqueID }}">
+					<div id="videoPlayBtn{{ include.uniqueID }}" class="video-play-button" style="display:none"><div class="triangle-right"></div></div>
+					<div id="videoPauseBtn{{ include.uniqueID }}" class="video-pause-button"></div>
+					<div class="aspect-ratio {{ include.class }}">
+						<div class="vimeo-player" id="vimeo-player{{ include.uniqueID }}"></div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+</div>
+	
+
+<script src="https://player.vimeo.com/api/player.js"></script>
+
+<script type="text/plain" data-consent="analytics">
+
+	// Cookiehub - blocks vimeo embed until analytic cookies allowed
+
+	var tag = document.createElement('iframe');
+	tag.src = "{{ include.src }}?controls=0{{ include.extra-controls }}";
+	tag.width = 640;
+	tag.height = 360;
+	tag.frameBorder = 0;
+	tag.allow = "autoplay";
+	tag.setAttribute('webkitallowfullscreen', '');
+	tag.setAttribute('mozallowfullscreen', '');	
+	tag.setAttribute('allowfullscreen', '');
+	
+	var el = document.getElementById('vimeo-player{{ include.uniqueID }}');
+	el.appendChild(tag);
+	
+	// Change id to remove test pattern when cookies allowed
+	
+	if ( document.getElementById("testPatternBg{{ include.uniqueID }}").id  !== null ) {
+		var videoBox{{ include.uniqueID }} = document.getElementById("testPatternBg{{ include.uniqueID }}");
+		videoBox{{ include.uniqueID }}.style.background = "none";
+		$('#videoPlayBtn{{ include.uniqueID }}').fadeIn(400);
+	}
+
+	// Vimeo player controls
+	const iframe{{ include.uniqueID }} = $('#vimeo-player{{ include.uniqueID }} iframe');
+    const player{{ include.uniqueID }} = new Vimeo.Player(iframe{{ include.uniqueID }});
+
+    // Events: When video starts playing
+    player{{ include.uniqueID }}.on('play', function() {
+        $('#videoPlayBtn{{ include.uniqueID }}').fadeOut(10);
+    	$('#videoPauseBtn{{ include.uniqueID }}').css('cursor', 'pointer');
+    });
+
+    // Events: When video ended
+    player{{ include.uniqueID }}.on('ended', function() {
+        $('#videoPlayBtn{{ include.uniqueID }}').fadeIn(400);
+    });
+
+    // Events: When video paused
+    player{{ include.uniqueID }}.on('pause', function() {
+    	// Re-set hover classes
+		$('#videoPlayBtn{{ include.uniqueID }}').hover(function(){
+		  $(this).css("background-color", '#eb2a85');
+		  }, function(){
+		  $(this).css("background-color", '#373737');
+		});
+    	$('#videoPlayBtn{{ include.uniqueID }}').fadeIn(10);
+    	$('#videoPauseBtn{{ include.uniqueID }}').css('cursor', 'default');
+    });
+
+    // Methods: Play video when play button clicked
+    $('#videoPlayBtn{{ include.uniqueID }}').click(function() {
+    	player{{ include.uniqueID }}.play();
+    	$('#videoPlayBtn{{ include.uniqueID }}').css('background-color', '#373737');
+	});
+
+    // Methods: Pause video when pause button clicked
+    $('#videoPauseBtn{{ include.uniqueID }}').click(function() {
+    	player{{ include.uniqueID }}.pause();
+	});
+
+</script>
+
+{% endif %}
+
+
+

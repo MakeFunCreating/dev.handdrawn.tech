@@ -1,0 +1,351 @@
+
+/////////////////////////////////////////////////////
+/////////////////////////////////////////////////////
+/////////////////////// TEXT ////////////////////////
+/////////////////////////////////////////////////////
+/////////////////////////////////////////////////////
+
+
+.section-text {
+	position: relative;
+}
+
+.section-text .content-wrapper {
+	position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+	height: 100%;
+  left: 0;
+  width: 100%;
+	z-index: 9;
+  text-align: center;
+}
+
+.section-text .col-wrapper {
+	position: relative;
+	z-index: 10;
+}
+
+
+/////////////////////// TEXT ////////////////////////
+
+.section-text .text-wrapper {
+  position: relative;
+  z-index: 101;
+  width: 94%;
+  @include breakpoint(TP) {
+    width: 100%;
+  }
+  @include breakpoint(TL) {
+    width: 80%;
+  }
+  @include breakpoint(D) {
+    width: 80%;
+  }
+}
+
+.section-text .text-wrapper p:first-child,
+.section-text .text-wrapper h4:first-child {
+  margin-top: 0rem;
+}
+
+.section-text .text-wrapper > *:last-child {
+  margin-bottom: 0rem;
+}
+
+
+// Header announcement overide
+
+.section-text.announcement {
+  z-index: 100;
+}
+
+.section-text.announcement .content-wrapper .frame .bottom-frame {
+  //display: initial;
+  display: none;
+}
+
+.section-text.announcement p a {
+  text-decoration: none;
+  background-image: none;
+  &:hover{
+    background-image: none;
+  }
+}
+
+// Button Tidio overides
+
+.section-text .button-wrapper.open-chat a {
+  transition: all 0.4s ease;
+  padding-left: 20px;
+}
+
+// Chat button - cookie block text
+
+.section-text .button-wrapper.open-chat.disable a {
+  pointer-events: none;
+}
+
+.section-text .cookie-block-wrapper {
+  margin-top: 15px;
+}
+
+.section-text .cookie-block-wrapper p {
+  color: $pink;
+}
+
+.blue .cookie-block-wrapper p,
+.pink .cookie-block-wrapper p,
+.black .cookie-block-wrapper p {
+  color: white;
+}
+
+
+/////////////////////////////////////////////////////
+/////////////////////////////////////////////////////
+//////////////////// NAV BLOCKS /////////////////////
+/////////////////////////////////////////////////////
+/////////////////////////////////////////////////////
+
+.section-nav-block {
+  position: relative;
+}
+
+.section-nav-block .content-wrapper {
+  position: relative;
+  z-index: 9;
+  display: flex; ////
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  align-items: stretch; ////
+  height: 100%;
+  left: 0;
+  width: 100%;
+  @include breakpoint(TP) {
+    justify-content: space-between;
+  }
+}
+
+
+/////////////////////////////////////////////////////
+////////////////////// COLUMN ///////////////////////
+/////////////////////////////////////////////////////
+
+.section-nav-block .col-wrapper {
+  position: relative;
+  z-index: 12;
+}
+
+
+//////////////////// COL WRAPPER ////////////////////
+
+.section-nav-block .col-wrapper {
+  text-align: center;
+  width: 94%;
+  @include breakpoint(TP) {
+    width: 32.5%;
+  }
+  @include breakpoint(TL) {
+    width: 31.5%;
+  }
+}
+
+.section-nav-block .col-wrapper:not(.col-3) {
+  margin-bottom: 16px;
+  @include breakpoint(TP) {
+    margin-bottom: 0px;
+  }
+}
+
+/////////////////// FRAME WRAPPER ///////////////////
+
+.section-nav-block .frame-wrapper {
+    position: relative;
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
+    display: flex; ////
+    flex-direction: column; ////
+}
+
+.section-nav-block.no-frame .frame {
+    display: none;
+}
+
+////////////// TEXT WRAPPER (IN COLUMN) /////////////
+
+.section-nav-block .content-wrapper div.col-wrapper .text-wrapper {
+  position: relative;
+  z-index: 100;
+  display: flex; ////
+  flex-direction: column;
+  align-content: flex-start; ////
+  text-align: center;
+  padding: 20px 10px 20px 10px;
+  height: 100%;
+  @include breakpoint(TP) {
+    padding: 20px 7px 25px 7px;
+  }
+  @include breakpoint(TL) {
+    padding: 27px ​15px 27px 15px;
+  }
+  @include breakpoint(D) {
+    padding: 27px 20px 30px 20px;
+  }
+}
+
+.section-nav-block .col-wrapper .text-wrapper .title {
+  width: 100%;
+  margin: 0 0 5px;
+  @include breakpoint(TL) {
+    margin: 0 0 10px;
+  }
+  @include breakpoint(D) {
+    margin: 0 0 15px;
+  }
+}
+
+// Overide; when "title-only"
+.section-nav-block .col-wrapper .text-wrapper .title.title-only {
+  margin: 0 0 0px;
+}
+
+
+.section-nav-block .col-wrapper .text-wrapper .desc-wrapper {
+  width: 100%;
+  flex-grow: 1;
+  padding: 0;
+}
+
+.section-nav-block .col-wrapper .text-wrapper .desc-wrapper p {
+  margin: 0;
+  padding: 0;
+}
+
+////////////////////// TEXT LINK ////////////////////
+
+.section-nav-block .col-wrapper .text-wrapper .text-link {
+  display: none;
+  @include breakpoint(TL) {
+    display: none;
+  }
+}
+
+/////////////////// BUTTON WRAPPER //////////////////
+
+.section-nav-block .col-wrapper .text-wrapper .button-wrapper {
+  margin-top: 18px;
+  //display: none;
+  @include breakpoint(TL) {
+    display: initial;
+  }
+}
+
+// Plain-button overides
+
+.section-nav-block.plain-button .content-wrapper div.col-wrapper .text-wrapper {
+  padding-bottom: 13px;
+  @include breakpoint(TP) {
+    padding-bottom: 14px;
+  }
+  @include breakpoint(TL) {
+    padding-bottom: 16px;
+  }
+  @include breakpoint(D) {
+    padding-bottom: 21px;
+  }
+}
+
+.section-nav-block.plain-button .col-wrapper .text-wrapper .button-wrapper {
+  margin-top: -3px;
+}
+
+.section-nav-block.plain-button .col-wrapper .text-wrapper .button-wrapper a {
+  color: $pink;
+  background-color: transparent;
+  &:hover {
+    background-color: transparent;
+    box-shadow: none;
+  }
+}
+
+
+// Bg-texture
+
+.section-nav-block .col-wrapper .bg-texture-wrapper {
+  padding: 1px;
+}
+
+// Highlight bar
+
+.section-nav-block .highlight-bar.hide {
+  display: none;
+}
+
+.section-nav-block .highlight-bar.show {
+  display: initial;
+  height: 10px;
+  background-color: $pink;
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  z-index: 0;
+  width: calc(100% - 2px);
+  margin: 0 auto;
+}
+
+
+// Col overide
+
+
+.section-nav-block.pink .col-wrapper .text-wrapper .desc-wrapper p,
+.section-nav-block.blue .col-wrapper .text-wrapper .desc-wrapper p,
+.section-nav-block.black .col-wrapper .text-wrapper .desc-wrapper p {
+  color: white;
+}
+
+
+.section-nav-block.plain-button.pink .col-wrapper .text-wrapper .button-wrapper a,
+.section-nav-block.plain-button.blue .col-wrapper .text-wrapper .button-wrapper a,
+.section-nav-block.plain-button.black .col-wrapper .text-wrapper .button-wrapper a {
+  color: white;
+}
+
+.section-nav-block.pink .highlight-bar.show,
+.section-nav-block.blue .highlight-bar.show,
+.section-nav-block.black .highlight-bar.show {
+  background-color: white;
+}
+
+
+.section-nav-block .col-wrapper .text-wrapper.pink .title a,
+.section-nav-block .col-wrapper .text-wrapper.blue .title a,
+.section-nav-block .col-wrapper .text-wrapper.black .title a {
+  color: white;
+  &:hover {
+    color: $black;
+  }
+}
+
+
+.section-nav-block.blue .col-wrapper .top-frame {
+    background: url(../images/lines/frame/white/top.png) left top/760px 100% repeat;
+}
+
+.section-nav-block.blue .col-wrapper .bottom-frame {
+    background-image: url(../images/lines/frame/white/bottom.png);
+}
+
+.section-nav-block.blue .col-wrapper .left-frame {
+    background: url(../images/lines/frame/white/left.png) left top/100% 760px repeat;
+}
+
+.section-nav-block.blue .col-wrapper .right-frame {
+    background-image: url(../images/lines/frame/white/right.png);
+}
+

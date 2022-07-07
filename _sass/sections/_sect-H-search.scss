@@ -1,0 +1,330 @@
+
+/////////////////////////////////////////////////////
+/////////////////////////////////////////////////////
+///////////////// SECTION - SEARCH //////////////////
+/////////////////////////////////////////////////////
+/////////////////////////////////////////////////////
+
+.section-search {
+    position: relative;
+}
+
+////////////////// CONTENT-WRAPPER //////////////////
+
+.section-search .content-wrapper {
+	position: relative;
+  display: flex; ////
+  flex-wrap: wrap;
+  justify-content: space-around; ////
+
+}
+
+
+/////////////////// SECTION TITLE ///////////////////
+
+.section-search .sect-title-wrapper {
+  @include breakpoint(D) {
+    margin-top: 40px;
+  }
+}
+
+// Overides- make white when section has .bg-image class
+
+.section-search.bg-image .sect-title,
+.section-search.bg-image .sect-title em {
+	color: white;
+}
+
+.section-search.bg-image .sect-title-wrapper .underline {
+  background-image: url(../images/line-sketch/short/white/short-line.png);
+}
+
+
+/////////////////// TEXT WRAPPER ////////////////////
+
+.section-search .text-wrapper {
+  position: relative;
+  z-index: 100;
+  width: 94%;
+  display: flex;
+  justify-content: center;
+  @include breakpoint(TP) {
+    width: 80%;
+  }
+}
+
+.section-search .text-wrapper h4,
+.section-search .text-wrapper p {
+	text-align: center;
+}
+
+.section-search .text-wrapper p:first-child,
+.section-search .text-wrapper h4:first-child {
+	margin-top: 2.5rem;
+}
+
+.section-search .text-wrapper > *:last-child {
+  margin-bottom: 0rem;
+}
+
+// Overides- make white when section has .bg-image class
+
+section-search.bg-image .text-wrapper h4,
+.section-search.bg-image .text-wrapper p {
+  color: white;
+}
+
+
+/////////////////// IMAGE-WRAPPER ///////////////////
+
+.section-search .img-wrapper {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    height: 100%;
+    width: 100vw;
+	left: calc( (100vw - 94vw) / -2 ); // [container-width]/2
+	@include breakpoint(TP) {
+		left: calc( (100vw - 600px) / -2 ); // [container-width]/2
+	}
+	@include breakpoint(TL) {
+		left: calc( (100vw - 800px) / -2 ); // [container-width]/2
+	}
+	@include breakpoint(D) {
+		left: calc( (100vw - 1040px) / -2 ); // [container-width]/2
+	}
+}
+
+
+////////////////////// OVERLAY //////////////////////
+
+.section-search .img-wrapper .overlay {
+	position: absolute;
+	z-index: 20;
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(to bottom, RGB(55,55,55,0.5) 0%, RGBA(55,55,55,0.5) 100%);
+}
+
+//////////////////////// IMG ////////////////////////
+
+.section-search .img-wrapper img {
+    position: relative;
+    object-fit: cover;
+    font-family: 'object-fit: cover;';
+    //background: url(../images/loader/loader-body-bg.gif) center center/85px 85px no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+
+/////////////////////////////////////////////////////
+////////////////// SIMPLE SEARCH ////////////////////
+/////////////////////////////////////////////////////
+
+.section-search .search-outer-wrapper {
+  position: relative;
+  z-index: 211;
+  height: 40px;
+  padding: 0;
+  width: 95%;
+  @include breakpoint(TP) {
+    height: 50px; 
+    width: 95%;
+  }
+  @include breakpoint(TL) {
+    width: 90%;
+  }
+  @include breakpoint(D) {
+    height: 70px; 
+    width: 80%;
+  }
+}
+
+.section-search #search-wrapper {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.section-search #search-container {
+  position: relative;
+  height: 100%;
+}
+
+.section-search #search-input {
+  width: 100%;
+  height: 100%;
+  border-radius: $radius; //60px;
+  padding-left: 20px;
+  padding-top: 2px;
+  box-sizing: border-box;
+  color: #999;
+  border: 1px solid #d1d1d1;
+  box-shadow: inset 0px 1px 8px rgba(0,0,0,0.3);
+  transition-property: none;
+  font-size: 1.7rem; // .bigger sizes (global text)
+  @include breakpoint(TP) {
+  	font-size: 1.95rem; // .bigger sizes (global text)
+    padding-top: 3px;
+  }
+  @include breakpoint(D) {
+    padding-top: 2px;
+    padding-left: 30px;
+    font-size: 2.2rem; // .bigger sizes (global text)
+  }
+}
+
+.section-search #search-input::placeholder {
+  color: #999;
+}
+
+.section-search #search-input:hover {
+  box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.02);
+}
+
+.section-search #search-input:focus {
+  outline: none;
+  color: #4b515d;
+  border: 1px solid #B8B6B6;
+  box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.01), 0px 0px 8px rgba(0, 0, 0, 0.2);
+}
+
+.section-search #search-input.results {
+  border-radius: $radius $radius 0 0 ;//30px 30px 0px 0px;
+  border: none;
+}
+
+//////////////////// SEARCH TEXT ////////////////////
+
+.section-search #search-wrapper #search-container .search-text-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+}
+
+.section-search #search-wrapper #search-container .search-text {
+  margin-left: 17px;
+  margin-top: 2px;
+  color: #999;
+  font-size: 1.35rem;
+  @include breakpoint(TP) {
+    margin-left: 22px;
+    margin-top: 2px;
+    font-size: 1.8rem;
+  }
+  @include breakpoint(D) {
+    margin-left: 25px;
+    margin-top: 3px;
+    font-size: 1.9rem;
+  }
+}
+
+/////////////////// SEARCH ICONS ////////////////////
+
+.section-search #search-wrapper .search-icon-wrapper {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 90;
+  width: 37px;
+  height: 100%;
+  right: 0px;
+  top: 0px;
+  @include breakpoint(TP) {
+    width: 43px;
+  }
+  @include breakpoint(D) {
+  	width: 57px;
+  }
+}
+
+.section-search #search-wrapper .search-icon {
+  padding-top: 1px;
+  width: 23px;
+  height: 24px;
+  @include breakpoint(TP) {
+    width: 28px;
+    height: 31px;
+  }
+  @include breakpoint(D) {
+  	width: 38px;
+    height: 36px;
+  }
+}
+
+.section-search #search-wrapper .search-icon img {
+  width: 100%;
+}
+
+
+//////////////// RESULTS CONTAINER //////////////////
+
+.section-search #results-container {
+  position: absolute;
+  width: 100%;
+  letter-spacing: -0.5px;
+  box-shadow: 0px 7px 7px rgba(0,0,0,0.3);
+  border-radius: 0px 0px $radius $radius ; //0px 0px 25px 25px;
+  background-color: $body-bg;
+}
+
+.section-search #results-container li {
+  padding: 10px 20px 10px 20px;
+  list-style-type: none;
+}
+
+.section-search #results-container li:first-child {
+  padding-top: 35px;
+}
+
+.section-search #results-container li:last-child {
+  padding-bottom: 35px;
+}
+
+.section-search #results-container li.no-results {
+  padding: 21px 20px 21px 20px;
+  list-style-type: none;
+}
+
+// Text colors
+
+.section-search #results-container .entry-type {
+  background-image: none;
+  background-color: $body-bg;
+}
+
+.section-search #results-container li a {
+  background-image: none;
+  color: $black;
+  &:hover {
+    color: $pink;
+    text-decoration: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

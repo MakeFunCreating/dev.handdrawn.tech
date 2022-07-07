@@ -1,0 +1,136 @@
+
+
+{% assign section-divider = null %}
+{% assign section-class = null %}
+
+{% if include.class contains "pink" or include.class contains "yellow" or include.class contains "grey" or include.class contains "black" or include.class contains "black-medium" or include.class contains "blue" or include.class contains "none" %}
+  {% assign section-class = include.class %}
+{% else%}
+  {% assign section-class = include.class | append: " none" %}
+{% endif %}
+
+
+{% if include.section-divider == "no-illo" %}
+    {% assign section-class = section-class | append: " " | append: "no-illo strip-top" %}
+    {% assign section-divider = "" %}
+{% elsif include.section-divider == "no-illo-butt" %}
+    {% assign section-class = section-class | append: " " | append: "no-illo-butt strip-top-butt"  %}
+    {% assign section-divider = "" %}
+{% elsif include.section-divider and include.section-divider != empty %}
+    {% assign section-divider = include.section-divider %}
+{% else %}
+    {% assign section-class = section-class | append: " " | append: "no-illo strip-top"  %}
+    {% assign section-divider = "" %}
+{% endif %} 
+
+{% assign section-class = section-class | append: " " | append: include.ani-triggers | replace: "  ", " " %}
+
+
+
+<section {% if include.id and include.id != empty %}id="{{ include.id }}"{% endif %} class="section-text strip-line {{ section-class | strip }}">
+
+    {% if include.section-divider and include.section-divider != empty %}
+      <div class="sect-illo-wrapper {{ section-divider }}"><div class="sect-illo"></div></div>
+    {% endif %}
+
+    <div class="content-wrapper">
+
+      {% if include.sect-title and include.sect-title != empty %}
+
+        <div class="sect-title-wrapper">
+          <h2 class="sect-title">{{ include.sect-title }}</h2>
+          <div class="underline"></div>
+        </div>
+
+      {% endif %}
+  
+      <div class="text-wrapper">    
+        {% if include.h1 and include.h1 != empty %}
+          <h4>{{ include.h1 }}</h4>
+        {% endif %}
+        {% if include.p1 and include.p1 != empty %}
+          <p{% if include.class contains "announcement" %} class="smaller"{% endif %}>{{ include.p1 }}</p>
+        {% endif %}
+
+        {% if include.h2 and include.h2 != empty %}
+          <h4>{{ include.h2 }}</h4>
+        {% endif %}
+        {% if include.p2 and include.p2 != empty %}
+          <p{% if include.class contains "announcement" %} class="smaller"{% endif %}>{{ include.p2 }}</p>
+        {% endif %}
+
+        {% if include.h3 and include.h3 != empty %}
+          <h4>{{ include.h3 }}</h4>
+        {% endif %}
+        {% if include.p3 and include.p3 != empty %}
+          <p{% if include.class contains "announcement" %} class="smaller"{% endif %}>{{ include.p3 }}</p>
+        {% endif %} 
+
+        {% if include.h4 and include.h4 != empty %}
+          <h4>{{ include.h4 }}</h4>
+        {% endif %}
+        {% if include.p4 and include.p4 != empty %}
+          <p{% if include.class contains "announcement" %} class="smaller"{% endif %}>{{ include.p4 }}</p>
+        {% endif %} 
+
+        {% if include.h5 and include.h5 != empty %}
+          <h4>{{ include.h5 }}</h4>
+        {% endif %}
+        {% if include.p5 and include.p5 != empty %}
+          <p{% if include.class contains "announcement" %} class="smaller"{% endif %}>{{ include.p5 }}</p>
+        {% endif %} 
+
+        {% if include.h6 and include.h6 != empty %}
+          <h4>{{ include.h6 }}</h4>
+        {% endif %}
+        {% if include.p6 and include.p6 != empty %}
+          <p{% if include.class contains "announcement" %} class="smaller"{% endif %}>{{ include.p6 }}</p>
+        {% endif %} 
+
+        {% if include.h7 and include.h7 != empty %}
+          <h4>{{ include.h7 }}</h4>
+        {% endif %}
+        {% if include.p7 and include.p7 != empty %}
+          <p{% if include.class contains "announcement" %} class="smaller"{% endif %}>{{ include.p7 }}</p>
+        {% endif %} 
+
+        {% if include.h8 and include.h8 != empty %}
+          <h4>{{ include.h8 }}</h4>
+        {% endif %}
+        {% if include.p8 and include.p8 != empty %}
+          <p{% if include.class contains "announcement" %} class="smaller"{% endif %}>{{ include.p8 }}</p>
+        {% endif %} 
+
+        {% if include.h9 and include.h9 != empty %}
+          <h4>{{ include.h9 }}</h4>
+        {% endif %}
+        {% if include.p9 and include.p9 != empty %}
+          <p{% if include.class contains "announcement" %} class="smaller"{% endif %}>{{ include.p9 }}</p>
+        {% endif %} 
+
+
+        {% if include.end-caption and include.end-caption != empty %}
+          <p class="smallest end-caption">{{ include.end-caption }}</p>
+        {% endif %} 
+
+        {% if include.link-text and include.link-text != empty %}
+          <div class="button-wrapper {% if include.link-url == "open-chat" %}open-chat disable{% endif %}"><a {% if include.link-url == "open-chat" %}onclick="tidioChatApi.open()"{% else %} href="{{ include.link-url }}"{% endif %} class="link-button smaller" >{{ include.link-text }} <span class="right-arrow">›</span></a></div> 
+          {% if include.link-url == "open-chat" %}<div class="cookie-block-wrapper"><p class="cookie-block-text smallest">Please allow cookies to enable chat</p></div>{% endif %} 
+        {% endif %} 
+
+      </div>
+
+      <div class="bg-texture-wrapper">
+        <div class="frame show"><div class="top-frame"></div><div class="bottom-frame"></div></div>
+        <div class="bg-texture"></div>
+      </div>
+
+    </div>
+    
+</section>
+
+
+
+
+
+

@@ -1,0 +1,252 @@
+
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    {% include build/head-product.html %}
+  </head>
+
+  {% assign body-class-1 = null %}
+  {% assign body-class-2 = null %}
+  {% if page.layout-sub-type and page.layout-sub-type != empty %}
+    {% assign body-class-1 = page.layout-sub-type %}
+  {% endif %}
+  {% if page.tidio-show-on-scroll == false %}
+    {% assign body-class-2 = "TidioOnLoad" %}
+  {% endif %}
+
+  <body class="layout-product {{ body-class-1 }} {{ body-class-2 }}">
+
+
+    {% include build/top-bar.html %}
+    
+    <article class="container-wrapper">
+
+      <div class="container">
+        <div class="content">
+
+
+          {% assign rootDir = page.collection %}
+          {% if rootDir == "pro-draw" %}
+            {% assign rootDirLink = "pro-draw/products" %}
+          {% else %}
+            {% assign rootDirLink = page.collection %}
+          {% endif %}
+          <div class="breadcrumb smallest"><a href="{{ site.baseurl }}/pro-draw/products">Products</a> /  {% comment %}<a href="{{ site.baseurl }}/{{ rootDirLink }}">{% endcomment %}{{ rootDir }}{% comment %}</a>{% endcomment %}  / {{ page.product-name }}</div>         
+
+          <div class="fotorama-box handAni">
+
+            <div class="frame-wrapper">
+              
+                <div class="top-frame"></div>
+                <div class="left-frame"></div>
+                <div class="right-frame"></div>
+                <div class="bottom-frame"></div>
+              
+              <div class="fotorama"
+                  data-width="100%"
+                  data-ratio="1.499"
+                  data-arrows="always"
+                  data-nav="thumbs"
+                  thumbwidth="150"
+                  thumbheight="103"
+                  data-loop="true">
+    
+              {% assign photo-loop = page.product-detail-photos | plus: 0 %}
+              {% for i in (1..photo-loop) %}
+                {% assign file-format = "jpg" %}
+                {% assign products-dir = "/images/content/collections/" %}
+                {% assign product-dir = page.product-dir %}
+                {% assign loop-num = i | minus: 0 %}
+                {% assign product-photo-dir = products-dir | append: product-dir %}
+                <a href="{{ site.url }}{{ site.baseurl }}{{ product-photo-dir }}/detail-{{ i }}/1500px.{{ file-format }}"><img src="{{ site.url }}{{ site.baseurl }}{{ product-photo-dir }}/detail-{{ i }}/thumb-150px.{{ file-format }}"></a>
+              {% endfor %}
+              </div>
+            </div>
+          </div>
+
+          <div class="payment-box">
+            <div class="payment-box-wrapper">
+              <div class="text-wrapper">
+
+                <h4 class="title {% if page.license-options[0]['active'] == true %}options{% endif %}">{{ page.product-name }}</h4>
+
+                {% assign price-split = page.product-price[0]['value'] | round: 2 | split: "." %}
+                {% assign integral = price-split[0] %}
+                {% assign fractional = price-split[1] | append: "00" | truncate: 2, "" %}
+                {% if page.license-options[0]['active'] != true %}
+                  <div class="price-wrapper">
+                    <p class="currency main bigger">{{ page.product-price[0]['currency'] }}{{ integral }}.{{ fractional }}</p>
+                  </div>
+                {% endif %}
+
+                {% if page.product-rating[0]['active'] == true %}
+                  <div class="rating-wrapper"><p class="smallest">{{ page.product-rating[0]['store'] }}: </p>
+                    {% assign star-total = page.product-rating[0]['rating'] | split: "/" | last %}
+                    {% assign star-rating = page.product-rating[0]['rating'] | split: "/" | first | plus: 0 %}
+                    {% assign star-rating-round = star-rating | round %}
+                    {% for i in (1..star-total) %}
+                      {% if i <= star-rating %}
+                        <div class="rating-star full"></div>
+                      {% elsif i > star-rating and i == star-rating-round %}
+                        <div class="rating-star half"></div>
+                      {% elsif i > star-rating-round %}
+                        <div class="rating-star blank"></div>
+                      {% endif %}
+                    {% endfor %}
+                  </div>
+                {% endif %}
+
+                <div class="desc-wrapper {% if page.license-options[0]['active'] == true %}options{% endif %}"><p class="smallest-skew">{{ page.product-desc }}</p></div>
+
+                <div class="spacer"></div>
+
+                {% if page.store-mode[0]['external-link'] == true %}
+                  {% for item in page.external-store %}
+                      {% if item.affiliate == true %}
+                        <div class="desc-wrapper commission">
+                          <div class="long-line-black"></div>
+                          <p class="smallest">Note: Commission may be earned, at no cost to you, if you make a purchase. Thanks for your support!</p>
+                        </div>
+                        {% break %}
+                      {% endif %}
+                  {% endfor %}
+                {% endif %}
+
+                <div class="sales-wrapper"><p class="small-cap">{{ page.product-sales }}</p></div>
+                
+
+                {% if page.license-options[0]['active'] == true %}
+                  <div class="options-wrapper">
+                    {% assign optionNameArray = page.license-options[0]['dropdown-options'] | split: "|" %}
+                    {% assign optionValueRelArray = page.license-options[0]['dropdown-values-rel'] | split: "|" %}
+                    {% assign optionValueAbsArray = page.license-options[0]['dropdown-values-abs'] | split: "|" %}
+                    {% assign optionNameValueVar = "" %}
+
+                    {% comment %}
+                    <div class="dropdown-wrapper">
+                      <label><p class="smaller">{{ page.license-options[0]['dropdown-label'] }}</p></label>
+                      <select id="license-option">
+                        {% for item in optionNameArray %}
+                          <option value="{{ item }}" data-price="{{ page.product-price[0]['currency'] }}{{ optionValueAbsArray[forloop.index0] }}">{{ item }}</option>
+                          {% assign optionNameValueVar = optionNameValueVar | append: item | append: optionValueRelArray[forloop.index0] %}
+                          {% unless forloop.last %}{% assign optionNameValueVar = optionNameValueVar | append: "|" %}{% endunless %}
+                        {% endfor %}
+                      </select>
+                    </div>
+                    {% endcomment %}
+
+
+                    <div class="license-wrapper">
+                      <div class="long-line-black"></div>
+                      <form id="license-option">
+                        {% if page.license-options[0]['dropdown-options'] contains "|" and page.license-options[0]['dropdown-values-rel'] contains "|" and page.license-options[0]['dropdown-values-abs'] contains "|" %}
+                          {% for item in optionNameArray %}
+                            <label class="checkbox-wrapper">
+                              <input value="{{ item }}" type="radio" name="license-type" {% if forloop.first %}checked="checked"{% endif %} data-price="{{ page.product-price[0]['currency'] }}{{ optionValueAbsArray[forloop.index0] }}"><span class="checkmark"></span><p class="smaller-skew">{{ item }} - {{ page.product-price[0]['currency'] }}{{ optionValueAbsArray[forloop.index0] }}</p>
+                            </label> 
+                            {% assign optionNameValueVar = optionNameValueVar | append: item | append: optionValueRelArray[forloop.index0] %}
+                            {% unless forloop.last %}{% assign optionNameValueVar = optionNameValueVar | append: "|" %}{% endunless %}
+                          {% endfor %}
+                        {% else %}
+                          <label class="checkbox-wrapper">
+                            <input value="{{ page.license-options[0]['dropdown-options'] }}" type="radio" name="license-type" checked="checked" data-price="{{ page.product-price[0]['currency'] }}{{ integral }}.{{ fractional }}"><span class="checkmark"></span><p class="smaller-skew">{{ page.license-options[0]['dropdown-options'] }} - {{ page.product-price[0]['currency'] }}{{ integral }}.{{ fractional }}</p>
+                          </label> 
+                        {% endif %}
+                      </form>
+                      <div class="license-link"><p><a href="{{ page.license-options[0]['dropdown-license-link-url'] }}" class="smallest">{{ page.license-options[0]['dropdown-license-link-text'] }} ›</a></p></div>
+                    </div>
+                  
+                  </div>
+                {% endif %}
+
+                {% if page.store-mode[0]['external-link'] == true %}
+                  {% for item in page.external-store %}
+                      <div class="button-wrapper"><a href="{{ item.link }}" class="link-button smaller-skew" >{{ item.button-text }} ❯</a></div>
+                  {% endfor %}
+                {% elsif page.store-mode[1]['not-available'] == true %}
+                  <div class="button-wrapper disable"><a class="link-button smaller-skew" >Not Available <span class="right-arrow">›</span></a></div> 
+                {% elsif page.store-mode[2]['add-to-cart'] == true %}
+                  <div class="button-wrapper"><a 
+                    class="snipcart-add-item link-button smaller-skew"
+                    data-item-id="{{ page.product-ID }}"
+                    data-item-file-guid="{{ page.product-GUID }}"
+                    data-item-name="{{ page.product-name }}"
+                    data-item-price="{{ integral }}.{{ fractional }}"
+                    data-item-url="{{ site.url }}{{ site.baseurl }}{{ page.url }}"
+                    data-item-description="{{ page.product-desc }}"
+                    data-item-image="{{ site.url }}{{ site.baseurl }}{{ product-photo-dir }}/detail-1/1500px.{{ file-format }}"
+                    data-item-custom1-name="{{ page.license-options[0]['dropdown-label'] }}"
+                    data-item-custom1-options="{{ optionNameValueVar }}"
+                    data-item-custom1-value="{{ optionNameArray[0] }}"
+                    >Add to Cart <span class="right-arrow">›</span></a></div> 
+                {% endif %}
+
+
+                <script type="text/javascript">
+                  // For Dropdown
+                  $(function() {
+                    $('#license-option').change(function() {
+                      //$('.snipcart-add-item').attr('data-item-custom1-value',$(this).val());
+                      //$('.currency.main').text( $(this).find(':selected').data('price') );
+                    });
+                  });
+                  // For radio boxes
+                  $(document).ready(function(){
+                    $('input[type=radio][name=license-type]').change(function() {
+                      // Tell SnipCart of custom selection
+                      $('.snipcart-add-item').attr('data-item-custom1-value',$(this).val());
+                      // Update price text (currently hidden)
+                      $('.currency.main').text( $(this).data('price') );
+                    });
+                  });
+                </script>
+
+
+              </div>
+              <div class="long-line-black"></div>
+            </div>
+
+            <div class="extra-info-wrapper">
+              <div class="icon"></div>
+              <div class="text">
+                <p class="smallest">Any questions? Please use the message button in the corner.</p>
+              </div>
+
+            </div>
+          </div>
+
+
+          <div class="product-spec">
+            <h4>Product Details</h4>
+            <div class="long-line-black"></div>
+            {{ content }}
+          </div>
+
+          <div class="footer-wrapper">
+            {% if page.footer %}
+              {% include {{ page.footer }} %}
+            {% endif %}
+            {% include build/global-footer.html %}
+          </div>
+
+        </div>
+              
+      </div>
+
+    </article>
+
+
+    {% include animations/burglar.html class="burglar" %}
+    {% include animations/pointy-hand.html class="hand" %}
+    {% include animations/robot.html class="robot" %}
+    {% include animations/telescope.html class="telescope" %}
+
+    {% include build/footer-scripts.html %}
+
+  </body>
+
+</html>

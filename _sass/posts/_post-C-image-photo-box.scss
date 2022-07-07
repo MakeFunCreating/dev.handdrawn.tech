@@ -1,0 +1,249 @@
+
+///////////////////////////////////////////////////////
+///////////////////////////////////////////////////////
+/////////////////// PHOTO IMAGE BOX ///////////////////
+///////////////////////////////////////////////////////
+///////////////////////////////////////////////////////
+
+.image-box {
+	position: relative;
+	height: auto;
+	text-align: left;
+	margin: 4rem auto 4rem auto;
+	width: 98%;
+	text-align: center;
+	@include breakpoint(TP) {
+		margin: 5.5rem auto 5.5rem auto;
+		width: 100%;
+	}
+	@include breakpoint(D) {
+		margin: 8.5rem auto 8.5rem auto;
+	}
+}
+
+
+///////////////////// OVERIDES ////////////////////////
+
+// Add some extra space to allow for the image-top-illo on first image box
+
+p + figure.image-box:nth-of-type(1) {
+	margin-top: 4.75rem;
+	@include breakpoint(TP) {
+		margin-top: 5.5rem;
+	}
+	@include breakpoint(D) {
+		margin-top: 8.5rem;
+	} 
+}
+
+// Remove some space when image comes after an H3 and H4 heading
+
+h3 + figure.image-box,
+h4 + figure.image-box {
+	margin-top: 4rem;
+	@include breakpoint(TP) {
+		margin-top: 3.5rem;
+	}
+	@include breakpoint(D) {
+		margin-top: 5rem;
+	}
+}
+
+
+////////////////// IMAGE WRAPPER //////////////////////
+
+.image-box .img-wrapper {
+    box-sizing: border-box;
+    height: auto;
+	background-size: 100% 100%;
+	width: 100%;
+	padding: 8px;
+	@include breakpoint(TP) {
+		padding: 8px;
+	}
+	@include breakpoint(D) {
+		padding: 8px;
+	}
+}
+
+// Overide: remove padding between frame and image
+.image-box .img-wrapper {
+  //padding: 1px;
+}
+
+
+// Narrow frame lines to make them more elegant
+
+.image-box .frame-wrapper .frame .top-frame,
+.image-box .frame-wrapper .frame .bottom-frame {
+    height: 3px;  
+}
+
+.image-box .frame-wrapper .frame .left-frame,
+.image-box .frame-wrapper .frame .right-frame {
+    height: calc(100% - 6px);
+    width: 3px; 
+}
+
+
+/////////////////////// IMG ///////////////////////////
+
+.image-box img {
+    //background: url(../images/loader/loader-white-bg.gif) center center/85px 85px no-repeat;
+  	display: block;
+   	width: 100%;
+}
+
+.no-bot-margin {
+	margin-bottom: 0;
+}
+
+
+///////////////////// CAPTION ///////////////////////// 
+
+.image-box .image-box-caption {
+	margin-top: 1rem;
+	@include breakpoint(TP) {
+		margin-top: 1.25rem;
+	}
+	@include breakpoint(D) {
+		margin-top: 1.75rem;
+	}
+}
+
+
+///////////////////////////////////////////////////////
+//////////////////////// ILLOS ////////////////////////
+///////////////////////////////////////////////////////
+
+///////////// IMAGE ILLO [LIGHTBULB ETC.] /////////////
+
+.image-box:nth-of-type(1) {
+	.iron-wrapper {
+		display: none;
+	}
+}
+
+figure.image-box:not(:first-of-type) .img-top-illo {
+	display: none;
+}
+
+// Clock overide
+.image-box.clock:nth-of-type(1) .img-top-illo {
+	background-image: url(../images/image-top-illo/clock/500px.png);
+    @include breakpoint(ML) {
+    	background-image: url(../images/image-top-illo/clock/677px.png);
+    }
+	@include breakpoint(D) {
+	    background-image: url(../images/image-top-illo/clock/775px.png);
+	}
+}
+
+// Printer overide
+.image-box.printer:nth-of-type(1) .img-top-illo {
+	background-image: url(../images/image-top-illo/printer/rot-right/500px.png);
+    @include breakpoint(ML) {
+    	background-image: url(../images/image-top-illo/printer/rot-right/677px.png);
+    }
+	@include breakpoint(D) {
+	    background-image: url(../images/image-top-illo/printer/rot-right/775px.png);
+	}
+}
+
+
+///////////////////// SIDE ILLOS //////////////////////
+
+.side-illo {
+	position: absolute;
+	z-index: 200;
+	display: none;
+	@include breakpoint(ML) {
+		display: initial;
+	}
+}
+
+// Side illos positioning every 1,2,3,4
+.image-box:nth-of-type(4n + 1) { // Mag glasss left
+	.side-illo {
+    	transform: rotate(22deg);
+		width: 210px;
+    	height: 340px;
+    	right: auto;
+    	left: -121px;
+    	top: 6%;
+		background: url(../images/image-side-illo/illo-1/445px.png) left center/contain no-repeat;
+		@include breakpoint(ML) {
+			background: url(../images/image-side-illo/illo-1/500px.png) left center/contain no-repeat;
+		}
+		@include breakpoint(TP) {
+    		width: 300px;
+    		height: 383px;
+    		left: -135px;
+    		top: 9%;
+		}
+		@include breakpoint(D) {
+		   	background: url(../images/image-side-illo/illo-1/612px.png) left center/contain no-repeat;
+    		height: 460px;
+    		left: -166px;
+    		top: 14%;
+		}
+	}
+}
+
+.image-box:nth-of-type(4n + 2),
+.image-box:nth-of-type(4n + 4) { // Drill right
+	.side-illo {
+    	transform: rotate(-6deg);
+		width: 180px;
+    	height: 310px;
+    	left: auto;
+    	right: -108px;
+    	top: 11%;
+		background: url(../images/image-side-illo/illo-2/300px.png) left center/contain no-repeat;
+		@include breakpoint(ML) {
+			background: url(../images/image-side-illo/illo-2/425px.png) left center/contain no-repeat;
+		}
+		@include breakpoint(TP) {
+			width: 300px;
+    		height: 380px;
+    		right: -208px;
+    		top: 9%;
+		}
+		@include breakpoint(D) {
+		    background: url(../images/image-side-illo/illo-2/550px.png) left center/contain no-repeat;
+    		height: 460px;
+    		right: -195px;
+    		top: 18%;
+		}
+	}
+}
+
+.image-box:nth-of-type(4n + 3) { // Glue left
+	.side-illo {
+    	transform: rotate(10deg);
+		width: 140px;
+    	height: 320px;
+    	left: -100px;
+    	right: auto;
+    	top: 11%;
+    	background: url(../images/image-side-illo/illo-3/237px.png) left center/contain no-repeat;
+    	@include breakpoint(ML) {
+    		background: url(../images/image-side-illo/illo-3/325px.png) left center/contain no-repeat;
+    	}
+		@include breakpoint(TP) {
+    		width: 190px;
+    		height: 370px;
+    		left: -111px;
+    		top: 12%;
+		}
+		@include breakpoint(D) {
+    		background: url(../images/image-side-illo/illo-3/400px.png) left center/contain no-repeat;
+    		height: 440px;
+    		left: -137px;
+    		top: 14%;
+		}
+	}
+}
+
+
+

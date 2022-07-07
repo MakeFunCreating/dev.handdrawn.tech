@@ -1,0 +1,664 @@
+
+
+
+<script type="text/plain" data-consent="necessary" src="//code.tidio.co/msww1auvnpe19cpja3m6knfof5tfy0t5.js" async></script>
+
+
+
+
+<script type="text/plain" data-consent="necessary">
+  ;(function() { //Limit scope
+    ///////////////////////////////////////////
+    ////////// LOADING CHAT FUNCTION //////////
+    ///////////////////////////////////////////
+    // Hide cookie message
+    $( ".cookie-block-wrapper" ).each(function() {
+      $(this).hide();
+      $(".button-wrapper.open-chat a").text("Loading Chat ❯");
+    });
+  })() //End of limit scope
+</script>
+
+
+
+{% if jekyll.environment != "development" %}
+    <script src="https://cookiehub.net/c2/4c37d5c9.js"></script>
+    <script type="text/javascript">
+        ///////////////////////////////////////////
+        ///////////// COOKIE HUB CODE /////////////
+        ///////////////////////////////////////////
+        document.addEventListener("DOMContentLoaded", function(event) {
+        var cpm = {};
+        window.cookiehub.load(cpm);
+        });
+    </script>
+{% endif %}
+
+
+
+<script type="text/javascript">
+  ;(function() { //Limit scope
+    ///////////////////////////////////////////
+    //////// ADJUST PREVIOUS SECTIONS /////////
+    ///////////////////////////////////////////
+    $('section.none').next().not('.none').removeClass('strip-line');
+    $('section.pink').next().not('.pink').removeClass('strip-line');
+    $('section.pink-light').next().not('.pink-light').removeClass('strip-line');
+    $('section.black').next().not('.black').removeClass('strip-line');
+    $('section.blue').next().not('.blue').removeClass('strip-line');
+    $('section.grey').next().not('.grey').removeClass('strip-line');
+    $('section.yellow').next().not('.yellow').removeClass('strip-line');
+
+    // Exception, the 'section-full-bleed-images' module requires following sections to preserve the top line
+    $('section.section-full-bleed-images').not('.strip-lines').next().removeClass('strip-line');
+    $('section.section-full-bleed-images').removeClass('strip-line');
+
+    // Strip-lines class removes lines completely
+    $('section.strip-lines').next().addClass('strip-line');
+    $('section.strip-lines').addClass('strip-line');  
+
+    $('section.join').next('section').addClass('join-top');
+
+    // Put extra padding above full-bleed sections if previous section not full-bleed
+    $('section.section-full-bleed-images').prev('section').not('.section-full-bleed-images').addClass('bot-pad');
+
+    // If section followed by section with no illo AND bg cols the same, ADD 'butt' classes to move them closer
+    $('section.none').next('section.no-illo.none').addClass('no-illo-butt strip-top-butt').removeClass('no-illo strip-top');
+    $('section.black').next('section.no-illo.black').addClass('no-illo-butt strip-top-butt').removeClass('no-illo strip-top');
+    $('section.blue').next('section.no-illo.blue').addClass('no-illo-butt strip-top-butt').removeClass('no-illo strip-top');
+    $('section.pink').next('section.no-illo.pink').addClass('no-illo-butt strip-top-butt').removeClass('no-illo strip-top');
+    $('section.pink-light').next('section.no-illo.pink-light').addClass('no-illo-butt strip-top-butt').removeClass('no-illo strip-top');
+    $('section.grey').next('section.no-illo.grey').addClass('no-illo-butt strip-top-butt').removeClass('no-illo strip-top');
+    $('section.yellow').next('section.no-illo.yellow').addClass('no-illo-butt strip-top-butt').removeClass('no-illo strip-top');
+    
+    // If section with no-illo ADD strip-bottom class to previous section
+    $('.no-illo').prev('section').addClass('strip-bottom');
+    $('.no-illo-butt').prev('section').addClass('strip-bottom-butt');
+
+    ///////////////////////////////////////////
+    /////////// HEADER ADJUSTMENTS ////////////
+    ///////////////////////////////////////////
+
+    // If first section has an illo...
+    if( $( '.content > section:nth-of-type(1)' ).hasClass('no-illo-butt') != true &&
+        $( '.content > section:nth-of-type(1)' ).hasClass('no-illo') != true )
+    {
+      // ...and there's a [header with no-image] add classes to stop illo overlapping header
+      if ( $('body.layout-page header').hasClass('no-image') ) {
+        $('header').addClass('pad-for-overlap');
+        $('.content > section:nth-of-type(1)').addClass('overlap');
+      }
+    }
+    else { // If first section does NOT have an illo...
+      // If [header with no-image] remove strip-line and match bg colours
+      if ( $('body.layout-page header').hasClass('no-image') ) {
+        if ( $('.content > section:nth-of-type(1)').hasClass('none') ) {
+          $('header').addClass('none');
+        }
+        else if ( $('.content > section:nth-of-type(1)').hasClass('pink') ) {
+          $('header').addClass('pink');
+        }
+        else if ( $('.content > section:nth-of-type(1)').hasClass('pink-light') ) {
+          $('header').addClass('pink-light');
+        }
+        else if ( $('.content > section:nth-of-type(1)').hasClass('black') ) {
+          $('header').addClass('black');
+        }
+        else if ( $('.content > section:nth-of-type(1)').hasClass('blue') ) {
+          $('header').addClass('blue');
+        }
+        else if ( $('.content > section:nth-of-type(1)').hasClass('grey') ) {
+          $('header').addClass('grey');
+        }
+        else if ( $('.content > section:nth-of-type(1)').hasClass('yellow') ) {
+          $('header').addClass('yellow');
+        }
+        $('.content > section:nth-of-type(1)').addClass('strip-top-butt');
+        $('header').addClass('strip-line');
+      }
+    } 
+
+    // If [header with no-image] and first section dont't share the same bg colour remove strip-line class
+    if ( $('body.layout-page header.no-image').hasClass('none') && $('.content > section:nth-of-type(1)').hasClass('none') ) {
+    }
+    else if ( $('body.layout-page header.no-image').hasClass('pink') && $('.content > section:nth-of-type(1)').hasClass('pink') ) {
+    }
+    else if ( $('body.layout-page header.no-image').hasClass('pink-light') && $('.content > section:nth-of-type(1)').hasClass('pink-light') ) {
+    }
+    else if ( $('body.layout-page header.no-image').hasClass('black') && $('.content > section:nth-of-type(1)').hasClass('black') ) {
+    }
+    else if ( $('body.layout-page header.no-image').hasClass('blue') && $('.content > section:nth-of-type(1)').hasClass('blue') ) {
+    }
+    else if ( $('body.layout-page header.no-image').hasClass('yellow') && $('.content > section:nth-of-type(1)').hasClass('yellow') ) {
+    }
+    else if ( $('body.layout-page header.no-image').hasClass('grey') && $('.content > section:nth-of-type(1)').hasClass('grey') ) {
+    }
+    else {
+      $('.content > section:nth-of-type(1)').removeClass('strip-line');
+    }
+
+    // Header class 'no-strip'
+    // Leave strip-line present when no-strip added to header class
+    if ( $('body header').hasClass('no-strip') || $('body header').hasClass('no-image') ) {
+      $('.content > section:nth-of-type(1)').addClass('strip-line');
+      $('body .top-bar > .bg-texture-wrapper .frame .bottom-frame').hide();
+    }
+
+    // Header class 'no-top-gap'
+    // If header has no-top-gap add no-top-gap to first section
+    if ( $('body.layout-page header').hasClass('no-top-gap') ) {
+      $('.content > section:nth-of-type(1)').addClass('no-top-gap');
+    }
+
+  })() //End of limit scope
+</script>
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+  ;(function() { //Limit scope
+    ///////////////////////////////////////////
+    /////////////// ANIMATIONS ////////////////
+    ///////////////////////////////////////////
+
+    ScrollTrigger.matchMedia({
+      // desktop
+      "(min-width: 1660px)": function() {
+          // POINTY HAND animation
+          //.handAni is the class that triggers ani
+          //.hand is the target class that is animated
+          let allHandAni = gsap.utils.toArray('.handAni');
+          
+          allHandAni.forEach((item, index) => {
+          
+            let handAni = gsap.timeline({
+              scrollTrigger:{
+                trigger: item,
+                start: "top center",
+                end: "center top",
+                toggleActions: "play reverse resume reverse", 
+                scrub: false,
+                markers: false
+              }
+            });
+            handAni.to(".hand", {yPercent: 80, xPercent: 88, duration: 0.4});  
+          });
+      },
+    });
+    
+    ScrollTrigger.matchMedia({
+      // desktop and tablet
+      "(min-width: 768px)": function() {
+          // BURGLAR aniamtion
+          //.burglarAni is the class that triggers animation
+          //.burglar is the target class that is animated
+          let allBurglarsAni = gsap.utils.toArray('.burglarAni');
+          
+          allBurglarsAni.forEach((item, index) => {
+          
+            let burglarAni = gsap.timeline({
+              scrollTrigger:{
+                trigger: item,
+                start: "center bottom",
+                end: "center top",
+                toggleActions: "play reverse resume reverse", 
+                scrub: false,
+                markers: false
+              }
+            });
+            burglarAni.to(".burglar", {yPercent: -92, xPercent: -16, duration: 0.4});
+          });
+      },
+    });
+
+    ScrollTrigger.matchMedia({
+      // desktop
+      "(min-width: 1660px)": function() {
+          // Spotlight animation
+          //.spotlightAni is the class that triggers ani
+          //.spotlight is the target class that is animated
+          let allSpotlightsAni = gsap.utils.toArray('.spotlightAni');
+          
+          allSpotlightsAni.forEach((item, index) => {
+          
+            let spotlightAni = gsap.timeline({
+              scrollTrigger:{
+                trigger: item,
+                start: "top center",
+                end: "center top",
+                toggleActions: "play reverse resume reverse", 
+                scrub: false,
+                markers: false
+              }
+            });
+            spotlightAni.to(".spotlight", {yPercent: 80, xPercent: 105, duration: 0.4});  
+          });
+      },
+    });
+
+    ScrollTrigger.matchMedia({
+      // desktop
+      "(min-width: 1660px)": function() {
+          // Robot animation
+          //.robotAni is the class that triggers ani
+          //.robot is the target class that is animated
+          let allRobotAni = gsap.utils.toArray('.robotAni');
+          
+          allRobotAni.forEach((item, index) => {
+          
+            let robotAni = gsap.timeline({
+              scrollTrigger:{
+                trigger: item,
+                start: "top center",
+                end: "center top",
+                toggleActions: "play reverse resume reverse", 
+                scrub: false,
+                markers: false
+              }
+            });
+            robotAni.to(".robot", {yPercent: 80, xPercent: 105, duration: 0.4});  
+          });
+      },
+    });
+    
+    ScrollTrigger.matchMedia({
+      // desktop and tablet
+      "(min-width: 768px)": function() {
+          // Telescope aniamtion
+          //.telescopesAni is the class that triggers animation
+          //.telescope is the target class that is animated
+          let allTelescopesAni = gsap.utils.toArray('.telescopeAni');
+          
+          allTelescopesAni.forEach((item, index) => {
+          
+            let telescopeAni = gsap.timeline({
+              scrollTrigger:{
+                trigger: item,
+                start: "center bottom",
+                end: "center top",
+                toggleActions: "play reverse resume reverse", 
+                scrub: false,
+                markers: false
+              }
+            });
+            telescopeAni.to(".telescope", {yPercent: -92, xPercent: -0, duration: 0.4});
+          });
+      },
+    });
+
+  })() //End of limit scope
+</script>
+
+
+
+
+
+<script type="text/javascript">
+  ;(function() { //Limit scope
+    ///////////////////////////////////////////
+    //////////// SUBSCRIBE MODAL //////////////
+    ///////////////////////////////////////////
+
+    // Cookie - show modal once (7 day expiry)
+    function createCookie(cookieName,cookieValue,daysToExpire){
+      var date = new Date();
+      date.setTime(date.getTime()+(daysToExpire*24*60*60*1000));
+      document.cookie = cookieName + "=" + cookieValue + "; expires=" + date.toGMTString();
+    }
+    // Access cookie, not being used
+    function accessCookie(cookieName){
+      var name = cookieName + "=";
+      var allCookieArray = document.cookie.split(';');
+      for(var i=0; i<allCookieArray.length; i++)
+      {
+        var temp = allCookieArray[i].trim();
+        if (temp.indexOf(name)==0)
+        return temp.substring(name.length,temp.length);
+      }
+      return "";
+    }
+    // Check cookie, and call createCookie if not cookie present
+    function checkCookie() {
+      var cookieData = accessCookie("subscribeModal");
+      if (cookieData == "viewed") {
+        console.log("CHECK TRUE - document.cookie = " + document.cookie);
+        return true;
+      }
+      else {
+        createCookie("subscribeModal","viewed",7);
+        console.log("CREATE - document.cookie = " + document.cookie);
+      }
+    }
+    // Delete cookie, un-comment delete on close button to delete during development
+    function deleteCookie() {
+      document.cookie = "subscribeModal=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+      console.log("DELETE - document.cookie = " + document.cookie);
+    }
+    ///////////////////////////////////////////
+    // Scroll Trigger
+    ///////////////////////////////////////////
+    ScrollTrigger.matchMedia({
+      // All devices
+      "(min-width: 0px)": function() {
+        // #download-trigger' is the class that triggers animation
+        let allDownloadTriggersAni = gsap.utils.toArray('#download-trigger');
+        allDownloadTriggersAni.forEach((item, index) => {
+          let downloadTriggersAni = gsap.timeline({
+            scrollTrigger:{
+              trigger: item,
+              onEnter: openSubscribeModal, // calls openSubscribeModal function
+              start: "top center",
+              end: "center top",
+              toggleActions: "", 
+              scrub: false,
+              markers: false
+            }
+          });
+          // Timeline - not being used
+        });
+      },
+    });
+    // Refresh scroll trigger as images loads
+    document.querySelectorAll("img").forEach(img => {
+    if (img.complete) {
+      ScrollTrigger.refresh();
+    } else {
+      img.addEventListener('load', imgLoaded => ScrollTrigger.refresh());
+    }
+    });
+    ///////////////////////////////////////////
+    // Subscribe Modal Open/Close
+    ///////////////////////////////////////////
+    var trigger = false;
+    function openSubscribeModal() {
+      // If 'once-per-visit' (as used on hire-me page) delete cookie to reset after each visit
+      if ( $(".subscribe-modal").hasClass("once-per-visit") == true ){
+        deleteCookie();
+      }
+      if ( trigger != true  && checkCookie() != true) {
+        $(".subscribe-modal").css("bottom",0);
+        $(".subscribe-modal").addClass("open");
+        // Fade overlay opacity then set display to none
+        gsap.to(".fullpage-tint.over-nav", {opacity:1, display:"initial", duration: 0.4});
+        // Hide Tidio chat window
+        tidioChatApi.hide();
+        // Fade animations to zero
+        gsap.to(".burglar", {opacity:0, display:"none", duration: 0.4}); 
+        gsap.to(".hand", {opacity:0, display:"none", duration: 0.4}); 
+        gsap.to(".robot", {opacity:0, display:"none", duration: 0.4}); 
+        gsap.to(".telescope", {opacity:0, display:"none", duration: 0.4});
+      }
+      else if ( trigger != true ) {
+        $(".subscribe-modal").css("bottom", ($(".subscribe-modal").innerHeight() - 45) * -1 );
+        $(".subscribe-modal .bg-texture-wrapper.pink").css("opacity", 1);
+        // Add strip class
+        $(".subscribe-modal").addClass("strip");
+        $(".subscribe-modal .strip-text").addClass("show");
+        $(".subscribe-modal .close-button").addClass("hide");
+      }
+      // Set trigger to true... do once
+      trigger = true;
+    }
+    // Close button click
+    $(".subscribe-modal .close-button").click(function() {
+      {% if jekyll.environment == "development" %}
+        deleteCookie();
+      {% endif %}
+      if ( $(".subscribe-modal").hasClass("once-per-visit") == true ){
+        // Animate modal compleytely off screen (no strip text)
+        $(".subscribe-modal").css("bottom", ($(".subscribe-modal").innerHeight() + 4) * -1 );      
+        $(".subscribe-modal .close-button").addClass("hide");
+      }
+      else{
+        // Animate modal to bottom and fade in strip text
+        $(".subscribe-modal").css("bottom", ($(".subscribe-modal").innerHeight() - 45) * -1 );
+        $(".subscribe-modal .bg-texture-wrapper.pink").css("opacity", 1);
+        // Add strip class
+        $(".subscribe-modal").addClass("strip");
+      }
+      $(".subscribe-modal").removeClass("open");
+      // Fade overlay opacity then set display to none
+      gsap.to(".fullpage-tint.over-nav", {opacity:0, display:"none", duration: 0.4}); 
+      $(".subscribe-modal .strip-text").addClass("show");
+      $(".subscribe-modal .close-button").addClass("hide");
+      // Show Tidio chat window
+      tidioChatApi.show();
+      // Fade animations to 1
+      gsap.to(".burglar", {opacity:1, display:"initial", duration: 0.4}); 
+      gsap.to(".hand", {opacity:1, display:"initial", duration: 0.4}); 
+      gsap.to(".robot", {opacity:1, display:"initial", duration: 0.4}); 
+      gsap.to(".telescope", {opacity:1, display:"initial", duration: 0.4}); 
+    });
+    // Strip text click
+    $(".subscribe-modal .strip-text").click(function() {
+      $(".subscribe-modal").css("bottom",0);
+      $(".subscribe-modal .bg-texture-wrapper.pink").css("opacity", 0);
+      // Remove class strip
+      $(".subscribe-modal").addClass("open");
+      // Fade overlay opacity then set display to none
+      gsap.to(".fullpage-tint.over-nav", {opacity:1, display:"initial", duration: 0.4}); 
+      $(".subscribe-modal").removeClass("strip");
+      $(".subscribe-modal .strip-text").removeClass("show");
+      $(".subscribe-modal .close-button").removeClass("hide");
+      // Hide Tidio chat window
+      tidioChatApi.hide();
+      // Fade animations to zero
+      gsap.to(".burglar", {opacity:0, display:"none", duration: 0.4}); 
+      gsap.to(".hand", {opacity:0, display:"none", duration: 0.4}); 
+      gsap.to(".robot", {opacity:0, display:"none", duration: 0.4}); 
+      gsap.to(".telescope", {opacity:0, display:"none", duration: 0.4}); 
+    });
+    // On resize re-set bottom position of modal if in strip mode
+    $( window ).resize(function() {
+      if( $(".subscribe-modal").hasClass("strip") ){
+        $(".subscribe-modal").css("bottom", ($(".subscribe-modal").innerHeight() - 45) * -1 );
+      }
+    });
+  })() //End of limit scope
+</script>
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+  ;(function() { //Limit scope
+    ///////////////////////////////////////////
+    ////// TOP BAR NAVIGATION SHOW/HIDE ///////
+    /////// TIDO WIDGET SHOW ON SCROLL ////////
+    ///////////////////////////////////////////
+    var tidioDoOnce = false;
+    var tidioReady = false;
+    // Tidio - on load function
+    function slideInTidio() {
+      if ( tidioDoOnce == false && tidioReady == true ) {
+        if( !$("body").hasClass("NoTidio") ){ // For Posts, they don't have chat, gets in the way
+          tidioChatApi.show();
+          $(".button-wrapper.open-chat").removeClass("disable");
+          $(".button-wrapper.open-chat a").text("Start Chat ❯");
+          tidioDoOnce = true;
+        }
+      }
+    }
+    (function() {
+      function onTidioChatApiReady() {
+        tidioReady = true;
+        tidioChatApi.hide();
+        if( window.pageYOffset > 150 || $("body").hasClass("TidioOnLoad") ){
+          slideInTidio();
+        }
+      }
+      if (window.tidioChatApi) {
+        window.tidioChatApi.on("ready", onTidioChatApiReady);
+      } else {
+        document.addEventListener("tidioChat-ready", onTidioChatApiReady);
+      }
+    })();
+    
+    // Top bar animation
+    var navTimeouts = [];
+    navTimeouts.open = [];
+    navTimeouts.close = [];
+    var prevScrollpos = window.pageYOffset;
+    var scrollCheck = false;
+    window.onscroll = function() {
+      // If scroll > 150 move Tido widget onto screen
+      if( window.pageYOffset > 150 ) {
+        slideInTidio();
+      }
+      if ( scrollCheck != true ){
+        // Every 200millisecs check to see if scroll exceeds 20px
+        navTimeouts.open['scrollBegin'] = setTimeout(function() {
+          var currentScrollPos = window.pageYOffset;
+          //var gap = currentScrollPos - prevScrollpos;
+          if ( currentScrollPos < (prevScrollpos-20) ) {
+            //Show
+            $(".top-bar").css("top", "0px");
+          }
+          else if( currentScrollPos > $(".top-bar").innerHeight() ) {
+            if ( currentScrollPos > (prevScrollpos+20) ) {
+              // Hide
+              $(".top-bar").css("top", "-140px");
+            }
+          }
+          prevScrollpos = currentScrollPos;
+          scrollCheck = false;    
+        }, 200);
+        scrollCheck = true;  
+      }
+    }
+  })() //End of limit scope
+</script>
+
+
+
+
+
+<script type="text/javascript">
+  ;(function() { //Limit scope
+    ///////////////////////////////////////////
+    //////////////// MEGA-MENU ////////////////
+    ///////////////////////////////////////////
+    var timeouts = [];
+    timeouts.open = [];
+    timeouts.close = [];
+    if (window.matchMedia("(min-width: 1200px)").matches)  { 
+      ///////////////////////////////////////////
+      // Nav-link hover on/off code
+      ///////////////////////////////////////////
+      $( '.nav-link' ).hover(
+        function() {
+          // kill any close delay, we are hovering
+          clearTimeout(timeouts.close['nav-link']);
+          var self =$(this);
+          // set small delay to open, to avoid opening on quick mouseover
+          timeouts.open['nav-link'] = setTimeout(function() {
+              // Find which .nav-link is being hovered over (index+1)
+              var navIndexCurr = self.index() + 1;
+              //Find total number of nav-links
+              var navItemsTotal = $('.navigation-menu li').length;
+              // Loop and remove .active classes from all .nav-links
+              $('.navigation-menu li').each(function() {
+                $(this).removeClass( 'active' );
+              });
+              // Loop and remove .show classes from all .mega-menu
+              $('.mega-menu-wrapper .mega-menu').each(function() {
+                $(this).fadeOut( 0 );
+              });
+              // Check nav-link has .dropdown class
+              if ( self.hasClass('dropdown') ) {
+                  self.addClass( 'active' );  
+                  // Animate heigt, opacty, and set display to block after completion
+                  var tl = gsap.timeline();
+                  tl.to('.mega-menu-wrapper', {height: 390, duration: 0.3, display:'block', ease: Power1.easeOut});
+                  tl.to('.mega-menu-wrapper', {opacity: 1, duration: 0.6},'-=0.25');  
+                  // Set overlay to display and then fade it to full opacity
+                  gsap.to('.fullpage-tint.under-nav', {opacity:1, display:'initial', duration: 0.4});   
+                  $( '.mega-menu-wrapper .mega-menu:nth-of-type(' + navIndexCurr + ')').fadeIn( 0 );
+              }
+              else {
+                // Fade overlay opacity then set display to none
+                gsap.to('.fullpage-tint.under-nav', {opacity:0, display:'none', duration: 0.4});  
+                // Animate heigt, opacty, and set display to none after completion
+                var tl = gsap.timeline();
+                tl.to('.mega-menu-wrapper', {height: 0, duration: 0.3, display:'none', ease: Power1.easeOut});  
+                tl.to('.mega-menu-wrapper', {opacity: 0, duration: 0.2},'<'); 
+              }
+          }, 300);
+        }
+        ,
+        function() {
+          // After delay check if .mega-menu-wrapper still has .show class (if not remove .active class from .nav-link)
+            // kill any open delay, we left element
+            clearTimeout(timeouts.open['nav-link']);
+            timeouts.close['nav-link'] = setTimeout(function() {
+              $( '.nav-link.active' ).removeClass( 'active' ); 
+              // Fade overlay opacity then set display to none
+              gsap.to('.fullpage-tint.under-nav', {opacity:0, display:'none', duration: 0.4});  
+              // Animate heigt, opacty, and set display to none after completion
+              var tl = gsap.timeline();
+              tl.to('.mega-menu-wrapper', {height: 0, duration: 0.3, display:'none', ease: Power1.easeOut});  
+              tl.to('.mega-menu-wrapper', {opacity: 0, duration: 0.2},'<'); 
+              $( '.mega-menu-wrapper .mega-menu.show').fadeOut( 0 );   
+            }, 300);
+        }
+      );
+      ///////////////////////////////////////////
+      // Mega-menu hover on/off code
+      ///////////////////////////////////////////
+      $( '.mega-menu-wrapper' ).hover(
+        function() {
+          // kill any close delay, we are hovering
+          clearTimeout(timeouts.close['nav-link']);
+        }
+        ,
+        function() {
+          // kill any open delay, we left element
+          clearTimeout(timeouts.open['nav-link']);
+          timeouts.close['nav-link'] = setTimeout(function() {
+            $( '.nav-link.active' ).removeClass( 'active' ); 
+            // Animate height, opacty, and set display to none after completion
+            var tl = gsap.timeline();
+            tl.to('.mega-menu-wrapper', {height: 0, duration: 0.3, display:'none', ease: Power1.easeOut}); 
+            tl.to('.mega-menu-wrapper', {opacity: 0, duration: 0.2},'<'); 
+            // Fade overlay opacity then set display to none
+            gsap.to('.fullpage-tint.under-nav', {opacity:0, display:'none', duration: 0.4});  
+            $( '.mega-menu-wrapper .mega-menu.show').fadeOut( 0 );  
+          }, 300);
+        }
+      );
+    }
+  })() //End of limit scope
+</script>
+
+
+
+
+
+<script type="text/javascript">
+///////////////////////////////////////////
+////////// OBJECT-FIT: POLYFILL ///////////
+///////////////////////////////////////////
+//POLYFILL FOR OBJECT-FIT: ON IE/EDGE
+  $(function () { objectFitImages() });
+</script>
+
+
+
+
+
+
+
+
+
+
+

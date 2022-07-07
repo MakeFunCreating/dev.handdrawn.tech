@@ -1,0 +1,84 @@
+
+
+{% assign section-divider = null %}
+{% assign section-class = null %}
+
+{% if include.class contains "pink" or include.class contains "yellow" or include.class contains "grey" or include.class contains "black" or include.class contains "black-medium" or include.class contains "blue" or include.class contains "none" %}
+  {% assign section-class = include.class %}
+{% else%}
+  {% assign section-class = include.class | append: " none" %}
+{% endif %}
+
+{% if include.section-divider == "no-illo" %}
+    {% assign section-class = section-class | append: " " | append: "no-illo" %}
+    {% assign section-class = section-class | append: " " | append: "strip-top"  %}
+    {% assign section-divider = "" %}
+{% elsif include.section-divider == "no-illo-butt" %}
+    {% assign section-class = section-class | append: " " | append: "no-illo-butt"  %}
+    {% assign section-class = section-class | append: " " | append: "strip-top-butt"  %}
+    {% assign section-divider = "" %}
+{% elsif include.section-divider and include.section-divider != empty%}
+    {% assign section-divider = include.section-divider %}
+{% else %}
+    {% assign section-class = section-class | append: " " | append: "no-illo"  %}
+    {% assign section-class = section-class | append: " " | append: "strip-top"  %}
+    {% assign section-divider = "" %}
+{% endif %} 
+
+{% assign section-class = section-class | append: " " | append: include.ani-triggers | replace: "  ", " " %}
+
+{% assign tag-nam-var = null %}
+{% assign tag-nam-num = null %}
+
+
+<section {% if include.id and include.id != empty %}id="{{ include.id }}"{% endif %} class="section-tags strip-line {{ section-class | strip }}">
+    <div class="content-wrapper">
+
+      {% if include.sect-title and include.sect-title != empty %}
+
+        <div class="sect-title-wrapper">
+          <h2 class="sect-title">{{ include.sect-title }}</h2>
+          <div class="underline"></div>
+        </div>
+
+      {% endif %}
+
+      <div class="text-wrapper">
+
+        {% if include.h1 and include.h1 != empty %}
+          <h4>{{ include.h1 }}</h4>
+        {% endif %}
+        {% if include.p1 and include.p1 != empty %}
+          <p{% if include.class contains "announcement" %} class="smaller"{% endif %}>{{ include.p1 }}</p>
+        {% endif %}
+
+          <!--<p>Use the category page links to quickly search for other illustrations:</p>-->
+        <div class="tags-wrapper">
+          <ul>
+            {% if include.thispage-all == "all" %}
+              {% for tags in site.tags %}
+                {% assign tag-nam-var = tags[0] %}
+                {% assign tag-nam-num = site.tags[tag-nam-var].size %}
+                <li class="tag"><a href="{{ site.baseurl }}/illustrations/tags/{{ tag-nam-var | replace:' ','-' }}" class="link-button smallest-skew">{{ tag-nam-var }}<div class="tag-num"><span class="tag-text">{{ tag-nam-num }}</span></div></a></li>
+              {% endfor %}
+            {% elsif include.thispage-all == "thispage" %}
+              {% for tags in page.tags %}
+                {% assign tag-nam-var = tags %}
+                {% assign tag-nam-num = site.tags[tag-nam-var].size %}
+
+                <li class="tag"><a href="{{ site.baseurl }}/illustrations/tags/{{ tag-nam-var | replace:' ','-' }}" class="link-button smallest-skew">{{ tag-nam-var }}{% if tag-nam-num > 1 %}<div class="tag-num"><span class="tag-text">{{ tag-nam-num }}</span></div>{% endif %}</a></li>
+              {% endfor %}
+            {% endif %}
+          </ul>
+        </div>
+      </div>
+      <div class="bg-texture-wrapper">
+        <div class="frame show"><div class="top-frame"></div><div class="bottom-frame"></div></div>
+        <div class="bg-texture"></div>
+      </div>
+    </div>
+</section>
+
+
+
+      

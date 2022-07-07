@@ -1,0 +1,167 @@
+ 
+
+
+{% assign temp-header-class = page.header-class | downcase %}
+{% assign header-class = temp-header-class %}
+
+{% unless temp-header-class contains "none" or temp-header-class contains "pink" or temp-header-class contains "black" or temp-header-class contains "blue" %}
+  {% assign header-class = header-class | append: " none" %}
+{% endunless %}
+
+{% if page.header-image and page.header-image != empty %}
+  {% unless temp-header-class contains "tall" or temp-header-class contains "narrow" %}
+      {% assign header-class = header-class | append: " tall" %}
+  {% endunless %}
+  
+  {% unless temp-header-class contains "bottom" or temp-header-class contains "center" %}
+      {% assign header-class = header-class | append: " bottom" %}
+  {% endunless %}
+{% else %}
+  {% assign header-class = header-class | append: " no-image" %}
+{% endif %}
+
+
+{% unless temp-header-class contains "no-header" or  page.header-class == null or page.layout == "illustration-tags" %}
+
+{% if site.data.announcement.announcement["show"] != false %}
+  {% if page.announcement != false %}
+    <section class="section-text announcement strip-top strip-bottom pink">
+        <div class="content-wrapper">
+          <div class="text-wrapper">    
+              <p class="smallest"><a href="{{ site.url }}{{ site.baseurl }}{{ site.data.announcement.announcement["link"  ] }}">{{ site.data.announcement.announcement["text"] }}</a></p>
+          </div>
+          <div class="bg-texture-wrapper">
+            <div class="frame show"><div class="top-frame"></div><div class="bottom-frame"></div></div>
+            <div class="bg-texture"></div>
+          </div>
+        </div>
+    </section>
+  {% endif %}
+{% endif %}
+
+<header class="{{ header-class | strip }} {% if site.data.announcement.announcement["show"] != false %}{% if page.announcement != false %}announcement{% endif %}{% endif %} down-arrow">
+
+  <div class="content-wrapper">
+    {% unless temp-header-class contains "no-title" %}
+    <div class="title-card-wrapper">
+      <div class="title-card">
+        <div class="left-wing-wrapper"><div class="left-wing"></div></div>
+        <div class="right-wing-wrapper"><div class="right-wing"></div></div>
+
+          <div class="frame-wrapper">
+            <div class="frame">
+              <div class="top-frame"></div>
+              <div class="left-frame"></div>
+              <div class="right-frame"></div>
+              <div class="bottom-frame"></div>
+            </div>
+
+            <div class="text-wrapper card">
+              {% if page.h1 %}
+                {% if page.title-nbsp == "false" %}{% assign breaking-space-var = " " %}{% else %}{% assign breaking-space-var = ";psbn&" %}{% endif %}
+                {% assign h1 = page.h1 | split:'' | reverse | join:'' | replace_first: ' ', breaking-space-var  | split:'' | reverse | join:'' %}
+                 <h1 class="page-title {% if page.title-large == true %}large{% endif %}">{{ h1 }}</h1>
+              {% elsif page.product-title %}
+                  {% assign title = page.product-title %}
+                 <h1 class="page-title">{{ title }}</h1>
+              {% endif %}
+
+              {% if page.sub-heading and page.sub-heading != empty %}
+                <p class="page-sub-title">
+                  {%if page.sub-heading-link and page.sub-heading-link != empty %}<a href="{{ site.baseurl }}{{ page.sub-heading-link }}">{% endif %}
+                      {{ page.sub-heading }}
+                  {% if page.sub-heading-link and page.sub-heading-link != empty %}</a>{% endif %}
+                </p>
+              {% endif %}
+            </div>
+            
+          </div>
+
+        <div class="down-arrow"></div>
+        <div class="bg-texture-wrapper"><div class="bg-texture"></div></div>
+
+      </div>
+    </div>
+    {% endunless %}
+
+    {% unless page.header-class contains "no-image" %}
+      <div class="img-wrapper">
+          <div class="overlay"></div>
+          <picture>
+            {% if page.header-image == true %} 
+              {% assign img-file-prepend = page.image-dir | split: "/" | last | append: "-" %}
+              {% assign new-src = page.image-dir | append: "/header"  %}
+              {% assign file-format = "jpg" %}
+            {% else %}
+              {% assign src = page.header-image %}
+              {% assign srcArray = src | split: "/" %}
+              
+              {% assign new-src = null %}
+              {% assign img-file-prepend = null %}
+              {% assign hypenYesNo = null %}
+              {% assign noHash = null %}
+              {% assign file-format = "jpg" %}
+            
+              {% if src contains "#" %}
+                {% assign file-format = srcArray | last | split: "#" | last %} 
+                {% assign hashSplitArray = srcArray | last | split: "#" %}  
+                {% assign tempVar = hashSplitArray | first %} 
+                {% if tempVar == empty %}
+                  {% assign img-file-prepend = "" %}
+                  {% assign whereIsHash = "ONLY-FILE-FORMAT" %}
+                {% else%}
+                  {% assign img-file-prepend = srcArray | last | split: "#" | first | append: "-" %}
+                  {% assign whereIsHash = "FILE-FORMAT-PREPEND" %}
+                {% endif %}
+              {% else %}
+                {% assign whereIsHash = "NO-HASH" %}
+                {% assign img-file-prepend = imgDirArray | last | append: "" %}
+                {% assign file-format = "jpg" %}
+              {% endif %}
+            
+              {% for item in srcArray %}
+                {% if whereIsHash == "ONLY-FILE-FORMAT" %}
+                  {% if forloop.first == true %}
+                    {% assign new-src = new-src | append: item %}
+                  {% else %}
+                    {% if forloop.last != true %}
+                      {% assign new-src = new-src | append: "/" |  append: item %}
+                    {% endif %}
+                  {% endif %}
+                {% elsif whereIsHash == "FILE-FORMAT-PREPEND" %}
+                  {% if forloop.last != true %}
+                    {% if forloop.first == true %}
+                      {% assign new-src = new-src | append: item %}
+                    {% elsif forloop.first != true %}
+                      {% assign new-src = new-src  | append: "/"| append: item %}
+                    {% endif %}
+                  {% endif %}
+                {% elsif whereIsHash == "NO-HASH" %}
+                    {% assign new-src = new-src | append: item %}
+                    {% if forloop.last != true %}
+                      {% assign new-src = new-src | append: "/" %}
+                    {% endif %}
+                {% endif %}
+              {% endfor %}
+            {% endif %}
+            <source media="(min-width: 1200px)" srcset="{{ site.url }}{{ site.baseurl }}/images/{{ new-src }}/{{ img-file-prepend }}3200px.{{ file-format }}">
+            <source media="(min-width: 480px)" srcset="{{ site.url }}{{ site.baseurl }}/images/{{ new-src }}/{{ img-file-prepend }}2200px.{{ file-format }}">
+            <img src="{{ site.url }}{{ site.baseurl }}/images/{{ new-src }}/{{ img-file-prepend }}1200px.{{ file-format }}"
+            alt="{{ page.header-image | replace: '-', ' '}}" loading="eager">
+          </picture>  
+      </div>
+    {% endunless %}
+
+    <div class="bg-texture-wrapper">
+      <div class="frame show">{% unless header-class contains "no-imageX" %}<div class="bottom-frame"></div>{% endunless %}</div>
+      <div class="bg-texture"></div>
+    </div>
+
+  </div>
+
+</header>
+{% endunless %}
+
+
+
+

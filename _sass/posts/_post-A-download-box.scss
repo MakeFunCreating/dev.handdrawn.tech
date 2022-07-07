@@ -1,0 +1,259 @@
+
+///////////////////////////////////////////////////////
+///////////////////////////////////////////////////////
+///////////////////// DOWNLOAD BOX ////////////////////
+///////////////////////////////////////////////////////
+///////////////////////////////////////////////////////
+
+.download-box-wrapper {
+	position: relative;
+    margin: 8rem 0 7rem 0;
+    width: 100%;
+    @include breakpoint(TP) {
+    	margin: 10rem 0 9rem 0;
+    } 
+    @include breakpoint(D) {
+    	margin: 16rem 0 12rem 0;
+    }    
+}
+
+.download-box-wrapper .download-title { // Roundel
+    background: url(../images/roundels/dont-miss-out/375px.png) no-repeat bottom right/100% auto;
+    left: 53px;
+    top: -42px;
+    width: 123px;
+    height: 141px;
+    margin: 0;
+    text-indent: 1000px;
+    white-space: nowrap;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+    @include breakpoint(ML) {
+    	background: url(../images/roundels/dont-miss-out/500px.png) no-repeat bottom right/100% auto;
+    }
+    @include breakpoint(TP) {
+    	left: 61px;
+    	top: -46px;
+        width: 149px;
+        height: 171px;
+    }
+	@include breakpoint(D) {
+    	background: url(../images/roundels/dont-miss-out/625px.png) no-repeat bottom right/100% auto;
+    	left: 191px;
+    	top: -120px;
+        width: 180px;
+        height: 238px;
+   }
+}
+
+///////////////// ROUNDEL OVERIDES ///////////////////
+
+.download-box-wrapper .download-title.dont-miss-out { // Roundel
+    background: url(../images/roundels/dont-miss-out/375px.png) no-repeat bottom right/100% auto;
+}
+
+.download-box-wrapper .download-title.get-free-artwork { // Roundel
+    background: url(../images/roundels/get-free-artwork/375px.png) no-repeat bottom right/100% auto;
+}
+
+.download-box-wrapper .download-title.get-free-stuff { // Roundel
+    background: url(../images/roundels/get-free-stuff/375px.png) no-repeat bottom right/100% auto;
+}
+
+//////////////////////////////////////////////////////
+
+.download-box { // Main box & background
+	position: relative;
+	text-align: center;
+	font-size: 1.7rem;
+	width: 100%;
+    left: 0;
+	box-shadow: 5px 5px 10px rgba(0,0,0,0.15);	
+    //transform: rotate(-2deg);
+    @include breakpoint(ML) {
+
+    }
+	@include breakpoint(TP) {
+		width: 100%;
+		left: 0;
+  		font-size: 1.85rem;
+  		min-height: 424px;
+	}
+	@include breakpoint(D) {
+		font-size: 2rem;
+		width: 100%; 
+		left: 0;
+		min-height: 489px;
+	}
+}
+
+.download-box .text-column {
+	position: relative;
+	z-index: 14;
+	padding: 292px 33px 20px 30px;
+	@include breakpoint(ML) {
+		padding: 116px 207px 37px 22px;
+	}
+	@include breakpoint(TP) {
+		padding: 112px 269px 27px 30px;
+	}
+	@include breakpoint(D) {
+		padding: 107px 369px 35px 40px;
+	}
+}
+
+.download-box .summary-wrapper {
+	margin: 1rem 5% 1rem 5%;
+	@include breakpoint(TP) {
+		margin: 1rem 0 1rem 0;
+	}
+}
+
+.download-box .summary-wrapper p {
+	margin-bottom: 10px;
+	font-size: 1.5rem;
+	@include breakpoint(TP) {
+		font-size: 1.7rem;
+	}
+	@include breakpoint(D) {
+		font-size: 1.9rem;
+	}
+}
+
+.download-box .list-wrapper {
+	margin: 1rem 0 2rem 0;
+	@include breakpoint(TP) {
+		margin: 2rem 0 3.25rem 0;
+	}
+}
+
+.download-box .list-wrapper p {
+	font-size: 1.5rem;
+	margin-bottom: 0px;
+	@include breakpoint(TP) {
+		margin-bottom: 10px;
+	}
+	@include breakpoint(D) {
+		margin-bottom: 10px;
+		font-size: 1.7rem;
+	}
+}
+
+.download-box .list-wrapper p.unsubscribe {
+	font-size: 1.3rem;
+    margin: 1rem 0 0 0;
+	@include breakpoint(TP) {
+		 margin: 2rem 0 0 0;
+		font-size: 1.35rem;
+	}
+	@include breakpoint(D) {
+		font-size: 1.4rem;
+   	}
+}
+
+.download-box h4 {
+	font-weight: 300;
+	font-size: 3rem;
+	margin: 0.5rem 10% 1rem 10%;
+	@include breakpoint(TP) {
+		font-size: 3.3rem;
+		margin: 3rem 0 2rem 0;
+	}
+	@include breakpoint(D) {
+		margin: 2.5rem 0 2rem 0;
+		font-size: 3.8rem;
+	}
+}
+
+/////////////////////// WASHER ////////////////////////
+
+.download-box .washer-nail {
+	background: url(../images/washer-nail/165px.png) center/contain no-repeat;
+    position: absolute;
+    height: 100px;
+    z-index: 11;
+    right: 91px;
+    width: 45px;
+    top: 178px;
+	@include breakpoint(TP) {
+		right: 151px;
+    	width: 50px;
+    	top: 340px;
+    }
+	@include breakpoint(D) {
+    	right: 223px;
+   		width: 53px;
+    	top: 422px;
+    }
+}
+
+/////////////////////// IMAGE /////////////////////////
+
+.download-box-image { // Download image pos
+	position: absolute;
+	z-index: 2;
+    transform: rotate(1deg); //transform: rotate(6deg);
+    top: 21px;
+    right: 31px;
+   	@include breakpoint(ML) {
+   		display: initial;
+   		top: 31px;
+    	right: -58px;
+    	margin-right: 15px;	
+   	}
+    @include breakpoint(TP) { 		    
+   		top: 84px;
+    	right: -53px;
+    }
+   	@include breakpoint(D) {
+		top: 57px;
+    	right: -71px;
+   	}	
+}
+
+.download-box-image img { // Download image size
+	object-fit: contain;
+	font-family: 'object-fit: contain;'; // Polyfill fix for IE/EDGE
+    position: absolute;
+    height: 230px;
+    width: 203px;
+    top: 44px;
+    right: 39px;
+   	@include breakpoint(ML) {
+    	height: 220px;
+    	width: 183px;
+   	}
+   	@include breakpoint(TP) {
+    	height: 289px;
+    	width: 247px;
+    }
+	@include breakpoint(D) {
+   	    height: 370px;
+    	width: 361px;
+    }
+}
+
+//////////////// NO ROUNDEL OVERIDES //////////////////
+// This removes the roundel from download boxes and footer and adjusts for gap!
+
+.download-box-wrapper {
+    margin: 12rem 0 12rem 0;
+}
+
+.download-title {
+    display: none;
+}
+
+.download-box .text-column {
+    padding: 32px 369px 35px 40px;
+}
+
+.download-box-image {
+    top: 47px;
+}
+
+
+
+
+

@@ -1,0 +1,287 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    {% include build/head-illustration-details.html %}
+  </head>
+
+
+  {% assign body-class-1 = null %}
+  {% assign body-class-2 = null %}
+  {% if page.layout-sub-type and page.layout-sub-type != empty %}
+    {% assign body-class-1 = page.layout-sub-type %}
+  {% endif %}
+  {% if page.tidio-show-on-scroll == false %}
+    {% assign body-class-2 = "TidioOnLoad" %}
+  {% endif %}
+
+  <body class="layout-illustration-details {{ body-class-1 }} {{ body-class-2 }}">
+
+    
+    {% include build/top-bar.html %}
+
+
+    <div class="container-wrapper">
+
+      {% include build/header-page.html %}
+
+      <div class="container">
+        <div class="content">
+
+          <!-- BASED ON: SECTION TEXT/IMAGE -->
+          <section class="section-text-image illo-details full-image large-image no-frame squeeze join none no-illo strip-top no-sect-title strip-bottom-butt">
+              <div class="content-wrapper">
+                  <div class="col-wrapper col-1">
+                    <div class="text-wrapper">
+                        <h4>Illustration Description</h4>
+                        <h1 id="h1-override">{{ page.description }}</h1>
+                    </div>
+                  </div>
+                  <div class="col-wrapper col-2">
+                    <div class="frame-wrapper">
+                      <div class="img-wrapper">
+                          
+                        {% assign image-base-url = site.url | append: site.baseurl | append: "/images/illustrations/" %}
+                        {% if page.img-name contains "slug" %}
+                          {% assign image-name = "/" | append: page.slug %}
+                        {% else %}
+                          {% assign image-name = "/" | append: page.img-name %}
+                        {% endif %}
+                        {% assign image-format = "." | append: page.img-format %}
+                        {% assign variationsArray = null %}
+                        {% assign variationsArray = page.colour-variations[0]['dropdown-options'] | split: "|" %}
+                        {% assign count-num = 0 %}
+
+                        {% for item in variationsArray %}
+                          {% if item contains "[selected]" %}
+                            {% assign image-colour = item | remove: "[selected]" | slugify  %}
+                            {% assign count-num = count-num | plus: 1 %}
+                            <picture class="selected {{image-colour}}">
+                              <source media="(min-width: 1150px)" srcset="{{ image-base-url }}{{ image-colour }}{{ image-name }}-2000px{{ image-format }}">
+                              <source media="(min-width: 450px)" srcset="{{ image-base-url }}{{ image-colour }}{{ image-name }}-1500px{{ image-format }}">
+                              <img src="{{ image-base-url }}{{ image-colour }}{{ image-name }}-1000px{{ image-format }}"
+                              width="100%" height="auto" alt="{% if page.img-alt %}{{ page.img-alt }}{% endif %}">
+                            </picture>
+                          {% endif %}
+                        {% endfor %}
+
+                        {% for item in variationsArray %}
+                          {% unless item contains "[selected]" %}
+                            {% assign image-colour = item | remove: "[selected]" | slugify %}
+                            {% assign count-num = count-num | plus: 1 %}
+                            <picture class="{{image-colour}}">
+                              <source media="(min-width: 1150px)" srcset="{{ image-base-url }}{{ image-colour }}{{ image-name }}-2000px{{ image-format }}">
+                              <source media="(min-width: 450px)" srcset="{{ image-base-url }}{{ image-colour }}{{ image-name }}-1500px{{ image-format }}">
+                              <img src="{{ image-base-url }}{{ image-colour }}{{ image-name }}-1000px{{ image-format }}"
+                              width="100%" height="auto" alt="{% if page.img-alt %}{{ page.img-alt }}{% endif %}" loading="lazy">
+                            </picture>
+                          {% endunless %}
+                        {% endfor %}
+
+                      </div> 
+                      
+                      <div class="text-wrapper colour-dropdown">   
+                        {% assign variationsArray = page.colour-variations[0]['dropdown-options'] | split: "|" %}
+                        <div class="dropdown-wrapper">
+                          <label><p class="stretch-cap">{{ variationsArray.size }} Colour Option{% if variationsArray.size > 1 %}s{% endif %}:</p></label>
+                          
+                            <select id="colour-variations">
+                              {% for item in variationsArray %}
+                                <option value="{{ item  | remove: '[selected]' | slugify }}" {% if item contains "[selected]" %}selected{% endif%}>{{ item  | remove: '[selected]' }}</option>
+                              {% endfor %}
+                            </select>
+                          
+                        </div>
+                        <p class="smallest watermark">Note: The image is watermarked, this  will be removed when <a href="/how-to-licence-existing-illustrations/">licensed</a>.</p>
+                      </div>
+
+                      <script>
+                        $(document).ready(function(){
+                            $('#colour-variations').on('change', function(){
+                              var demovalue = $(this).val(); 
+                              $('.section-text-image.illo-details picture').css('position','absolute');
+                              $('.section-text-image.illo-details picture').css('z-index','1');
+                              $('.section-text-image.illo-details picture.'+demovalue).css('position','relative');
+                              $('.section-text-image.illo-details picture.'+demovalue).css('z-index','10');
+                            });
+                        });
+                      </script>
+
+                    </div>
+                  </div>
+              </div>
+          </section>
+
+
+
+
+          <!-- BASED ON: SECTION TEXT -->
+          <section class="section-text announcement none no-illo-butt strip-top-butt strip-bottom">
+              <div class="content-wrapper">
+                <div class="text-wrapper">    
+                    <h4>Style & Medium</h4>
+                  {% if page.style and page.style != empty and page.style != "default" %}
+                    <p>{{ page.style }}</p>
+                  {% elsif page.style == "default" or page.style == empty %}
+                    <p>{{ site.data.illustration-styles.default-style["text"] }}</p>
+                  {% endif %}
+                </div>
+              </div>  
+          </section>
+
+
+
+
+          <!-- SECTION TAGS -->
+          {% include sections-pages/add-sect-tags.html
+            class = "illo-detail-pg squeeze"
+            thispage-all = "thispage"
+            sect-title = ""
+            
+            h1 = "Keywords"
+            p1 = ""
+          %}
+
+ 
+
+
+          <!-- BASED ON: SECTION TEXT -->
+          {% if page.ticklist[0]['active'] != false %}
+            <section class="section-text grey squeeze no-illo-butt strip-top-butt strip-bottom">
+              <div class="content-wrapper">
+                <div class="text-wrapper ticklist">    
+                  <h4>Concept Checklist</h4>
+                    {% assign ticklistArray = page.ticklist[0]['ticklist-options'] | split: "|" %}
+                    {% for item in ticklistArray %}
+                      <p><em>&#10003;</em>  {{ item }}</p>
+                    {% endfor %}
+                </div>
+                <div class="bg-texture-wrapper">
+                  <div class="frame show"><div class="top-frame"></div><div class="bottom-frame"></div></div>
+                  <div class="bg-texture"></div>
+                </div>
+              </div>
+            </section>
+          {% endif %}
+
+
+
+          <!-- SECTION TEXT -->
+          {% include sections-pages/add-sect-text.html
+            class = "black join"
+            section-divider = ""
+            ani-triggers = ""
+          
+            sect-title = "Next Steps?"
+            
+            h1 = "<span class=\"smallest stretch-cap\">TWO SIMPLE OPTIONS</span>"
+            p1 = ""
+          
+            h2 = "Licensing & Commissioning"
+            p2 = "To use one of my illustrations, you can either <a href=\"/how-to-licence-hand-drawn-tech-illustrations/\">license</a> an existing illustration, or <a href=\"/how-to-commission-new-hand-drawn-tech-illustrations/\">commission</a> a totally new illustration. To get a quote, or to discuss a project, please use the chat feature to get in touch."
+            
+            link-text = "Start chat"
+            link-url = "open-chat"
+          %}
+
+
+          <!-- SECTION TEXT -->
+          {% include sections-pages/add-sect-text.html
+            class = "black no-top-gap"
+            section-divider = ""
+            ani-triggers = ""
+          
+            sect-title = ""
+            
+            h1 = "Book a Free Consultation"
+            p1 = "For impartial advice on how to maximise your brand, marketing or content using my illustrations book a meeting. I'd love to help, and no, you won't be wasting my time."
+          
+            h2 = ""
+            p2 = ""
+            
+            link-text = "View calendar"
+            link-url = "/contact"
+          %}
+          
+          
+          
+          <!-- SECTION TEXT -->
+          {% include sections-pages/add-sect-text.html
+            class = "announcement join black"
+            section-divider = ""
+            ani-triggers = ""
+          
+            sect-title = ""
+            
+            h1 = ""
+            p1 = "You'll also find me at the following places."
+            
+            h2 = ""
+            p2 = ""
+            
+            link-text = ""
+            link-url = ""
+          %}
+          
+
+          <!-- SECTION NAV BLOCKS -->
+          {% include sections-pages/add-sect-nav-blocks.html
+            class = "plain-button black"
+            box-col = ""
+            section-divider = ""
+            ani-triggers = ""
+          
+            sect-title = ""
+          
+            hightlight = ""
+            
+            block-1-title = "Make Fun Creating"
+            block-1-text = "Webby Award Winning craft blog"
+            block-1-butt-text = "Visit blog"
+            block-1-butt-url = "https://makefuncreating.com"
+          
+            block-2-title = "Creative Market"
+            block-2-text = "Awesome templates and fonts"
+            block-2-butt-text = "Visit store"
+            block-2-butt-url = "https://creativemarket.com/HandDrawnTech"
+          
+            block-3-title = "Dribble"
+            block-3-text = "Snapshots of latest illustrations"
+            block-3-butt-text = "Visit playbook"
+            block-3-butt-url = "https://dribbble.com/HandDrawnTech"
+          %} 
+
+
+
+
+          <div class="footer-wrapper">
+            {% if page.footer %}
+              {% include {{ page.footer }} %}
+            {% endif %}
+            {% include build/global-footer.html %}
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    {% include build/subscribe-modal-newsletter-ML.html class="black" %}
+
+    {% include animations/burglar.html class="burglar" %}
+    {% include animations/pointy-hand.html class="hand" %}
+    {% include animations/robot.html class="robot" %}
+    {% include animations/telescope.html class="telescope" %}
+
+    {% include build/footer-scripts.html %}
+
+  </body>
+
+</html>
+
+
+

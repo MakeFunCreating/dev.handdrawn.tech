@@ -1,0 +1,85 @@
+
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    {% if page.layout-sub-type == "illustration-gallery" %}
+      {% include build/head-illustration.html %}
+    {% else %}
+      {% include build/head-page.html %}
+   {% endif %}
+  </head>
+
+
+  {% assign body-class-1 = null %}
+  {% assign body-class-2 = null %}
+  {% if page.layout-sub-type and page.layout-sub-type != empty %}
+    {% assign body-class-1 = page.layout-sub-type %}
+  {% endif %}
+  {% if page.tidio-show-on-scroll == false %}
+    {% assign body-class-2 = "TidioOnLoad" %}
+  {% endif %}
+
+  <body class="layout-page {{ body-class-1 }} {{ body-class-2 }}">
+
+    
+    {% include build/top-bar.html %}
+
+
+    <div class="container-wrapper">
+
+      {% include build/header-page.html %}
+
+      <div class="container">
+        <div class="content">
+
+
+          {% if site.data.announcement.announcement["show"] != false %}
+            {% if page.announcement != false and page.header-class contains "no-header" %}
+              <section class="section-text announcement no-illo strip-top strip-bottom pink">
+                  <div class="content-wrapper">
+                    <div class="text-wrapper">    
+                        <p class="smallest"><a href="{{ site.url }}{{ site.baseurl }}{{ site.data.announcement.announcement["link"] }}">{{ site.data.announcement.announcement["text"] }}</a></p>
+                    </div>
+                    <div class="bg-texture-wrapper">
+                      <div class="frame show"><div class="top-frame"></div><div class="bottom-frame"></div></div>
+                      <div class="bg-texture"></div>
+                    </div>
+                  </div>
+              </section>
+            {% endif %}
+          {% endif %}
+
+          {{ content }}
+
+          <div class="footer-wrapper">
+            {% if page.footer %}
+              {% include {{ page.footer }} %}
+            {% endif %}
+            {% include build/global-footer.html %}
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    {% include build/subscribe-modal-newsletter-ML.html class="black" %}
+
+    {% include animations/burglar.html class="burglar" %}
+    {% include animations/pointy-hand.html class="hand" %}
+    {% include animations/robot.html class="robot" %}
+    {% include animations/telescope.html class="telescope" %}
+
+    {% include build/footer-scripts.html %}
+
+  </body>
+
+</html>
+
+
+

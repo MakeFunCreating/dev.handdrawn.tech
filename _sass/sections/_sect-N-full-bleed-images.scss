@@ -1,0 +1,445 @@
+
+/////////////////////////////////////////////////////
+/////////////////////////////////////////////////////
+////////////// SECTION - TEXT + IMAGE ///////////////
+/////////////////////////////////////////////////////
+/////////////////////////////////////////////////////
+
+
+.section-full-bleed-images {
+  position: relative;
+}
+
+.section-full-bleed-images:first-child {
+    margin-top: 0rem;
+}
+
+
+
+/////////////////////////////////////////////////////
+////////////////// CONTENT WRAPPER //////////////////
+/////////////////////////////////////////////////////
+
+section.section-full-bleed-images .content-wrapper {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  z-index: 9;
+  left: calc( (100vw - 100%) / -2 ); // [container-width]/2
+  width: 100vw;
+  @include breakpoint(TP) {
+    left: calc( (100vw - 650px) / -2 ); // [container-width]/2
+  }
+  @include breakpoint(TL) {
+    left: calc( (100vw - 800px) / -2 ); // [container-width]/2
+  }
+  @include breakpoint(D) {
+    left: calc( (100vw - 1100px) / -2 ); // [container-width]/2
+  }
+}
+
+
+/////////////////////////////////////////////////////
+//////////////////// COL WRAPPER ////////////////////
+/////////////////////////////////////////////////////
+
+.section-full-bleed-images .col-wrapper {
+  position: relative;
+  box-sizing: border-box;
+  z-index: 10;
+  text-align: center;
+  @include breakpoint(TP) {
+  }
+  @include breakpoint(TL) {
+  }
+  @include breakpoint(D) {
+  }
+}
+
+.section-full-bleed-images .col-wrapper.col-1 {
+  width: 100%;
+  height: 87.25vw; //1000px
+  @include breakpoint(ML) {
+    height: 87.25vw; //1900px
+  }
+  @include breakpoint(TP) {
+    height: 87.25vw; //1900px
+  }
+  @include breakpoint(TL) {
+    height: 40.68vw //3200px
+  }
+  @include breakpoint(D) {
+    height: 40.68vw //3200px
+  }
+}
+
+// "Tall" overide
+
+.section-full-bleed-images .col-wrapper.col-1.tall {
+  width: 100%;
+  height: 87.25vw; //1000px
+  @include breakpoint(ML) {
+    height: 87.25vw; //1900px
+  }
+  @include breakpoint(TP) {
+    height: 87.25vw; //1900px
+  }
+  @include breakpoint(TL) {
+    height: 48.68vw //3200px
+  }
+  @include breakpoint(D) {
+    height: 48.68vw //3200px
+  }
+}
+
+
+// "Narrow" overide
+
+.section-full-bleed-images .col-wrapper.col-1.narrow {
+  width: 100%;
+  height: 64vw; //1000px
+  @include breakpoint(ML) {
+    height: 55vw; //1900px
+  }
+  @include breakpoint(TP) {
+    height: 55vw; //1900px
+  }
+  @include breakpoint(TL) {
+    height: 30.68vw //3200px
+  }
+  @include breakpoint(D) {
+    height: 30.68vw //3200px
+  }
+}
+
+
+.section-full-bleed-images .col-wrapper.col-2 {
+  width: 100%;
+  height: 87.25vw; //1000px
+  @include breakpoint(ML) {
+    height: 87.25vw; //1000px
+  }
+  @include breakpoint(TP) {
+    height: 87.25vw; //1900px
+  }
+  @include breakpoint(TL) {
+    width: 50%;
+    height: 43.5vw; //1900px
+  }
+  @include breakpoint(D) {
+    height: 43.5vw; //1900px
+  }
+}
+
+.section-full-bleed-images .col-wrapper.col-3 {
+  width: 100%;
+  height: 87.1vw; //1000px
+  @include breakpoint(ML) {
+    height: 87.1vw; //1000px
+  }
+  @include breakpoint(TP) {
+    height: 87.1vw; //1900px
+  }
+  @include breakpoint(TL) {
+    width: 33.333%;
+    height: 29.05vw; //1000px
+  }
+  @include breakpoint(D) {
+    height: 29.05vw; //1000px
+  }
+}
+
+
+//////////////////// IMG WRAPPER ////////////////////
+
+.section-full-bleed-images .bg-img-wrapper {
+  z-index: 100;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+}
+
+.section-full-bleed-images .bg-img-wrapper.hide {
+  display: none;
+}
+
+
+//////////////////////// IMG ////////////////////////
+
+.section-full-bleed-images img {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  object-fit: cover;
+  font-family: 'object-fit: cover;'; // Polyfill fix for IE/EDGE
+  height: 100%;
+  @include breakpoint(TP) {
+    border-width: 5px;
+    //max-height: 600px;
+  }
+  @include breakpoint(TL) {
+    //max-height: 480px;
+  }
+  @include breakpoint(D) {
+    border-width: 10px;
+    //max-height: 550px;
+  }
+}
+
+
+/////////////////////////////////////////////////////
+/////////////////////// FRAME ///////////////////////
+/////////////////////////////////////////////////////
+
+.section-full-bleed-images .top-frame:last-child {
+  position: absolute;
+  top: -2px;
+  left: 0px;
+  z-index: 20;
+}
+
+.section-full-bleed-images .bg-texture-wrapper {
+  position: absolute;
+  z-index: 1;
+  left: calc( (100vw - 100%) / -2 ); // [container-width]/2
+  width: 100vw;
+  @include breakpoint(TP) {
+    left: calc( (100vw - 650px) / -2 ); // [container-width]/2
+  }
+  @include breakpoint(TL) {
+    left: calc( (100vw - 800px) / -2 ); // [container-width]/2
+  }
+  @include breakpoint(D) {
+    left: calc( (100vw - 1100px) / -2 ); // [container-width]/2
+  }
+}
+
+.section-full-bleed-images .col-wrapper .bg-texture-wrapper {
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.section-full-bleed-images .frame-wrapper {
+  position: absolute;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+// Bottom frame
+.section-full-bleed-images .frame-wrapper .bottom-frame {
+  position: absolute;
+  opacity: 0;
+  z-index: 200;
+}
+
+// Right frame
+.section-full-bleed-images .frame-wrapper .right-frame {
+  position: absolute;
+  opacity: 0;
+  z-index: 201;
+}
+
+// Top frame
+.section-full-bleed-images .frame-wrapper .top-frame {
+  position: absolute;
+  top: -2px;
+  z-index: 202;
+}
+
+.section-full-bleed-images .col-wrapper:first-child .frame-wrapper .top-frame {
+  opacity: 0;
+}
+
+.section-full-bleed-images .col-wrapper.col-2 .frame-wrapper .top-frame {
+  @include breakpoint(TL) {
+    opacity: 0;
+  }
+}
+
+.section-full-bleed-images .col-wrapper.col-3 .frame-wrapper .top-frame {
+  @include breakpoint(TL) {
+    opacity: 0;
+  }
+}
+
+// Left frame
+.section-full-bleed-images .frame-wrapper .left-frame {
+  position: absolute;
+  top: 0px;
+  left: -2px;
+  height: 100%;
+  z-index: 203;
+}
+
+.section-full-bleed-images .col-wrapper:first-child .frame-wrapper .left-frame {
+  opacity: 0;
+}
+
+.section-full-bleed-images .col-wrapper.col-2:nth-child(2) .frame-wrapper .left-frame {
+  opacity: 0;
+  @include breakpoint(TL) {
+    opacity: 1;
+  }
+}
+
+.section-full-bleed-images .col-wrapper.col-3:first-child .frame-wrapper .left-frame {
+  opacity: 0;
+  @include breakpoint(TL) {
+  }
+}
+
+.section-full-bleed-images .col-wrapper.col-3 .frame-wrapper .left-frame {
+  opacity: 0;
+  @include breakpoint(TL) {
+    opacity: 1;
+  }
+}
+
+.section-full-bleed-images.strip-lines .content-wrapper .left-frame,
+.section-full-bleed-images.strip-lines .content-wrapper .right-frame,
+.section-full-bleed-images.strip-lines .content-wrapper .top-frame,
+.section-full-bleed-images.strip-lines .content-wrapper .bottom-frame, {
+  display: none;  
+}
+
+/////////////////////////////////////////////////////
+/////////////////////// VIDEO ///////////////////////
+/////////////////////////////////////////////////////
+
+.section-full-bleed-images .img-top-illo-wrapper,
+.section-full-bleed-images .bg-img-wrapper .video-box .left-frame,
+.section-full-bleed-images .bg-img-wrapper .video-box .right-frame,
+.section-full-bleed-images .bg-img-wrapper .video-box .top-frame,
+.section-full-bleed-images .bg-img-wrapper .video-box .bottom-frame {
+  display: none;
+}
+
+
+.section-full-bleed-images .col-wrapper .video-box {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+}
+
+.section-full-bleed-images .col-wrapper .video-box .video-wrapper {
+  height: 100%;
+  margin: 0px;
+  overflow: hidden;
+}
+
+/////////////// VIDEO DEVICE SIZING /////////////////
+
+.section-full-bleed-images .video-box .video-wrapper .aspect-ratio {
+  padding: 0;
+  height: 100%;
+}
+
+.section-full-bleed-images .col-wrapper.col-1 .video-box .video-wrapper .aspect-ratio {
+    width: 154vw;
+    left: -26vw;
+  @include breakpoint(TL) {
+    width: auto;
+    left: auto;
+    height: 56.5vw;
+    bottom: 8vw;
+  }
+}
+
+// Tall overide
+
+.section-full-bleed-images .col-wrapper.col-1.tall .video-box .video-wrapper .aspect-ratio {
+    width: 154vw;
+    left: -26vw;
+  @include breakpoint(TL) {
+    width: auto;
+    left: auto;
+    height: 56.5vw;
+    bottom: 4vw;
+  }
+}
+
+.section-full-bleed-images .col-wrapper.col-2 .video-box .video-wrapper .aspect-ratio {
+    width: 154vw;
+    left: -26vw;
+  @include breakpoint(TL) {
+    width: 79vw;
+    left: -15vw;
+  }
+}
+
+
+.section-full-bleed-images .col-wrapper.col-3 .video-box .video-wrapper .aspect-ratio {
+    width: 154vw;
+    left: -26vw;
+  @include breakpoint(TL) {
+    width: 154vw;
+    left: -60vw;
+  }
+}
+
+///////////// VIMEO CUSTOM LAY BUTTON ///////////////
+
+.section-full-bleed-images .video-pause-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background-color: #373737;
+  opacity: 0;
+}
+
+.section-full-bleed-images .video-play-button {
+  width: 70px;
+  height: 48px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -24px 0 0 -35px;
+  background-color: #373737;
+  opacity: 0.9;
+  z-index: 101;
+  cursor: pointer;
+  border-radius: 5px;
+  &:hover {
+    transition: background-color 0.2s;
+    background-color: $pink;
+  }
+}
+
+.video-play-button .triangle-right {
+  width: 0;
+  height: 0;
+  border-top: 11px solid transparent;
+  border-left: 23px solid #fff;
+  border-bottom: 11px solid transparent;
+  margin: 11px 0 0 26px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

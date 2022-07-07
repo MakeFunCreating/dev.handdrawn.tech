@@ -1,0 +1,223 @@
+
+
+{% assign link-text = "Show me more" %}
+{% assign section-divider = null %}
+{% assign section-class = null %}
+
+{% if include.class contains "pink" or include.class contains "black" or include.class contains "blue" or include.class contains "none" %}
+  {% assign section-class = include.class %}
+{% else%}
+  {% assign section-class = include.class | append: " none" %}
+{% endif %}
+
+{% assign section-class = section-class | append: " no-illo strip-top strip-line" %}
+{% assign cat-name = include.cat-name %}
+
+{% assign illoTitle = null %}
+{% assign illoUrl = null %}
+{% assign illoCat = null %}
+{% assign imgDirArray = null %}
+{% assign featImgArray = null %}
+{% assign src = null %}
+{% assign file-format = null %}
+{% assign lastLoopNum = null %}
+
+{% assign count-2 = 0 %}
+{% assign count-3 = 0 %}
+
+
+
+{% for post in site.categories[cat-name] %}
+
+  {% assign count-2 = count-2 | plus: 1 %} 
+  {% assign count-3 = count-3 | plus: 1 %} 
+
+  {% if forloop.first %}
+  <section class="section-collection-cat-tag {{ section-class }}">
+      <div class="content-wrapper">
+        {% if forloop.first %}{% if include.sect-title %}<div class="sect-title-wrapper">
+              <h2 class="sect-title">{{ include.sect-title }}</h2>
+              <div class="underline"></div>
+          </div>
+          {% endif %}
+        {% endif %}
+  {% endif %}
+
+
+      {% assign illoTitle = post.title %}
+      {% assign illoUrl = post.url %}
+      {% assign illoCat = post.categories %}
+
+
+      {% assign img-file-prepend = null %}
+      {% assign src = post.img-src %}
+      {% assign new-src = null %}
+      {% assign hypenYesNo = null %}
+      {% assign noHash = null %}
+      {% assign file-format = null %}
+      {% assign file-format = "jpg" %}
+      {% assign srcArray = src | split: "/" %}
+      
+      {% if srcArray.size > 1 %}
+        {% if src contains "#" %}
+          {% assign file-format = srcArray | last | split: "#" | last %} 
+          {% assign hashSplitArray = srcArray | last | split: "#" %}  
+          {% assign tempVar = hashSplitArray | first %} 
+          {% if tempVar == empty %}
+            {% assign img-file-prepend = "" %}
+            {% assign whereIsHash = "ONLY-FILE-FORMAT" %}
+          {% else%}
+            {% assign img-file-prepend = srcArray | last | split: "#" | first | append: "-" %}
+            {% assign whereIsHash = "FILE-FORMAT-PREPEND" %}
+          {% endif %}
+        {% else %}
+          {% assign whereIsHash = "NO-HASH" %}
+          {% assign img-file-prepend = imgDirArray | last | append: "" %}
+          {% assign file-format = "jpg" %}
+        {% endif %}
+      
+          {% for item in srcArray %}
+            {% if whereIsHash == "ONLY-FILE-FORMAT" %}
+            {% if forloop.first == true %}
+              {% assign new-src = new-src | append: item %}
+            {% else %}
+              {% if forloop.last != true %}
+                {% assign new-src = new-src | append: "/" |  append: item %}
+              {% endif %}
+            {% endif %}
+          {% elsif whereIsHash == "FILE-FORMAT-PREPEND" %}
+            {% if forloop.last != true %}
+              {% if forloop.first == true %}
+                {% assign new-src = new-src | append: item %}
+              {% elsif forloop.first != true %}
+                {% assign new-src = new-src  | append: "/"| append: item %}
+              {% endif %}
+            {% endif %}
+          {% elsif whereIsHash == "NO-HASH" %}
+              {% assign new-src = new-src | append: item %}
+              {% if forloop.last != true %}
+                {% assign new-src = new-src | append: "/" %}
+              {% endif %}
+          {% endif %}
+          {% endfor %}
+      {% else %}
+        {% assign new-src = src | remove: "/" %}
+        {% assign img-file-prepend = imgDirArray | last | append: "-" %}
+        {% assign whereIsHash = "NO-HASH" %}
+      {% endif %}
+  
+
+
+       <div class="col-wrapper three-col-{{ count-3 }} two-col-{{ count-2 }}">
+
+          <div class="frame-wrapper">
+            <a href="{{ site.baseurl }}{{ illoUrl }}">
+            <div class="frame show">
+              <div class="top-frame"></div>
+              <div class="left-frame"></div>
+              <div class="right-frame"></div>
+              <div class="bottom-frame"></div>
+            </div>
+
+            <div class="img-wrapper">
+              {% if forloop.first %}
+              <div class="img-top-illo-wrapper"><div class="img-top-illo"></div></div>
+              {% endif %}
+
+              <picture>
+                <source media="(min-width: 1150px)" srcset="{{ site.url }}{{ site.baseurl }}/images/{{ new-src }}/{{ img-file-prepend }}2000px.{{ file-format }}">
+                <source media="(min-width: 450px)" srcset="{{ site.url }}{{ site.baseurl }}/images/{{ new-src }}/{{ img-file-prepend }}1500px.{{ file-format }}">
+                <img src="{{ site.url }}{{ site.baseurl }}/images/{{ new-src }}/{{ img-file-prepend }}1000px.{{ file-format }}"
+                alt="{{ img-file-prepend }}" loading="lazy">
+              </picture>
+
+            </div>
+            </a>
+          </div>
+
+          <div class="text-wrapper">
+            <p class="category small-cap">{{ illoCat }}</p>
+            {% assign illoTitle = illoTitle | split:'' | reverse | join:'' | replace_first: ' ', ';psbn&'  | split:'' | reverse | join:'' %}
+            <h5 class="title"><a href="{{ site.baseurl }}{{ illoUrl }}" class="">{{ illoTitle }}</a></h5>
+            <div class="desc-wrapper"><p>{{ include.desc-1 }}</p></div>
+            <div class="spacer"></div>
+            <div class="button-wrapper"><a href="{{ site.baseurl }}{{ illoUrl }}" class="link-button smaller" >{{ link-text }} ❯</a></div> 
+          </div>
+      </div>
+
+
+
+      {% if forloop.last == true %}
+        {% for i in (1..2) %}
+            {% if count-3 == 3 %}
+              {% assign count-3 = 0 %}
+            {% endif %}
+            {% assign count-3 = count-3 | plus: 1 %}
+
+            {% if count-2 == 2 %}
+              {% assign count-2 = 0 %}
+            {% endif %}
+            {% assign count-2 = count-2 | plus: 1 %}
+
+             <div class="col-wrapper three-col-{{ count-3 }} two-col-{{ count-2 }} filler-{{ i }}">
+                <div class="frame-wrapper">
+                  <div class="frame show">
+                    <div class="top-frame"></div>
+                    <div class="left-frame"></div>
+                    <div class="right-frame"></div>
+                    <div class="bottom-frame"></div>
+                  </div>
+
+                  <div class="img-wrapper">
+                    <picture>
+                      <source media="(min-width: 1150px)" srcset="{{ site.url }}{{ site.baseurl }}/images/content/collections/posts/coming-soon/photo-1/2000px.jpg">
+                      <source media="(min-width: 450px)" srcset="{{ site.url }}{{ site.baseurl }}/images/content/collections/posts/coming-soon/photo-1/1500px.jpg">
+                      <img src="{{ site.url }}{{ site.baseurl }}/images/content/collections/posts/coming-soon/photo-1/1000px.jpg"
+                      alt="{{ img-file-prepend }}" loading="lazy">
+                    </picture>
+                  </div>
+                </div>
+
+                <div class="text-wrapper">
+                  <p class="category small-cap">{{ illoCat }}</p>
+                  <h5 class="title"><a style="text-transform: capitalize;">More {{ illoCat }} Projects Coming Soon!</a></h5>
+                  <div class="spacer"></div>
+                  <div class="button-wrapper"><a class="link-button smaller" >{{ link-text }} ❯</a></div> 
+                </div>
+            </div>
+        {% endfor %}
+      {% endif %}
+
+
+
+{% if count-2 == 2 %}
+  {% assign count-2 = 0 %}
+{% endif %}
+
+{% if count-3 == 3 %}
+  {% assign count-3 = 0 %}
+{% endif %}
+
+{% if forloop.last  %}
+      <div class="bg-texture-wrapper">
+        <div class="frame show"><div class="top-frame"></div><div class="bottom-frame"></div></div>
+        <div class="bg-texture"></div>
+      </div>
+    </div>
+  </section>
+{% endif %}
+
+
+{% endfor %}
+
+
+
+
+
+
+
+
+
+
+
+

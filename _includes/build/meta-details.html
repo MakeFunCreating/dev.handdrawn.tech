@@ -1,0 +1,43 @@
+
+
+
+{% assign author = site.data.people[page.author] %}
+
+<div class="meta-box" itemscope itemtype="http://data-vocabulary.org/Person">
+
+	<div class="content-wrapper">
+
+		<div class="photo-wrapper"  itemprop="photo">
+			<a href="{{ author.url | prepend: site.baseurl }}">
+	
+				<picture>
+					<source media="(min-width: 1150px)" srcset="{{ site.url }}{{ site.baseurl }}/images/{{ author.pic }}/large.jpg">
+					<source media="(min-width: 450px)" srcset="{{ site.url }}{{ site.baseurl }}/images/{{ author.pic }}/large.jpg">
+					<img src="{{ site.url }}{{ site.baseurl }}/images/{{ author.pic }}/large.jpg"
+					alt="Photo of {{ author.name }}">
+				</picture>
+	
+			</a>
+		</div>
+	
+		<div class="text-wrapper">
+			<div class="author-title small-cap">{{ author.title }}</div>
+			<div class="author-name" itemprop="name"><a  href="{{ author.url | prepend: site.baseurl }}" class="stand-alone-link">{{ author.name }}</a></div>
+		</div>
+
+		<div class="tags-wrapper">
+
+			{% if page.categories[0] and page.categories[0] != empty %}
+				<a href="{{ site.baseurl }}/crafts/{{ page.categories[0] | replace:' ','-' }}" class="smallest link-button">{{ page.categories[0] }}</a>
+			{% endif %}
+
+			{% if page.tags[0] and page.tags[0] != empty %}
+				<a href="{{ site.baseurl }}/crafts/{{ page.tags[0] | replace:' ','-' }}" class="smallest link-button">{{ page.tags[0] }}</a>
+			{% endif %}
+
+		</div>
+
+
+	</div>
+
+</div>

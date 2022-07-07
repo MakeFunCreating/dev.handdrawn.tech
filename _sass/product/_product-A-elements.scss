@@ -1,0 +1,752 @@
+
+///////////////////////////////////////////////////////
+///////////////////////////////////////////////////////
+/////////////////////// FOTORAMA //////////////////////
+///////////////////////////////////////////////////////
+///////////////////////////////////////////////////////
+
+body.layout-product .content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    @include breakpoint(TP) {
+        margin-top: 4rem;
+    }
+    @include breakpoint(D) {
+        margin-top: 7rem;
+    }
+}
+
+body.layout-product .breadcrumb {
+    margin: 0 0 2rem 0;
+    width: 100%;
+    letter-spacing: -0.15px;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    @include breakpoint(TP) {
+        font-size: 1.3rem;
+    }
+    @include breakpoint(D) {
+        font-size: 1.5rem;
+    }
+}
+
+
+///////////////////////////////////////////////////////
+//////////////////////// FOTORAMA /////////////////////
+///////////////////////////////////////////////////////
+
+body.layout-product .fotorama-box {
+	position: relative;
+    margin: 0rem 0 4rem 0;
+    width: 100%;
+    @include breakpoint(TP) {
+    	margin: 0rem 0 5rem 0;
+    } 
+    @include breakpoint(TL) {
+        width: 60%;
+    }
+    @include breakpoint(D) {
+    	margin: 0rem 0 5rem 0;
+        width: 70%;
+    }    
+}
+
+body.layout-product .fotorama {
+    width: 100%;
+}
+
+
+//////////////////////// ARROWS ///////////////////////
+
+body.layout-product .fotorama-box .fotorama__arr {
+    background: url(../images/icon-set/chevron/single/black/right/119px.png) 14px center / 40% auto no-repeat;
+    height: 55px;
+    width: 40px;
+    top: calc(50% - 15px);
+    box-shadow: 0 0 24px rgba(0,0,0,0.2);
+    @include breakpoint(TP) {
+        height: 70px;
+        width: 50px;
+        background-size: 40% auto;
+        background-position: 15px center;
+    } 
+    @include breakpoint(D) {
+        background-size: 40% auto;
+        background-position: 15px center;
+    }
+}
+
+body.layout-product .fotorama-box  .fotorama__arr--next {
+    right: 0px;
+    transition: all 0.3s ease !important;
+    background-color: white;
+    border-radius: $radius 0 0 $radius;
+    &:hover{
+        background-image: url(../images/icon-set/chevron/single/white/right/119px.png);
+        background-color: $pink;
+    }
+}
+
+body.layout-product .fotorama-box  .fotorama__arr--prev {
+    background-image: url(../images/icon-set/chevron/single/black/left/119px.png);
+    left: 0px;
+    transition: all 0.3s ease !important;
+    background-color: white;
+    border-radius: 0 $radius $radius 0;
+    &:hover{
+        background-image: url(../images/icon-set/chevron/single/white/left/119px.png);
+        background-color: $pink;
+    }
+}
+
+
+/////////////////// THUMBNAIL STRIP ///////////////////
+
+body.layout-product .fotorama-box  .fotorama__nav-wrap {
+    margin-top: 14px;
+    background-color: rgba(55,55,55,0.05);
+    border-radius: $radius;
+}
+
+body.layout-product .fotorama-box  .fotorama__nav--thumbs .fotorama__nav__frame {
+    //padding: 4px;
+}
+
+body.layout-product .fotorama-box  .fotorama__thumb-border {
+    border-color: $pink;
+}
+
+//////////////////////// FRAME ////////////////////////
+
+
+body.layout-product .fotorama-box .frame-wrapper {
+    overflow: hidden;
+    @include breakpoint(ML) {
+        overflow: visible;
+    }
+}
+
+
+body.layout-product .fotorama-box .right-frame,
+body.layout-product .fotorama-box .left-frame {
+    position: absolute;
+    z-index: 10;
+    top: 0px;
+    height: 84%;
+    bottom: 86px;
+    top: auto;
+    @include breakpoint(ML) {
+        bottom: auto;
+        top: 0px;
+        height: 79%;
+    }
+    @include breakpoint(TP) {
+        top: 0px;
+        height: 84%;
+    }
+    @include breakpoint(TL) {
+        top: 3px;
+        height: 78.5%;
+    }
+    @include breakpoint(D) {
+        height: 85.5%;
+    }
+}
+
+body.layout-product .fotorama-box .right-frame {
+    right: -1px;
+}
+
+body.layout-product .fotorama-box .left-frame {
+    left: 0px;
+}
+
+body.layout-product .fotorama-box .top-frame {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 10;
+    @include breakpoint(TL) {
+        top: -1px;
+    }
+}
+
+body.layout-product .fotorama-box .bottom-frame {
+    position: absolute;
+    left: 0px;
+    bottom: 81px;
+    width: 100%;
+    z-index: 10;
+}
+
+
+///////////////////////////////////////////////////////
+////////////////////// PAYMENT BOX ////////////////////
+///////////////////////////////////////////////////////
+
+.payment-box {
+    position: relative;
+    width: 100%;
+    margin: 0rem 0 2rem 0;
+    @include breakpoint(TP) {
+        margin: 0rem 0 3rem 0;
+    } 
+    @include breakpoint(TP) {
+        margin: 0rem 0 3rem 0;
+    }
+    @include breakpoint(TL) {
+        padding-left: 40px;
+        margin: 0rem 0 3rem 0;
+        width: 40%;
+    }
+    @include breakpoint(D) {
+        padding-left: 35px;
+        width: 30%;
+    }    
+}
+
+.payment-box-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    z-index: 12;
+}
+
+
+/////////////////// TEXT WRAPPER ////////////////////
+
+.layout-product .payment-box .text-wrapper {
+    position: relative;
+    flex-grow: 1;
+    display: flex; ////
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: column; ////
+}
+
+.layout-product .payment-box .text-wrapper p {
+    margin: 0;
+}
+
+.layout-product .payment-box .title {
+    margin: 0 0 10px 0;
+    line-height: 1.3;
+    width: 75%;
+    @include breakpoint(TP) {
+        width: 80%;
+    }
+    @include breakpoint(TL) {
+        width: 100%;
+    }
+    @include breakpoint(D) {
+      margin: 0 0 15px 0;
+    }
+}
+
+// Overides when no licenses
+
+.layout-product .payment-box .title.options {
+    width: 100%;
+}
+
+.layout-product .payment-box .title a {
+    line-height: inherit;
+}
+
+.layout-product .payment-box .price-wrapper {
+    margin: 0 0 10px 0;
+    position: absolute;
+    display: flex; ////
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-direction: column; ////
+    right: 0px;
+    width: 20%;
+    text-align: right;
+    @include breakpoint(TP) {
+        margin: 0 0 12px 0;
+    }
+    @include breakpoint(TL) {
+        align-items: baseline;
+        flex-direction: row; 
+        width: 100%;
+        position: relative;
+        text-align: left;
+    }
+    @include breakpoint(D) {
+        margin: 0 0 15px 0;
+    }
+}
+
+.layout-product .payment-box .price-wrapper .currency.main {
+    margin: 0;
+    transition: all 0.3s ease;
+    font-size: 1.9rem; // default H4 size
+    @include breakpoint(TP) {
+        font-size: 2.4rem; // default H4 size
+    }
+    @include breakpoint(D) {
+        font-size: 2.9rem; // default H4 size
+    }
+}
+
+.layout-product .payment-box .price-wrapper span {
+    position: relative;
+    top: 3px;
+    margin: 0 3px 0 3px;
+    display: none;
+    @include breakpoint(TL) {
+        display: initial;
+    }
+}
+
+////////////////// RATING WRAPPER ///////////////////
+
+.layout-product .payment-box .rating-wrapper {
+    position: relative;
+    display: flex; ////
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center; ////
+    margin-bottom: 10px;
+    @include breakpoint(TL) {
+        margin-bottom: 15px;
+    }
+}
+
+.layout-product .payment-box .rating-wrapper p {
+    margin-right: 3px;
+}
+
+.layout-product .payment-box .rating-star.full,
+.layout-product .payment-box .rating-star.half,
+.layout-product .payment-box .rating-star.blank {
+    position: relative;
+    margin: -5px 0 0 1px;
+    background: url(../images/icon-set/rating-star/full/35px.png) center center/16px auto no-repeat;
+    width: 16px;
+    height: 20px;
+    @include breakpoint(TP) {
+        background-size: 17px auto;
+        width: 17px;
+    }
+    @include breakpoint(D) {
+        background-size: 18px auto;
+        width: 18px;
+    }
+}
+
+.layout-product .payment-box .rating-star.half {
+    background-image: url(../images/icon-set/rating-star/half/35px.png);
+}
+
+.layout-product .payment-box .rating-star.blank {
+    background-image: url(../images/icon-set/rating-star/blank/35px.png);
+}
+
+
+/////////////////// DESC WRAPPER ////////////////////
+
+.layout-product .payment-box .desc-wrapper {
+    margin: 0 0 10px 0;
+    display: initial;
+    width: 100%;
+    @include breakpoint(TP) {
+        width: 80%;
+    }
+    @include breakpoint(TL) {
+        width: 100%;
+    }
+}
+
+// Overides when no licenses
+
+.layout-product .payment-box .desc-wrapper.options {
+    width: 100%;
+}
+
+.layout-product .payment-box .spacer {
+    width: 100%;
+    flex-grow: 1;
+    min-height: 10px;
+    @include breakpoint(TP) {
+      min-height: 10px;
+    }
+    @include breakpoint(D) {
+      min-height: 32px;
+    }
+}
+
+// Commission text and line
+
+.layout-product .payment-box .desc-wrapper.commission {
+    margin: 0 0 25px 0;
+    width: 100%;
+}
+
+.layout-product .payment-box .desc-wrapper.commission p {
+    @include breakpoint(D) {
+        font-size: 1.3rem
+    }
+}
+
+.layout-product .payment-box .desc-wrapper.commission .long-line-black {
+    margin: 0 0 2.5rem 0;
+    width: 100%;
+}
+
+
+////////////////// SALES WRAPPER ////////////////////
+
+.layout-product .payment-box .sales-wrapper {
+    display: none;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.layout-product .payment-box .sales-wrapper p {
+    letter-spacing: 1.3px;
+}
+
+
+////////////////// OPTIONS WRAPPER ////////////////////
+
+// This has been depracated in favour of check boxes
+// see 'License Wrapper' section below
+
+.del {
+
+.layout-product .options-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 0 13px 0;
+    @include breakpoint(TP) {
+        flex-direction: row;
+        align-items: flex-start;
+        align-items: center;
+        margin: 0 0 15px 0;
+    }
+    @include breakpoint(TL) {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0 0 23px 0;
+    }
+    @include breakpoint(D) {
+        margin: 0 0 30px 0;
+    }
+}
+
+.dropdown-wrapper {
+    position: relative;
+}
+
+.layout-product .payment-box .dropdown-wrapper label p {
+    margin: 0 0 5px 0;
+    display: none;
+}
+
+.layout-product .payment-box .dropdown-wrapper select {
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    height: 35px;
+    border-radius: $radius;
+    padding: 2px 35px 0px 19px;
+    display: block;
+    border: 1px solid #d1d1d1;
+    box-shadow: inset 0px 1px 8px rgba(0,0,0,0.1);
+    font-size: 16px; //1.35rem;
+    @include breakpoint(TP) {
+        height: 38px;
+        font-size: 16px; //1.5rem;
+    }
+    @include breakpoint(D) {
+        height: 42px;
+        font-size: 1.5rem; //1.7rem;
+    }   
+}
+
+.layout-product .dropdown-wrapper:after {
+    content: '›'; //‹
+    font-size: 2.9rem;
+    color: #333;
+    transform: rotate(90deg);
+    right: 17px;
+    top: -5px;
+    padding: 0 0 2px;
+    border-bottom: 0px solid #999;
+    position: absolute;
+    pointer-events: none;
+    @include breakpoint(TP) {
+        top: -4px;
+    }
+    @include breakpoint(D) {
+        top: -2px;
+    }
+}
+
+.layout-product .payment-box div.license-link > p {
+    margin: 10px 0 0px 0px;
+}
+
+.layout-product div.license-link.solo > p {
+    margin: 0px 0 20px 0px;
+}
+
+.layout-product .payment-box div.license-link > p a {
+    white-space: nowrap;
+    background-position: 0 1.3rem;
+    padding-bottom: 1px;
+    @include breakpoint(TL) {
+        padding-bottom: 4px;
+       background-position: 0 1.4rem; 
+    }
+}
+
+} // end .delete
+
+
+////////////////// LICENSE WRAPPER ////////////////////
+
+// Check box license information
+
+.layout-product .options-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 0 13px 0;
+    @include breakpoint(TP) {
+        margin: 0 0 23px 0;
+    }
+    @include breakpoint(TL) {
+        margin: 0 0 23px 0;
+    }
+    @include breakpoint(D) {
+        margin: 0 0 30px 0;
+    }
+}
+
+.layout-product .payment-box .license-wrapper {
+    width: 100%;
+}
+
+.layout-product .payment-box .license-wrapper .long-line-black {
+    margin: 0 0 3rem 0;
+    @include breakpoint(TP) {
+        margin: 0 0 3rem 0;
+    }
+    @include breakpoint(TL) {
+        margin: 0 0 3rem 0;
+    }
+}
+
+.layout-product .license-wrapper .checkbox-wrapper {
+  margin: 0 0 15px 0;
+  @include breakpoint(TP) {
+    margin: 0 0 15px 0;
+  }
+}
+
+.layout-product .license-wrapper .checkbox-wrapper .checkmark {
+    background-color: #e2e2e2;
+}
+
+// On mouse-over, add a grey background color
+
+.layout-product .license-wrapper .checkbox-wrapper:hover input ~ .checkmark {
+  background-color: #ccc;
+  transition: all 0.4s ease;
+}
+
+// When the checkbox is checked, add a pink background
+
+.layout-product .license-wrapper .checkbox-wrapper input:checked ~ .checkmark {
+  background-color: $pink;
+}
+
+.layout-product .license-wrapper .checkbox-wrapper input:checked:disabled ~ .checkmark {
+  background-color: #bdbdbd;
+}
+
+.layout-product .license-wrapper .license-link {
+   width: 100%; 
+}
+
+.layout-product .license-wrapper .license-link a {
+   background-image: none;
+   &:hover {
+        background-image: none;
+   }
+}
+
+.layout-product .license-wrapper div.license-link > p {
+    margin: 0;
+}
+
+
+//////////////////// BUTTON WRAPPER ///////////////////
+
+.layout-product .payment-box .button-wrapper {
+    align-self: flex-end;
+    width: 100%;
+}
+
+.layout-product .payment-box div.button-wrapper:not(:last-of-type) {
+    margin-bottom: 10px;
+}
+
+.layout-product .payment-box .button-wrapper a {
+    width: 100%;
+    margin: 0;
+}
+
+.layout-product .payment-box .button-wrapper.disable,
+.button-wrapper.disable  {
+    opacity: 0.3;
+}
+
+.layout-product .payment-box .button-wrapper.disable a,
+.button-wrapper.disable a {
+    background-color: #666;
+    &:hover{
+        cursor: default;
+        color: white;
+        background-color: #666;
+        box-shadow: none;
+    }
+}
+
+
+////////////////// PAYMENT BOX LINE ///////////////////
+
+.layout-product .payment-box .long-line-black {
+    margin: 2rem 0 0 0;
+    @include breakpoint(TP) {
+        margin: 2.5rem 0 0 0;
+    } 
+    @include breakpoint(D) {
+        margin: 3rem 0 0 0;
+    } 
+}
+
+
+///////////////////////////////////////////////////////
+////////////////////// EXTRA INFO /////////////////////
+///////////////////////////////////////////////////////
+
+.extra-info-wrapper {
+    position: relative;
+    width: 100%;
+    display: flex; ////
+    align-items: center;
+    flex-direction: row; ////
+    margin: 2rem 0 0 0;
+    @include breakpoint(TP) {
+        margin: 2.5rem 0 0 0;
+    } 
+    @include breakpoint(TP) {
+        margin: 3rem 0 0 0;
+    }
+    @include breakpoint(TL) {
+        margin: 2.5rem 0 0 0;
+    }
+    @include breakpoint(D) {
+    }    
+}
+
+.extra-info-wrapper .icon {
+    position: relative;
+    background: url(../images/icon-set/requests/black/300px.png) -3px center/50px auto no-repeat;
+    width: 50px;
+    height: 39px;
+    @include breakpoint(TP) {
+       background-size: 56px;
+       width: 55px;
+       background-position: -5px center;
+    }
+    @include breakpoint(TL) {
+       background-size: 58px;
+       width: 90px;
+    }
+    @include breakpoint(D) {
+       background-size: 63px;
+       width: 77px;
+       height: 48px;
+    }  
+}
+
+.extra-info-wrapper .text {
+    position: relative;
+    width: 100%;
+}
+
+
+///////////////////////////////////////////////////////
+///////////////////// PRODUCT SPEC ////////////////////
+///////////////////////////////////////////////////////
+
+.product-spec {
+    position: relative;
+    @include breakpoint(TP) {
+    } 
+    @include breakpoint(TL) {
+        width: 60%;
+    }  
+    @include breakpoint(D) {
+        width: 70%;
+    }    
+}
+
+.product-spec p,
+.product-spec li,
+.contact-box p, { 
+    font-size: 1.3rem; // default smaller size
+    @include breakpoint(TP) {
+        font-size: 1.5rem; // default smaller size
+    }
+    @include breakpoint(D) {
+        font-size: 1.7rem; // default smaller size
+    }
+}
+
+.product-spec h5:not(:nth-of-type(1)) {
+    margin-top: 5rem;
+    @include breakpoint(TP) {
+        margin-top: 6rem;
+    }  
+}
+
+
+/////////////////// DIVIDING LINE ///////////////////
+
+.layout-product .long-line-black {
+    margin: 2rem 0 2rem 0;
+    @include breakpoint(TP) {
+        margin: 2rem 0 2rem 0;
+    } 
+    @include breakpoint(D) {
+        margin: 3rem 0 3rem 0;
+    } 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,213 @@
+ 
+
+{% assign section-divider = null %}
+{% assign section-class = null %}
+
+{% assign classTemp =  include.class | downcase %}
+{% if classTemp contains "pink" %}
+   {% assign bg-col =  "pink" %}
+{% elsif classTemp contains "blue" %}
+  {% assign bg-col =  "blue" %}
+{% elsif classTemp contains "black" %}
+  {% assign bg-col =  "black" %}
+{% elsif classTemp contains "black-medium" %}
+  {% assign bg-col =  "black-medium" %}
+{% elsif classTemp contains "grey" %}
+  {% assign bg-col =  "grey" %}
+{% elsif classTemp contains "yellow" %}
+  {% assign bg-col =  "yellow" %}
+{% elsif classTemp contains "none" %}
+  {% assign bg-col =  "none" %}
+{% endif %}
+
+{% if include.class contains "pink" or include.class contains "yellow" or include.class contains "grey" or include.class contains "black" or include.class contains "black-medium" or include.class contains "blue" or include.class contains "none" %}
+  {% assign section-class = include.class %}
+{% else%}
+  {% assign section-class = include.class | append: " none" %}
+{% endif %}
+
+
+{% if include.bg-slider-uniq-ID and include.bg-slider-uniq-ID != empty %}
+  {% assign bg-slider-uniq-ID = include.bg-slider-uniq-ID %}
+{% else %} 
+  {% assign bg-slider-uniq-ID = "uniq-ID-ABC" %}
+{% endif %} 
+
+{% if include.class contains "bg-slider" %}  
+  {% assign section-class = section-class | append: " " | append: bg-slider-uniq-ID %}
+{% endif %} 
+
+
+{% if include.section-divider == "no-illo" %}
+    {% assign section-class = section-class | append: " " | append: "no-illo strip-top" %}
+{% elsif include.section-divider == "no-illo-butt" %}
+    {% assign section-class = section-class | append: " " | append: "no-illo-butt strip-top-butt" %}
+{% elsif include.section-divider and include.section-divider != empty %}
+    {% assign section-divider = include.section-divider %}
+{% else %}
+    {% assign section-class = section-class | append: " " | append: "no-illo strip-top" %}
+{% endif %} 
+
+{% unless include.sect-title and include.sect-title != empty %}
+  {% assign section-class = section-class | append: " " | append: "no-sect-title" %}
+{% endunless %} 
+
+{% assign section-class = section-class | append: " " | append: include.ani-triggers | replace: "  ", " "  %}
+
+
+<section {% if include.id and include.id != empty %}id="{{ include.id }}"{% endif %} class="section-calendar strip-line {{ section-class | strip }}">
+
+    {% if include.section-divider and include.section-divider != empty %}
+      <div class="sect-illo-wrapper {{ section-divider }}"><div class="sect-illo"></div></div>
+    {% endif %}
+
+    <div class="content-wrapper {% if include.bg-image == "true" or include.bg-image == true %}bg-image-tall{% endif %}">
+
+      {% if include.sect-title and include.sect-title != empty %}
+        <div class="sect-title-wrapper">
+          <h2 class="sect-title">{{ include.sect-title }}</h2>
+          <div class="underline"></div>
+        </div>
+      {% endif %}
+
+        <div class="col-wrapper col-1">
+        {% assign text-content = include.h4-sub-title | append: include.h3-sub-title | append: include.text | append: include.link-text %}
+        {% if text-content and text-content != empty %}
+          <div class="text-wrapper">
+            {% if include.h3-sub-title and include.h3-sub-title != empty %}
+              <h3 class="title {{ bg-slider-uniq-ID }}">{{ include.h3-sub-title }}</h3>
+            {% elsif include.h4-sub-title and include.h4-sub-title != empty %}
+              <h4 class="title {{ bg-slider-uniq-ID }}">{{ include.h4-sub-title }}</h4>
+            {% endif %}
+            {% if include.caption and include.caption != empty %}
+              <p class="text {{ bg-slider-uniq-ID }} smaller">{{ include.caption }}</p>
+            {% endif %}
+            {% if include.text and include.text != empty %}
+              <p class="text {{ bg-slider-uniq-ID }}">{{ include.text }}</p>
+            {% endif %}
+            {% if include.link-text and include.link-text != empty %}
+              <div class="button-wrapper"><a href="{{ site.baseurl }}{{ include.link-url }}" class="link-button smaller" >{{ include.link-text }} <span class="right-arrow">›</span></a></div> 
+            {% endif %}
+
+          </div>
+        {% endif %}
+        </div>
+
+
+        <div class="col-wrapper col-2">
+          <!-- Calendly inline widget begin -->
+          <div class="calendly-inline-widget" data-url="https://calendly.com/handdrawntech/30min?hide_gdpr_banner=1&background_color=f5f6f5&text_color=373737&primary_color=eb2a85" style="width:100%;min-width:320px;height:100%;"></div>
+          <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+          <!-- Calendly inline widget end -->
+        </div>
+
+      
+      <div class="bg-texture-wrapper">
+        <div class="frame show"><div class="top-frame"></div><div class="bottom-frame"></div></div>
+          {% assign counter = 20 %}
+          {% if include.class contains "bg-slider" %}
+            {% for item in bg-slider-class-array reversed %}
+              {% assign counter = counter %}
+              <div class="bg-texture bg-slider {{ item | split: ":" | first }} {{ bg-slider-uniq-ID }}" style="z-index: {{ counter }};"></div>
+            {% endfor %}
+          {% endif %}
+            {% unless include.bg-image == "true" or include.bg-image == true %}
+              <div class="bg-texture"></div>
+            {% endunless %}
+      </div>
+      
+
+    </div>
+
+
+
+
+{% if include.bg-image == true or include.bg-image == "true" %}
+    <div class="bg-img-wrapper">
+
+      {% if include.bg-image-overlay == true %}<div class="overlay"></div>{% endif %}
+
+        {% assign imgDirArray = page.image-dir | split: "/" %}
+        {% assign img-file-prepend = null %}
+        {% assign src = include.bg-image-src %}
+        {% assign new-src = null %}
+        {% assign hypenYesNo = null %}
+        {% assign noHash = null %}
+        {% assign file-format = null %}
+        
+        {% if include.format and include.format != empty %}
+          {% assign file-format = include.format %}
+        {% else %}
+          {% assign file-format = "jpg" %}
+        {% endif %}
+        
+        {% assign srcArray = src | split: "/" %}
+        
+        {% if srcArray.size > 1 %}
+          {% if src contains "#" %}
+            {% assign file-format = srcArray | last | split: "#" | last %} 
+            {% assign hashSplitArray = srcArray | last | split: "#" %}  
+            {% assign tempVar = hashSplitArray | first %} 
+            {% if tempVar == empty %}
+              {% assign img-file-prepend = "" %}
+              {% assign whereIsHash = "ONLY-FILE-FORMAT" %}
+            {% else%}
+              {% assign img-file-prepend = srcArray | last | split: "#" | first | append: "-" %}
+              {% assign whereIsHash = "FILE-FORMAT-PREPEND" %}
+            {% endif %}
+          {% else %}
+            {% assign whereIsHash = "NO-HASH" %}
+            {% assign img-file-prepend = imgDirArray | last | append: "" %}
+            {% assign file-format = "jpg" %}
+          {% endif %}
+                
+          {% for item in srcArray %}
+            {% if whereIsHash == "ONLY-FILE-FORMAT" %}
+            {% if forloop.first == true %}
+              {% assign new-src = new-src | append: item %}
+            {% else %}
+              {% if forloop.last != true %}
+                {% assign new-src = new-src | append: "/" |  append: item %}
+              {% endif %}
+            {% endif %}
+          {% elsif whereIsHash == "FILE-FORMAT-PREPEND" %}
+            {% if forloop.last != true %}
+              {% if forloop.first == true %}
+                {% assign new-src = new-src | append: item %}
+              {% elsif forloop.first != true %}
+                {% assign new-src = new-src  | append: "/"| append: item %}
+              {% endif %}
+            {% endif %}
+          {% elsif whereIsHash == "NO-HASH" %}
+              {% assign new-src = new-src | append: item %}
+              {% if forloop.last != true %}
+                {% assign new-src = new-src | append: "/" %}
+              {% endif %}
+          {% endif %}
+          {% endfor %}
+      {% else %}
+        {% assign new-src = src | remove: "/" %}
+        {% assign img-file-prepend = imgDirArray | last | append: "-" %}
+        {% assign whereIsHash = "NO-HASH" %}
+      {% endif %}
+  
+      <picture>
+        <source media="(min-width: 1150px)" srcset="{{ site.url }}{{ site.baseurl }}/images/{{ new-src }}/{{ img-file-prepend }}3200px.{{ file-format }}">
+        <source media="(min-width: 450px)" srcset="{{ site.url }}{{ site.baseurl }}/images/{{ new-src }}/{{ img-file-prepend }}2200px.{{ file-format }}">
+        <img src="{{ site.url }}{{ site.baseurl }}/images/{{ new-src }}/{{ img-file-prepend }}1200px.{{ file-format }}"
+        alt="{% if include.alt %}{{ include.alt }}{% endif %}" loading="lazy">
+      </picture>
+    </div>
+  {% endif %}
+
+
+
+</section>
+
+
+
+
+
+
+
+

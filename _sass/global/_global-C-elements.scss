@@ -1,0 +1,551 @@
+
+
+///////////////////////////////////////////////////////
+///////////////////////////////////////////////////////
+/////////////////// ADD SECTION GAP ///////////////////
+///////////////////////////////////////////////////////
+///////////////////////////////////////////////////////
+
+.sectionGap {
+	height: 4rem;
+    @include breakpoint(TP) {
+        height: 6rem;
+    }
+    @include breakpoint(D) {
+        height: 10rem;
+    }
+}
+
+
+///////////////////////////////////////////////////////
+///////////////////////////////////////////////////////
+/////////////////////// DIVIDER ///////////////////////
+///////////////////////////////////////////////////////
+///////////////////////////////////////////////////////
+
+.divider img {
+	width: 100%;
+}
+
+.divider {
+	margin: 4rem 1.1rem 4rem 0.9rem;
+	@include breakpoint(TP) {
+		margin: 5rem 1.4rem 5rem 0;
+	}
+	@include breakpoint(D) {
+		margin: 7rem 0.2rem 7rem 0.3rem;
+	}
+}
+
+
+///////////////////////////////////////////////////////
+///////////////////////////////////////////////////////
+//////////////// TEXTURED BACKGROUNDS /////////////////
+///////////////////////////////////////////////////////
+///////////////////////////////////////////////////////
+
+.bg-texture-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+// Default is body background colour
+
+.bg-texture-wrapper .bg-texture {
+    height: 100%;
+    width: 100%;
+    background-image: none;
+    background-color: $body-bg;
+}
+
+.bg-texture-wrapper.lined .bg-texture {
+    background: url(../images/paper-textures/lined-paper/norm/block/425px.png) top left/174px auto repeat;
+    @include breakpoint(ML) {
+        background: url(../images/paper-textures/lined-paper/norm/block/650px.png) top left/188px auto repeat;  
+    }
+    @include breakpoint(TP) {
+        background: url(../images/paper-textures/lined-paper/norm/block/650px.png) top left/229px auto repeat;
+    }
+    @include breakpoint(D) {
+        background: url(../images/paper-textures/lined-paper/norm/block/650px.png) top left/242px auto repeat;
+    }
+}
+
+// Overides for SECTION and HEADER background textures
+ 
+.bg-texture-wrapper.pink .bg-texture,
+.bg-texture-wrapper .bg-texture.pink,
+section.pink .bg-texture,
+header.pink .content-wrapper > .bg-texture-wrapper .bg-texture,
+.tips-box.pink .bg-texture,
+.top-bar.pink .bg-texture  { 
+  background: url(../images/paper-textures/pink-texture/740px.jpg) top left/740px auto repeat;
+  background-color: $pink;
+}
+
+.bg-texture-wrapper.pink-light .bg-texture,
+.bg-texture-wrapper .bg-texture.pink-light,
+section.pink-light .bg-texture,
+header.pink-light .content-wrapper > .bg-texture-wrapper .bg-texture,
+.tips-box.pink-light .bg-texture,
+.top-bar.pink-light .bg-texture  { 
+  background: url(../images/paper-textures/pink-light-texture/740px.jpg) top left/740px auto repeat;
+  background-color: #f16eb3;
+}
+
+.bg-texture-wrapper.blue .bg-texture,
+.bg-texture-wrapper .bg-texture.blue,
+section.blue .bg-texture,
+header.blue .content-wrapper > .bg-texture-wrapper .bg-texture,
+.top-bar.blue .bg-texture    { 
+    background: url(../images/paper-textures/blue-texture/740px.jpg) top left/740px auto repeat;
+    background-color: #429bc5;
+}
+
+.bg-texture-wrapper.yellow .bg-texture,
+.bg-texture-wrapper .bg-texture.yellow,
+section.yellow .bg-texture,
+header.yellow .content-wrapper > .bg-texture-wrapper .bg-texture,
+.top-bar.yellow .bg-texture    { 
+    background: url(../images/paper-textures/yellow-texture/740px.jpg) top left/740px auto repeat;
+    background-color: #ffd936;
+}
+
+.bg-texture-wrapper.black .bg-texture,
+.bg-texture-wrapper .bg-texture.black,
+section.black .bg-texture,
+header.black .content-wrapper > .bg-texture-wrapper .bg-texture,
+.top-bar.black .bg-texture    { 
+    background: url(../images/paper-textures/black-light-texture/740px.jpg) top left/740px auto repeat;
+    background-color: #424242;
+}
+
+.bg-texture-wrapper.black-dark .bg-texture,
+.bg-texture-wrapper .bg-texture.black-dark,
+section.black-dark .bg-texture,
+header.black-dark .content-wrapper > .bg-texture-wrapper .bg-texture,
+.top-bar.black-dark .bg-texture    { 
+    background: url(../images/paper-textures/black-dark-texture/740px.jpg) top left/740px auto repeat;
+    background-color: #333333;
+}
+
+.bg-texture-wrapper.black-medium .bg-texture,
+.bg-texture-wrapper .bg-texture.black-medium,
+section.black-medium .bg-texture,
+header.black-medium .content-wrapper > .bg-texture-wrapper .bg-texture,
+.top-bar.black-medium .bg-texture    { 
+    background: url(../images/paper-textures/black-medium-texture/740px.jpg) top left/740px auto repeat;
+    background-color: #3a3a3a;
+}
+
+.bg-texture-wrapper.grey .bg-texture,
+.bg-texture-wrapper .bg-texture.grey,
+section.grey .bg-texture,
+header.grey .content-wrapper > .bg-texture-wrapper .bg-texture,
+.top-bar.grey .bg-texture    { 
+    background: url(../images/paper-textures/grey-texture/740px.jpg) top left/740px auto repeat;
+    background-color: #eaece9;    
+}
+
+.bg-texture-wrapper.none .bg-texture,
+.bg-texture-wrapper .bg-texture.none,
+section.none .bg-texture,
+header.none .content-wrapper > .bg-texture-wrapper .bg-texture,
+.top-bar.none .bg-texture   { 
+    background-image: none;
+    background-color: #f4f6f4;
+}
+
+
+///////////////////////////////////////////////////////
+/////////// IMAGE TOP ILLO [LIGHTBULB ETC.] ///////////
+///////////////////////////////////////////////////////
+
+.img-top-illo-wrapper {
+  position: absolute;
+  z-index: 200;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  width: 310px;
+  height: 130px;
+  top: -61px;
+  // Illo positioned on right side
+  right: -138px;
+}
+
+// Illo positioned on left... left: -138px;
+
+.img-top-illo {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  transform: rotate(30deg);
+  background: url(../images/image-top-illo/lightbulb/400px.png) center center/65% no-repeat;
+  @include breakpoint(TP) {
+    background-size: 73%;
+  }
+  @include breakpoint(TL) {
+    background-size: 83%;
+  }
+  @include breakpoint(D) {
+    background-image: url(../images/image-top-illo/lightbulb/500px.png);
+    background-size: 95%;
+  }
+}
+
+// Illo positioned on left... Transform: rotate(-30deg);
+
+.img-top-illoX,
+.img-top-illo.lightbulbX {
+  position: absolute;
+    width: 220px;
+    height: 90px;
+    left: auto;
+    right: -86px;
+    top: -32px;
+  background: url(../images/image-top-illo/lightbulb/500px.png) top/contain no-repeat;
+    transform: rotate(29deg);
+    z-index: 200;
+    @include breakpoint(ML) {
+      background: url(../images/image-top-illo/lightbulb/677px.png) top/contain no-repeat;
+    }
+  @include breakpoint(TP) {
+    width: 274px;
+      height: 117px;
+      left: auto;
+      top: -36px;
+      right: -108px;
+  }
+  @include breakpoint(D) {
+      background: url(../images/image-top-illo/lightbulb/775px.png) top/79% no-repeat;
+      width: 400px;
+      height: 130px;
+      left: auto;
+      top: -47px;
+      right: -174px;
+  }
+}
+
+// Clock overide
+.img-top-illo.clock {
+  background-image: url(../images/image-top-illo/clock/500px.png);
+    @include breakpoint(ML) {
+      background-image: url(../images/image-top-illo/clock/677px.png);
+    }
+  @include breakpoint(D) {
+      background-image: url(../images/image-top-illo/clock/775px.png);
+  }
+}
+
+// Printer overide
+.img-top-illo.printer {
+  background-image: url(../images/image-top-illo/printer/rot-right/500px.png);
+    @include breakpoint(ML) {
+      background-image: url(../images/image-top-illo/printer/rot-right/677px.png);
+    }
+  @include breakpoint(D) {
+      background-image: url(../images/image-top-illo/printer/rot-right/775px.png);
+  }
+}
+
+// No top illo
+section.no-top-illo .img-top-illo {
+  display: none;
+}
+
+
+///////////////////////////////////////////////////////
+///////////////////////////////////////////////////////
+//////////////////////// FRAME ////////////////////////
+///////////////////////////////////////////////////////
+///////////////////////////////////////////////////////
+
+.frame-wrapper {
+    position: relative;
+}
+
+.frame {
+    position: absolute;
+    z-index:100;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+
+.top-frame,
+.bottom-frame,
+.frame .top-frame,
+.frame .bottom-frame {
+    background: url(../images/lines/frame/black/top.png) left top/760px 100% repeat;
+    width: 100%;
+    height: 3px;
+    @include breakpoint(D) {
+      //height: 4px;
+    }
+}
+
+// Make title card a bit thicker
+
+.title-card .top-frame,
+.title-card .bottom-frame,
+.title-card .frame .top-frame,
+.title-card .frame .bottom-frame {
+  @include breakpoint(D) {
+    height: 4px;
+  }
+}
+
+.bottom-frame,
+.frame .bottom-frame {
+    background-image: url(../images/lines/frame/black/bottom.png);
+}
+
+.left-frame,
+.right-frame, 
+.frame .left-frame,
+.frame .right-frame {
+    background: url(../images/lines/frame/black/left.png) left top/100% 760px repeat;
+    height: calc(100% - 6px);
+    width: 3px;
+    @include breakpoint(D) {
+      //height: calc(100% - 8px);
+      //width: 4px;
+    }
+}
+
+// Make title card a bit thicker
+
+.title-card .left-frame,
+.title-card .right-frame, 
+.title-card .frame .left-frame,
+.title-card .frame .right-frame {
+  @include breakpoint(D) {
+    height: calc(100% - 8px);
+    width: 4px;
+  }
+}
+
+.right-frame,
+.frame .right-frame {
+    background-image: url(../images/lines/frame/black/right.png);
+}
+
+
+// Small overide (used in mega menu!)
+
+.frame.small .right-frame {
+    background-image: url(../images/lines/frame/black-small/right.png);
+}
+
+.frame.small .left-frame {
+    background-image: url(../images/lines/frame/black-small/left.png);
+}
+
+.frame.small .top-frame {
+    background-image: url(../images/lines/frame/black-small/top.png);
+}
+
+.frame.small .bottom-frame {
+    background-image: url(../images/lines/frame/black-small/bottom.png);
+}
+
+
+// Frame overide
+
+.bg-texture-wrapper > .frame > .top-frame,
+.bg-texture-wrapper > .frame > .bottom-frame {
+  display: none;
+}
+
+
+///////////////////////////////////////////////////////
+///////////////////////////////////////////////////////
+//////////////// UNDER LINE (SKETCHED) ////////////////
+///////////////////////////////////////////////////////
+///////////////////////////////////////////////////////
+
+// Long line
+
+.long-line,
+.long-line-black,
+.long-line-white {
+    position: relative;
+    z-index: 100;
+    width: 100%;
+    height: 4px;
+    background: url(../images/lines/rules/long/black/long-line.png) left top/780px 100% repeat;
+    margin: 4rem 0 4rem 0; 
+    @include breakpoint(TP) {
+        margin: 5.5rem 0 5.5rem 0; 
+        height: 4px;
+    }
+    @include breakpoint(D) {
+        margin: 8.5rem 0 8.5rem 0; 
+        height: 4px;
+    }
+}
+
+.long-line-white {
+    background-image: url(../images/lines/rules/long/white/long-line.png);
+}
+
+
+///////////////////////////////////////////////////////
+///////////////////////////////////////////////////////
+////////////////////// BURGLAR ////////////////////////
+///////////////////////////////////////////////////////
+///////////////////////////////////////////////////////
+
+.burglar {
+    position: fixed;
+    z-index: 999;
+    display: none;
+    @include breakpoint(TP) {
+        display: block;
+        bottom: -625px;
+        right: -193px;
+        max-width: 440px;
+    }
+    @include breakpoint(TL) {
+        right: -153px;
+        bottom: -625px;
+    }
+    @include breakpoint(D) {
+        bottom: -605px;
+        right: -100px;
+        max-width: 490px;
+    }
+}
+
+
+///////////////////////////////////////////////////////
+///////////////////////////////////////////////////////
+//////////////////// POINTY HAND //////////////////////
+///////////////////////////////////////////////////////
+///////////////////////////////////////////////////////
+
+.hand {
+	position: fixed;
+    z-index: 200;
+    display: none;
+    width: 610px;
+	@include breakpoint(TP) {
+        display: block;
+        transform: rotate(15deg);
+        top: -63px;
+        width: 610px;
+        left: -910px;
+    }
+    @include breakpoint(TL) {
+        top: -188px;
+        left: -880px;
+    }
+	@include breakpoint(D) {
+        width: 730px;
+        left: -1050px;
+        top: -125px;
+    	transform: rotate(5deg);
+    }
+}
+
+
+///////////////////////////////////////////////////////
+///////////////////////////////////////////////////////
+///////////////////// TELESCOPE ///////////////////////
+///////////////////////////////////////////////////////
+///////////////////////////////////////////////////////
+
+.telescope {
+    position: fixed;
+    z-index: 999;
+    display: none;
+    @include breakpoint(TP) {
+        display: block;
+        bottom: -625px;
+        right: -177px;
+        max-width: 440px;
+    }
+    @include breakpoint(TL) {
+        right: -137px;
+        bottom: -625px;
+    }
+    @include breakpoint(D) {
+        bottom: -605px;
+        right: -84px;
+        max-width: 490px;
+    }
+}
+
+
+///////////////////////////////////////////////////////
+///////////////////////////////////////////////////////
+///////////////////// SPOTLIGHT ///////////////////////
+///////////////////////////////////////////////////////
+///////////////////////////////////////////////////////
+
+.spotlight {
+  position: fixed;
+    z-index: 200;
+    display: none;
+    width: 610px;
+  @include breakpoint(TP) {
+        display: block;
+        //transform: rotate(15deg);
+        top: -63px;
+        width: 610px;
+        left: -910px;
+    }
+    @include breakpoint(TL) {
+        top: -188px;
+        left: -880px;
+    }
+  @include breakpoint(D) {
+        width: 730px;
+        left: -1050px;
+        top: -125px;
+      //transform: rotate(5deg);
+    }
+}
+
+
+///////////////////////////////////////////////////////
+///////////////////////////////////////////////////////
+/////////////////////// ROBOT /////////////////////////
+///////////////////////////////////////////////////////
+///////////////////////////////////////////////////////
+
+.robot {
+  position: fixed;
+    z-index: 200;
+    display: none;
+    width: 610px;
+  @include breakpoint(TP) {
+        display: block;
+        //transform: rotate(15deg);
+        top: -63px;
+        width: 610px;
+        left: -910px;
+    }
+    @include breakpoint(TL) {
+        top: -188px;
+        left: -880px;
+    }
+  @include breakpoint(D) {
+        width: 730px;
+        left: -1050px;
+        top: -125px;
+      //transform: rotate(5deg);
+    }
+}
+
+
+
+

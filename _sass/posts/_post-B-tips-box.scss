@@ -1,0 +1,130 @@
+
+///////////////////////////////////////////////////////
+///////////////////////////////////////////////////////
+/////////////////////// TIPS BOX //////////////////////
+///////////////////////////////////////////////////////
+///////////////////////////////////////////////////////
+
+.tips-box {
+  position: relative;
+  margin: 4.5rem 0 4.5rem 0;
+  @include breakpoint(TP) {
+    margin: 5.5rem 0 5.5rem 0;
+  }
+  @include breakpoint(D) {
+    margin: 8.5rem 0 8.5rem 0;
+  }
+}
+
+// Remove some space when image comes after an H3 and H4 heading
+
+h3 + div.tips-box,
+h4 + div.tips-box {
+  margin-top: 4rem;
+  @include breakpoint(TP) {
+    margin-top: 3.5rem;
+  }
+  @include breakpoint(D) {
+    margin-top: 5rem;
+  }
+}
+
+
+//////////////////// CONTENT WRAPPER //////////////////
+
+.tips-box .content-wrapper {
+  position: relative;
+  z-index: 1;
+  display: flex; ////
+  justify-content: space-around;
+  align-items: center; ////
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  @include breakpoint(TP) {
+  }
+  @include breakpoint(D) {
+  }
+}
+
+
+///////////////////// TEXT WRAPPER ////////////////////
+
+.tips-box .text-wrapper {
+  position: relative;
+  z-index: 1;
+  flex-basis: 95%;
+  margin: 0;
+  @include breakpoint(TP) {
+    flex-basis: 80%;
+  }
+  @include breakpoint(D) {
+  }
+}
+
+.tips-box .text-wrapper .tips-title {
+  //color: $pink;
+  margin: 0;
+}
+
+.tips-box .text-wrapper p {
+  //color: $pink;
+  margin-bottom: 0;
+}
+
+
+/////////////////////// LONGLINE //////////////////////
+
+.tips-box .long-line-black.top {
+  z-index: 1;
+  margin-bottom: 2.7rem;
+  @include breakpoint(TP) {
+    margin-bottom: 3rem;
+  }
+  @include breakpoint(D) {
+    margin-bottom: 4rem;
+  }
+}
+
+.tips-box .long-line-black.bot {
+  z-index: 1;
+  margin-top: 3.7rem;
+  @include breakpoint(TP) {
+    margin-top: 4rem;
+  }
+  @include breakpoint(D) {
+    margin-top: 6rem;
+  }
+}
+
+
+///////////////////////////////////////////////////////
+/////////// IMAGE TOP ILLO [LIGHTBULB ETC.] ///////////
+///////////////////////////////////////////////////////
+
+// Clock overide
+.tips-box.clock .image-top-illo {
+  background-image: url(../images/image-top-illo/clock/500px.png);
+    @include breakpoint(ML) {
+      background-image: url(../images/image-top-illo/clock/677px.png);
+    }
+  @include breakpoint(D) {
+      background-image: url(../images/image-top-illo/clock/775px.png);
+  }
+}
+
+// Printer overide
+.tips-box.printer .image-top-illo {
+  background-image: url(../images/image-top-illo/printer/rot-right/500px.png);
+    @include breakpoint(ML) {
+      background-image: url(../images/image-top-illo/printer/rot-right/677px.png);
+    }
+  @include breakpoint(D) {
+      background-image: url(../images/image-top-illo/printer/rot-right/775px.png);
+  }
+}
+
+
+
+

@@ -1,0 +1,839 @@
+
+
+///////////////////////////////////////////////////////
+///////////////////////////////////////////////////////
+///////////////////// MAILERLITE //////////////////////
+///////////////////////////////////////////////////////
+///////////////////////////////////////////////////////
+
+div.digital-products,
+div.crafts,
+div.dual,
+div.newsletter {
+    width: 100%;
+}
+
+
+////////////////// DIGITAL PRODUCTS ///////////////////
+
+
+.digital-products .ml-form-embedWrapper.embedForm {
+    max-width: 540px !important;
+    height: 46px !important;
+}
+
+.digital-products .ml-form-embedWrapper.embedForm {
+    background-color: transparent !important;  
+}
+
+.digital-products .ml-form-embedBody {
+    padding: 0 !important;
+}
+
+.digital-products .ml-form-embedContainer.ml-form-embedWrapper {
+    background-color: transparent !important;
+}
+
+.digital-products #mlb2-1710358.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody.ml-form-embedBodyHorizontal .ml-form-formContent.horozintalForm {
+    padding: 0 0 0 0 !important;
+    height: 37px;
+    @include breakpoint(TP) {
+        height: 38px;
+    }
+    @include breakpoint(D) {
+        height: 42px;
+    }
+}
+
+.digital-products #mlb2-1710358.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .ml-input-horizontal {
+   width: 90% !important;
+   @include breakpoint(TP) {
+        width: 70% !important;
+   } 
+}
+
+.digital-products .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow input {
+    border-radius: $radius; // 15px !important;
+    height: 42px;
+    font-family: 'Pro-Draw' !important;
+}
+
+
+// Submit
+
+.digital-products #mlb2-1710358.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    @include breakpoint(TP) {
+        display: block;
+    }
+}
+
+.digital-products #mlb2-1710358.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .horizontal-fields {
+    padding-right: 0px !important;
+    @include breakpoint(TP) {
+        padding-right: 10px !important;
+    }
+}
+
+.digital-products #mlb2-1710358.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .ml-button-horizontal,
+.digital-products #mlb2-1710358.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-mobileButton-horizontal {
+    margin: 15px 0 0 0 !important;
+    width: 130px !important;
+    @include breakpoint(TP) {
+        width: 30% !important;
+        margin: 0px !important;
+    }
+    span{
+        color: white;
+    }
+}
+
+.digital-products #mlb2-1710358.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .ml-button-horizontal button,
+.digital-products #mlb2-1710358.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-mobileButton-horizontal button {
+    font-size: 1.5rem !important;
+    height: 37px;
+    border-radius: $radius; //15px !important;
+    font-family: 'Pro-Draw' !important;
+    outline: none !important;
+    padding: 2px 25px 0px 25px !important;
+    background-color: $pink;
+    transition: all 0.3s ease;
+    @include breakpoint(TP) {
+        padding: 2px 0px 0px 2px !important;
+        font-size: 1.7rem !important;
+        height: 38px;
+    }
+    @include breakpoint(D) {
+        font-size: 1.9rem !important;
+        height: 42px;
+    }
+    &:hover{
+        background-color: white;
+        color: $pink !important;
+    }
+}
+
+.digital-products .ml-form-horizontalRow .ml-button-horizontal button:hover .ml-form-embedSubmitLoad::after {
+    border: 4px solid $pink !important;
+    border-color: $pink $pink $pink transparent !important;
+}
+
+
+// Input
+
+.ml-field-group.ml-field-email {
+    position: relative !important;   
+}
+
+.digital-products #mlb2-1710358.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow input,
+.digital-products #mlb2-1710358.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow input:focus {
+    font-size: 16px !important; //1.3rem
+    box-shadow: 0 0 0 30px white inset !important;
+    outline: none !important;
+    height: 37px;
+    color: $black;
+    background-color: white !important;
+    padding: 3px 0px 0px 20px !important;
+    @include breakpoint(TP) {
+        font-size: 16px !important; //1.5rem
+        height: 38px;
+    }
+    @include breakpoint(D) {
+        font-size: 1.7rem !important;
+        height: 42px;
+    } 
+}
+
+.digital-products #mlb2-1710358.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow input::placeholder {
+    color: #999 !important;
+}
+
+// Success messages
+
+.digital-products #mlb2-1710358.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody {
+    padding: 0px !important;
+}
+
+.digital-products #mlb2-1710358.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent {
+    margin: 0px !important;  
+}
+
+.digital-products #mlb2-1710358.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent h4,
+.digital-products #mlb2-1710358.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent p:last-child {
+    color: white;
+    font-family: Pro-Draw !important;
+    text-align: center !important;  
+}
+
+
+
+
+
+
+
+
+
+
+
+//////////////////////// NEWSLETTER /////////////////////////
+
+
+.newsletter .ml-form-embedWrapper.embedForm {
+    max-width: 540px !important;
+    height: 46px !important;
+}
+
+.newsletter .ml-form-embedWrapper.embedForm {
+    background-color: transparent !important;  
+}
+
+.newsletter .ml-form-embedBody {
+    padding: 0 !important;
+}
+
+.newsletter .ml-form-embedContainer.ml-form-embedWrapper {
+    background-color: transparent !important;
+}
+
+.newsletter #mlb2-5705922.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody.ml-form-embedBodyHorizontal .ml-form-formContent.horozintalForm {
+    padding: 0 0 0 0 !important;
+    height: 37px;
+    @include breakpoint(TP) {
+        height: 38px;
+    }
+    @include breakpoint(D) {
+        height: 42px;
+    }
+}
+
+.newsletter #mlb2-5705922.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .ml-input-horizontal {
+   width: 90% !important;
+   @include breakpoint(TP) {
+        width: 70% !important;
+   } 
+}
+
+.newsletter .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow input {
+    border-radius: $radius; //15px !important;
+    height: 42px;
+    font-family: 'Pro-Draw' !important;
+}
+
+
+// Submit
+
+.newsletter #mlb2-5705922.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    @include breakpoint(TP) {
+        display: block;
+    }
+}
+
+.newsletter #mlb2-5705922.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .horizontal-fields {
+    padding-right: 0px !important;
+    @include breakpoint(TP) {
+        padding-right: 10px !important;
+    }
+}
+
+.newsletter #mlb2-5705922.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .ml-button-horizontal,
+.newsletter #mlb2-5705922.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-mobileButton-horizontal {
+    margin: 15px 0 0 0 !important;
+    width: 130px !important;
+    @include breakpoint(TP) {
+        width: 30% !important;
+        margin: 0px !important;
+    }
+    span{
+        color: white;
+    }
+}
+
+.newsletter #mlb2-5705922.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .ml-button-horizontal button,
+.newsletter #mlb2-5705922.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-mobileButton-horizontal button {
+    font-size: 1.5rem !important;
+    height: 37px;
+    border-radius: $radius; //15px !important;
+    font-family: 'Pro-Draw' !important;
+    outline: none !important;
+    padding: 2px 25px 0px 25px !important;
+    background-color: $pink;
+    transition: all 0.3s ease;
+    @include breakpoint(TP) {
+        padding: 2px 0px 0px 2px !important;
+        font-size: 1.7rem !important;
+        height: 38px;
+    }
+    @include breakpoint(D) {
+        font-size: 1.9rem !important;
+        height: 42px;
+    }
+    &:hover{
+        background-color: white;
+        color: $pink !important;
+    }
+}
+
+.newsletter .ml-form-horizontalRow .ml-button-horizontal button:hover .ml-form-embedSubmitLoad::after {
+    border: 4px solid $pink !important;
+    border-color: $pink $pink $pink transparent !important;
+}
+
+
+// Input
+
+.ml-field-group.ml-field-email {
+    position: relative !important;   
+}
+
+.newsletter #mlb2-5705922.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow input,
+.newsletter #mlb2-5705922.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow input:focus {
+    font-size: 16px !important; //1.3rem
+    box-shadow: 0 0 0 30px white inset !important;
+    outline: none !important;
+    height: 37px;
+    color: $black;
+    background-color: white !important;
+    padding: 3px 0px 0px 20px !important;
+    @include breakpoint(TP) {
+        font-size: 16px !important; //1.5rem
+        height: 38px;
+    }
+    @include breakpoint(D) {
+        font-size: 1.7rem !important;
+        height: 42px;
+    } 
+}
+
+#mlb2-5705922.ml-form-embedContainer .ml-form-align-center {
+    @include breakpoint(TP) {
+        text-align: left !important;
+    }
+}
+
+.newsletter #mlb2-5705922.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow input::placeholder {
+    color: #999 !important;
+}
+
+
+// Success messages
+
+.newsletter #mlb2-5705922.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody {
+    padding: 0px !important;
+}
+
+.newsletter #mlb2-5705922.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent {
+    margin: 0px !important;
+    @include breakpoint(TP) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.newsletter #mlb2-5705922.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent h4,
+.newsletter #mlb2-5705922.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent p {
+    @include breakpoint(TP) {
+         align-self: flex-start;
+    }
+}
+
+.newsletter #mlb2-5705922.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent h4,
+.newsletter #mlb2-5705922.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent p:last-child {
+    color: white;
+    font-family: Pro-Draw !important;
+    text-align: center !important;  
+}
+
+
+////////////////////////////////////////
+/// Overides for the subscribe modal ///
+////////////////////////////////////////
+
+.subscribe-modal.newsletter #mlb2-5705922.ml-form-embedContainer .ml-form-align-center {
+    text-align: center !important;
+    height: 37px;
+    @include breakpoint(TP) {
+        text-align: left !important;
+        height: 38px;
+    }
+    @include breakpoint(D) {
+        height: 42px;
+    } 
+}
+
+.subscribe-modal.newsletter #mlb2-5705922.ml-form-embedContainer .ml-form-embedWrapper.embedForm {
+    width: 90%;
+    @include breakpoint(TP) {
+        width: 95%;
+    }
+    @include breakpoint(D) {
+        width: 80%;
+    }
+}
+
+// Success messages
+
+.subscribe-modal.newsletter #mlb2-5705922.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody {
+    padding: 0px !important;
+}
+
+.subscribe-modal.newsletter #mlb2-5705922.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent {
+    margin: 0px !important;  
+}
+
+.subscribe-modal.newsletter #mlb2-5705922.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent h4,
+.subscribe-modal.newsletter #mlb2-5705922.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent p:last-child {
+    color: white;
+    font-family: Pro-Draw !important;
+    text-align: center !important;
+    @include breakpoint(TP) {
+        text-align: left !important;
+    }   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//////////////////////// DUAL /////////////////////////
+
+
+.section-subscribe.dual .dual {
+    height: 165px;
+    @include breakpoint(ML) {
+        height: 90px;
+    }
+    @include breakpoint(TP) {
+        height: 90px;
+    }
+    @include breakpoint(D) {
+        height: 90px;
+    }
+}
+
+.section-subscribe.dual .text-wrapper {
+    margin: -0.25rem 0 2.5rem 0;
+    @include breakpoint(ML) {
+        margin: -0.25rem 0 1rem 0;
+    }
+}
+
+.section-subscribe.dual #mlb2-3872608.ml-form-embedContainer .ml-form-embedWrapper {
+    background-color: transparent !important;  
+}
+
+.dual #mlb2-3872608.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody form {
+    @include breakpoint(ML) {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+    } 
+}
+
+.dual #mlb2-3872608.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-formContent.horozintalForm {
+    @include breakpoint(ML) {
+        order: 2;
+    }
+}
+
+.dual #mlb2-3872608.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-interestGroupsRow {
+    display: flex;
+    justify-content: center;
+    margin: 19px 0 23px 0 !important;
+    flex-wrap: wrap;
+    @include breakpoint(ML) {
+        margin: 10px 0 25px 0 !important;
+        order: 1;
+    }
+    @include breakpoint(D) {
+        margin: 5px 0 28px 0 !important;
+    } 
+}
+
+.dual #mlb2-3872608.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-interestGroupsRow .ml-form-interestGroupsRowCheckbox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    @include breakpoint(ML) {
+        margin-right: 30px;
+        width: auto;
+        display: initial;
+    }
+}
+
+
+// Submit
+
+.dual #mlb2-3872608.ml-form-embedContainer .ml-form-embedWrapper .ml-mobileButton-horizontal {
+    width: 130px !important;
+    margin-bottom: 0;
+}
+
+.dual #mlb2-3872608.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow button,
+.dual #mlb2-3872608.ml-form-embedContainer .ml-form-embedWrapper .ml-mobileButton-horizontal button {
+    font-size: 1.5rem !important;
+    height: 37px;
+    border-radius: $radius; //15px !important;
+    font-family: 'Pro-Draw' !important;
+    outline: none !important;
+    padding: 2px 25px 0px 25px !important;
+    background-color: $pink;
+    transition: all 0.3s ease;
+    @include breakpoint(ML) {
+        padding: 2px 0px 0px 2px !important;
+        font-size: 1.7rem !important;
+        height: 38px;
+    }
+    @include breakpoint(D) {
+        font-size: 1.9rem !important;
+        height: 42px;
+    }
+    &:hover{
+        background-color: white;
+        color: $pink !important;
+    }    
+}
+
+.dual #mlb2-3872608.ml-form-embedContainer .ml-mobileButton-horizontal {
+    @include breakpoint(ML) {
+        order: 3;
+    }
+}
+
+
+// Input
+
+.dual #mlb2-3872608.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow input {
+    font-size: 1.3rem !important;
+    box-shadow: 0 0 0 30px white inset !important;
+    outline: none !important;
+    height: 37px;
+    color: $black;
+    background-color: white !important;
+    padding: 3px 0px 0px 20px !important;
+    @include breakpoint(ML) {
+        font-size: 1.5rem !important;
+        height: 38px;
+    }
+    @include breakpoint(D) {
+        font-size: 1.7rem !important;
+        height: 42px;
+    }     
+}
+
+.dual #mlb2-3872608.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow input::placeholder {
+    color: #999 !important;
+}
+
+.dual #mlb2-3872608.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow {
+    display: flex;
+    justify-content: center; 
+    @include breakpoint(ML) {
+        display: initial;
+    }  
+}
+
+.dual #mlb2-3872608.ml-form-embedContainer .ml-form-formContent.horozintalForm .ml-form-horizontalRow .ml-input-horizontal {
+    width: 90% !important;
+    @include breakpoint(ML) {
+        width: 70% !important;
+    }
+}
+
+.dual #mlb2-3872608.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-interestGroupsRow .ml-form-interestGroupsRowCheckbox .label-description {
+    font-size: 1.3rem !important;
+    font-family: 'Pro-Draw' !important;
+    font-weight: normal !important;
+    color: white !important;
+    @include breakpoint(ML) {
+        font-size: 1.5rem !important;
+    }
+    @include breakpoint(D) {
+        font-size: 1.7rem !important;
+    }    
+}
+
+.dual #mlb2-3872608.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-formContent.horozintalForm {
+    padding: 0 0 0 0 !important;  
+}
+
+
+// Success messages
+
+.dual #mlb2-3872608.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody {
+    padding: 0px !important;
+}
+
+.dual #mlb2-3872608.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent {
+    margin: 0px !important;  
+}
+
+.dual #mlb2-3872608.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent h4,
+.dual #mlb2-3872608.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent p:last-child {
+    color: white;
+    font-family: Pro-Draw !important;
+    text-align: center !important;  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/////////////////////// CRAFTS ////////////////////////
+
+.crafts .ml-form-embedWrapper.embedForm {
+    max-width: 540px !important;
+    height: 46px !important;
+}
+
+.crafts .ml-form-embedWrapper.embedForm {
+    background-color: transparent !important;  
+}
+
+.crafts .ml-form-embedBody {
+    padding: 0 !important;
+}
+
+.crafts .ml-form-embedContainer.ml-form-embedWrapper {
+    background-color: transparent !important;
+}
+
+.crafts #mlb2-3876124.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody.ml-form-embedBodyHorizontal .ml-form-formContent.horozintalForm {
+    padding: 0 0 0 0 !important;
+    height: 37px;
+    @include breakpoint(TP) {
+        height: 38px;
+    }
+    @include breakpoint(D) {
+        height: 42px;
+    }
+}
+
+.crafts #mlb2-3876124.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .ml-input-horizontal {
+   width: 90% !important;
+   @include breakpoint(TP) {
+        width: 70% !important;
+   } 
+}
+
+.crafts .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow input {
+    border-radius: $radius; //15px !important;
+    height: 42px;
+    font-family: 'Pro-Draw' !important;
+}
+
+
+// Submit
+
+.crafts #mlb2-3876124.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    @include breakpoint(TP) {
+        display: block;
+    }
+}
+
+.crafts #mlb2-3876124.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .horizontal-fields {
+    padding-right: 0px !important;
+    @include breakpoint(TP) {
+        padding-right: 10px !important;
+    }
+}
+
+.crafts #mlb2-3876124.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .ml-button-horizontal,
+.crafts #mlb2-3876124.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-mobileButton-horizontal {
+    margin: 15px 0 0 0 !important;
+    width: 130px !important;
+    @include breakpoint(TP) {
+        width: 30% !important;
+        margin: 0px !important;
+    }
+    span{
+        color: white;
+    }
+}
+
+.crafts #mlb2-3876124.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .ml-button-horizontal button,
+.crafts #mlb2-3876124.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-mobileButton-horizontal button {
+    font-size: 1.5rem !important;
+    height: 37px;
+    border-radius: $radius; //15px !important;
+    font-family: 'Pro-Draw' !important;
+    outline: none !important;
+    padding: 2px 25px 0px 25px !important;
+    background-color: $pink;
+    transition: all 0.3s ease;
+    @include breakpoint(TP) {
+        padding: 2px 0px 0px 2px !important;
+        font-size: 1.7rem !important;
+        height: 38px;
+    }
+    @include breakpoint(D) {
+        font-size: 1.9rem !important;
+        height: 42px;
+    }
+    &:hover{
+        background-color: white;
+        color: $pink !important;
+    }
+}
+
+.crafts .ml-form-horizontalRow .ml-button-horizontal button:hover .ml-form-embedSubmitLoad::after {
+    border: 4px solid $pink !important;
+    border-color: $pink $pink $pink transparent !important;
+}
+
+
+// Input
+
+.ml-field-group.ml-field-email {
+    position: relative !important;   
+}
+
+.crafts #mlb2-3876124.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow input,
+.crafts #mlb2-3876124.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow input:focus {
+    font-size: 16px !important; //1.3rem
+    box-shadow: 0 0 0 30px white inset !important;
+    outline: none !important;
+    height: 37px;
+    color: $black;
+    background-color: white !important;
+    padding: 3px 0px 0px 20px !important;
+    @include breakpoint(TP) {
+        font-size: 16px !important; //1.5rem
+        height: 38px;
+    }
+    @include breakpoint(D) {
+        font-size: 1.7rem !important;
+        height: 42px;
+    } 
+}
+
+.crafts #mlb2-3876124.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow input::placeholder {
+    color: #999 !important;
+}
+
+
+// Success messages
+
+.crafts #mlb2-3876124.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody {
+    padding: 0px !important;
+}
+
+.crafts #mlb2-3876124.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent {
+    margin: 0px !important;  
+}
+
+.crafts #mlb2-3876124.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent h4,
+.crafts #mlb2-3876124.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent p:last-child {
+    color: white;
+    font-family: Pro-Draw !important;
+    text-align: center !important;  
+}
+
+
+////////////////////////////////////////
+/// Overides for the subscribe modal ///
+////////////////////////////////////////
+
+.subscribe-modal.crafts #mlb2-3876124.ml-form-embedContainer .ml-form-align-center {
+    text-align: center !important;
+    height: 37px;
+    @include breakpoint(TP) {
+        text-align: left !important;
+        height: 38px;
+    }
+    @include breakpoint(D) {
+        height: 42px;
+    } 
+}
+
+.subscribe-modal.crafts #mlb2-3876124.ml-form-embedContainer .ml-form-embedWrapper.embedForm {
+    width: 90%;
+    @include breakpoint(TP) {
+        width: 95%;
+    }
+    @include breakpoint(D) {
+        width: 80%;
+    }
+}
+
+// Success messages
+
+.subscribe-modal.crafts #mlb2-3876124.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody {
+    padding: 0px !important;
+}
+
+.subscribe-modal.crafts #mlb2-3876124.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent {
+    margin: 0px !important;  
+}
+
+.subscribe-modal.crafts #mlb2-3876124.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent h4,
+.subscribe-modal.crafts #mlb2-3876124.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent p:last-child {
+    color: white;
+    font-family: Pro-Draw !important;
+    text-align: center !important;
+    @include breakpoint(TP) {
+        text-align: left !important;
+    }   
+}
+
+
+
+
+
+
+
+//////////// SUBSCRIBE (PLACEHOLDER) TEXT /////////////
+
+.subscribe-text-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+}
+
+.subscribe-text {
+  margin-left: 17px;
+  margin-top: 2px;
+  color: #999;
+  font-size: 1.3rem;
+  @include breakpoint(TP) {
+    margin-top: 2px;
+    font-size: 1.5rem;
+  }
+  @include breakpoint(D) {
+    margin-top: 2px;
+    font-size: 1.7rem;
+  }
+}
+
+
+
+
