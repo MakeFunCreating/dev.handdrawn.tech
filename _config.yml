@@ -17,7 +17,7 @@ github_username:  jekyll
 
 # cd ~/Dropbox/"Hand Drawn Tech"/"- Website"/"dev.handdrawn.tech"
 
-# Deployment
+# Production
 # JEKYLL_ENV=production bundle exec jekyll build
 
 # Development
