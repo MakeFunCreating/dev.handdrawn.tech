@@ -29,7 +29,7 @@ meta-description: "A life time in the making, here's how, and why, Hand Drawn Te
 
 <!-- SECTION TEXT & IMAGE -->
 {% include sections-pages/add-sect-text-image.html
-  class = "full-image no-frame squeeze large-image join"
+  class = "full-image no-frame large-image"
   section-divider = ""
   ani-triggers = ""
   bg-slider-uniq-ID = ""
