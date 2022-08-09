@@ -7,7 +7,7 @@ top-bar-class: none
 
 title: Hand Drawn Tech by Scott Bedford
 title-large: true
-title-nbsp:
+title-nbsp: false
 
 h1: What is Hand&nbsp;Drawn Tech?
 h1: Hand Drawn Illustrations With a Charming Low-Tech Aesthetic
@@ -15,8 +15,8 @@ h1: Add an Authentic Touch to your Marketing & Advertising
 #h1: Disarmingly Persuasive Hand Drawn Illustrations
 h1: Add an Authentic Touch to Your Marketing & Advertising
 h1: Add an Authentic Touch to Your Communications & Marketing
-#h1: Whimsical Low-Tech Illustrations By Scott Bedford
-#h1: Tell Your Story with Disarmingly Persuasive Low-Tech Illustrations
+h1: Add an Authentic Touch to Your Marketing Communications
+h1: Add an Authentic Touch to Your Communications
 #----------------------- H1 LENGTH GUIDE ----------------------------
 
 sub-heading: + Why You'll Want Them & How to Get&nbsp;Them
@@ -24,8 +24,8 @@ sub-heading: + Who They Are For & Why You'll Want&nbsp;Them
 sub-heading: For Design, Marketing and Publishing
 sub-heading: Hand Drawn Illustrations With a Low-Tech Aesthetic
 sub-heading: Hand Drawn Illustrations With a Low-Tech Charm
-sub-heading: With Scott Bedford's Hand Drawn Low-Tech Illustrations
 sub-heading: Hand Drawn Illustrations With Low-Tech Charm
+sub-heading: With Scott Bedford's Low-Tech Illustrations
 
 announcement:
 
