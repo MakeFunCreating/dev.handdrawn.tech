@@ -1,6 +1,9 @@
 # dev.handdrawn.tech
 
 
+### Aug 9th 2022 - v1.0.3
+* UPDATED: Changed text on index page
+
 ### Jul 7th 2022 - v1.0.2
 * UPDATED: Fixed dribble/CMarket links
 

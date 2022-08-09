@@ -88,14 +88,14 @@ body.no-search .top-bar  {
   width: 180px;
   height: 32px;
   margin-top: 5px;
-  background: url(../images/logo/domain/800px.png) top left/174px auto no-repeat;
+  background: url(../images/logo/plain/800px.png) top left/174px auto no-repeat;
   background-size: 180px auto;
   @include breakpoint(TP) {
     margin-top: 5px;
     margin-left: 25px; 
     width: 230px;
     height: 40px;
-    background: url(../images/logo/domain/1200px.png) top left/230px auto no-repeat;
+    background: url(../images/logo/plain/1200px.png) top left/230px auto no-repeat;
   }
   @include breakpoint(D) {
     margin-top: 4px; //0px;
