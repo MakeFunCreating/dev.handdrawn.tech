@@ -17,6 +17,8 @@ h1: Add an Authentic Touch to Your Marketing & Advertising
 h1: Add an Authentic Touch to Your Communications & Marketing
 h1: Add an Authentic Touch to Your Marketing Communications
 h1: Add an Authentic Touch to Your Communications
+h1: Add Low-Tech Charm to Your Marketing Communications
+h1: Add Low-Tech Appeal to Your Marketing Communications
 #----------------------- H1 LENGTH GUIDE ----------------------------
 
 sub-heading: + Why You'll Want Them & How to Get&nbsp;Them
@@ -26,6 +28,7 @@ sub-heading: Hand Drawn Illustrations With a Low-Tech Aesthetic
 sub-heading: Hand Drawn Illustrations With a Low-Tech Charm
 sub-heading: Hand Drawn Illustrations With Low-Tech Charm
 sub-heading: With Scott Bedford's Low-Tech Illustrations
+sub-heading: With Scott Bedford's Whimsical Illustrations
 
 announcement:
 

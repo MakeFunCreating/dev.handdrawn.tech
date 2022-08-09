@@ -1,6 +1,9 @@
 # dev.handdrawn.tech
 
 
+### Aug 9th 2022 - v1.0.6
+* UPDATED: Changed text on index page
+
 ### Aug 9th 2022 - v1.0.5
 * UPDATED: Changed text on index page
 
