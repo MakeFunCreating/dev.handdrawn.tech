@@ -58,7 +58,7 @@
 
             <div class="text-wrapper card">
               {% if page.h1 %}
-                {% if page.title-nbsp == "false" %}{% assign breaking-space-var = " " %}{% else %}{% assign breaking-space-var = ";psbn&" %}{% endif %}
+                {% if page.title-nbsp == false %}{% assign breaking-space-var = " " %}{% else %}{% assign breaking-space-var = ";psbn&" %}{% endif %}
                 {% assign h1 = page.h1 | split:'' | reverse | join:'' | replace_first: ' ', breaking-space-var  | split:'' | reverse | join:'' %}
                  <h1 class="page-title {% if page.title-large == true %}large{% endif %}">{{ h1 }}</h1>
               {% elsif page.product-title %}
