@@ -6,13 +6,14 @@ layout-sub-type:
 top-bar-class:
 
 title: Human Assisted Robot Delivering Food Order by Lifting up Roof
-slug: human-assisted-robot-delivering-food-order-by-lifting-up-roof
+title: Robot Delivering Food to a Women Sitting Inside Her House
+slug: robot-delivering-food-to-a-women-sitting-inside-her-house
 #----------------------- H1 LENGTH GUIDE ----------------------------
 
 categories: [line,hand drawn,playful parenting]
 tags: [human augmentation,house,robots,customer service]
 
-img-alt: Human assisted robot delivers online food order by lifting off roof
+img-alt: Robot Delivering Food to a Women Sitting Inside Her House
 img-name: slug
 img-format: jpg
 
