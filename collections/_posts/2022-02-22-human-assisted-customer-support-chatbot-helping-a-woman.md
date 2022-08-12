@@ -6,7 +6,8 @@ layout-sub-type:
 top-bar-class:
 
 title: Human Assisted Customer Support Chatbot Helping a Woman
-slug: human-assisted-customer-support-chatbot-helping-a-woman
+title: Women at Home Speaking to a Customer Support Chatbot
+slug: women-at-home-speaking-to-a-customer-support-chatbot
 #----------------------- H1 LENGTH GUIDE ----------------------------
 
 categories: [line,hand drawn,playful parenting]
