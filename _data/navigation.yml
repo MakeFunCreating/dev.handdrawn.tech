@@ -34,12 +34,17 @@ footer-nav:
       url:
 - heading: Get Illustrations
   subfolderitems:
-    - title: Licensing
-      url: /how-to-licence-illustrations
-    - title: Commissioning
+    - title: Licence Model
+      url: /the-licence-model
+    - title: Existing Illustrations
+      url: /how-to-licence-existing-illustrations
+    - title: New Commissions
       url: /how-to-commission-new-illustrations
-    - title: Book Consultation
-      url: /contact
+
+
+
+
+      
 
 
 

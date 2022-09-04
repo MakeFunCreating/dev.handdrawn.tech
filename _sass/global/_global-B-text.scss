@@ -452,7 +452,11 @@ p.disclosure {
 // Adjust for breadcrumb links
 .content p.breadcrumb.smallest > a {
     padding-bottom: 2px;
-    background-position: 0 1.4rem;
+    background-position: 0 1.25rem;
+    @include breakpoint(TP) {
+    	padding-bottom: 2px;
+    	background-position: 0 1.4rem;
+    }
 }
 
 
@@ -462,7 +466,7 @@ p.disclosure {
 
 .content .button-wrapper {
     position: relative;
-    z-index: 1;
+    z-index: 10;
 }
 
 .content p + div.button-wrapper {

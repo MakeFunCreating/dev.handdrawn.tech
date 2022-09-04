@@ -1,69 +1,132 @@
-I"Wž<!-- SECTION TEXT -->
+I"c«<!-- SECTION LOGOS -->
 
-<section class="section-text strip-line join none no-illo strip-top">
-
+<section class="section-logos strip-line none no-illo strip-top">
+  
     
 
     <div class="content-wrapper">
 
       
-
         <div class="sect-title-wrapper">
-          <h2 class="sect-title">Who They Are For</h2>
+          <h2 class="sect-title">About Hand Drawn Tech</h2>
           <div class="underline"></div>
+        </div>
+      
+
+      <div class="text-wrapper">
+        
+  
+        
+          <div class="text-top"><p>Hand Drawn <em>Tech</em> illustrations are an engaging and authtentic way to explain, demonstrate or market your products and services to your customers and clients. They have been proven effective time and time again; winning hearts, minds and new business wherever they are used.</p></div>
+        
+
+
+      </div>
+
+      
+      
+        
+        
+
+          <div class="img-wrapper">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="https://handdrawn.tech/images/content/logos/black/panasonic.png" />
+                <source media="(min-width: 450px)" srcset="https://handdrawn.tech/images/content/logos/black/panasonic.png" />
+                <img src="https://handdrawn.tech/images/content/logos/black/panasonic.png" alt="" loading="lazy" />
+              </picture>
+          </div>
+
+      
+        
+        
+
+          <div class="img-wrapper">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="https://handdrawn.tech/images/content/logos/black/samsung.png" />
+                <source media="(min-width: 450px)" srcset="https://handdrawn.tech/images/content/logos/black/samsung.png" />
+                <img src="https://handdrawn.tech/images/content/logos/black/samsung.png" alt="" loading="lazy" />
+              </picture>
+          </div>
+
+      
+        
+        
+
+          <div class="img-wrapper">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="https://handdrawn.tech/images/content/logos/black/disney.png" />
+                <source media="(min-width: 450px)" srcset="https://handdrawn.tech/images/content/logos/black/disney.png" />
+                <img src="https://handdrawn.tech/images/content/logos/black/disney.png" alt="" loading="lazy" />
+              </picture>
+          </div>
+
+      
+        
+        
+
+          <div class="img-wrapper">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="https://handdrawn.tech/images/content/logos/black/vodafone.png" />
+                <source media="(min-width: 450px)" srcset="https://handdrawn.tech/images/content/logos/black/vodafone.png" />
+                <img src="https://handdrawn.tech/images/content/logos/black/vodafone.png" alt="" loading="lazy" />
+              </picture>
+          </div>
+
+      
+        
+        
+
+          <div class="img-wrapper">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="https://handdrawn.tech/images/content/logos/black/ford.png" />
+                <source media="(min-width: 450px)" srcset="https://handdrawn.tech/images/content/logos/black/ford.png" />
+                <img src="https://handdrawn.tech/images/content/logos/black/ford.png" alt="" loading="lazy" />
+              </picture>
+          </div>
+
+      
+        
+        
+
+          <div class="img-wrapper">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="https://handdrawn.tech/images/content/logos/black/southwest.png" />
+                <source media="(min-width: 450px)" srcset="https://handdrawn.tech/images/content/logos/black/southwest.png" />
+                <img src="https://handdrawn.tech/images/content/logos/black/southwest.png" alt="" loading="lazy" />
+              </picture>
+          </div>
+
+      
+
+      
+        <div class="text-wrapper bottom">
+          
+          
+          
+
+          
+            <div class="button-wrapper "><a href="/the-licence-model/" class="link-button smaller">How to Get Them <span class="right-arrow">â€º</span></a></div> 
+             
+           
+
         </div>
 
       
-  
-      <div class="text-wrapper">    
-        
-        
-          <p>If you are someone looking for an engaging and authtentic way to explain or demonstrate your product or service to your customers, Hand Drawn <em>Tech</em> illustrations are for you.</p>
-        
-
-        
-        
-
-        
-         
-
-        
-         
-
-        
-         
-
-        
-         
-
-        
-         
-
-        
-         
-
-        
-         
 
 
-         
-
-         
-
-      </div>
 
       <div class="bg-texture-wrapper">
         <div class="frame show"><div class="top-frame"></div><div class="bottom-frame"></div></div>
         <div class="bg-texture"></div>
       </div>
-
+      
     </div>
     
 </section>
 
 <!-- SECTION TEXT & IMAGE -->
 
-<section class="section-text-image strip-line full-image no-frame squeeze large-image join none no-illo strip-top no-sect-title">
+<section class="section-text-image strip-line full-image no-frame squeeze large-image none no-illo strip-top no-sect-title">
 
     
 
@@ -154,7 +217,7 @@
       
 
         <div class="sect-title-wrapper">
-          <h2 class="sect-title">Why They Are On-Trend</h2>
+          <h2 class="sect-title">Donâ€™t Miss Out on the Latest Trend</h2>
           <div class="underline"></div>
         </div>
 
@@ -163,7 +226,7 @@
       <div class="text-wrapper">    
         
         
-          <p>This quote from the Graphic Artists Guild handbook explains, better than I can, why Hand Drawn <em>Tech</em> illustrations are so on-trend...</p>
+          <p>For a long time flat, vector style illustrations have ruled the roost, but consumers are tiring of this impersonal aesthetic. This quote from the Graphic Artists Guild explains why illustration styles, particularly hand drawn styles, are now so relevant.</p>
         
 
         
@@ -222,7 +285,7 @@
              
             
 
-          <div class="quote-wrapper"><div class="left-ditto"></div><p class="quote ">One of the biggest trends currently affecting illustration is the desire for a more artful aesthetic in branding... originally led by boutique brands... it has now caught on with the big brands, who want to be more appealing and stay relevant to their consumer... to the point that illustration is playing a much bigger role than photography in branding</p><div class="right-ditto"></div></div>
+          <div class="quote-wrapper"><div class="left-ditto"></div><p class="quote ">One of the biggest trends currently affecting illustration is the desire for a more <em>artful aesthetic</em> in branding... originally led by boutique brands... it has now caught on with the big brands, who want to be more appealing and stay relevant to their consumer... to the point that illustration is playing a much bigger role than photography in branding</p><div class="right-ditto"></div></div>
           <p class="author smaller">- Graphic Artists Guild Handbook 16th Edition</p>
         </div>
 
@@ -255,7 +318,7 @@
       <div class="text-wrapper">    
         
         
-          <p>Hand Drawn <em>Tech</em> illustrations are perfect for explaining complex ideas (actually, any ideas) and are proven in boardrooms and loved by consumers. Here's 9 reasons why they are so effective...</p>
+          <p>Hand Drawn <em>Tech</em> illustrations are an extremely powerful communications tool, here's 9 reasons why:</p>
         
 
         
@@ -313,7 +376,7 @@
         
           <div class="text-wrapper">
             
-              <h4 class="title uniq-ID-ABC"><em>No. 1:</em> Seductive</h4>
+              <h4 class="title uniq-ID-ABC"><em>No. 1:</em> They Are Seductive</h4>
             
             
             
@@ -411,7 +474,7 @@
         
           <div class="text-wrapper">
             
-              <h4 class="title uniq-ID-ABC"><em>No. 2:</em> Authentic</h4>
+              <h4 class="title uniq-ID-ABC"><em>No. 2:</em> They Are Authentic</h4>
             
             
             
@@ -509,7 +572,7 @@
         
           <div class="text-wrapper">
             
-              <h4 class="title uniq-ID-ABC"><em>No. 3:</em> Versatile</h4>
+              <h4 class="title uniq-ID-ABC"><em>No. 3:</em> They Are Versatile</h4>
             
             
             
@@ -607,7 +670,7 @@
         
           <div class="text-wrapper">
             
-              <h4 class="title slider-1"><em>No. 4:</em> Descriptive</h4>
+              <h4 class="title slider-1"><em>No. 4:</em> They Are Descriptive</h4>
             
             
             
@@ -875,7 +938,7 @@
         
           <div class="text-wrapper">
             
-              <h4 class="title uniq-ID-ABC"><em>No. 5:</em> Unique</h4>
+              <h4 class="title uniq-ID-ABC"><em>No. 5:</em> They Are Unique</h4>
             
             
             
@@ -973,7 +1036,7 @@
         
           <div class="text-wrapper">
             
-              <h4 class="title uniq-ID-ABC"><em>No. 6:</em> Dynamic</h4>
+              <h4 class="title uniq-ID-ABC"><em>No. 6:</em> They Are Dynamic</h4>
             
             
             
@@ -1078,7 +1141,7 @@
         
           <div class="text-wrapper">
             
-              <h4 class="title uniq-ID-ABC"><em>No. 7:</em> Evergreen</h4>
+              <h4 class="title uniq-ID-ABC"><em>No. 7:</em> They Are Evergreen</h4>
             
             
             
@@ -1176,7 +1239,7 @@
         
           <div class="text-wrapper">
             
-              <h4 class="title uniq-ID-ABC"><em>No. 8:</em> Customisable</h4>
+              <h4 class="title uniq-ID-ABC"><em>No. 8:</em> They Are Customisable</h4>
             
             
             
@@ -1274,7 +1337,7 @@
         
           <div class="text-wrapper">
             
-              <h4 class="title uniq-ID-ABC"><em>No. 9:</em> Proven</h4>
+              <h4 class="title uniq-ID-ABC"><em>No. 9:</em> They Are Proven</h4>
             
             
             
@@ -1515,7 +1578,7 @@
           <h4>Licensing &amp; Commissioning</h4>
         
         
-          <p>To use one of my illustrations, you can either <a href="/how-to-licence-hand-drawn-tech-illustrations/">license</a> an existing illustration, or <a href="/how-to-commission-new-hand-drawn-tech-illustrations/">commission</a> a totally new illustration. To get a quote, or to discuss a project, please use the chat feature to get in touch.</p>
+          <p>To use one of my illustrations, you can either <a href="/how-to-licence-existing-illustrations/">licence</a> an existing illustration, or <a href="/how-to-commission-new-illustrations/">commission</a> a totally new illustration. To get a quote, or to discuss a project, please use the chat feature to get in touch.</p>
         
 
         

@@ -21,10 +21,17 @@ h1: Add Low-Tech Charm to Your Marketing Communications
 h1: Add Low-Tech Appeal to Your Marketing Communications
 h1: Show Your Customers What You Do In a Way That Makes Them Care
 h1: Explain Stuff In A Way That Makes Your Customers Care
-#h1: Hand Drawn Illustrations That Your Customers Will Love
-#h1: Win Hearts & Minds With Scott Bedford's Low-Tech Illustrations
 h1: Win Hearts, Minds & New Business
 h1: Win Hearts, Minds & New Customers
+h1: Explain Stuff In A Way That Makes Your Customers Care
+h1: Hi-Tech Stuff Explained in an Engaging Low-Tech Way
+h1: Add Low-Tech Appeal to Your Marketing Communications
+h1: Show The World What You Do, In a Way That Makes People Care
+h1: Show Your Customers What You Do in a Way That Makes Them Care
+h1: Give your products and services some heart and soul
+h1: Win Hearts, Minds & New Customers
+h1: Add a Human Touch to Your Marketing Communications
+h1: Give Your Marketing Communications a Human Touch
 #----------------------- H1 LENGTH GUIDE ----------------------------
 
 sub-heading: + Why You'll Want Them & How to Get&nbsp;Them
@@ -35,7 +42,11 @@ sub-heading: Hand Drawn Illustrations With a Low-Tech Charm
 sub-heading: Hand Drawn Illustrations With Low-Tech Charm
 sub-heading: With Scott Bedford's Low-Tech Illustrations
 sub-heading: With Scott Bedford's Whimsical Illustrations
-sub-heading: With Scott Bedford's Persuasive Low-Tech Illustrations
+sub-heading: With Scott Bedford's Seductive Low-Tech Illustrations
+sub-heading: And Win the Hearts & Minds of Your Customers
+sub-heading: With Scott Bedford's Whimsical Low-Tech Illustrations
+#sub-heading: With Whimsical Hand Drawn Low-Tech Illustrations
+
 
 announcement:
 
@@ -46,31 +57,33 @@ featured-image: header
 author:
 permalink:
 footer:
-meta-description: Hand Drawn Tech is the place to find, commission and license Scott Bedford's whimsical low-tech illustrations, send a message or book a consultation.
+meta-description: Hand Drawn Tech is the place to find, commission and licence Scott Bedford's whimsical low-tech illustrations, send a message or book a consultation.
 
 ---
 
 
 
-
-<!-- SECTION TEXT -->
-{% include sections-pages/add-sect-text.html
-  class = "join"
+<!-- SECTION LOGOS -->
+{% include sections-pages/add-sect-logos.html
+  class = ""
   section-divider = ""
   ani-triggers = ""
 
-  sect-title = "Who They Are For"
-  
-  h1 = ""
-  p1 = "If you are someone looking for an engaging and authtentic way to explain or demonstrate your product or service to your customers, Hand Drawn <em>Tech</em> illustrations are for you."
-  
-  h2 = ""
-  p2 = ""
+  sect-title = "About Hand Drawn Tech"
 
-  end-caption = ""
-  
-  link-text = ""
-  link-url = ""
+  h3-sub-title-top = ""
+  h4-sub-title-top = ""
+  text-top = "Hand Drawn <em>Tech</em> illustrations are an engaging and authtentic way to explain, demonstrate or market your products and services to your customers and clients. They have been proven effective time and time again; winning hearts, minds and new business wherever they are used."
+
+  logo-png-array = "panasonic,samsung,disney,vodafone,ford,southwest"
+  logo-col = "black"
+
+  h3-sub-title-bot = ""
+  h4-sub-title-bot = ""
+  text-bot = ""
+
+  link-text = "How to Get Them"
+  link-url = "/the-licence-model/"
 %}
 
 
@@ -80,7 +93,7 @@ meta-description: Hand Drawn Tech is the place to find, commission and license S
 
 <!-- SECTION TEXT & IMAGE -->
 {% include sections-pages/add-sect-text-image.html
-  class = "full-image no-frame squeeze large-image join"
+  class = "full-image no-frame squeeze large-image"
   section-divider = ""
   ani-triggers = ""
   bg-slider-uniq-ID = ""
@@ -117,10 +130,10 @@ meta-description: Hand Drawn Tech is the place to find, commission and license S
   section-divider = ""
   ani-triggers = ""
 
-  sect-title = "Why They Are On-Trend"
+  sect-title = "Don’t Miss Out on the Latest Trend"
   
   h1 = ""
-  p1 = "This quote from the Graphic Artists Guild handbook explains, better than I can, why Hand Drawn <em>Tech</em> illustrations are so on-trend..."
+  p1 = "For a long time flat, vector style illustrations have ruled the roost, but consumers are tiring of this impersonal aesthetic. This quote from the Graphic Artists Guild explains why illustration styles, particularly hand drawn styles, are now so relevant."
   
   h2 = ""
   p2 = ""
@@ -141,7 +154,7 @@ meta-description: Hand Drawn Tech is the place to find, commission and license S
 
   avatar-src = "/images/content/quote-avatars/graphic-arts-logo-grey.png"
   rating = ""
-  text = "One of the biggest trends currently affecting illustration is the desire for a more artful aesthetic in branding... originally led by boutique brands... it has now caught on with the big brands, who want to be more appealing and stay relevant to their consumer... to the point that illustration is playing a much bigger role than photography in branding"
+  text = "One of the biggest trends currently affecting illustration is the desire for a more <em>artful aesthetic</em> in branding... originally led by boutique brands... it has now caught on with the big brands, who want to be more appealing and stay relevant to their consumer... to the point that illustration is playing a much bigger role than photography in branding"
   author = "- Graphic Artists Guild Handbook 16th Edition"
 %}
 
@@ -169,7 +182,7 @@ meta-description: Hand Drawn Tech is the place to find, commission and license S
   sect-title = "Why They Are So Effective"
   
   h1 = ""
-  p1 = "Hand Drawn <em>Tech</em> illustrations are perfect for explaining complex ideas (actually, any ideas) and are proven in boardrooms and loved by consumers. Here's 9 reasons why they are so effective..."
+  p1 = "Hand Drawn <em>Tech</em> illustrations are an extremely powerful communications tool, here's 9 reasons why:"
   
   h2 = ""
   p2 = ""
@@ -200,7 +213,7 @@ meta-description: Hand Drawn Tech is the place to find, commission and license S
   sect-title = ""
 
   h3-sub-title = ""
-  h4-sub-title = "<em>No. 1:</em> Seductive"
+  h4-sub-title = "<em>No. 1:</em> They Are Seductive"
   text = "<em>&#10003;</em> Hand Drawn <em>Tech</em> illustrations, with their low-tech charm,  are disarmingly persuasive."
   img-src = "content/pages/home/section-images/hacker/#jpg"
   img-alt = "Cyber terrorist stealing data from a highly secure data silo"
@@ -231,7 +244,7 @@ meta-description: Hand Drawn Tech is the place to find, commission and license S
   sect-title = ""
 
   h3-sub-title = ""
-  h4-sub-title = "<em>No. 2:</em> Authentic"
+  h4-sub-title = "<em>No. 2:</em> They Are Authentic"
   text = "<em>&#10003;</em> Hand Drawn <em>Tech</em> illustrations are drawn by hand, so are not perfect, and scream authenticity."
   img-src = "content/pages/home/section-images/delivery-food/#jpg"
   img-alt = "Human assisted robot delivers online food order by lifting off roof"
@@ -262,7 +275,7 @@ meta-description: Hand Drawn Tech is the place to find, commission and license S
   sect-title = ""
 
   h3-sub-title = ""
-  h4-sub-title = "<em>No. 3:</em> Versatile"
+  h4-sub-title = "<em>No. 3:</em> They Are Versatile"
   text = "<em>&#10003;</em> Hand Drawn <em>Tech</em> illustrations can bring-to-life almost any idea or concept, however abstract."
   img-src = "content/pages/home/section-images/tough-nut/#jpg"
   img-alt = "Tough-nut cracking machine with computerised hydraulic hammer"
@@ -291,7 +304,7 @@ meta-description: Hand Drawn Tech is the place to find, commission and license S
   sect-title = ""
 
   h3-sub-title = ""
-  h4-sub-title = "<em>No. 4:</em> Descriptive"
+  h4-sub-title = "<em>No. 4:</em> They Are Descriptive"
   text = "<em>&#10003;</em> Hand Drawn <em>Tech</em> illustrations, with their use of familiar low-tech objects, are easy to understand."
   img-src = "content/pages/home/section-images/punch-single/black-and-white/#png"
   img-alt = "Competing businesses (in the form of boxing robots) fight it out"
@@ -320,7 +333,7 @@ meta-description: Hand Drawn Tech is the place to find, commission and license S
   sect-title = ""
 
   h3-sub-title = ""
-  h4-sub-title = "<em>No. 5:</em> Unique"
+  h4-sub-title = "<em>No. 5:</em> They Are Unique"
   text = "<em>&#10003;</em> Hand Drawn <em>Tech</em> illustrations are bespoke, and ensure you stand apart from the competition."
   img-src = "content/pages/home/section-images/house-cloud/#jpg"
   img-alt = "Four smart homes connected to a floating cloud server by pipes"
@@ -349,7 +362,7 @@ meta-description: Hand Drawn Tech is the place to find, commission and license S
   sect-title = ""
 
   h3-sub-title = ""
-  h4-sub-title = "<em>No. 6:</em> Dynamic"
+  h4-sub-title = "<em>No. 6:</em> They Are Dynamic"
   text = "<em>&#10003;</em> Hand Drawn <em>Tech</em> illustrations incorporate mechanical elements that can be easily animated."
   img-src = ""
   img-alt = ""
@@ -387,7 +400,7 @@ meta-description: Hand Drawn Tech is the place to find, commission and license S
   sect-title = ""
 
   h3-sub-title = ""
-  h4-sub-title = "<em>No. 7:</em> Evergreen"
+  h4-sub-title = "<em>No. 7:</em> They Are Evergreen"
   text = "<em>&#10003;</em> Hand Drawn <em>Tech</em> illustrations are not slavish to current trends and will remain fresh indefinitely."
   img-src = "content/pages/home/section-images/eyeball/#jpg"
   img-alt = "Eyeball connected to a computer analyses marketing communications"
@@ -417,7 +430,7 @@ meta-description: Hand Drawn Tech is the place to find, commission and license S
   sect-title = ""
 
   h3-sub-title = ""
-  h4-sub-title = "<em>No. 8:</em> Customisable"
+  h4-sub-title = "<em>No. 8:</em> They Are Customisable"
   text = "<em>&#10003;</em> Hand Drawn <em>Tech</em> illustrations work with almost any brand colour, even pink!"
   img-src = "content/pages/home/section-images/super-maker/pink/#jpg"
   img-alt = "Person wearing a jet pack assembles pipes using robotic tools"
@@ -443,7 +456,7 @@ meta-description: Hand Drawn Tech is the place to find, commission and license S
   sect-title = ""
 
   h3-sub-title = ""
-  h4-sub-title = "<em>No. 9:</em> Proven"
+  h4-sub-title = "<em>No. 9:</em> They Are Proven"
   text = "<em>&#10003;</em> Hand Drawn <em>Tech</em> illustrations have been successfully used to market products and win business."
   img-src = "content/pages/home/section-images/zoom-meeting/#jpg"
   img-alt = "Conflict resolution meeting between a women, man and mediator"
@@ -528,7 +541,7 @@ meta-description: Hand Drawn Tech is the place to find, commission and license S
   p1 = ""
 
   h2 = "Licensing & Commissioning"
-  p2 = "To use one of my illustrations, you can either <a href=\"/how-to-licence-hand-drawn-tech-illustrations/\">license</a> an existing illustration, or <a href=\"/how-to-commission-new-hand-drawn-tech-illustrations/\">commission</a> a totally new illustration. To get a quote, or to discuss a project, please use the chat feature to get in touch."
+  p2 = "To use one of my illustrations, you can either <a href=\"/how-to-licence-existing-illustrations/\">licence</a> an existing illustration, or <a href=\"/how-to-commission-new-illustrations/\">commission</a> a totally new illustration. To get a quote, or to discuss a project, please use the chat feature to get in touch."
   
   link-text = "Start chat"
   link-url = "open-chat"

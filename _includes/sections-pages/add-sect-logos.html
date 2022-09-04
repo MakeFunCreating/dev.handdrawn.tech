@@ -74,19 +74,25 @@
 
       {% endfor %}
 
-      {% if include.h3-sub-title-bot and include.h3-sub-title-bot != empty or include.h4-sub-title-bot and include.h4-sub-title-bot != empty or include.text-bot and include.text-bot != empty or include.end-caption and include.end-caption != empty %}
+      {% if include.link-text and include.link-text != empty or include.h3-sub-title-bot and include.h3-sub-title-bot != empty or include.h4-sub-title-bot and include.h4-sub-title-bot != empty or include.text-bot and include.text-bot != empty or include.end-caption and include.end-caption != empty %}
         <div class="text-wrapper bottom">
           {% if include.h3-sub-title-bot and include.h3-sub-title-bot != empty %}
-            <div class="title"><h3>{{ include.h3-sub-title-bot }}</h3></div>
+            <h3 class="title">{{ include.h3-sub-title-bot }}</h3>
           {% elsif include.h4-sub-title-bot and include.h4-sub-title-bot != empty %}
-            <div class="title"><h4>{{ include.h4-sub-title-bot }}</h4></div>
+            <h4 class="title">{{ include.h4-sub-title-bot }}</h4>
           {% endif %}
           {% if include.text-bot and include.text-bot != empty %}
-            <div class="text-bottom"><p>{{ include.text-bot }}</p></div>
+            <p class="text-bottom">{{ include.text-bot }}</p>
           {% endif %}
           {% if include.end-caption and include.end-caption != empty %}
             <p class="smallest end-caption">{{ include.end-caption }}</p>
+          {% endif %}
+
+          {% if include.link-text and include.link-text != empty %}
+            <div class="button-wrapper {% if include.link-url == "open-chat" %}open-chat disable{% endif %}"><a {% if include.link-url == "open-chat" %}onclick="tidioChatApi.open()"{% else %} href="{{ include.link-url }}"{% endif %} class="link-button smaller" >{{ include.link-text }} <span class="right-arrow">›</span></a></div> 
+            {% if include.link-url == "open-chat" %}<div class="cookie-block-wrapper"><p class="cookie-block-text smallest">Please allow cookies to enable chat</p></div>{% endif %} 
           {% endif %} 
+
         </div>
 
       {% endif %}

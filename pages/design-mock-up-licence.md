@@ -18,15 +18,13 @@ meta-description: "How to get in touch and book a free consultation."
 
 
 
-<div><p class="breadcrumb smallest"><em>Design Mock-up License</em> | <a href="/how-to-licence-hand-drawn-tech-illustrations/">How to Licence My Illustrations</a> | <a href="/how-to-commission-new-hand-drawn-tech-illustrations/">How to Commission New Illustrations</a></p></div>
-
-#### The Bad, But Unsurprising News
+#### The (Slightly) Bad News
 
 The copyright of all images displayed on handdrawn.tech belong to Scott Bedford. Using them without permission (other than fair use) is a breach of copyright.
 
 #### The Good News
 
-Luckily, all images can be legally licensed, here's a bit more about [how to license my illustrations](/how-to-licence-illustrations/).
+Luckily, all images can be legally licenced, here's a bit more about [how to licence my illustrations](/how-to-licence-existing-illustrations/).
 
 
 #### The Even Better News
