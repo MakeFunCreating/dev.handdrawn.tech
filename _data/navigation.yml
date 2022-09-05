@@ -24,6 +24,8 @@ footer-nav:
       url: /about
     - title: Contact
       url: /contact
+    - title: Books
+      url: /books
 - heading: Find Illustrations
   subfolderitems:
     - title: Illustration Gallery

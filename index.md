@@ -57,7 +57,7 @@ featured-image: header
 author:
 permalink:
 footer:
-meta-description: Hand Drawn Tech is the place to find, commission and licence Scott Bedford's whimsical low-tech illustrations, send a message or book a consultation.
+meta-description: Hand Drawn Tech is the official home of Scott Bedford's whimsical low-tech illustrations, the engaging and authtentic way to explain, demonstrate or market your products and services to your customers and clients.
 
 ---
 
@@ -154,7 +154,7 @@ meta-description: Hand Drawn Tech is the place to find, commission and licence S
 
   avatar-src = "/images/content/quote-avatars/graphic-arts-logo-grey.png"
   rating = ""
-  text = "One of the biggest trends currently affecting illustration is the desire for a more <em>artful aesthetic</em> in branding... originally led by boutique brands... it has now caught on with the big brands, who want to be more appealing and stay relevant to their consumer... to the point that illustration is playing a much bigger role than photography in branding"
+  text = "As a reaction to the impersonal look of digital illustrations, recently there has been a renewed interest and demand for <em>traditional techniques</em>... originally led by boutique brands... it has now caught on with the big brands..."
   author = "- Graphic Artists Guild Handbook 16th Edition"
 %}
 
