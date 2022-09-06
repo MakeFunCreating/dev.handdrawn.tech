@@ -37,7 +37,7 @@ meta-description: "Three awesome books that celebrate creativity in different wa
   sect-title = ""
   
   h1 = ""
-  p1 = "Three awesome books that celebrate creativity in different ways, all written and illustrated by <a href=\"/about\">Scott&nbsp;Bedford</a>. The perfect screen time alternatives!"
+  p1 = "If you'd like to discuss a book project use the chat feature to get in touch."
   
   h2 = ""
   p2 = ""
@@ -82,7 +82,7 @@ meta-description: "Three awesome books that celebrate creativity in different wa
 
   carousel-active = "true"
   carousel-uniq-ID = "MBPO"
-  carousel-img-dir = "content/pages/books/made-by-papa-outdoor/carousel/"
+  carousel-img-dir = "content/pages/books/made-by-papa-outdoor/carousel"
   carousel-img-num = 9
 
   link-text = "View on Amazon"
@@ -119,7 +119,7 @@ meta-description: "Three awesome books that celebrate creativity in different wa
 
   carousel-active = "true"
   carousel-uniq-ID = "MBPO"
-  carousel-img-dir = "content/pages/books/made-by-papa-craft-sets/carousel/"
+  carousel-img-dir = "content/pages/books/made-by-papa-craft-sets/carousel"
   carousel-img-num = 4
 
   link-text = "View on Amazon"
@@ -158,7 +158,7 @@ meta-description: "Three awesome books that celebrate creativity in different wa
 
     carousel-active = "true"
     carousel-uniq-ID = "MMA"
-    carousel-img-dir = "content/pages/books/mega-maze/carousel/"
+    carousel-img-dir = "content/pages/books/mega-maze/carousel"
     carousel-img-num = 7
 
   link-text = "View on Amazon"
@@ -197,7 +197,7 @@ meta-description: "Three awesome books that celebrate creativity in different wa
 
     carousel-active = "true"
     carousel-uniq-ID = "MBD"
-    carousel-img-dir = "content/pages/books/made-by-dad/carousel/"
+    carousel-img-dir = "content/pages/books/made-by-dad/carousel"
     carousel-img-num = 8
 
   link-text = "View on Amazon"

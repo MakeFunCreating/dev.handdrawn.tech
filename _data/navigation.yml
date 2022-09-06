@@ -4,19 +4,21 @@ main-nav:
 - title: Home ›
   url: /
   mega-menu:
-- title: About ›
-  url: /about
-  mega-menu: #"build/mega-menu-crafts.html"
-- title: Illustration Gallery ›
+- title: Illustration ›
   url: /illustrations
   mega-menu: #"build/mega-menu-pro-draw.html"
+- title: Design ›
+  url: /graphic-design
+  mega-menu: #"build/mega-menu-crafts.html"
+- title: Video ›
+  url: /video-animation
+  mega-menu:
 - title: Contact ›
   url: /contact
-  mega-menu:
 
 
 footer-nav:
-- heading: General Info
+- heading: General
   subfolderitems:
     - title: Home
       url: /
@@ -24,25 +26,22 @@ footer-nav:
       url: /about
     - title: Contact
       url: /contact
-    - title: Books
-      url: /books
-- heading: Find Illustrations
+- heading: Illustration
   subfolderitems:
-    - title: Illustration Gallery
+    - title: Showcase
       url: /illustrations
     - title: Tag Cloud
       url: /illustrations/tags
-    - title:
-      url:
-- heading: Get Illustrations
-  subfolderitems:
-    - title: Licence Model
+    - title: About Licensing
       url: /the-licence-model
-    - title: Existing Illustrations
-      url: /how-to-licence-existing-illustrations
-    - title: New Commissions
-      url: /how-to-commission-new-illustrations
-
+- heading: Other Services
+  subfolderitems:
+    - title: Graphic Design 
+      url: /graphic-design
+    - title: Video Animation
+      url: /video-animation
+    - title: Books
+      url: /books
 
 
 

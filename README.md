@@ -1,6 +1,12 @@
 # dev.handdrawn.tech
 
 
+### Sep 6th 2022 - v1.1.2
+* UPDATED: Added design & video pages
+
+### Sep 4th 2022 - v1.1.1
+* UPDATED: Changed book page
+
 ### Sep 4th 2022 - v1.1.0
 * UPDATED: Changed text on index page
 * UPDATED: Changed licensing pages
