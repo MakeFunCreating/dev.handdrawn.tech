@@ -1,0 +1,1479 @@
+I"�k<!-- SECTION TEXT -->
+
+<section class="section-text strip-line grey squeeze no-illo strip-top">
+
+    
+
+    <div class="content-wrapper">
+
+      
+
+        <div class="sect-title-wrapper">
+          <h2 class="sect-title">Video Animation Service</h2>
+          <div class="underline"></div>
+        </div>
+
+      
+  
+      <div class="text-wrapper">    
+        
+        
+          <p><span class="smallest stretch-cap">Video Animation With A Human Touch</span></p>
+        
+
+        
+        
+          <p>Give your next whiteboard explainer video the Hand Drawn <em>Tech</em> treatment.</p>
+        
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+
+
+         
+
+         
+
+      </div>
+
+      <div class="bg-texture-wrapper">
+        <div class="frame show"><div class="top-frame"></div><div class="bottom-frame"></div></div>
+        <div class="bg-texture"></div>
+      </div>
+
+    </div>
+    
+</section>
+
+<!-- SECTION FULL BLEED IMAGES -->
+
+<section class="section-full-bleed-images strip-line strip-lines none no-illo strip-top no-sect-title">
+
+    
+
+    <div class="content-wrapper ">
+
+
+      
+
+
+
+      
+      
+      
+      
+      
+      
+
+
+      
+
+
+
+      
+        
+
+        <div class="col-wrapper col-1 ">
+
+           
+           
+           
+           
+
+
+           
+           
+            
+
+
+          
+              
+              
+
+              
+
+              
+              
+              
+
+              
+              
+              
+
+              
+
+
+              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="video-box vimeo sixteen-nine">
+
+		<div class="img-top-illo-wrapper"><div class="img-top-illo"></div></div>
+
+		<div class="frame-wrapper">
+
+			<div class="frame">
+				<div class="top-frame"></div>
+				<div class="left-frame"></div>
+				<div class="right-frame"></div>
+				<div class="bottom-frame"></div>
+			
+
+				<div class="video-wrapper" id="testPatternBg30637">
+					<div id="videoPlayBtn30637" class="video-play-button" style="display:none"><div class="triangle-right"></div></div>
+					<div id="videoPauseBtn30637" class="video-pause-button"></div>
+					<div class="aspect-ratio sixteen-nine">
+						<div class="vimeo-player" id="vimeo-player30637"></div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+</div>
+	
+
+<script src="https://player.vimeo.com/api/player.js"></script>
+
+<script type="text/plain" data-consent="analytics">
+
+	// Cookiehub - blocks vimeo embed until analytic cookies allowed
+
+	var tag = document.createElement('iframe');
+	tag.src = "https://player.vimeo.com/video/481630637?controls=0";
+	tag.width = 640;
+	tag.height = 360;
+	tag.frameBorder = 0;
+	tag.allow = "autoplay";
+	tag.setAttribute('webkitallowfullscreen', '');
+	tag.setAttribute('mozallowfullscreen', '');	
+	tag.setAttribute('allowfullscreen', '');
+	
+	var el = document.getElementById('vimeo-player30637');
+	el.appendChild(tag);
+	
+	// Change id to remove test pattern when cookies allowed
+	
+	if ( document.getElementById("testPatternBg30637").id  !== null ) {
+		var videoBox30637 = document.getElementById("testPatternBg30637");
+		videoBox30637.style.background = "none";
+		$('#videoPlayBtn30637').fadeIn(400);
+	}
+
+	// Vimeo player controls
+	const iframe30637 = $('#vimeo-player30637 iframe');
+    const player30637 = new Vimeo.Player(iframe30637);
+
+    // Events: When video starts playing
+    player30637.on('play', function() {
+        $('#videoPlayBtn30637').fadeOut(10);
+    	$('#videoPauseBtn30637').css('cursor', 'pointer');
+    });
+
+    // Events: When video ended
+    player30637.on('ended', function() {
+        $('#videoPlayBtn30637').fadeIn(400);
+    });
+
+    // Events: When video paused
+    player30637.on('pause', function() {
+    	// Re-set hover classes
+		$('#videoPlayBtn30637').hover(function(){
+		  $(this).css("background-color", '#eb2a85');
+		  }, function(){
+		  $(this).css("background-color", '#373737');
+		});
+    	$('#videoPlayBtn30637').fadeIn(10);
+    	$('#videoPauseBtn30637').css('cursor', 'default');
+    });
+
+    // Methods: Play video when play button clicked
+    $('#videoPlayBtn30637').click(function() {
+    	player30637.play();
+    	$('#videoPlayBtn30637').css('background-color', '#373737');
+	});
+
+    // Methods: Pause video when pause button clicked
+    $('#videoPauseBtn30637').click(function() {
+    	player30637.pause();
+	});
+
+</script>
+
+
+
+
+
+
+          
+          
+
+        </div>
+
+      
+
+      
+      <div class="bg-texture-wrapper">
+        <div class="bg-texture"></div>
+      </div>
+
+      <div class="top-frame"></div>
+
+    </div>
+      
+
+</section>
+
+<!-- SECTION TEXT -->
+
+<section class="section-text strip-line join none no-illo strip-top">
+
+    
+
+    <div class="content-wrapper">
+
+      
+  
+      <div class="text-wrapper">    
+        
+          <h4><em>&#10003;</em> Health and Wellbeing</h4>
+        
+        
+          <p>Replace matter-of-fact explanations and descriptions with warmth and charm.</p>
+        
+
+        
+        
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+
+
+         
+
+         
+
+      </div>
+
+      <div class="bg-texture-wrapper">
+        <div class="frame show"><div class="top-frame"></div><div class="bottom-frame"></div></div>
+        <div class="bg-texture"></div>
+      </div>
+
+    </div>
+    
+</section>
+
+<!-- SECTION FULL BLEED IMAGES -->
+
+<section class="section-full-bleed-images strip-line strip-lines none no-illo strip-top no-sect-title">
+
+    
+
+    <div class="content-wrapper ">
+
+
+      
+
+
+
+      
+      
+      
+      
+      
+      
+
+
+      
+
+
+
+      
+        
+
+        <div class="col-wrapper col-1 ">
+
+           
+           
+           
+           
+
+
+           
+           
+            
+
+
+          
+              
+              
+
+              
+
+              
+              
+              
+
+              
+              
+              
+
+              
+
+
+              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="video-box vimeo sixteen-nine">
+
+		<div class="img-top-illo-wrapper"><div class="img-top-illo"></div></div>
+
+		<div class="frame-wrapper">
+
+			<div class="frame">
+				<div class="top-frame"></div>
+				<div class="left-frame"></div>
+				<div class="right-frame"></div>
+				<div class="bottom-frame"></div>
+			
+
+				<div class="video-wrapper" id="testPatternBg31501">
+					<div id="videoPlayBtn31501" class="video-play-button" style="display:none"><div class="triangle-right"></div></div>
+					<div id="videoPauseBtn31501" class="video-pause-button"></div>
+					<div class="aspect-ratio sixteen-nine">
+						<div class="vimeo-player" id="vimeo-player31501"></div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+</div>
+	
+
+<script src="https://player.vimeo.com/api/player.js"></script>
+
+<script type="text/plain" data-consent="analytics">
+
+	// Cookiehub - blocks vimeo embed until analytic cookies allowed
+
+	var tag = document.createElement('iframe');
+	tag.src = "https://player.vimeo.com/video/270131501?controls=0";
+	tag.width = 640;
+	tag.height = 360;
+	tag.frameBorder = 0;
+	tag.allow = "autoplay";
+	tag.setAttribute('webkitallowfullscreen', '');
+	tag.setAttribute('mozallowfullscreen', '');	
+	tag.setAttribute('allowfullscreen', '');
+	
+	var el = document.getElementById('vimeo-player31501');
+	el.appendChild(tag);
+	
+	// Change id to remove test pattern when cookies allowed
+	
+	if ( document.getElementById("testPatternBg31501").id  !== null ) {
+		var videoBox31501 = document.getElementById("testPatternBg31501");
+		videoBox31501.style.background = "none";
+		$('#videoPlayBtn31501').fadeIn(400);
+	}
+
+	// Vimeo player controls
+	const iframe31501 = $('#vimeo-player31501 iframe');
+    const player31501 = new Vimeo.Player(iframe31501);
+
+    // Events: When video starts playing
+    player31501.on('play', function() {
+        $('#videoPlayBtn31501').fadeOut(10);
+    	$('#videoPauseBtn31501').css('cursor', 'pointer');
+    });
+
+    // Events: When video ended
+    player31501.on('ended', function() {
+        $('#videoPlayBtn31501').fadeIn(400);
+    });
+
+    // Events: When video paused
+    player31501.on('pause', function() {
+    	// Re-set hover classes
+		$('#videoPlayBtn31501').hover(function(){
+		  $(this).css("background-color", '#eb2a85');
+		  }, function(){
+		  $(this).css("background-color", '#373737');
+		});
+    	$('#videoPlayBtn31501').fadeIn(10);
+    	$('#videoPauseBtn31501').css('cursor', 'default');
+    });
+
+    // Methods: Play video when play button clicked
+    $('#videoPlayBtn31501').click(function() {
+    	player31501.play();
+    	$('#videoPlayBtn31501').css('background-color', '#373737');
+	});
+
+    // Methods: Pause video when pause button clicked
+    $('#videoPauseBtn31501').click(function() {
+    	player31501.pause();
+	});
+
+</script>
+
+
+
+
+
+
+          
+          
+
+        </div>
+
+      
+
+      
+      <div class="bg-texture-wrapper">
+        <div class="bg-texture"></div>
+      </div>
+
+      <div class="top-frame"></div>
+
+    </div>
+      
+
+</section>
+
+<!-- SECTION TEXT -->
+
+<section class="section-text strip-line join none no-illo strip-top">
+
+    
+
+    <div class="content-wrapper">
+
+      
+  
+      <div class="text-wrapper">    
+        
+          <h4><em>&#10003;</em> Charities and Non-Profit</h4>
+        
+        
+          <p>Communicate in an authentic and professional way that doesn't look too polished.</p>
+        
+
+        
+        
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+
+
+         
+
+         
+
+      </div>
+
+      <div class="bg-texture-wrapper">
+        <div class="frame show"><div class="top-frame"></div><div class="bottom-frame"></div></div>
+        <div class="bg-texture"></div>
+      </div>
+
+    </div>
+    
+</section>
+
+<!-- SECTION FULL BLEED IMAGES -->
+
+<section class="section-full-bleed-images strip-line strip-lines none no-illo strip-top no-sect-title">
+
+    
+
+    <div class="content-wrapper ">
+
+
+      
+
+
+
+      
+      
+      
+      
+      
+      
+
+
+      
+
+
+
+      
+        
+
+        <div class="col-wrapper col-1 ">
+
+           
+           
+           
+           
+
+
+           
+           
+            
+
+
+          
+              
+              
+
+              
+
+              
+              
+              
+
+              
+              
+              
+
+              
+
+
+              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="video-box vimeo sixteen-nine">
+
+		<div class="img-top-illo-wrapper"><div class="img-top-illo"></div></div>
+
+		<div class="frame-wrapper">
+
+			<div class="frame">
+				<div class="top-frame"></div>
+				<div class="left-frame"></div>
+				<div class="right-frame"></div>
+				<div class="bottom-frame"></div>
+			
+
+				<div class="video-wrapper" id="testPatternBg46435">
+					<div id="videoPlayBtn46435" class="video-play-button" style="display:none"><div class="triangle-right"></div></div>
+					<div id="videoPauseBtn46435" class="video-pause-button"></div>
+					<div class="aspect-ratio sixteen-nine">
+						<div class="vimeo-player" id="vimeo-player46435"></div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+</div>
+	
+
+<script src="https://player.vimeo.com/api/player.js"></script>
+
+<script type="text/plain" data-consent="analytics">
+
+	// Cookiehub - blocks vimeo embed until analytic cookies allowed
+
+	var tag = document.createElement('iframe');
+	tag.src = "https://player.vimeo.com/video/199146435?controls=0";
+	tag.width = 640;
+	tag.height = 360;
+	tag.frameBorder = 0;
+	tag.allow = "autoplay";
+	tag.setAttribute('webkitallowfullscreen', '');
+	tag.setAttribute('mozallowfullscreen', '');	
+	tag.setAttribute('allowfullscreen', '');
+	
+	var el = document.getElementById('vimeo-player46435');
+	el.appendChild(tag);
+	
+	// Change id to remove test pattern when cookies allowed
+	
+	if ( document.getElementById("testPatternBg46435").id  !== null ) {
+		var videoBox46435 = document.getElementById("testPatternBg46435");
+		videoBox46435.style.background = "none";
+		$('#videoPlayBtn46435').fadeIn(400);
+	}
+
+	// Vimeo player controls
+	const iframe46435 = $('#vimeo-player46435 iframe');
+    const player46435 = new Vimeo.Player(iframe46435);
+
+    // Events: When video starts playing
+    player46435.on('play', function() {
+        $('#videoPlayBtn46435').fadeOut(10);
+    	$('#videoPauseBtn46435').css('cursor', 'pointer');
+    });
+
+    // Events: When video ended
+    player46435.on('ended', function() {
+        $('#videoPlayBtn46435').fadeIn(400);
+    });
+
+    // Events: When video paused
+    player46435.on('pause', function() {
+    	// Re-set hover classes
+		$('#videoPlayBtn46435').hover(function(){
+		  $(this).css("background-color", '#eb2a85');
+		  }, function(){
+		  $(this).css("background-color", '#373737');
+		});
+    	$('#videoPlayBtn46435').fadeIn(10);
+    	$('#videoPauseBtn46435').css('cursor', 'default');
+    });
+
+    // Methods: Play video when play button clicked
+    $('#videoPlayBtn46435').click(function() {
+    	player46435.play();
+    	$('#videoPlayBtn46435').css('background-color', '#373737');
+	});
+
+    // Methods: Pause video when pause button clicked
+    $('#videoPauseBtn46435').click(function() {
+    	player46435.pause();
+	});
+
+</script>
+
+
+
+
+
+
+          
+          
+
+        </div>
+
+      
+
+      
+      <div class="bg-texture-wrapper">
+        <div class="bg-texture"></div>
+      </div>
+
+      <div class="top-frame"></div>
+
+    </div>
+      
+
+</section>
+
+<!-- SECTION TEXT -->
+
+<section class="section-text strip-line join none no-illo strip-top">
+
+    
+
+    <div class="content-wrapper">
+
+      
+  
+      <div class="text-wrapper">    
+        
+          <h4><em>&#10003;</em> Commercial and Business</h4>
+        
+        
+          <p>Transform business speak into a story that people will emotionally engage with.</p>
+        
+
+        
+        
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+
+
+         
+
+         
+
+      </div>
+
+      <div class="bg-texture-wrapper">
+        <div class="frame show"><div class="top-frame"></div><div class="bottom-frame"></div></div>
+        <div class="bg-texture"></div>
+      </div>
+
+    </div>
+    
+</section>
+
+<!-- SECTION FULL BLEED IMAGES -->
+
+<section class="section-full-bleed-images strip-line strip-lines none no-illo strip-top no-sect-title">
+
+    
+
+    <div class="content-wrapper ">
+
+
+      
+
+
+
+      
+      
+      
+      
+      
+      
+
+
+      
+
+
+
+      
+        
+
+        <div class="col-wrapper col-1 ">
+
+           
+           
+           
+           
+
+
+           
+           
+            
+
+
+          
+              
+              
+
+              
+
+              
+              
+              
+
+              
+              
+              
+
+              
+
+
+              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="video-box vimeo sixteen-nine">
+
+		<div class="img-top-illo-wrapper"><div class="img-top-illo"></div></div>
+
+		<div class="frame-wrapper">
+
+			<div class="frame">
+				<div class="top-frame"></div>
+				<div class="left-frame"></div>
+				<div class="right-frame"></div>
+				<div class="bottom-frame"></div>
+			
+
+				<div class="video-wrapper" id="testPatternBg85168">
+					<div id="videoPlayBtn85168" class="video-play-button" style="display:none"><div class="triangle-right"></div></div>
+					<div id="videoPauseBtn85168" class="video-pause-button"></div>
+					<div class="aspect-ratio sixteen-nine">
+						<div class="vimeo-player" id="vimeo-player85168"></div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+</div>
+	
+
+<script src="https://player.vimeo.com/api/player.js"></script>
+
+<script type="text/plain" data-consent="analytics">
+
+	// Cookiehub - blocks vimeo embed until analytic cookies allowed
+
+	var tag = document.createElement('iframe');
+	tag.src = "https://player.vimeo.com/video/408785168?controls=0";
+	tag.width = 640;
+	tag.height = 360;
+	tag.frameBorder = 0;
+	tag.allow = "autoplay";
+	tag.setAttribute('webkitallowfullscreen', '');
+	tag.setAttribute('mozallowfullscreen', '');	
+	tag.setAttribute('allowfullscreen', '');
+	
+	var el = document.getElementById('vimeo-player85168');
+	el.appendChild(tag);
+	
+	// Change id to remove test pattern when cookies allowed
+	
+	if ( document.getElementById("testPatternBg85168").id  !== null ) {
+		var videoBox85168 = document.getElementById("testPatternBg85168");
+		videoBox85168.style.background = "none";
+		$('#videoPlayBtn85168').fadeIn(400);
+	}
+
+	// Vimeo player controls
+	const iframe85168 = $('#vimeo-player85168 iframe');
+    const player85168 = new Vimeo.Player(iframe85168);
+
+    // Events: When video starts playing
+    player85168.on('play', function() {
+        $('#videoPlayBtn85168').fadeOut(10);
+    	$('#videoPauseBtn85168').css('cursor', 'pointer');
+    });
+
+    // Events: When video ended
+    player85168.on('ended', function() {
+        $('#videoPlayBtn85168').fadeIn(400);
+    });
+
+    // Events: When video paused
+    player85168.on('pause', function() {
+    	// Re-set hover classes
+		$('#videoPlayBtn85168').hover(function(){
+		  $(this).css("background-color", '#eb2a85');
+		  }, function(){
+		  $(this).css("background-color", '#373737');
+		});
+    	$('#videoPlayBtn85168').fadeIn(10);
+    	$('#videoPauseBtn85168').css('cursor', 'default');
+    });
+
+    // Methods: Play video when play button clicked
+    $('#videoPlayBtn85168').click(function() {
+    	player85168.play();
+    	$('#videoPlayBtn85168').css('background-color', '#373737');
+	});
+
+    // Methods: Pause video when pause button clicked
+    $('#videoPauseBtn85168').click(function() {
+    	player85168.pause();
+	});
+
+</script>
+
+
+
+
+
+
+          
+          
+
+        </div>
+
+      
+
+      
+      <div class="bg-texture-wrapper">
+        <div class="bg-texture"></div>
+      </div>
+
+      <div class="top-frame"></div>
+
+    </div>
+      
+
+</section>
+
+<!-- SECTION TEXT -->
+
+<section class="section-text strip-line none no-illo strip-top">
+
+    
+
+    <div class="content-wrapper">
+
+      
+  
+      <div class="text-wrapper">    
+        
+          <h4><em>&#10003;</em> Science and Technology</h4>
+        
+        
+          <p>Explain abstract ideas and tricky concepts in an accessible and memorable way.</p>
+        
+
+        
+        
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+
+
+         
+
+         
+
+      </div>
+
+      <div class="bg-texture-wrapper">
+        <div class="frame show"><div class="top-frame"></div><div class="bottom-frame"></div></div>
+        <div class="bg-texture"></div>
+      </div>
+
+    </div>
+    
+</section>
+
+<!-- SECTION TEXT & IMAGE -->
+
+<section class="section-text-image strip-line full-image large-image no-frame right none no-illo strip-top">
+
+    
+
+    <div class="content-wrapper ">
+
+      
+        <div class="sect-title-wrapper">
+          <h2 class="sect-title">Animated Loops</h2>
+          <div class="underline"></div>
+        </div>
+      
+
+        <div class="col-wrapper col-1">
+        
+        
+          <div class="text-wrapper">
+            
+            
+            
+              <p class="text uniq-ID-ABC">I can also create animation loops for use in social media, content marketing, or on brand sites, they can be provided as an animated GIF or conventional video format</p>
+            
+            
+
+            
+            
+            
+
+          </div>
+        
+        </div>
+
+
+        <div class="col-wrapper col-2">
+
+          
+            <div class="video-wrapper-constrain max-height">
+
+              
+
+                  
+                  
+                  
+                  
+    
+                  
+    
+    
+                  
+                  
+                  
+                  
+
+                <div class="video-box vimeo max-height">
+                    <div class="img-top-illo-wrapper"><div class="img-top-illo"></div></div>
+                    <div class="frame-wrapper">
+                      <div class="frame">
+                        <div class="top-frame"></div>
+                        <div class="left-frame"></div>
+                        <div class="right-frame"></div>
+                        <div class="bottom-frame"></div>
+                        <div class="video-wrapper local">
+                          <div class="aspect-ratio sixteen-nine">
+                            <video class="video-local" playsinline="" autoplay="" loop="" muted=""><source src="/videos/mfc-sq-col-720p.mp4" type="video/mp4" />
+                                Your browser does not support the video tag.
+                            </video>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+              
+
+
+            </div>
+          
+
+        </div>
+
+      
+      <div class="bg-texture-wrapper">
+        <div class="frame show"><div class="top-frame"></div><div class="bottom-frame"></div></div>
+          
+          
+            
+              <div class="bg-texture"></div>
+            
+      </div>
+      
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+<!-- SECTION TEXT -->
+
+<section class="section-text strip-line black no-illo strip-top">
+
+    
+
+    <div class="content-wrapper">
+
+      
+
+        <div class="sect-title-wrapper">
+          <h2 class="sect-title">Get in Touch</h2>
+          <div class="underline"></div>
+        </div>
+
+      
+  
+      <div class="text-wrapper">    
+        
+        
+          <p>For more information, timings, and an accurate quote send me a message.</p>
+        
+
+        
+        
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+
+
+         
+
+        
+          <div class="button-wrapper open-chat disable"><a onclick="tidioChatApi.open()" class="link-button smaller">Start chat <span class="right-arrow">›</span></a></div> 
+          <div class="cookie-block-wrapper"><p class="cookie-block-text smallest">Please allow cookies to enable chat</p></div> 
+         
+
+      </div>
+
+      <div class="bg-texture-wrapper">
+        <div class="frame show"><div class="top-frame"></div><div class="bottom-frame"></div></div>
+        <div class="bg-texture"></div>
+      </div>
+
+    </div>
+    
+</section>
+
+<!-- SECTION TEXT -->
+
+<section class="section-text strip-line black no-top-gap no-illo strip-top">
+
+    
+
+    <div class="content-wrapper">
+
+      
+
+        <div class="sect-title-wrapper">
+          <h2 class="sect-title">Book a Free Consultation</h2>
+          <div class="underline"></div>
+        </div>
+
+      
+  
+      <div class="text-wrapper">    
+        
+        
+          <p>If you would like to discuss a project in-person over zoom, please book a 'consultation'.</p>
+        
+
+        
+        
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+
+
+         
+
+        
+          <div class="button-wrapper "><a href="/contact" class="link-button smaller">View calendar <span class="right-arrow">›</span></a></div> 
+           
+         
+
+      </div>
+
+      <div class="bg-texture-wrapper">
+        <div class="frame show"><div class="top-frame"></div><div class="bottom-frame"></div></div>
+        <div class="bg-texture"></div>
+      </div>
+
+    </div>
+    
+</section>
+
+<!-- SECTION TEXT -->
+
+<section class="section-text strip-line announcement join black no-illo strip-top">
+
+    
+
+    <div class="content-wrapper">
+
+      
+  
+      <div class="text-wrapper">    
+        
+        
+          <p class="smaller">You'll also find me at the following places.</p>
+        
+
+        
+        
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+
+
+         
+
+         
+
+      </div>
+
+      <div class="bg-texture-wrapper">
+        <div class="frame show"><div class="top-frame"></div><div class="bottom-frame"></div></div>
+        <div class="bg-texture"></div>
+      </div>
+
+    </div>
+    
+</section>
+
+<!-- SECTION NAV BLOCKS -->
+
+<section class="section-nav-block strip-line plain-button black no-illo strip-top ">
+    
+    
+
+      <div class="content-wrapper item-total-">
+            
+
+
+
+        <div class="col-wrapper col-1">
+            <div class="frame-wrapper">
+
+              <div class="frame show">
+                <div class="top-frame"></div>
+                <div class="left-frame"></div>
+                <div class="right-frame"></div>
+                <div class="bottom-frame"></div>
+              </div>
+
+              <div class="text-wrapper ">
+                <h5 class="title "><a href="https://makefuncreating.com" class="">Make Fun Creating</a></h5>
+                
+                
+                  <div class="desc-wrapper"><p class="smallest">Webby Award Winning craft blog</p></div>
+                
+
+                
+                  <div class="button-wrapper"><a href="https://makefuncreating.com" class="link-button smaller">Visit blog <span class="right-arrow">›</span></a></div> 
+                 
+              </div>
+
+            </div>
+            <div class="bg-texture-wrapper "><div class="bg-texture"></div><div class="highlight-bar hide"></div></div>
+        </div>
+
+
+        <div class="col-wrapper col-2">
+            <div class="frame-wrapper">
+
+              <div class="frame show">
+                <div class="top-frame"></div>
+                <div class="left-frame"></div>
+                <div class="right-frame"></div>
+                <div class="bottom-frame"></div>
+              </div>
+
+              <div class="text-wrapper ">
+                <h5 class="title "><a href="https://creativemarket.com/HandDrawnTech" class="">Creative Market</a></h5>
+                
+                
+                  <div class="desc-wrapper"><p class="smallest">Awesome templates and fonts</p></div>
+                
+
+                
+                  <div class="button-wrapper"><a href="https://creativemarket.com/HandDrawnTech" class="link-button smaller">Visit store <span class="right-arrow">›</span></a></div> 
+                 
+              </div>
+
+            </div>
+            <div class="bg-texture-wrapper "><div class="bg-texture"></div><div class="highlight-bar hide"></div></div>
+        </div>
+
+
+        <div class="col-wrapper col-3">
+            <div class="frame-wrapper">
+
+              <div class="frame show">
+                <div class="top-frame"></div>
+                <div class="left-frame"></div>
+                <div class="right-frame"></div>
+                <div class="bottom-frame"></div>
+              </div>
+
+              <div class="text-wrapper ">
+                <h5 class="title "><a href="https://dribbble.com/HandDrawnTech" class="">Dribble</a></h5>
+                
+                
+                  <div class="desc-wrapper"><p class="smallest">Snapshots of latest illustrations</p></div>
+                            
+
+                
+                  <div class="button-wrapper"><a href="https://dribbble.com/HandDrawnTech" class="link-button smaller">Visit playbook <span class="right-arrow">›</span></a></div> 
+                              
+              </div>
+
+            </div>
+            <div class="bg-texture-wrapper "><div class="bg-texture"></div><div class="highlight-bar hide"></div></div>
+        </div>
+  
+  
+        <div class="bg-texture-wrapper">
+          <div class="frame show"><div class="top-frame"></div><div class="bottom-frame"></div></div>
+          <div class="bg-texture"></div>
+        </div>
+  
+      </div>
+
+  </section>
+
+:ET

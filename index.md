@@ -73,7 +73,7 @@ meta-description: Hand Drawn Tech is the official home of Scott Bedford's whimsi
 
   h3-sub-title-top = ""
   h4-sub-title-top = ""
-  text-top = "Hand Drawn <em>Tech</em> illustrations are an engaging and authtentic way to explain, demonstrate or market your products and services to your customers and clients. They have been proven effective time and time again; winning hearts, minds and new business wherever they are used."
+  text-top = "Hand Drawn <em>Tech</em> illustrations are an engaging and authtentic way to explain, demonstrate or market your products and services to your customers and clients. They have been proven to win hearts, minds and new business wherever they are used."
 
   logo-png-array = "panasonic,samsung,disney,vodafone,ford,southwest"
   logo-col = "black"
