@@ -6,7 +6,7 @@ layout-sub-type:
 top-bar-class: none
 
 title: "Hand Drawn Tech - Video Animation Service"
-h1: "Whiteboard Video Animation"
+h1: "Whiteboard Animation Service"
 #----------------------- H1 LENGTH GUIDE ----------------------------
 
 sub-heading: "Video Animation With a Human Touch"
