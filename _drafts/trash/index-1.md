@@ -1,314 +1,163 @@
 ---
 
 layout: page
+layout-sub-type:
 
 top-bar-class: none
 
-title: "Make Fun Creating | Home of Scott Bedford"
-h1: "Home of Scott Bedford"
+title: Hand Drawn Tech by Scott Bedford
+title-large: true
+title-nbsp: false
+
+h1: What is Hand&nbsp;Drawn Tech?
+h1: Hand Drawn Illustrations With a Charming Low-Tech Aesthetic
+h1: Add an Authentic Touch to your Marketing & Advertising
+#h1: Disarmingly Persuasive Hand Drawn Illustrations
+h1: Add an Authentic Touch to Your Marketing & Advertising
+h1: Add an Authentic Touch to Your Communications & Marketing
+h1: Add an Authentic Touch to Your Marketing Communications
+h1: Add an Authentic Touch to Your Communications
+h1: Add Low-Tech Charm to Your Marketing Communications
+h1: Add Low-Tech Appeal to Your Marketing Communications
+h1: Show Your Customers What You Do In a Way That Makes Them Care
+h1: Explain Stuff In A Way That Makes Your Customers Care
+h1: Win Hearts, Minds & New Business
+h1: Win Hearts, Minds & New Customers
+h1: Explain Stuff In A Way That Makes Your Customers Care
+h1: Hi-Tech Stuff Explained in an Engaging Low-Tech Way
+h1: Add Low-Tech Appeal to Your Marketing Communications
+h1: Show The World What You Do, In a Way That Makes People Care
+h1: Show Your Customers What You Do in a Way That Makes Them Care
+h1: Give your products and services some heart and soul
+h1: Win Hearts, Minds & New Customers
+h1: Add a Human Touch to Your Marketing Communications
+h1: Give Your Marketing Communications a Human Touch
+h1: Explain Stuff In A Way That Makes Your Customers Care
 #----------------------- H1 LENGTH GUIDE ----------------------------
 
-sub-heading: "Creative Director, Author, Illustrator"
-sub-heading-link: ""
+sub-heading: + Why You'll Want Them & How to Get&nbsp;Them
+sub-heading: + Who They Are For & Why You'll Want&nbsp;Them
+sub-heading: For Design, Marketing and Publishing
+sub-heading: Hand Drawn Illustrations With a Low-Tech Aesthetic
+sub-heading: Hand Drawn Illustrations With a Low-Tech Charm
+sub-heading: Hand Drawn Illustrations With Low-Tech Charm
+sub-heading: With Scott Bedford's Low-Tech Illustrations
+sub-heading: With Scott Bedford's Whimsical Illustrations
+sub-heading: With Scott Bedford's Seductive Low-Tech Illustrations
+sub-heading: And Win the Hearts & Minds of Your Customers
+sub-heading: With Scott Bedford's Whimsical Low-Tech Illustrations
+#sub-heading: With Whimsical Hand Drawn Low-Tech Illustrations
 
-announcement: 
 
-header-image: content/pages/hire-me/header-daredevil-1/#jpg
-header-class: center #no-header narrow overlay white-text center no-image no-card no-header
+announcement:
+
+header-image: content/pages/home/header/how-tweets-made/#jpg
+header-class: center #down-arrow no-header no-card no-title narrow overlay white-text center no-image no-strip
 featured-image: header
 
 author:
+permalink:
 footer:
-meta-description: "Make Fun Creating showcases the books, crafts, illustrations and products of Scott Bedford, an award winning creative director, illustrator and best-selling author."
+meta-description: Hand Drawn Tech is the official home of Scott Bedford's whimsical low-tech illustrations, the engaging and authtentic way to explain, demonstrate or market your products and services to your customers and clients.
 
 ---
 
 
 
-<!-- SECTION TEXT -->
-{% include sections-pages/add-sect-text.html
-	class = "blue"
-	section-divider = ""
-	ani-triggers = ""
-
-	sect-title = ""
-	
-	h1 = "Thanks For Visiting"
-	p1 = "Make Fun Creating showcases the books, crafts, illustrations and products of <a href=\"/about\">Scott&nbsp;Bedford</a>, an award winning creative director, illustrator and best-selling author."
-	
-	h2 = ""
-	p2 = ""
-
-	end-caption = "Header image: 'How Tweets Are Made' by Scott Bedford, Creative Review Illustration Annual"
-	
-	link-text = ""
-	link-url = ""
-%}
-
-
-
-
-
-
-
-
-
-{% include sections-pages/add-sect-text.html
-  class = ""
-  section-divider = "ping-pong"
-  ani-triggers = ""
-
-  sect-title = "Corporate Illustration"
-  
-  h1 = ""
-  p1 = "Scott's sought after illustrations are the perfect way to bring to life abstract ideas, complex technology and company visions."
-  
-  h2 = ""
-  p2 = ""
-
-  h3 = ""
-  p3 = ""
-  
-  end-caption = ""
-
-  link-text = ""
-  link-url = ""
-%}
-
-
-<!-- SECTION FULL BLEED IMAGES -->
-{% include sections-pages/add-sect-full-bleed-images.html
-  class = "tall"
-  ani-triggers = "telescopeAni"
-
-  img-src-1 = "autoplay&loop|https://player.vimeo.com/video/671941143"
-  img-alt-1 = ""
-  img-txt-1 = ""
-
-  img-src-2 = "autoplay&loop&muted|/videos/robot-loop-no-talk.mp4"
-  img-alt-2 = ""
-  img-txt-2 = ""
-
-  img-src-3 = ""
-  img-alt-3 = ""
-  img-txt-3 = ""
-
-  img-src-4 = ""
-  img-alt-4 = ""
-  img-txt-4 = ""
-
-  img-src-5 = ""
-  img-alt-5 = ""
-  img-txt-5 = ""
-
-  img-src-6 = ""
-  img-alt-6 = ""
-  img-txt-6 = ""
-
-  image-array = "2"
-
-%}
-
-
-{% include sections-pages/add-sect-text.html
-  	class = ""
-  	section-divider = ""
-  	ani-triggers = ""
-
-  	sect-title = ""
-  
-  	h1 = ""
-  	p1 = "Check out the showcase and use the chat feature to get in touch."
-  
-  	h2 = ""
-  	p2 = ""
-
-  	h3 = ""
-  	p3 = ""
-  
-  	end-caption = ""
-
-	link-text = "View Showcase"
-	link-url = "/hire-me"
-%}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- SECTION TEXT -->
-{% include sections-pages/add-sect-text.html
-  	class = ""
-  	section-divider = ""
-  	ani-triggers = ""
-
-  	sect-title = "Craft & Puzzle Books"
-  
-  	h1 = ""
-  	p1 = "Scott has published two ingenious craft books as well as the world's longest maze in a book."
-  
-  	h2 = ""
-  	p2 = ""
-
-  	h3 = ""
-  	p3 = ""
-  
-  	end-caption = ""
-
-  	link-text = ""
-  	link-url = ""
-%}
-
-<!-- SECTION FULL BLEED IMAGES -->
-{% include sections-pages/add-sect-full-bleed-images.html
-  	class = ""
-  	ani-triggers = ""
-
-  	img-src-1 = "content/pages/hire-me/full-bleed-mega-maze-1/#jpg"
-  	img-alt-1 = ""
-  	img-txt-1 = ""
-
-  	img-src-2 = "content/pages/hire-me/full-bleed-mega-maze-2/#jpg"
-  	img-alt-2 = ""
-  	img-txt-2 = ""
-
-  	img-src-3 = "content/pages/hire-me/full-bleed-mega-maze-3/#jpg"
-  	img-alt-3 = ""
-  	img-txt-3 = ""
-
-  	img-src-4 = "content/pages/hire-me/full-bleed-mega-maze-4/#jpg"
-  	img-alt-4 = ""
-  	img-txt-4 = ""
-
-  	img-src-5 = ""
-  	img-alt-5 = ""
-  	img-txt-5 = ""
-
-  	image-array = "1"
-%}
-
-
-{% include sections-pages/add-sect-text.html
-	class = ""
-	section-divider = ""
-	ani-triggers = ""
-
-	sect-title = ""
-	
-	h1 = ""
-	p1 = "Find out more about each book and where to buy them."
-	
-	h2 = ""
-	p2 = ""
-
-	h3 = ""
-	p3 = ""
-	
-	end-caption = ""
-
-	link-text = "View Books"
-	link-url = "/books"
-%}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- SECTION TEXT -->
-{% include sections-pages/add-sect-text.html
+<!-- SECTION LOGOS -->
+{% include sections-pages/add-sect-logos.html
   class = ""
   section-divider = ""
   ani-triggers = ""
 
-  sect-title = "Craft Blog"
-  
-  h1 = ""
-  p1 = "Scott's award winning blog is full of unique projects with unique hand drawn instructions."
-  
-  h2 = ""
-  p2 = ""
+  sect-title = "About Hand Drawn Tech"
 
-  h3 = ""
-  p3 = ""
-  
-  end-caption = ""
+  h3-sub-title-top = ""
+  h4-sub-title-top = ""
+  text-top = "Hand Drawn <em>Tech</em> illustrations are an engaging and authtentic way to explain, demonstrate or market your products and services to your customers and clients. They have been proven to win hearts, minds and new business wherever they are used."
+
+  logo-png-array = "panasonic,samsung,disney,vodafone,ford,southwest"
+  logo-col = "black"
+
+  h3-sub-title-bot = ""
+  h4-sub-title-bot = ""
+  text-bot = ""
+
+  link-text = "How to Get Them"
+  link-url = "/the-licence-model/"
+%}
+
+
+
+
+
+
+<!-- SECTION TEXT & IMAGE -->
+{% include sections-pages/add-sect-text-image.html
+  class = "full-image no-frame squeeze large-image"
+  section-divider = ""
+  ani-triggers = ""
+  bg-slider-uniq-ID = ""
+  bg-slider-classes = ""
+
+  sect-title = ""
+
+  h3-sub-title = ""
+  h4-sub-title = ""
+  text = ""
+  img-src = "content/pages/home/section-images/earth-pipes/#jpg"
+  img-alt = "AI computer with brain analysing social data to predict trends"
 
   link-text = ""
   link-url = ""
 %}
 
-<!-- SECTION FULL BLEED IMAGES -->
-{% include sections-pages/add-sect-full-bleed-images.html
-  class = ""
-  ani-triggers = "handAni"
 
-  img-src-1 = "content/pages/hire-me/full-bleed-crafts-8/#jpg"
-  img-alt-1 = ""
-  img-txt-1 = ""
 
-  img-src-2 = ""
-  img-alt-2 = ""
-  img-txt-2 = ""
 
-  img-src-3 = ""
-  img-alt-3 = ""
-  img-txt-3 = ""
 
-  img-src-4 = ""
-  img-alt-4 = ""
-  img-txt-4 = ""
 
-  img-src-5 = ""
-  img-alt-5 = ""
-  img-txt-5 = ""
 
-  image-array = "1"
 
-%}
 
+
+
+
+
+
+<!-- SECTION TEXT -->
 {% include sections-pages/add-sect-text.html
-	class = ""
-	section-divider = ""
-	ani-triggers = ""
+  class = "join"
+  section-divider = ""
+  ani-triggers = ""
 
-	sect-title = ""
-	
-	h1 = ""
-	p1 = "Find a cool project to make today!"
-	
-	h2 = ""
-	p2 = ""
+  sect-title = "Don’t Miss Out on the Latest Trend"
+  
+  h1 = ""
+  p1 = "For a long time flat, vector style illustrations have ruled the roost, but consumers are tiring of this impersonal aesthetic. This quote from the Graphic Artists Guild explains why illustration styles, particularly hand drawn styles, are now so relevant."
+  
+  h2 = ""
+  p2 = ""
 
-	h3 = ""
-	p3 = ""
-	
-	end-caption = ""
-
-	link-text = "View Crafts"
-	link-url = "/crafts"
+  end-caption = ""
+  
+  link-text = ""
+  link-url = ""
 %}
 
+<!-- SECTION QUOTE -->
+{% include sections-pages/add-sect-quote.html
+  class = "small no-top-gap"
+  section-divider = ""
+  ani-triggers = ""
 
+  sect-title = ""
+
+  avatar-src = "/images/content/quote-avatars/graphic-arts-logo-grey.png"
+  rating = ""
+  text = "As a reaction to the impersonal look of digital illustrations, recently there has been a renewed interest and demand for <em>traditional techniques</em>... originally led by boutique brands... it has now caught on with the big brands..."
+  author = "- Graphic Artists Guild Handbook 16th Edition"
+%}
 
 
 
@@ -327,105 +176,448 @@ meta-description: "Make Fun Creating showcases the books, crafts, illustrations 
 
 <!-- SECTION TEXT -->
 {% include sections-pages/add-sect-text.html
-  class = ""
+  class = "join"
   section-divider = ""
   ani-triggers = ""
 
-  sect-title = "Digital Products"
+  sect-title = "Why They Are So Effective"
   
   h1 = ""
-  p1 = "Professional templates and fonts in Scott's popular signature style."
+  p1 = "Hand Drawn <em>Tech</em> illustrations are an extremely powerful communications tool, here's 9 reasons why:"
   
   h2 = ""
   p2 = ""
 
-  h3 = ""
-  p3 = ""
-  
   end-caption = ""
+  
+  link-text = ""
+  link-url = ""
+%}
+
+
+
+
+
+
+
+
+
+
+<!-- SECTION TEXT & IMAGE -->
+{% include sections-pages/add-sect-text-image.html
+  class = "full-image no-frame large-image"
+  section-divider = ""
+  ani-triggers = "robotAni"
+  bg-slider-uniq-ID = ""
+  bg-slider-classes = ""
+
+  sect-title = ""
+
+  h3-sub-title = ""
+  h4-sub-title = "<em>No. 1:</em> They Are Seductive"
+  text = "<em>&#10003;</em> Hand Drawn <em>Tech</em> illustrations, with their low-tech charm,  are disarmingly persuasive."
+  img-src = "content/pages/home/section-images/hacker/#jpg"
+  img-alt = "Cyber terrorist stealing data from a highly secure data silo"
 
   link-text = ""
   link-url = ""
 %}
 
-<!-- SECTION FULL BLEED IMAGES -->
-{% include sections-pages/add-sect-full-bleed-images.html
-  class = ""
-  ani-triggers = "burglarAni"
 
-  img-src-1 = "content/pages/hire-me/full-bleed-presentations-1/#jpg"
-  img-alt-1 = ""
-  img-txt-1 = ""
 
-  img-src-2 = "content/pages/hire-me/full-bleed-presentations-2/#jpg"
-  img-alt-2 = ""
-  img-txt-2 = ""
 
-  img-src-3 = "content/pages/hire-me/full-bleed-presentations-3/#jpg"
-  img-alt-3 = ""
-  img-txt-3 = ""
 
-  img-src-4 = "content/pages/hire-me/full-bleed-presentations-4/#jpg"
-  img-alt-4 = ""
-  img-txt-4 = ""
 
-  img-src-5 = "https://player.vimeo.com/video/558512844"
-  img-alt-5 = ""
-  img-txt-5 = ""
 
-  image-array = "3"
 
+
+
+
+
+<!-- SECTION TEXT & IMAGE -->
+{% include sections-pages/add-sect-text-image.html
+  class = "full-image no-frame large-image"
+  section-divider = ""
+  ani-triggers = ""
+  bg-slider-uniq-ID = ""
+  bg-slider-classes = ""
+
+  sect-title = ""
+
+  h3-sub-title = ""
+  h4-sub-title = "<em>No. 2:</em> They Are Authentic"
+  text = "<em>&#10003;</em> Hand Drawn <em>Tech</em> illustrations are drawn by hand, so are not perfect, and scream authenticity."
+  img-src = "content/pages/home/section-images/delivery-food/#jpg"
+  img-alt = "Human assisted robot delivers online food order by lifting off roof"
+
+  link-text = ""
+  link-url = ""
 %}
 
+
+
+
+
+
+
+
+
+
+
+
+<!-- SECTION TEXT & IMAGE -->
+{% include sections-pages/add-sect-text-image.html
+  class = "full-image no-frame large-image"
+  section-divider = ""
+  ani-triggers = ""
+  bg-slider-uniq-ID = ""
+  bg-slider-classes = ""
+
+  sect-title = ""
+
+  h3-sub-title = ""
+  h4-sub-title = "<em>No. 3:</em> They Are Versatile"
+  text = "<em>&#10003;</em> Hand Drawn <em>Tech</em> illustrations can bring-to-life almost any idea or concept, however abstract."
+  img-src = "content/pages/home/section-images/tough-nut/#jpg"
+  img-alt = "Tough-nut cracking machine with computerised hydraulic hammer"
+
+  link-text = ""
+  link-url = ""
+%}
+
+
+
+
+
+
+
+
+
+
+<!-- SECTION TEXT & IMAGE -->
+{% include sections-pages/add-sect-text-image.html
+  class = "full-image no-frame black large-image bg-slider"
+  section-divider = ""
+  ani-triggers = ""
+  bg-slider-uniq-ID = "slider-1"
+  bg-slider-classes = "black:light,blue:light,pink:light"
+
+  sect-title = ""
+
+  h3-sub-title = ""
+  h4-sub-title = "<em>No. 4:</em> They Are Descriptive"
+  text = "<em>&#10003;</em> Hand Drawn <em>Tech</em> illustrations, with their use of familiar low-tech objects, are easy to understand."
+  img-src = "content/pages/home/section-images/punch-single/black-and-white/#png"
+  img-alt = "Competing businesses (in the form of boxing robots) fight it out"
+
+  link-text = ""
+  link-url = ""
+%}
+
+
+
+
+
+
+
+
+
+
+<!-- SECTION TEXT & IMAGE -->
+{% include sections-pages/add-sect-text-image.html
+  class = "full-image no-frame large-image"
+  section-divider = ""
+  ani-triggers = ""
+  bg-slider-uniq-ID = ""
+  bg-slider-classes = ""
+
+  sect-title = ""
+
+  h3-sub-title = ""
+  h4-sub-title = "<em>No. 5:</em> They Are Unique"
+  text = "<em>&#10003;</em> Hand Drawn <em>Tech</em> illustrations are bespoke, and ensure you stand apart from the competition."
+  img-src = "content/pages/home/section-images/house-cloud/#jpg"
+  img-alt = "Four smart homes connected to a floating cloud server by pipes"
+
+  link-text = ""
+  link-url = ""
+%}
+
+
+
+
+
+
+
+
+
+
+<!-- SECTION TEXT & IMAGE -->
+{% include sections-pages/add-sect-text-image.html
+  class = "full-image no-frame large-image"
+  section-divider = ""
+  ani-triggers = ""
+  bg-slider-uniq-ID = ""
+  bg-slider-classes = ""
+
+  sect-title = ""
+
+  h3-sub-title = ""
+  h4-sub-title = "<em>No. 6:</em> They Are Dynamic"
+  text = "<em>&#10003;</em> Hand Drawn <em>Tech</em> illustrations incorporate mechanical elements that can be easily animated."
+  img-src = ""
+  img-alt = ""
+
+  video-active = "true"
+  video-uniqueID = "123"
+  video-type = "vimeo-full-bleed"
+  video-src = "autoplay&loop&muted|/videos/mfc-sq-col-720p.mp4"
+  video-class = "max-height"
+
+  carousel-active = "false"
+  carousel-uniq-ID = "MBPO"
+  carousel-img-dir = "content/pages/books/made-by-papa-outdoor/carousel/"
+  carousel-img-num = 10
+
+  link-text = ""
+  link-url = ""
+%}
+
+
+
+
+
+
+
+
+<!-- SECTION TEXT & IMAGE -->
+{% include sections-pages/add-sect-text-image.html
+  class = "full-image no-frame large-image"
+  section-divider = ""
+  ani-triggers = ""
+  bg-slider-uniq-ID = ""
+  bg-slider-classes = ""
+
+  sect-title = ""
+
+  h3-sub-title = ""
+  h4-sub-title = "<em>No. 7:</em> They Are Evergreen"
+  text = "<em>&#10003;</em> Hand Drawn <em>Tech</em> illustrations are not slavish to current trends and will remain fresh indefinitely."
+  img-src = "content/pages/home/section-images/eyeball/#jpg"
+  img-alt = "Eyeball connected to a computer analyses marketing communications"
+
+  link-text = ""
+  link-url = ""
+%}
+
+
+
+
+
+
+
+
+
+
+
+<!-- SECTION TEXT & IMAGE -->
+{% include sections-pages/add-sect-text-image.html
+  class = "full-image no-frame large-image"
+  section-divider = ""
+  ani-triggers = ""
+  bg-slider-uniq-ID = ""
+  bg-slider-classes = ""
+
+  sect-title = ""
+
+  h3-sub-title = ""
+  h4-sub-title = "<em>No. 8:</em> They Are Customisable"
+  text = "<em>&#10003;</em> Hand Drawn <em>Tech</em> illustrations work with almost any brand colour, even pink!"
+  img-src = "content/pages/home/section-images/super-maker/pink/#jpg"
+  img-alt = "Person wearing a jet pack assembles pipes using robotic tools"
+
+  link-text = ""
+  link-url = ""
+%}
+
+
+
+
+
+
+
+<!-- SECTION TEXT & IMAGE -->
+{% include sections-pages/add-sect-text-image.html
+  class = "full-image no-frame large-image"
+  section-divider = ""
+  ani-triggers = ""
+  bg-slider-uniq-ID = ""
+  bg-slider-classes = ""
+
+  sect-title = ""
+
+  h3-sub-title = ""
+  h4-sub-title = "<em>No. 9:</em> They Are Proven"
+  text = "<em>&#10003;</em> Hand Drawn <em>Tech</em> illustrations have been successfully used to market products and win business."
+  img-src = "content/pages/home/section-images/zoom-meeting/#jpg"
+  img-alt = "Conflict resolution meeting between a women, man and mediator"
+
+  link-text = ""
+  link-url = ""
+%}
+
+
+
+
+
+
+
+
+<!-- SECTION TEXT -->
 {% include sections-pages/add-sect-text.html
-	class = ""
-	section-divider = ""
-	ani-triggers = ""
+  class = "join grey"
+  section-divider = ""
+  ani-triggers = ""
 
-	sect-title = ""
-	
-	h1 = ""
-	p1 = "Check out the store and buy a product now!"
-	
-	h2 = ""
-	p2 = ""
+  sect-title = "Where They Can Be Used"
+  
+  h1 = ""
+  p1 = "Here’s a few places where inventive illustrations can make a difference:"
+  
 
-	h3 = ""
-	p3 = ""
-	
-	end-caption = ""
+  end-caption = ""
+  
+  link-text = ""
+  link-url = ""
+%}
 
-	link-text = "View Products"
-	link-url = "/products"
+<!-- SECTION TEXT -->
+{% include sections-pages/add-sect-text.html
+  class = "grey"
+  section-divider = ""
+  ani-triggers = ""
+
+  sect-title = ""
+  
+  h1 = ""
+  p1 = "<em>&#10003;</em> Traditional advertising and marketing"
+  
+  h2 = ""
+  p2 = "<em>&#10003;</em> Social media posts and online content"
+
+  h3 = ""
+  p3 = "<em>&#10003;</em> Branding, corporate identity and packaging "
+
+  h4 = ""
+  p4 = "<em>&#10003;</em> Company/product origin stories and visions"
+  
+  h5 = ""
+  p5 = "<em>&#10003;</em> Developing and enhancing company culture"
+
+  h6 = ""
+  p6 = "<em>&#10003;</em> Proposals, pitches and presentations"
+
+  h7 = ""
+  p7 = "<em>&#10003;</em> Events, trade shows and experiential"
+
+  end-caption = ""
+  
+  link-text = ""
+  link-url = ""
 %}
 
 
 
 
 
+<!-- SECTION TEXT -->
+{% include sections-pages/add-sect-text.html
+  class = "black"
+  section-divider = ""
+  ani-triggers = ""
 
-
-
-
-
-
-
-<!-- SECTION SUBSCRIBE -->
-{% include sections-pages/add-sect-subscribe-ML.html
-  	class = "black"
-  	section-divider = "earth-borer"
-  	ani-triggers = ""
-  	form-type = "dual"
+  sect-title = "How To Get Them"
   
-  	sect-title = "Subscribe Today"
+  h1 = "<span class=\"smallest stretch-cap\">TWO SIMPLE OPTIONS</span>"
+  p1 = ""
 
-  	p1 = "Subscribe for occasional updates, give-aways and more (you can unsubscribe at any time!)."
+  h2 = "Licensing & Commissioning"
+  p2 = "To use one of my illustrations, you can either <a href=\"/how-to-licence-existing-illustrations/\">licence</a> an existing illustration, or <a href=\"/how-to-commission-new-illustrations/\">commission</a> a totally new illustration. To get a quote, or to discuss a project, please use the chat feature to get in touch."
   
-  	tick-item-1 = ""
-  	tick-item-2 = ""
-  	tick-item-3 = ""
+  link-text = "Start chat"
+  link-url = "open-chat"
 %}
 
+
+
+<!-- SECTION TEXT -->
+{% include sections-pages/add-sect-text.html
+  class = "black no-top-gap"
+  section-divider = ""
+  ani-triggers = ""
+
+  sect-title = "Book a Free Consultation"
+  
+  h1 = ""
+  p1 = "For impartial advice on how to maximise your brand, marketing or content using my illustrations book a meeting. I'd love to help, and no, you won't be wasting my time."
+
+  h2 = ""
+  p2 = ""
+  
+  link-text = "View calendar"
+  link-url = "/contact"
+%}
+
+
+
+<!-- SECTION TEXT -->
+{% include sections-pages/add-sect-text.html
+  class = "announcement join black"
+  section-divider = ""
+  ani-triggers = ""
+
+  sect-title = ""
+  
+  h1 = ""
+  p1 = "You'll also find me at the following places."
+  
+  h2 = ""
+  p2 = ""
+  
+  link-text = ""
+  link-url = ""
+%}
+
+
+<!-- SECTION NAV BLOCKS -->
+{% include sections-pages/add-sect-nav-blocks.html
+  class = "plain-button black"
+  box-col = ""
+  section-divider = ""
+  ani-triggers = ""
+
+  sect-title = ""
+
+  hightlight = ""
+  
+  block-1-title = "Make Fun Creating"
+  block-1-text = "Webby Award Winning craft blog"
+  block-1-butt-text = "Visit blog"
+  block-1-butt-url = "https://makefuncreating.com"
+
+  block-2-title = "Creative Market"
+  block-2-text = "Awesome templates and fonts"
+  block-2-butt-text = "Visit store"
+  block-2-butt-url = "https://creativemarket.com/HandDrawnTech"
+
+  block-3-title = "Dribble"
+  block-3-text = "Snapshots of latest illustrations"
+  block-3-butt-text = "Visit playbook"
+  block-3-butt-url = "https://dribbble.com/HandDrawnTech"
+%} 
+
+
+ 
 
 
 
