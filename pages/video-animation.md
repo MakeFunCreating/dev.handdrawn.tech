@@ -6,15 +6,15 @@ layout-sub-type:
 top-bar-class: none
 
 title: "Hand Drawn Tech - Video Animation Service"
-h1: "Video Animation Service"
+h1: "Whiteboard Video Animation"
 #----------------------- H1 LENGTH GUIDE ----------------------------
 
-sub-heading: ""
+sub-heading: "Video Animation With a Human Touch"
 
 announcement:
 
 header-image: content/pages/pro-draw/header-options/presentation4/#jpg
-header-class: no-header
+header-class: no-image
 featured-image: header
 
 author:
@@ -26,19 +26,45 @@ meta-description: ""
 
 
 
+
+
+
+
 <!-- SECTION TEXT -->
 {% include sections-pages/add-sect-text.html
-  class = "grey squeeze"
+  class = "join"
   section-divider = ""
   ani-triggers = ""
 
-  sect-title = "Video Animation Service"
+  sect-title = ""
   
   h1-to-h3 = true
-  p1 = "<span class=\"smallest stretch-cap\">Video Animation With A Human Touch</span>"
+  p1 = "Give your next whiteboard explainer video the Hand Drawn <em>Tech</em> treatment."
   
   h2 = ""
-  p2 = "Give your next whiteboard explainer video the Hand Drawn <em>Tech</em> treatment."
+  p2 = ""
+
+  link-text = ""
+  link-url = ""
+%}
+
+
+
+
+
+<!-- SECTION TEXT -->
+{% include sections-pages/add-sect-text.html
+  class = "squeeze"
+  section-divider = ""
+  ani-triggers = ""
+
+  sect-title = "Video Showreel"
+  
+  h1-to-h3 = true
+  p1 = ""
+  
+  h2 = ""
+  p2 = ""
 
   link-text = ""
   link-url = ""
@@ -76,6 +102,7 @@ meta-description: ""
   image-array = "1"
 
 %}
+
 
 
 

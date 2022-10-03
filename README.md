@@ -1,6 +1,9 @@
 # dev.handdrawn.tech
 
 
+### Sep 6th 2022 - v1.1.3
+* UPDATED: Tweaked design of pages
+
 ### Sep 6th 2022 - v1.1.2
 * UPDATED: Added design & video pages
 

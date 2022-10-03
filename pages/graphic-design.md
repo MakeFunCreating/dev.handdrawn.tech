@@ -7,15 +7,16 @@ top-bar-class: none
 
 title: "Hand Drawn Tech - Graphic Design Service"
 h1: "Graphic Design Service"
+h1: "Pitches, Presentations and Proposals"
 #----------------------- H1 LENGTH GUIDE ----------------------------
 
-sub-heading: ""
+sub-heading: "Marketing Collateral With A Human Touch"
+sub-heading: "Designed in the Hand Drawn Tech Style"
 
 announcement:
 
-header-image: content/pages/pro-draw/header-options/soap/#jpg
-header-image: content/pages/pro-draw/header-options/presentation3/#jpg
-header-class: no-header
+header-image: content/pages/graphic-design/full-bleed-presentations-3/#jpg
+header-class: center
 featured-image: header
 
 author:
@@ -27,19 +28,26 @@ meta-description: ""
 
 
 
-<!-- SECTION TEXT -->
-{% include sections-pages/add-sect-text.html
-  class = "grey squeeze"
+
+
+<!-- SECTION LOGOS -->
+{% include sections-pages/add-sect-logos.html
+  class = ""
   section-divider = ""
   ani-triggers = ""
 
-  sect-title = "Graphic Design Service"
-  
-  h1-to-h3 = true
-  p1 = "<span class=\"smallest stretch-cap\">Marketing Collateral With A Human Touch</span>"
-  
-  h2 = ""
-  p2 = "Professionally designed marketing collateral in the Hand Drawn <em>Tech</em> style."
+  sect-title = "Proven Winner"
+
+  h3-sub-title-top = ""
+  h4-sub-title-top = ""
+  text-top = "Business pitches, presentations and proposals featuring Hand Drawn <em>Tech</em> illustrations are a proven new business winner. They look professional, feel human, and communicate ideas in a compelling way. They have been battle tested in many corporte boardrooms and consistently deliver."
+
+  logo-png-array = "panasonic,samsung,disney,vodafone,ford,southwest"
+  logo-col = "black"
+
+  h3-sub-title-bot = ""
+  h4-sub-title-bot = ""
+  text-bot = ""
 
   link-text = ""
   link-url = ""
@@ -49,34 +57,6 @@ meta-description: ""
 
 
 
-<!-- SECTION FULL BLEED IMAGES -->
-{% include sections-pages/add-sect-full-bleed-images.html
-  class = "tall strip-lines"
-  ani-triggers = ""
-
-  img-src-1 = "content/pages/graphic-design/full-bleed-presentations-1/#jpg"
-  img-alt-1 = ""
-  img-txt-1 = ""
-
-  img-src-2 = "content/pages/graphic-design/full-bleed-presentations-2/#jpg"
-  img-alt-2 = ""
-  img-txt-2 = ""
-
-  img-src-3 = "content/pages/graphic-design/full-bleed-presentations-3/#jpg"
-  img-alt-3 = ""
-  img-txt-3 = ""
-
-  img-src-4 = "content/pages/graphic-design/full-bleed-presentations-4/#jpg"
-  img-alt-4 = ""
-  img-txt-4 = ""
-
-  img-src-5 = ""
-  img-alt-5 = ""
-  img-txt-5 = ""
-
-  image-array = "3"
-
-%}
 
 
 <!-- SECTION FULL BLEED IMAGES -->
@@ -111,34 +91,13 @@ meta-description: ""
 
 
 
-
-
-<!-- SECTION TEXT -->
-{% include sections-pages/add-sect-text.html
-  class = "join"
-  section-divider = ""
-  ani-triggers = ""
-
-  sect-title = ""
-  
-  h1 = "<em>&#10003;</em> Proven New Business Winner"
-  p1 = "Business pitches, presentations and proposals featuring Hand Drawn Tech illustrations are a proven new business winner. They look professional, feel human, and communicate ideas in a compelling way. They have been battle tested in many corporte boardrooms and consistently deliver."
-  
-  h2 = ""
-  p2 = ""
-  
-  link-text = ""
-  link-url = ""
-%}
-
-
 <!-- SECTION QUOTE -->
 {% include sections-pages/add-sect-quote.html
   class = "small man"
   section-divider = ""
   ani-triggers = ""
 
-  sect-title = ""
+  sect-title = "What People Say"
 
   avatar-src = "/images/content/quote-avatars/man.png"
   rating = "5/5"

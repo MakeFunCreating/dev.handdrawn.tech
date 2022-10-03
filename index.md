@@ -12,7 +12,6 @@ title-nbsp: false
 h1: What is Hand&nbsp;Drawn Tech?
 h1: Hand Drawn Illustrations With a Charming Low-Tech Aesthetic
 h1: Add an Authentic Touch to your Marketing & Advertising
-#h1: Disarmingly Persuasive Hand Drawn Illustrations
 h1: Add an Authentic Touch to Your Marketing & Advertising
 h1: Add an Authentic Touch to Your Communications & Marketing
 h1: Add an Authentic Touch to Your Marketing Communications
@@ -20,7 +19,6 @@ h1: Add an Authentic Touch to Your Communications
 h1: Add Low-Tech Charm to Your Marketing Communications
 h1: Add Low-Tech Appeal to Your Marketing Communications
 h1: Show Your Customers What You Do In a Way That Makes Them Care
-h1: Explain Stuff In A Way That Makes Your Customers Care
 h1: Win Hearts, Minds & New Business
 h1: Win Hearts, Minds & New Customers
 h1: Explain Stuff In A Way That Makes Your Customers Care
@@ -32,20 +30,21 @@ h1: Give your products and services some heart and soul
 h1: Win Hearts, Minds & New Customers
 h1: Add a Human Touch to Your Marketing Communications
 h1: Give Your Marketing Communications a Human Touch
+h1: Explain Stuff in a Way That Makes Your Customers Care
 #----------------------- H1 LENGTH GUIDE ----------------------------
 
 sub-heading: + Why You'll Want Them & How to Get&nbsp;Them
 sub-heading: + Who They Are For & Why You'll Want&nbsp;Them
 sub-heading: For Design, Marketing and Publishing
 sub-heading: Hand Drawn Illustrations With a Low-Tech Aesthetic
-sub-heading: Hand Drawn Illustrations With a Low-Tech Charm
 sub-heading: Hand Drawn Illustrations With Low-Tech Charm
 sub-heading: With Scott Bedford's Low-Tech Illustrations
 sub-heading: With Scott Bedford's Whimsical Illustrations
 sub-heading: With Scott Bedford's Seductive Low-Tech Illustrations
 sub-heading: And Win the Hearts & Minds of Your Customers
 sub-heading: With Scott Bedford's Whimsical Low-Tech Illustrations
-#sub-heading: With Whimsical Hand Drawn Low-Tech Illustrations
+sub-heading: With Whimsical Hand Drawn Low-Tech Illustrations
+sub-heading: Hand Drawn Illustrations With a Low-Tech Aesthetic
 
 
 announcement:
@@ -69,11 +68,11 @@ meta-description: Hand Drawn Tech is the official home of Scott Bedford's whimsi
   section-divider = ""
   ani-triggers = ""
 
-  sect-title = "About Hand Drawn Tech"
+  sect-title = "What is Hand Drawn Tech?"
 
   h3-sub-title-top = ""
   h4-sub-title-top = ""
-  text-top = "Hand Drawn <em>Tech</em> illustrations are an engaging and authtentic way to explain, demonstrate or market your products and services to your customers and clients. They have been proven to win hearts, minds and new business wherever they are used."
+  text-top = "Hand Drawn <em>Tech</em> are whimsical low-tech illustrations by author, illustrator and award winning creative Scott Bedford. If you want to showcase, explain or demonstrate your company's products or services (and actually have people pay attention) these are for you."
 
   logo-png-array = "panasonic,samsung,disney,vodafone,ford,southwest"
   logo-col = "black"
@@ -130,10 +129,10 @@ meta-description: Hand Drawn Tech is the official home of Scott Bedford's whimsi
   section-divider = ""
   ani-triggers = ""
 
-  sect-title = "Don’t Miss Out on the Latest Trend"
+  sect-title = "Why Should I Pay Attention?"
   
   h1 = ""
-  p1 = "For a long time flat, vector style illustrations have ruled the roost, but consumers are tiring of this impersonal aesthetic. This quote from the Graphic Artists Guild explains why illustration styles, particularly hand drawn styles, are now so relevant."
+  p1 = "Consumers are tiring of the impersonal aesthetic of vector illustrations. This quote from the Graphic Artists Guild explains why more authentic styles, particularly those that are hand drawn, are on the rise."
   
   h2 = ""
   p2 = ""
@@ -179,7 +178,7 @@ meta-description: Hand Drawn Tech is the official home of Scott Bedford's whimsi
   section-divider = ""
   ani-triggers = ""
 
-  sect-title = "Why They Are So Effective"
+  sect-title = "What Makes Them So Effective?"
   
   h1 = ""
   p1 = "Hand Drawn <em>Tech</em> illustrations are an extremely powerful communications tool, here's 9 reasons why:"
@@ -478,7 +477,7 @@ meta-description: Hand Drawn Tech is the official home of Scott Bedford's whimsi
   section-divider = ""
   ani-triggers = ""
 
-  sect-title = "Where They Can Be Used"
+  sect-title = "Where Can I Use Them?"
   
   h1 = ""
   p1 = "Here’s a few places where inventive illustrations can make a difference:"
@@ -535,7 +534,7 @@ meta-description: Hand Drawn Tech is the official home of Scott Bedford's whimsi
   section-divider = ""
   ani-triggers = ""
 
-  sect-title = "How To Get Them"
+  sect-title = "How Do I Get Them?"
   
   h1 = "<span class=\"smallest stretch-cap\">TWO SIMPLE OPTIONS</span>"
   p1 = ""
@@ -555,7 +554,7 @@ meta-description: Hand Drawn Tech is the official home of Scott Bedford's whimsi
   section-divider = ""
   ani-triggers = ""
 
-  sect-title = "Book a Free Consultation"
+  sect-title = "Can I Book A Consultation?"
   
   h1 = ""
   p1 = "For impartial advice on how to maximise your brand, marketing or content using my illustrations book a meeting. I'd love to help, and no, you won't be wasting my time."
