@@ -1,5 +1,8 @@
 # dev.handdrawn.tech
 
+### Sep 6th 2022 - v1.1.6
+* UPDATED: Text tweak
+
 ### Sep 6th 2022 - v1.1.5
 * UPDATED: Ubuntu upgrade
 
