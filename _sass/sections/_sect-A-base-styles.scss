@@ -373,6 +373,7 @@ body.ubuntu section h1.sect-title {
     padding-top: 101px;
   }
   @include breakpoint(D) {
+    padding-top: 81px;
     font-size: 6.1rem;
   }
 }
