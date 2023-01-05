@@ -18,7 +18,7 @@
     {% assign body-class-2 = "TidioOnLoad" %}
   {% endif %}
 
-  <body class="layout-illustration-tags {{ body-class-1 }} {{ body-class-2 }}">
+  <body class="layout-illustration-tags {{ body-class-1 }} {{ body-class-2 }} {% if page.layout-sub-type contains "ubuntu" %}ubuntu{% endif %}">
 
     
     {% include build/top-bar.html %}

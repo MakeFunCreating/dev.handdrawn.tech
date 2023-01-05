@@ -1,9 +1,9 @@
 ---
 
 layout: post
-layout-sub-type: legal
+layout-sub-type: legal ubuntu
 
-top-bar-class:
+top-bar-class: apple
 
 title:  Privacy Policy | Hand Drawn Tech
 h1: "Privacy Policy"
@@ -11,6 +11,7 @@ h1: "Privacy Policy"
 sub-heading: "Please Read Carefully"
 
 header-image:
+header-class: no-card no-image
 
 permalink: /privacy-policy/
 meta-description: "Hand Drawn Tech Privacy Policy page."

@@ -49,16 +49,37 @@ html, body {
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Ubuntu';
+  src: url(../fonts/ubuntu/ubuntu-bold-webfont.woff2) format('woff2'),
+       url(../fonts/ubuntu/ubuntu-bold-webfont.woff) format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url(../fonts/ubuntu/ubuntu-light-webfont.woff2) format('woff2'),
+       url(../fonts/ubuntu/ubuntu-light-webfont.woff) format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 * {
-  font-family: 'Pro-Draw';
 	font-weight: normal;
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 
-h2 {
-  //font-family: 'Pro-Draw-Thick'; 
+body * {
+  font-family: 'Pro-Draw';
+}
+
+body.ubuntu * {
+  font-family: 'Ubuntu';
 }
 
 
@@ -89,6 +110,18 @@ body {
   	  padding-top: 86px; // Pushes container down, corresponds to height of .top-bar
   	}
 }
+
+// "Apple" Overide
+.container-wrapper.apple {
+    padding-top: 105px; // Pushes container down, corresponds to height of .top-bar
+    @include breakpoint(ML) {
+      padding-top: 40px; // Pushes container down, corresponds to height of .top-bar
+    }
+    @include breakpoint(D) {
+      padding-top: 40px; // Pushes container down, corresponds to height of .top-bar
+    }
+}
+
 
 // Overide when search removed (e.g.on project page)
 // - achieved by adding "layout-sub-type: 'no-search'" in front matter of page

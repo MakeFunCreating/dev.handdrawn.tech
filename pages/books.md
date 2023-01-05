@@ -3,7 +3,7 @@
 layout: page
 layout-sub-type:
 
-top-bar-class:
+top-bar-class: apple
 
 title: "Turn Free Time, Into Fun Time: Books by Scott Bedford"
 h1: "Turn Free Time, Into Fun Time"

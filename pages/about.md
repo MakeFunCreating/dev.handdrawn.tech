@@ -1,8 +1,9 @@
 ---
 
 layout: page
+layout-sub-type: ubuntu
 
-top-bar-class:
+top-bar-class: apple
 
 title: "About Hand Drawn Tech"
 h1: "About Hand Drawn Tech"
@@ -14,7 +15,7 @@ sub-heading: "A Life Time in the Making"
 announcement:
 
 header-image:
-header-class: no-image down-arrow
+header-class: no-image no-card
 featured-image: content/pages/about/section-images/diaper-sniper/blue/2000px.jpg
 
 footer:
@@ -110,7 +111,7 @@ meta-description: "A life time in the making, here's how, and why, Hand Drawn Te
 	sect-title = "Professional Accolades"
 
 	h1 = ""
-	p1 = "Fast forward to 2011. My illustration 'How Tweets are Made' was selected for inclusion in the prestigious Creative Review Illustration Annual."
+	p1 = "Alongside a career as a Creative Director, I have authored and illustrated <a href=\"/books\">three books</a> and am currently working on no. 4. I have won many creative awards, and have had one of my signature illustrations published in the prestigious Creative Review Illustration Annual."
 	
 	h2 = ""
 	p2 = ""
@@ -132,10 +133,10 @@ meta-description: "A life time in the making, here's how, and why, Hand Drawn Te
 	section-divider = "pipe-whistle"
 	ani-triggers = ""
 
-	sect-title = "Final Catalyst"
+	sect-title = "Hand Drawn Tech"
 
 	h1 = ""
-	p1 = "Although I went on to author and illustrate <a href=\"/books\">three books</a>, it was a hand drawn PowerPoint template (full of my inventive illustrations) that was the final catalyst, as it sold well and received positive feedback."
+	p1 = "Encouraged by positive client feedback, I was convinced there was a market for my whimsical low-tech creations. So, in June 2022 I launched <b>Hand Drawn Tech</b>, a place to licence my inventive illustrations or to commission new ones."
 	
 	h2 = ""
 	p2 = ""
@@ -143,56 +144,12 @@ meta-description: "A life time in the making, here's how, and why, Hand Drawn Te
 	h3 = ""
 	p3 = ""
 
- 
-%}
-
-<!-- SECTION QUOTE -->
-{% include sections-pages/add-sect-quote.html
-  class = "small no-top-gap blue"
-  section-divider = ""
-  ani-triggers = ""
-
-  sect-title = ""
-
-  avatar-src = "/images/content/quote-avatars/man.png"
-  rating = "5/5"
-  text = "This is just the most brilliant slide deck! So easy to edit, so many options, wonderful illustrations, I've never seen anything like this. I am so impressed - THIS is how presentations should be done."
-  author = "- Cef, Creative Market"
-%}
-
-
-
-
-
-
-
-
-
-<!-- SECTION TEXT -->
-{% include sections-pages/add-sect-text.html
-	class = "join"
-	section-divider = "pipe-whistle"
-	ani-triggers = "robotAni"
-
-	sect-title = "Stars Align"
-
-	h1 = ""
-	p1 = "Convinced there was a market for my whimsical low-tech creations, changing trends provided timely impetus (see below). So, in June 2022 I launched <span>Hand Drawn</span> <em>Tech</em>, a place to licence my inventive illustrations or to commission new ones. "
-	
-	h2 = ""
-	p2 = ""
-	
-	h3 = ""
-	p3 = ""
-
-	link-text = ""
-	link-url = ""
 %}
 
 
 <!-- SECTION QUOTE -->
 {% include sections-pages/add-sect-quote.html
-  class = "small no-top-gap"
+  class = "small blue no-top-gap"
   section-divider = ""
   ani-triggers = ""
 
@@ -207,58 +164,23 @@ meta-description: "A life time in the making, here's how, and why, Hand Drawn Te
 
 
 
-
-
-
-
-
-
-
-
 <!-- SECTION TEXT -->
 {% include sections-pages/add-sect-text.html
-  class = "join black"
-  section-divider = ""
-  ani-triggers = ""
+	class = "black"
+	section-divider = ""
+	ani-triggers = ""
 
-  sect-title = "How To Get In Touch"
-  
-  h1 = ""
-  p1 = "Use the chat feature to send me a message. You'll also find me at the following places."
-  
-  h2 = ""
-  p2 = ""
-  
-  link-text = ""
-  link-url = ""
+	sect-title = "Get in Touch"
+	
+	h1 = ""
+	p1 = "For more information, timings, and an accurate quote send me a message."
+	
+	h2 = ""
+	p2 = ""
+	
+	link-text = "Start chat"
+	link-url = "open-chat"
 %}
-
-<!-- SECTION NAV BLOCKS -->
-{% include sections-pages/add-sect-nav-blocks.html
-  class = "plain-button black"
-  box-col = ""
-  section-divider = ""
-  ani-triggers = ""
-
-  sect-title = ""
-
-  hightlight = ""
-  
-  block-1-title = "Make Fun Creating"
-  block-1-text = "Webby Award Winning craft blog"
-  block-1-butt-text = "Visit blog"
-  block-1-butt-url = "https://makefuncreating.com"
-
-  block-2-title = "Creative Market"
-  block-2-text = "Awesome templates and fonts"
-  block-2-butt-text = "Visit store"
-  block-2-butt-url = "https://creativemarket.com/HandDrawnTech"
-
-  block-3-title = "Dribble"
-  block-3-text = "Snapshots of latest illustrations"
-  block-3-butt-text = "Visit playbook"
-  block-3-butt-url = "https://dribbble.com/HandDrawnTech"
-%} 
 
 
 

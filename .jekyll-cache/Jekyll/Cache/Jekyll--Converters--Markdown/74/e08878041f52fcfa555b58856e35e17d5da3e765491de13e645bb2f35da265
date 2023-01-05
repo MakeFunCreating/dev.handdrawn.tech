@@ -1,64 +1,22 @@
-I".<!-- SECTION TEXT -->
+I"�<!-- SECTION TEXT -->
 
-<section class="section-text strip-line squeeze grey no-illo strip-top">
-
-    
-
+<!-- BASED ON: SECTION TEXT -->
+<section class="section-header-alt grey squeeze no-illo-butt strip-top-butt strip-bottom">
     <div class="content-wrapper">
-
-      
-
         <div class="sect-title-wrapper">
-          <h2 class="sect-title">Keyword Tag Cloud</h2>
+          <h1 class="sect-title top-pad">Keyword Tag Cloud</h1>
           <div class="underline"></div>
         </div>
-
-      
-  
-      <div class="text-wrapper">    
+      <div class="text-wrapper"> 
+        <!--<h4 class="caps"></h4>-->
         
-        
-          <p>Here you'll find every keyword, all in one place, for your convenience.</p>
-        
-
-        
-        
-
-        
-         
-
-        
-         
-
-        
-         
-
-        
-         
-
-        
-         
-
-        
-         
-
-        
-         
-
-
-         
-
-         
-
+        <p>Here you'll find every keyword, all in one place, for your convenience.</p>        
       </div>
-
       <div class="bg-texture-wrapper">
         <div class="frame show"><div class="top-frame"></div><div class="bottom-frame"></div></div>
         <div class="bg-texture"></div>
       </div>
-
     </div>
-    
 </section>
 
 <!-- SECTION TAGS -->
@@ -236,162 +194,5 @@
     </div>
     
 </section>
-
-<!-- SECTION TEXT -->
-
-<section class="section-text strip-line announcement join black no-illo strip-top">
-
-    
-
-    <div class="content-wrapper">
-
-      
-  
-      <div class="text-wrapper">    
-        
-        
-          <p class="smaller">You'll also find me at the following places.</p>
-        
-
-        
-        
-
-        
-         
-
-        
-         
-
-        
-         
-
-        
-         
-
-        
-         
-
-        
-         
-
-        
-         
-
-
-         
-
-         
-
-      </div>
-
-      <div class="bg-texture-wrapper">
-        <div class="frame show"><div class="top-frame"></div><div class="bottom-frame"></div></div>
-        <div class="bg-texture"></div>
-      </div>
-
-    </div>
-    
-</section>
-
-<!-- SECTION NAV BLOCKS -->
-
-<section class="section-nav-block strip-line plain-button black no-illo strip-top ">
-    
-    
-
-      <div class="content-wrapper item-total-">
-            
-
-
-
-        <div class="col-wrapper col-1">
-            <div class="frame-wrapper">
-
-              <div class="frame show">
-                <div class="top-frame"></div>
-                <div class="left-frame"></div>
-                <div class="right-frame"></div>
-                <div class="bottom-frame"></div>
-              </div>
-
-              <div class="text-wrapper ">
-                <h5 class="title "><a href="https://makefuncreating.com" class="">Make Fun Creating</a></h5>
-                
-                
-                  <div class="desc-wrapper"><p class="smallest">Webby Award Winning craft blog</p></div>
-                
-
-                
-                  <div class="button-wrapper"><a href="https://makefuncreating.com" class="link-button smaller">Visit blog <span class="right-arrow">›</span></a></div> 
-                 
-              </div>
-
-            </div>
-            <div class="bg-texture-wrapper "><div class="bg-texture"></div><div class="highlight-bar hide"></div></div>
-        </div>
-
-
-        <div class="col-wrapper col-2">
-            <div class="frame-wrapper">
-
-              <div class="frame show">
-                <div class="top-frame"></div>
-                <div class="left-frame"></div>
-                <div class="right-frame"></div>
-                <div class="bottom-frame"></div>
-              </div>
-
-              <div class="text-wrapper ">
-                <h5 class="title "><a href="https://creativemarket.com/HandDrawnTech" class="">Creative Market</a></h5>
-                
-                
-                  <div class="desc-wrapper"><p class="smallest">Awesome templates and fonts</p></div>
-                
-
-                
-                  <div class="button-wrapper"><a href="https://creativemarket.com/HandDrawnTech" class="link-button smaller">Visit store <span class="right-arrow">›</span></a></div> 
-                 
-              </div>
-
-            </div>
-            <div class="bg-texture-wrapper "><div class="bg-texture"></div><div class="highlight-bar hide"></div></div>
-        </div>
-
-
-        <div class="col-wrapper col-3">
-            <div class="frame-wrapper">
-
-              <div class="frame show">
-                <div class="top-frame"></div>
-                <div class="left-frame"></div>
-                <div class="right-frame"></div>
-                <div class="bottom-frame"></div>
-              </div>
-
-              <div class="text-wrapper ">
-                <h5 class="title "><a href="https://dribbble.com/HandDrawnTech" class="">Dribble</a></h5>
-                
-                
-                  <div class="desc-wrapper"><p class="smallest">Snapshots of latest illustrations</p></div>
-                            
-
-                
-                  <div class="button-wrapper"><a href="https://dribbble.com/HandDrawnTech" class="link-button smaller">Visit playbook <span class="right-arrow">›</span></a></div> 
-                              
-              </div>
-
-            </div>
-            <div class="bg-texture-wrapper "><div class="bg-texture"></div><div class="highlight-bar hide"></div></div>
-        </div>
-  
-  
-        <div class="bg-texture-wrapper">
-          <div class="frame show"><div class="top-frame"></div><div class="bottom-frame"></div></div>
-          <div class="bg-texture"></div>
-        </div>
-  
-      </div>
-
-  </section>
 
 :ET

@@ -24,16 +24,16 @@
     {% include build/top-bar.html %}
     
 
-    <article class="container-wrapper">
+    <article class="container-wrapper {% if page.top-bar-class contains "apple" %}apple{% endif %}">
 
       {% include build/header-post.html %}
 
       <div class="container">
         <div class="content">
 
-          {% if page.layout-sub-type != "legal" %}
+          {% unless page.layout-sub-type contains "legal" %}
             {% include build/meta-details.html %}
-          {% endif %}
+          {% endunless %}
 
           {{ content }}
           

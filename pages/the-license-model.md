@@ -1,15 +1,18 @@
 ---
 
 layout: post
-layout-sub-type: legal
+layout-sub-type: legal ubuntu
 
-top-bar-class:
+top-bar-class: apple
 
 title: "Licensing & Commissioning Illustrations: The Licence Model"
 h1: Licensing & Commissioning Illustrations
 #----------------------- H1 LENGTH GUIDE ----------------------------
 
 sub-heading: Everything You Need to Know
+
+header-image:
+header-class: no-card no-image
 
 permalink: /the-licence-model/
 meta-description: "How to get in touch and book a free consultation."

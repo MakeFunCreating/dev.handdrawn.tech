@@ -66,17 +66,19 @@ p.end-caption {
 }
 
 * strong {
-	font-weight: 700;
+	font-weight: bold;
 	color: $pink;
 }
 
 * b {
-	font-weight: 400;
+	font-weight: bold;
+	color: inherit;
 }
 
 * em {
 	font-style: normal;
 	font-size: inherit;
+	font-weight: inherit;
 	color: $pink;
 }
 
@@ -132,6 +134,13 @@ h1.large, h1.large a, h1.large em, .h1-style.large {
 	}
 }
 
+// 'Ubuntu' overide
+body.ubuntu h1,
+body.ubuntu h1 a,
+body.ubuntu h1 em,
+body.ubuntu .h1-style {
+	font-weight: bold;
+}
 
 ///////////////////////// H2 //////////////////////////
 
@@ -148,6 +157,14 @@ h2, h2 a, h2 em, .h2-style {
 		font-size: 3.9rem; // Same as H1
 		margin: 4.6rem 0 3.2rem 0; // 0.9x3.5=3.15, 1.3x3.5=4.55
 	}
+}
+
+// 'Ubuntu' overide
+body.ubuntu h2,
+body.ubuntu h2 a,
+body.ubuntu h2 em,
+body.ubuntu .h2-style {
+	font-weight: bold;
 }
 
 ///////////////////////// H3 //////////////////////////
@@ -182,6 +199,14 @@ figure + h3-style {
 	}
 }
 
+// 'Ubuntu' overide
+body.ubuntu h3,
+body.ubuntu h3 a,
+body.ubuntu h3 em,
+body.ubuntu .h3-style {
+	font-weight: bold;
+}
+
 ///////////////////////// H4 //////////////////////////
 
 // Calc font-size from p-h1 bands: 1.5+((2.3-1.5)*0.5)=1.9 / 1.7+((3-1.7)x0.5)=2.35 / 1.9+((3.9-1.9)x0.5)=2.9
@@ -198,6 +223,14 @@ h4, h4 a, h4 em, .h4-style  {
 		font-size: 2.9rem;
 		margin: 3.8rem 0 2.6rem 0;	// 0.9x2.9=2.61, 1.3x2.9=3.77
 	}
+}
+
+// 'Ubuntu' overide
+body.ubuntu h4,
+body.ubuntu h4 a,
+body.ubuntu h4 em,
+body.ubuntu .h4-style {
+	font-weight: bold;
 }
 
 ///////////////////////// H5 //////////////////////////
@@ -217,6 +250,13 @@ h5, h5 a, h5 em, .h5-style  {
 	}
 }
 
+// 'Ubuntu' overide
+body.ubuntu h5,
+body.ubuntu h5 a,
+body.ubuntu h5 em,
+body.ubuntu .h5-style {
+	font-weight: bold;
+}
 
 ///////////////////////////////////////////////////////
 ////////////////// SMALL CAP HEADING //////////////////
@@ -436,6 +476,22 @@ p.disclosure {
   	}
 }
 
+		// "Ubuntu" overides
+		body.ubuntu .content li > a,
+		body.ubuntu .content p > a {
+			background-position: 0 1.6rem;
+		 	@include breakpoint(TP) {
+		    	background-position: 0 1.85rem;
+		    	padding-bottom: 1px;
+		    }
+			@include breakpoint(TL) {
+		    	background-position: 0 1.85rem;
+		    }
+			@include breakpoint(D) {
+				background-position: 0 2rem;
+			} 
+		}
+
 .content p.smallest-skew > a {
 	background-position: 0 1.3rem;
 	@include breakpoint(TP) {
@@ -458,6 +514,14 @@ p.disclosure {
     	background-position: 0 1.4rem;
     }
 }
+
+		// "Ubuntu" overides
+		body.ubuntu .content p.breadcrumb.smallest > a {
+		    background-position: 0 1.3rem;
+		    @include breakpoint(TP) {
+		    	background-position: 0 1.6rem;
+		    }
+		}
 
 
 /////////////////////////////////////////////////////
@@ -560,14 +624,14 @@ a.smallest {
 
 span.right-arrow {
     position: relative;
-    top: 1px;
-    left: -2px;
+    top: 2px; // 1px;
+    left: 1px; //-2px;
 	font-size: 2.3rem;
     margin: 0;
     line-height: 0;
     @include breakpoint(D) {
-    	left: -1px;
-    	top: 0px;
+    	top: 1px; //0px;
+    	left: 1px; //-1px;
     }
 }
 

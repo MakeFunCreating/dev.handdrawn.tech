@@ -1,9 +1,9 @@
 ---
 
 layout: page
-layout-sub-type:
+layout-sub-type: ubuntu
 
-top-bar-class: none
+top-bar-class: apple
 
 title: Hand Drawn Tech by Scott Bedford
 title-large: true
@@ -16,7 +16,6 @@ h1: Add an Authentic Touch to Your Marketing & Advertising
 h1: Add an Authentic Touch to Your Communications & Marketing
 h1: Add an Authentic Touch to Your Marketing Communications
 h1: Add an Authentic Touch to Your Communications
-h1: Add Low-Tech Charm to Your Marketing Communications
 h1: Add Low-Tech Appeal to Your Marketing Communications
 h1: Show Your Customers What You Do In a Way That Makes Them Care
 h1: Win Hearts, Minds & New Business
@@ -31,26 +30,27 @@ h1: Win Hearts, Minds & New Customers
 h1: Add a Human Touch to Your Marketing Communications
 h1: Give Your Marketing Communications a Human Touch
 h1: Explain Stuff in a Way That Makes Your Customers Care
+h1: Add Low-Tech Charm to Your Marketing Communications
 #----------------------- H1 LENGTH GUIDE ----------------------------
 
-sub-heading: + Why You'll Want Them & How to Get&nbsp;Them
-sub-heading: + Who They Are For & Why You'll Want&nbsp;Them
-sub-heading: For Design, Marketing and Publishing
-sub-heading: Hand Drawn Illustrations With a Low-Tech Aesthetic
-sub-heading: Hand Drawn Illustrations With Low-Tech Charm
-sub-heading: With Scott Bedford's Low-Tech Illustrations
+# sub-heading: + Why You'll Want Them & How to Get&nbsp;Them
+# sub-heading: + Who They Are For & Why You'll Want&nbsp;Them
+# sub-heading: For Design, Marketing and Publishing
+# sub-heading: Hand Drawn Illustrations With a Low-Tech Aesthetic
+# sub-heading: Hand Drawn Illustrations With Low-Tech Charm
+# sub-heading: With Scott Bedford's Low-Tech Illustrations
 sub-heading: With Scott Bedford's Whimsical Illustrations
-sub-heading: With Scott Bedford's Seductive Low-Tech Illustrations
-sub-heading: And Win the Hearts & Minds of Your Customers
-sub-heading: With Scott Bedford's Whimsical Low-Tech Illustrations
-sub-heading: With Whimsical Hand Drawn Low-Tech Illustrations
-sub-heading: Hand Drawn Illustrations With a Low-Tech Aesthetic
+# sub-heading: With Scott Bedford's Seductive Low-Tech Illustrations
+# sub-heading: And Win the Hearts & Minds of Your Customers
+# sub-heading: With Scott Bedford's Whimsical Low-Tech Illustrations
+# sub-heading: With Whimsical Hand Drawn Low-Tech Illustrations
+# sub-heading: Hand Drawn Illustrations With a Low-Tech Aesthetic
 
 
 announcement:
 
 header-image: content/pages/home/header/how-tweets-made/#jpg
-header-class: center #down-arrow no-header no-card no-title narrow overlay white-text center no-image no-strip
+header-class: no-image no-card #down-arrow no-header no-card no-title narrow overlay white-text center no-image no-strip
 featured-image: header
 
 author:
@@ -62,37 +62,9 @@ meta-description: Hand Drawn Tech is the official home of Scott Bedford's whimsi
 
 
 
-<!-- SECTION LOGOS -->
-{% include sections-pages/add-sect-logos.html
-  class = ""
-  section-divider = ""
-  ani-triggers = ""
-
-  sect-title = "What is Hand Drawn Tech?"
-
-  h3-sub-title-top = ""
-  h4-sub-title-top = ""
-  text-top = "Hand Drawn <em>Tech</em> are whimsical low-tech illustrations by author, illustrator and award winning creative Scott Bedford. If you want to showcase, explain or demonstrate your company's products or services (and actually have people pay attention) these are for you."
-
-  logo-png-array = "panasonic,samsung,disney,vodafone,ford,southwest"
-  logo-col = "black"
-
-  h3-sub-title-bot = ""
-  h4-sub-title-bot = ""
-  text-bot = ""
-
-  link-text = "How to Get Them"
-  link-url = "/the-licence-model/"
-%}
-
-
-
-
-
-
 <!-- SECTION TEXT & IMAGE -->
 {% include sections-pages/add-sect-text-image.html
-  class = "full-image no-frame squeeze large-image"
+  class = "full-image no-frame join large-image"
   section-divider = ""
   ani-triggers = ""
   bg-slider-uniq-ID = ""
@@ -113,6 +85,39 @@ meta-description: Hand Drawn Tech is the official home of Scott Bedford's whimsi
 
 
 
+<!-- SECTION LOGOS -->
+{% include sections-pages/add-sect-logos.html
+  class = ""
+  section-divider = ""
+  ani-triggers = ""
+
+  sect-title = ""
+
+  h3-sub-title-top = ""
+  h4-sub-title-top = ""
+  text-top = "<b>Hand Drawn <em>Tech</em></b> are whimsical low-tech illustrations by author, illustrator and award winning creative Scott Bedford. If you want to showcase, explain or demonstrate your company's products or services (and actually have people pay attention) these are for you."
+
+  logo-png-array = "panasonic,samsung,disney,vodafone,ford,southwest"
+  logo-col = "black"
+
+  h3-sub-title-bot = ""
+  h4-sub-title-bot = ""
+  text-bot = ""
+
+  link-text = "How to Get Them"
+  link-url = "/the-licence-model/"
+%}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -125,14 +130,14 @@ meta-description: Hand Drawn Tech is the official home of Scott Bedford's whimsi
 
 <!-- SECTION TEXT -->
 {% include sections-pages/add-sect-text.html
-  class = "join"
+  class = "join black"
   section-divider = ""
   ani-triggers = ""
 
-  sect-title = "Why Should I Pay Attention?"
+  sect-title = "Leverage The Latest Trend"
   
   h1 = ""
-  p1 = "Consumers are tiring of the impersonal aesthetic of vector illustrations. This quote from the Graphic Artists Guild explains why more authentic styles, particularly those that are hand drawn, are on the rise."
+  p1 = "Consumers are tiring of the impersonal aesthetic of vector illustrations. This quote from the Graphic Artists Guild explains why authentic styles are on the rise."
   
   h2 = ""
   p2 = ""
@@ -145,7 +150,7 @@ meta-description: Hand Drawn Tech is the official home of Scott Bedford's whimsi
 
 <!-- SECTION QUOTE -->
 {% include sections-pages/add-sect-quote.html
-  class = "small no-top-gap"
+  class = "small no-top-gap black"
   section-divider = ""
   ani-triggers = ""
 
@@ -178,10 +183,10 @@ meta-description: Hand Drawn Tech is the official home of Scott Bedford's whimsi
   section-divider = ""
   ani-triggers = ""
 
-  sect-title = "What Makes Them So Effective?"
+  sect-title = "Why They're So Effective"
   
   h1 = ""
-  p1 = "Hand Drawn <em>Tech</em> illustrations are an extremely powerful communications tool, here's 9 reasons why:"
+  p1 = "<b>Hand Drawn <em>Tech</em></b> illustrations are an extremely powerful communications tool, here's 9 reasons why:"
   
   h2 = ""
   p2 = ""
@@ -212,8 +217,8 @@ meta-description: Hand Drawn Tech is the official home of Scott Bedford's whimsi
   sect-title = ""
 
   h3-sub-title = ""
-  h4-sub-title = "<em>No. 1:</em> They Are Seductive"
-  text = "<em>&#10003;</em> Hand Drawn <em>Tech</em> illustrations, with their low-tech charm,  are disarmingly persuasive."
+  h4-sub-title = "1: They Are Seductive"
+  text = "<b>Hand Drawn <em>Tech</em></b> illustrations, with their low-tech charm,  are disarmingly persuasive."
   img-src = "content/pages/home/section-images/hacker/#jpg"
   img-alt = "Cyber terrorist stealing data from a highly secure data silo"
 
@@ -243,8 +248,8 @@ meta-description: Hand Drawn Tech is the official home of Scott Bedford's whimsi
   sect-title = ""
 
   h3-sub-title = ""
-  h4-sub-title = "<em>No. 2:</em> They Are Authentic"
-  text = "<em>&#10003;</em> Hand Drawn <em>Tech</em> illustrations are drawn by hand, so are not perfect, and scream authenticity."
+  h4-sub-title = "2: They Are Authentic"
+  text = "<b>Hand Drawn <em>Tech</em></b> illustrations are drawn by hand, so are not perfect, and scream authenticity."
   img-src = "content/pages/home/section-images/delivery-food/#jpg"
   img-alt = "Human assisted robot delivers online food order by lifting off roof"
 
@@ -274,8 +279,8 @@ meta-description: Hand Drawn Tech is the official home of Scott Bedford's whimsi
   sect-title = ""
 
   h3-sub-title = ""
-  h4-sub-title = "<em>No. 3:</em> They Are Versatile"
-  text = "<em>&#10003;</em> Hand Drawn <em>Tech</em> illustrations can bring-to-life almost any idea or concept, however abstract."
+  h4-sub-title = "3: They Are Versatile"
+  text = "<b>Hand Drawn <em>Tech</em></b> illustrations can bring-to-life almost any idea or concept, however abstract."
   img-src = "content/pages/home/section-images/tough-nut/#jpg"
   img-alt = "Tough-nut cracking machine with computerised hydraulic hammer"
 
@@ -303,8 +308,8 @@ meta-description: Hand Drawn Tech is the official home of Scott Bedford's whimsi
   sect-title = ""
 
   h3-sub-title = ""
-  h4-sub-title = "<em>No. 4:</em> They Are Descriptive"
-  text = "<em>&#10003;</em> Hand Drawn <em>Tech</em> illustrations, with their use of familiar low-tech objects, are easy to understand."
+  h4-sub-title = "4: They Are Descriptive"
+  text = "<b>Hand Drawn <em>Tech</em></b> illustrations, with their use of familiar low-tech objects, are easy to understand."
   img-src = "content/pages/home/section-images/punch-single/black-and-white/#png"
   img-alt = "Competing businesses (in the form of boxing robots) fight it out"
 
@@ -332,8 +337,8 @@ meta-description: Hand Drawn Tech is the official home of Scott Bedford's whimsi
   sect-title = ""
 
   h3-sub-title = ""
-  h4-sub-title = "<em>No. 5:</em> They Are Unique"
-  text = "<em>&#10003;</em> Hand Drawn <em>Tech</em> illustrations are bespoke, and ensure you stand apart from the competition."
+  h4-sub-title = "5: They Are Unique"
+  text = "<b>Hand Drawn <em>Tech</em></b> illustrations are bespoke, and ensure you stand apart from the competition."
   img-src = "content/pages/home/section-images/house-cloud/#jpg"
   img-alt = "Four smart homes connected to a floating cloud server by pipes"
 
@@ -361,8 +366,8 @@ meta-description: Hand Drawn Tech is the official home of Scott Bedford's whimsi
   sect-title = ""
 
   h3-sub-title = ""
-  h4-sub-title = "<em>No. 6:</em> They Are Dynamic"
-  text = "<em>&#10003;</em> Hand Drawn <em>Tech</em> illustrations incorporate mechanical elements that can be easily animated."
+  h4-sub-title = "6: They Are Dynamic"
+  text = "<b>Hand Drawn <em>Tech</em></b> illustrations incorporate mechanical elements that can be easily animated."
   img-src = ""
   img-alt = ""
 
@@ -399,8 +404,8 @@ meta-description: Hand Drawn Tech is the official home of Scott Bedford's whimsi
   sect-title = ""
 
   h3-sub-title = ""
-  h4-sub-title = "<em>No. 7:</em> They Are Evergreen"
-  text = "<em>&#10003;</em> Hand Drawn <em>Tech</em> illustrations are not slavish to current trends and will remain fresh indefinitely."
+  h4-sub-title = "7: They Are Evergreen"
+  text = "<b>Hand Drawn <em>Tech</em></b> illustrations are not slavish to current trends and will remain fresh indefinitely."
   img-src = "content/pages/home/section-images/eyeball/#jpg"
   img-alt = "Eyeball connected to a computer analyses marketing communications"
 
@@ -429,8 +434,8 @@ meta-description: Hand Drawn Tech is the official home of Scott Bedford's whimsi
   sect-title = ""
 
   h3-sub-title = ""
-  h4-sub-title = "<em>No. 8:</em> They Are Customisable"
-  text = "<em>&#10003;</em> Hand Drawn <em>Tech</em> illustrations work with almost any brand colour, even pink!"
+  h4-sub-title = "8: They Are Customisable"
+  text = "<b>Hand Drawn <em>Tech</em></b> illustrations work with almost any brand colour, even pink!"
   img-src = "content/pages/home/section-images/super-maker/pink/#jpg"
   img-alt = "Person wearing a jet pack assembles pipes using robotic tools"
 
@@ -455,8 +460,8 @@ meta-description: Hand Drawn Tech is the official home of Scott Bedford's whimsi
   sect-title = ""
 
   h3-sub-title = ""
-  h4-sub-title = "<em>No. 9:</em> They Are Proven"
-  text = "<em>&#10003;</em> Hand Drawn <em>Tech</em> illustrations have been successfully used to market products and win business."
+  h4-sub-title = "9: They Are Proven"
+  text = "<b>Hand Drawn <em>Tech</em></b> illustrations have been successfully used to market products and win business."
   img-src = "content/pages/home/section-images/zoom-meeting/#jpg"
   img-alt = "Conflict resolution meeting between a women, man and mediator"
 
@@ -477,7 +482,7 @@ meta-description: Hand Drawn Tech is the official home of Scott Bedford's whimsi
   section-divider = ""
   ani-triggers = ""
 
-  sect-title = "Where Can I Use Them?"
+  sect-title = "Where You Can Use Them"
   
   h1 = ""
   p1 = "Here’s a few places where inventive illustrations can make a difference:"
@@ -534,7 +539,7 @@ meta-description: Hand Drawn Tech is the official home of Scott Bedford's whimsi
   section-divider = ""
   ani-triggers = ""
 
-  sect-title = "How Do I Get Them?"
+  sect-title = "How You Can Get Them"
   
   h1 = "<span class=\"smallest stretch-cap\">TWO SIMPLE OPTIONS</span>"
   p1 = ""
@@ -554,7 +559,7 @@ meta-description: Hand Drawn Tech is the official home of Scott Bedford's whimsi
   section-divider = ""
   ani-triggers = ""
 
-  sect-title = "Can I Book A Consultation?"
+  sect-title = "Book A Consultation"
   
   h1 = ""
   p1 = "For impartial advice on how to maximise your brand, marketing or content using my illustrations book a meeting. I'd love to help, and no, you won't be wasting my time."
@@ -565,54 +570,6 @@ meta-description: Hand Drawn Tech is the official home of Scott Bedford's whimsi
   link-text = "View calendar"
   link-url = "/contact"
 %}
-
-
-
-<!-- SECTION TEXT -->
-{% include sections-pages/add-sect-text.html
-  class = "announcement join black"
-  section-divider = ""
-  ani-triggers = ""
-
-  sect-title = ""
-  
-  h1 = ""
-  p1 = "You'll also find me at the following places."
-  
-  h2 = ""
-  p2 = ""
-  
-  link-text = ""
-  link-url = ""
-%}
-
-
-<!-- SECTION NAV BLOCKS -->
-{% include sections-pages/add-sect-nav-blocks.html
-  class = "plain-button black"
-  box-col = ""
-  section-divider = ""
-  ani-triggers = ""
-
-  sect-title = ""
-
-  hightlight = ""
-  
-  block-1-title = "Make Fun Creating"
-  block-1-text = "Webby Award Winning craft blog"
-  block-1-butt-text = "Visit blog"
-  block-1-butt-url = "https://makefuncreating.com"
-
-  block-2-title = "Creative Market"
-  block-2-text = "Awesome templates and fonts"
-  block-2-butt-text = "Visit store"
-  block-2-butt-url = "https://creativemarket.com/HandDrawnTech"
-
-  block-3-title = "Dribble"
-  block-3-text = "Snapshots of latest illustrations"
-  block-3-butt-text = "Visit playbook"
-  block-3-butt-url = "https://dribbble.com/HandDrawnTech"
-%} 
 
 
  

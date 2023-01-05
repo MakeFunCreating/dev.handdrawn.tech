@@ -359,8 +359,36 @@ section .sect-title {
   text-align: center;
 }
 
+section h2.sect-title {
+  padding-bottom: 25px;
+}
+
+// "Ubuntu" Overide
+body.ubuntu section h1.sect-title {
+  padding-bottom: 25px;
+  font-size: 4rem;
+  @include breakpoint(TP) {
+    font-size: 5rem;
+  }
+  @include breakpoint(D) {
+    font-size: 6.1rem;
+  }
+}
+
+
+section h1.sect-title.top-pad {
+  padding-bottom: 0px;
+  margin: 0px;
+  @include breakpoint(TP) {
+    padding-top: 40px;
+  }
+  @include breakpoint(D) {
+    padding-top: 80px;
+  }
+}
 
 section .underline {
+  display: none;
   background: url(../images/lines/rules/short/black/short-line.png) center center / 120px 4px no-repeat;
   height: 5px;
   width: 150px;

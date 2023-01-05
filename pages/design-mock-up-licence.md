@@ -3,7 +3,7 @@
 layout: post
 layout-sub-type: legal
 
-top-bar-class:
+top-bar-class: apple
 
 title:  Design Mock-up Licence
 h1: Design Mock-up Licence

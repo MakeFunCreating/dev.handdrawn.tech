@@ -1,9 +1,9 @@
 ---
 
 layout: post
-layout-sub-type: legal
+layout-sub-type: legal ubuntu
 
-top-bar-class:
+top-bar-class: apple
 
 title:  Terms and Conditions | Hand Drawn Tech
 h1: "Terms and Conditions"
@@ -11,6 +11,7 @@ h1: "Terms and Conditions"
 sub-heading: "Please Read Carefully"
 
 header-image:
+header-class: no-card no-image
 
 permalink: /terms-and-conditions/
 meta-description: "Hand Drawn Tech Terms and Conditions page."

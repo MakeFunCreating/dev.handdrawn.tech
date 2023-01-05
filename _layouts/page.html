@@ -1,4 +1,4 @@
-
+ 
 
 
 <!DOCTYPE html>
@@ -29,7 +29,7 @@
     {% include build/top-bar.html %}
 
 
-    <div class="container-wrapper">
+    <div class="container-wrapper {% if page.top-bar-class contains "apple" %}apple{% endif %}">
 
       {% include build/header-page.html %}
 

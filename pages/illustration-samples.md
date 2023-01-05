@@ -3,7 +3,7 @@
 layout: page
 layout-sub-type:
 
-top-bar-class: none
+top-bar-class: apple
 
 title: "Illustration Sample Kit"
 

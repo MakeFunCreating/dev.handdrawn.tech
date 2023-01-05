@@ -1,0 +1,84 @@
+
+/////////////////////////////////////////////////////
+/////////////////////////////////////////////////////
+/////////////////////// TEXT ////////////////////////
+/////////////////////////////////////////////////////
+/////////////////////////////////////////////////////
+
+
+.section-header-alt {
+	position: relative;
+}
+
+.section-header-alt .content-wrapper {
+  text-align: center;
+	position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+	height: 100%;
+  left: 0;
+  width: 100%;
+	z-index: 9;
+  text-align: center;
+}
+
+.section-header-alt .col-wrapper {
+	position: relative;
+	z-index: 10;
+}
+
+.section-header-alt .sect-title-wrapper {
+  max-width: 850px;
+  margin: 0px;
+}
+
+/////////////////////// TEXT ////////////////////////
+
+.section-header-alt .text-wrapper {
+  position: relative;
+  z-index: 101;
+  width: 94%;
+  padding-top: 21px;
+  @include breakpoint(TP) {
+    width: 100%;
+  }
+  @include breakpoint(TL) {
+    width: 80%;
+  }
+  @include breakpoint(D) {
+    width: 80%;
+  }
+}
+
+.section-header-alt .text-wrapper p:first-child,
+.section-header-alt .text-wrapper h4:first-child {
+  margin-top: 0rem;
+}
+
+.section-header-alt .text-wrapper > *:last-child {
+  margin-bottom: 0rem;
+}
+
+
+// Header announcement overide
+
+.section-header-alt.announcement {
+  z-index: 100;
+}
+
+.section-header-alt.announcement .content-wrapper .frame .bottom-frame {
+  //display: initial;
+  display: none;
+}
+
+.section-header-alt.announcement p a {
+  text-decoration: none;
+  background-image: none;
+  &:hover{
+    background-image: none;
+  }
+}
+
+

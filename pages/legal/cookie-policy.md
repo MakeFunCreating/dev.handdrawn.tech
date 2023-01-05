@@ -1,9 +1,9 @@
 ---
 
 layout: post
-layout-sub-type: legal
+layout-sub-type: legal ubuntu
 
-top-bar-class:
+top-bar-class: apple
 
 title: Cookie Policy | Hand Drawn Tech
 h1: "Cookie Settings & Policy"
@@ -11,6 +11,7 @@ h1: "Cookie Settings & Policy"
 sub-heading: "Please Read Carefully"
 
 header-image:
+header-class: no-card no-image
 
 permalink: /cookie-policy/
 meta-description: "Hand Drawn Tech Cookie Policy page."

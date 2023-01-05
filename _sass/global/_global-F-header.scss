@@ -163,7 +163,7 @@ header.overlay .overlay {
   position: absolute;
   z-index: 1;
   width: 100%;
-  opacity: 0.3;
+  opacity: 0.5;
   background-color: $black;
   height: 100%;
 }
@@ -260,6 +260,15 @@ header.no-image .content-wrapper .title-card-wrapper {
   }
 }
 
+header.no-card.ubuntu .content-wrapper .title-card-wrapper {
+  @include breakpoint(TP) { 
+    max-width: 750px;
+  }
+  @include breakpoint(D) {
+    max-width: 850px;  
+  } 
+}
+
 header.no-image .content-wrapper .img-wrapper {
   display: none;
 }
@@ -314,8 +323,10 @@ header .page-sub-title {
   padding: 14px 0 0 0;
   width: 100%;
   margin: 0;
+  font-size: 1.8rem;
   @include breakpoint(TP) {
     padding: 14px 0 0 0;
+    font-size: 2rem;
   }
   @include breakpoint(TL) {
   }
@@ -479,8 +490,30 @@ header.no-card .page-title {
   }
 }
 
+////////////////////////////////////////////////
+
+// "Ubuntu" Overide
+header.no-card.ubuntu .page-title {
+  background-image: none;
+  font-size: 4rem;
+  padding: 30px 0 0 0;
+  @include breakpoint(TP) {
+    font-size: 5rem;
+    padding: 76px 0 0 0;
+  }
+  @include breakpoint(D) {
+    font-size: 6.1rem;
+  }
+}
+
+header.no-card:not(no-image) .page-title {
+  padding: 30px 0 0 0;
+}
+
+////////////////////////////////////////////////
+
 header.no-card .page-sub-title {
-  padding: 0px;
+  padding: 14px 0 0 0;
   @include breakpoint(D) {
     font-size: 2.3rem;
     padding: 21px 0 0 0;
@@ -498,6 +531,12 @@ body.layout-post header.no-image .content-wrapper {
     padding-bottom: 85px;
     padding-top: 40px;
   }
+}
+
+// "Ubuntu" overide
+
+body.ubuntu.layout-post header.no-image .content-wrapper {
+  padding-top: 0px;
 }
 
 // Not really used: white-text/black-text colour options
