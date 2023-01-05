@@ -39,7 +39,7 @@ h1: Add Low-Tech Charm to Your Marketing Communications
 # sub-heading: Hand Drawn Illustrations With a Low-Tech Aesthetic
 # sub-heading: Hand Drawn Illustrations With Low-Tech Charm
 # sub-heading: With Scott Bedford's Low-Tech Illustrations
-sub-heading: With Scott Bedford's Whimsical Illustrations
+sub-heading: With Scott Bedford's Inventive Illustrations
 # sub-heading: With Scott Bedford's Seductive Low-Tech Illustrations
 # sub-heading: And Win the Hearts & Minds of Your Customers
 # sub-heading: With Scott Bedford's Whimsical Low-Tech Illustrations
