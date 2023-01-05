@@ -559,15 +559,14 @@ section .bg-texture-wrapper .bg-texture.bg-slider.pink-light {
 // section-divider: (illo name), no-illo, no-illo-butt
 
 
-/////////////////////// VIDEO ///////////////////////
+/////////////////////// FRAME ///////////////////////
 
-.section-text-image.no-frame .video-box .frame-wrapper .frame .top-frame,
-.section-text-image.no-frame .video-box .frame-wrapper .frame .bottom-frame,
-.section-text-image.no-frame .video-box .frame-wrapper .frame .left-frame,
-.section-text-image.no-frame .video-box .frame-wrapper .frame .right-frame {
+.section-text-image.no-frame .frame-wrapper.text-image .top-frame,
+.section-text-image.no-frame .frame-wrapper.text-image .bottom-frame,
+.section-text-image.no-frame .frame-wrapper.text-image .left-frame,
+.section-text-image.no-frame .frame-wrapper.text-image .right-frame {
   display: none;
 }
-
 
 /////////////////////// RIGHT ///////////////////////
 
