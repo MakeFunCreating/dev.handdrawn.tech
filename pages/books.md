@@ -33,7 +33,7 @@ meta-description: "Three awesome books that celebrate creativity in different wa
 
 <!-- SECTION TEXT & IMAGE -->
 {% include sections-pages/add-sect-text-image.html
-  class = "full-image right"
+  class = "full-image right no-frame"
   section-divider = ""
   ani-triggers = ""
   bg-slider-uniq-ID = ""
@@ -70,7 +70,7 @@ meta-description: "Three awesome books that celebrate creativity in different wa
 
 <!-- SECTION TEXT & IMAGE -->
 {% include sections-pages/add-sect-text-image.html
-  class = "full-image right"
+  class = "full-image right no-frame no-top-illo"
   section-divider = ""
   ani-triggers = ""
   bg-slider-uniq-ID = ""
@@ -109,7 +109,7 @@ meta-description: "Three awesome books that celebrate creativity in different wa
 
 <!-- SECTION TEXT & IMAGE -->
 {% include sections-pages/add-sect-text-image.html
-    class = "full-image right large-image no-frame"
+    class = "full-image right large-image no-frame no-top-illo"
     section-divider = ""
     ani-triggers = "handAni"
     bg-slider-uniq-ID = ""
@@ -148,7 +148,7 @@ meta-description: "Three awesome books that celebrate creativity in different wa
 
 <!-- SECTION TEXT & IMAGE -->
 {% include sections-pages/add-sect-text-image.html
-    class = "full-image right"
+    class = "full-image right no-frame no-top-illo"
     section-divider = ""
     ani-triggers = ""
     bg-slider-uniq-ID = ""

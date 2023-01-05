@@ -1,6 +1,6 @@
-I"­?<!-- SECTION TEXT & IMAGE -->
+I"<@<!-- SECTION TEXT & IMAGE -->
 
-<section class="section-text-image strip-line full-image right none no-illo strip-top">
+<section class="section-text-image strip-line full-image right no-frame none no-illo strip-top">
 
     
 
@@ -42,9 +42,8 @@
           
             <div class="fotorama-box">
               
-                <div class="img-top-illo-wrapper"><div class="img-top-illo"></div></div>
-              
-              <div class="frame-wrapper">
+              <div class="img-top-illo-wrapper"><div class="img-top-illo"></div></div>
+              <div class="frame-wrapper text-image">
                 
                   <div class="top-frame"></div>
                   <div class="left-frame"></div>
@@ -135,7 +134,7 @@
 
 <!-- SECTION TEXT & IMAGE -->
 
-<section class="section-text-image strip-line full-image right none no-illo strip-top">
+<section class="section-text-image strip-line full-image right no-frame no-top-illo none no-illo strip-top">
 
     
 
@@ -177,9 +176,8 @@
           
             <div class="fotorama-box">
               
-                <div class="img-top-illo-wrapper"><div class="img-top-illo"></div></div>
-              
-              <div class="frame-wrapper">
+              <div class="img-top-illo-wrapper"><div class="img-top-illo"></div></div>
+              <div class="frame-wrapper text-image">
                 
                   <div class="top-frame"></div>
                   <div class="left-frame"></div>
@@ -245,7 +243,7 @@
 
 <!-- SECTION TEXT & IMAGE -->
 
-<section class="section-text-image strip-line full-image right large-image no-frame none no-illo strip-top handAni">
+<section class="section-text-image strip-line full-image right large-image no-frame no-top-illo none no-illo strip-top handAni">
 
     
 
@@ -287,7 +285,8 @@
           
             <div class="fotorama-box">
               
-              <div class="frame-wrapper">
+              <div class="img-top-illo-wrapper"><div class="img-top-illo"></div></div>
+              <div class="frame-wrapper text-image">
                 
                   <div class="top-frame"></div>
                   <div class="left-frame"></div>
@@ -368,7 +367,7 @@
 
 <!-- SECTION TEXT & IMAGE -->
 
-<section class="section-text-image strip-line full-image right none no-illo strip-top">
+<section class="section-text-image strip-line full-image right no-frame no-top-illo none no-illo strip-top">
 
     
 
@@ -410,9 +409,8 @@
           
             <div class="fotorama-box">
               
-                <div class="img-top-illo-wrapper"><div class="img-top-illo"></div></div>
-              
-              <div class="frame-wrapper">
+              <div class="img-top-illo-wrapper"><div class="img-top-illo"></div></div>
+              <div class="frame-wrapper text-image">
                 
                   <div class="top-frame"></div>
                   <div class="left-frame"></div>
