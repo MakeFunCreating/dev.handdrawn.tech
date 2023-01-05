@@ -1,7 +1,7 @@
 ---
 
 layout: page
-layout-sub-type:
+layout-sub-type: ubuntu
 
 top-bar-class: apple
 
@@ -11,13 +11,13 @@ h1: "Turn Free Time, Into Fun Time"
 #----------------------- H1 LENGTH GUIDE ----------------------------
 
 sub-heading: "Three Creative Books for Dads & Kids"
-sub-heading: "With Books by Scott Bedford"
+sub-heading: "With Inventive Books & Craft Sets by Scott Bedford"
 #sub-heading-link: "/projects"
 
 announcement:
 
 header-image: content/pages/books/header/#jpg
-header-class: center narrow #down-arrow center no-header narrow overlay white-text center no-image no-card no-header
+header-class: no-image no-card
 featured-image: header
 
 author:
@@ -26,32 +26,6 @@ footer:
 meta-description: "Three awesome books that celebrate creativity in different ways all written and illustrated by Scott Bedford."
 
 ---
-
-
-<!-- SECTION TEXT -->
-{% include sections-pages/add-sect-text.html
-  class = "squeeze"
-  section-divider = ""
-  ani-triggers = ""
-
-  sect-title = ""
-  
-  h1 = ""
-  p1 = "If you'd like to discuss a book project use the chat feature to get in touch."
-  
-  h2 = ""
-  p2 = ""
-
-  end-caption = ""
-  
-  link-text = ""
-  link-url = ""
-%}
-
-
-
-
-
 
 
 
