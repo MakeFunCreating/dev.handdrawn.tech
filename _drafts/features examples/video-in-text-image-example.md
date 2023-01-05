@@ -95,3 +95,36 @@ meta-description: "Make Fun Creating showcases the books, crafts, illustrations 
 %}
 
 
+
+
+
+<!-- SECTION FULL BLEED IMAGES -->
+{% include sections-pages/add-sect-full-bleed-images.html
+  class = "strip-lines"
+  ani-triggers = ""
+
+  img-src-1 = "https://player.vimeo.com/video/481630637"
+  img-alt-1 = ""
+  img-txt-1 = ""
+
+  img-src-2 = "https://player.vimeo.com/video/270131501"
+  img-alt-2 = ""
+  img-txt-2 = ""
+
+  img-src-3 = "https://player.vimeo.com/video/199146435"
+  img-alt-3 = ""
+  img-txt-3 = ""
+
+  img-src-4 = "https://player.vimeo.com/video/408785168"
+  img-alt-4 = ""
+  img-txt-4 = ""
+
+  img-src-5 = ""
+  img-alt-5 = ""
+  img-txt-5 = ""
+
+  image-array = "1"
+
+%}
+
+

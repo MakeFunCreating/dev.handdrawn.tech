@@ -1,5 +1,7 @@
 # dev.handdrawn.tech
 
+### Sep 6th 2022 - v1.1.5
+* UPDATED: Ubuntu upgrade
 
 ### Sep 6th 2022 - v1.1.4
 * UPDATED: Tweaked design of pages

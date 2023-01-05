@@ -16,8 +16,6 @@
   {% unless temp-header-class contains "bottom" or temp-header-class contains "center" %}
       {% assign header-class = header-class | append: " bottom" %}
   {% endunless %}
-{% else %}
-  {% assign header-class = header-class | append: " no-image" %}
 {% endif %}
 
 

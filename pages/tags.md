@@ -1,9 +1,9 @@
 ---
 
 layout: page
-layout-sub-type:
+layout-sub-type: ubuntu
 
-top-bar-class:
+top-bar-class: apple
 
 title: "Keyword Tag Cloud"
 h1: ""
@@ -27,23 +27,14 @@ meta-description: "Webby Award winning craft blog, and inspiration behind Made b
 ---
 
 
-
 <!-- SECTION TEXT -->
-{% include sections-pages/add-sect-text.html
-  class = "squeeze grey"
-  section-divider = ""
+{% include sections-pages/add-sect-header-alt.html
   ani-triggers = ""
 
   sect-title = "Keyword Tag Cloud"
-  
-  h1 = ""
+  sub-title = ""
   p1 = "Here you'll find every keyword, all in one place, for your convenience."
   
-  h2 = ""
-  p2 = ""
-  
-  link-text = ""
-  link-url = ""
 %}
 
 
@@ -81,53 +72,6 @@ meta-description: "Webby Award winning craft blog, and inspiration behind Made b
   link-url = "open-chat"
 %}
 
-
-
-<!-- SECTION TEXT -->
-{% include sections-pages/add-sect-text.html
-  class = "announcement join black"
-  section-divider = ""
-  ani-triggers = ""
-
-  sect-title = ""
-  
-  h1 = ""
-  p1 = "You'll also find me at the following places."
-  
-  h2 = ""
-  p2 = ""
-  
-  link-text = ""
-  link-url = ""
-%}
-
-
-<!-- SECTION NAV BLOCKS -->
-{% include sections-pages/add-sect-nav-blocks.html
-  class = "plain-button black"
-  box-col = ""
-  section-divider = ""
-  ani-triggers = ""
-
-  sect-title = ""
-
-  hightlight = ""
-  
-  block-1-title = "Make Fun Creating"
-  block-1-text = "Webby Award Winning craft blog"
-  block-1-butt-text = "Visit blog"
-  block-1-butt-url = "https://makefuncreating.com"
-
-  block-2-title = "Creative Market"
-  block-2-text = "Awesome templates and fonts"
-  block-2-butt-text = "Visit store"
-  block-2-butt-url = "https://creativemarket.com/HandDrawnTech"
-
-  block-3-title = "Dribble"
-  block-3-text = "Snapshots of latest illustrations"
-  block-3-butt-text = "Visit playbook"
-  block-3-butt-url = "https://dribbble.com/HandDrawnTech"
-%} 
 
 
 

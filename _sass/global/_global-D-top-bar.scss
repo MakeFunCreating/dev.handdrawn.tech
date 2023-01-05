@@ -31,7 +31,6 @@
   align-items: flex-start; //center;
   width: 100%;
   padding: 10px 0 0px 0;
-  //box-shadow: 5px 5px 11px 0 rgba(0,0,0,0.2);
   box-shadow: 3px 3px 18px 0 rgba(0,0,0,0.07);
   top: 0px;
   transition: top 0.5s ease, box-shadow 0.5s ease; ////
@@ -45,6 +44,22 @@
   @include breakpoint(D) { 
     min-height: 86px;
     padding: 22px 0 22px 0;
+  }
+}
+
+// "Apple" overide
+.top-bar.apple  {
+  padding: 0px;
+  justify-content: center;
+  min-height: 105px;
+  @include breakpoint(ML) { 
+    min-height: 40px;
+  }
+  @include breakpoint(TP) {
+    min-height: 40px;
+  }
+  @include breakpoint(D) { 
+    min-height: 40px;
   }
 }
 
@@ -83,6 +98,25 @@ body.no-search .top-bar  {
   }
 }
 
+// "Apple" overide
+.top-bar.apple .logo-wrapper {
+  flex-grow: 0;
+  flex-basis: unset;
+  margin: 20px 0 20px 0;
+  height: 25px;
+  @include breakpoint(ML) {
+    height: 38px;
+    margin: 0px 0 0px 0;
+  }
+  @include breakpoint(TP) {
+    margin: 0px 0 0px 0;
+  }
+  @include breakpoint(D) {
+    flex-basis: 190px;
+    height: 42px;
+  }
+}
+
 .logo-wrapper .logo-box {
   margin-left: 23px; 
   width: 180px;
@@ -105,6 +139,26 @@ body.no-search .top-bar  {
     background-size: 280px auto;
   }
 }
+
+// "Apple" overide
+.top-bar.apple .logo-wrapper .logo-box {
+  margin-top: 0;
+  margin-left: 0; 
+  width: 180px;
+  height: 30px;
+  background-size: 180px auto;
+  @include breakpoint(TP) {
+    margin-left: 23px; 
+    margin-top: 10px;
+    width: 190px;
+    height: 40px;
+    background-size: 160px auto;
+  }
+  @include breakpoint(D) {
+    margin-top: 10px;
+  }
+}
+
 
 .top-bar-bg {
   width: 100%;
@@ -137,6 +191,14 @@ body.no-search .top-bar  {
   background-image: url(../images/logo/camel/800px.png);
   @include breakpoint(TP) {
       background-image: url(../images/logo/camel/1200px.png);
+  }  
+}
+
+
+.top-bar.apple .logo-box {
+  background-image: url(../images/logo/text/800px.png);
+  @include breakpoint(TP) {
+      background-image: url(../images/logo/text/1200px.png);
   }  
 }
 
@@ -176,6 +238,46 @@ body.no-search .top-bar  {
   }
 }
 
+
+// "Apple" overide
+
+.top-bar.apple .navigation-wrapper {
+  position: relative;
+  z-index: 160;
+  flex-basis: unset;
+  height: 20px;
+  flex-grow: 0;
+  width: 86%;
+  margin: 0 0 20px 0;
+  order: 4;
+  padding: 0;
+  align-self: flex-end;
+  @include breakpoint(ML) {
+    order: 3;
+    flex-grow: 0.1;
+    flex-basis: 350px;
+    height: 38px;
+    margin: -2px 0 0 0;
+  }
+  @include breakpoint(TP) {
+    flex-basis: 420px;
+    flex-grow: 0;
+    height: 22px;
+    margin: 0px 0 9px 0;
+  }
+  @include breakpoint(D) {
+    height: 25px;
+    margin: 0px 0 8px 0;
+    order: 2;
+    flex-basis: 500px;
+    padding: 0;
+    margin: 0;
+    align-self: center;
+  }
+}
+
+
+
 nav {
   height: 100%;
 }
@@ -207,6 +309,26 @@ nav {
 }
 
 
+// "Apple" overide
+.top-bar.apple .navigation-menu { // <ul>
+  padding-right: 5px;
+  padding-left: 5px;
+  @include breakpoint(ML) {
+    padding-right: 10px;
+    padding-left: 25px;
+  }
+  @include breakpoint(TP) {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+  @include breakpoint(D) {
+    padding-right: 45px;
+    padding-left: 45px;
+  }
+}
+
+
+
 //////////////////  NAV LINKS  ////////////////////// 
 
 .nav-link { // <li>
@@ -218,7 +340,7 @@ nav {
   margin: 0;
   height: 100%;
   @include breakpoint(TP) {
-    padding-top: 3px;
+    padding-top: 0px;
   }
   @include breakpoint(D) {
     padding-top: 2px;
@@ -229,6 +351,14 @@ nav {
   @include breakpoint(D) {
     padding-right: 12px;
   }  
+}
+
+
+// "Apple" overide
+top-bar.ubuntu .nav-link  {
+  @include breakpoint(TP) {
+    padding-top: 0px;
+  } 
 }
 
 
@@ -252,6 +382,7 @@ nav {
   }
 }
 
+
 .nav-link a.smaller {
   font-size: 1.45rem; // overide default smaller size: 1.3
   @include breakpoint(TP) {
@@ -262,8 +393,21 @@ nav {
   }
 }
 
+// "Apple" overide
+
+.top-bar.apple .nav-link a.smaller {
+  font-size: 1.3rem;
+  @include breakpoint(TP) {
+    font-size: 1.4rem;
+  }
+  @include breakpoint(D) {
+    font-size: 1.4rem;
+  }
+}
+
 
 .nav-link span {
+  font-family: inherit;
   font-weight: inherit;
   font-color: inherit;
 }
@@ -349,6 +493,11 @@ nav {
     align-self: center;
   }
 }
+
+.top-bar.apple .search-outer-wrapper {
+  display: none;
+}
+
 
 // Overide when search removed (e.g. on project page)
 // - achieved by adding "layout-sub-type: 'no-search'" in front matter of page
@@ -573,6 +722,10 @@ body.no-search .top-bar .search-outer-wrapper {
     order: 4;
     align-self: center;
   }
+}
+
+.top-bar.apple .cart-wrapper {
+  display: none;
 }
 
 // Color overide

@@ -365,6 +365,15 @@ section.no-top-illo .img-top-illo {
   display: none;
 }
 
+// 'no-frame' overide
+
+section.no-frame .frame .top-frame,
+section.no-frame .frame .bottom-frame,
+section.no-frame .frame .left-frame,
+section.no-frame .frame .right-frame {
+  display: none;
+}
+
 
 ///////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////

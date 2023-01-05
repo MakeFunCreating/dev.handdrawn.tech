@@ -81,9 +81,19 @@
 
 ////////////////////// TITLE ////////////////////////
 
-.section-text-image .col-1 .text-wrapper h4:first-child:not(.navi-dot),
+.section-text-image .col-1 .text-wrapper h4:first-child:not(.navi-dot) {
+  margin-top: 0;
+}
+
 .section-text-image .col-1 .text-wrapper p:first-child:not(.navi-dot) {
   margin-top: 0;
+}
+
+
+.section-text-image .col-1 .text-wrapper h4:first-child:not(.navi-dot) em,
+.section-text-image .col-1 .text-wrapper p:first-child:not(.navi-dot) em {
+  font-family: inherit;
+  font-weight: inherit;
 }
 
 //////////////////// NAVI-DOTS //////////////////////
@@ -499,6 +509,48 @@ section .bg-texture-wrapper .bg-texture.bg-slider.pink-light {
 
 
 
+///////////// VIMEO CUSTOM LAY BUTTON ///////////////
+
+.section-text-image .video-pause-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background-color: #373737;
+  opacity: 0;
+}
+
+.section-text-image .video-play-button {
+  width: 70px;
+  height: 48px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -24px 0 0 -35px;
+  background-color: #373737;
+  opacity: 0.9;
+  z-index: 101;
+  cursor: pointer;
+  border-radius: 5px;
+  &:hover {
+    transition: background-color 0.2s;
+    background-color: $pink;
+  }
+}
+
+.section-text-image .triangle-right {
+  width: 0;
+  height: 0;
+  border-top: 11px solid transparent;
+  border-left: 23px solid #fff;
+  border-bottom: 11px solid transparent;
+  margin: 11px 0 0 26px;
+}
+
+
+
 /////////////////////////////////////////////////////
 ///////////////// STYLE OVERIDES ////////////////////
 /////////////////////////////////////////////////////
@@ -512,8 +564,7 @@ section .bg-texture-wrapper .bg-texture.bg-slider.pink-light {
 .section-text-image.no-frame .video-box .frame-wrapper .frame .top-frame,
 .section-text-image.no-frame .video-box .frame-wrapper .frame .bottom-frame,
 .section-text-image.no-frame .video-box .frame-wrapper .frame .left-frame,
-.section-text-image.no-frame .video-box .frame-wrapper .frame .right-frame,
-.section-text-image.no-frame .video-box .img-top-illo-wrapper {
+.section-text-image.no-frame .video-box .frame-wrapper .frame .right-frame {
   display: none;
 }
 

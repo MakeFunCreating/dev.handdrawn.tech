@@ -8,7 +8,7 @@
   {% assign top-bar-class = "none" %}
 {% endif %}
 
-<div class="top-bar {{ top-bar-class | strip }} {% if page.layout-sub-type and page.layout-sub-type != empty %}{{ page.layout-sub-type }}{% endif %}" role="banner">
+<div class="top-bar {{ top-bar-class | strip }} {% if top-bar-class contains "apple" %} black {% endif %} {% if page.layout-sub-type and page.layout-sub-type != empty %}{{ page.layout-sub-type }}{% endif %}" role="banner">
 
       <div class="logo-wrapper">
         <a href="{{site.baseurl}}/">

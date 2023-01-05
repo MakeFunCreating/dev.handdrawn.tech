@@ -1,4 +1,86 @@
-I"®ª<!-- SECTION LOGOS -->
+I"U˜<!-- SECTION TEXT & IMAGE -->
+
+<section class="section-text-image strip-line full-image no-frame join large-image none no-illo strip-top no-sect-title">
+
+    
+
+    <div class="content-wrapper ">
+
+      
+
+        <div class="col-wrapper col-1">
+        
+        
+        </div>
+
+
+        <div class="col-wrapper col-2">
+
+          
+
+          <div class="frame-wrapper">
+            
+            <div class="frame">
+              
+            </div>
+            
+
+            <div class="img-wrapper">
+              
+              
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+  
+                <picture>
+                  <source media="(min-width: 1150px)" srcset="https://handdrawn.tech/images/content/pages/home/section-images/earth-pipes/2000px.jpg" />
+                  <source media="(min-width: 450px)" srcset="https://handdrawn.tech/images/content/pages/home/section-images/earth-pipes/1500px.jpg" />
+                  <img src="https://handdrawn.tech/images/content/pages/home/section-images/earth-pipes/1000px.jpg" width="100%" height="auto" alt="AI computer with brain analysing social data to predict trends" loading="lazy" />
+                </picture>
+
+            </div> 
+           </div>
+          
+
+        </div>
+
+      
+      <div class="bg-texture-wrapper">
+        <div class="frame show"><div class="top-frame"></div><div class="bottom-frame"></div></div>
+          
+          
+            
+              <div class="bg-texture"></div>
+            
+      </div>
+      
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+<!-- SECTION LOGOS -->
 
 <section class="section-logos strip-line none no-illo strip-top">
   
@@ -7,17 +89,12 @@
     <div class="content-wrapper">
 
       
-        <div class="sect-title-wrapper">
-          <h2 class="sect-title">What is Hand Drawn Tech?</h2>
-          <div class="underline"></div>
-        </div>
-      
 
       <div class="text-wrapper">
         
   
         
-          <div class="text-top"><p>Hand Drawn <em>Tech</em> are whimsical low-tech illustrations by author, illustrator and award winning creative Scott Bedford. If you want to showcase, explain or demonstrate your company's products or services (and actually have people pay attention) these are for you.</p></div>
+          <div class="text-top"><p><b>Hand Drawn <em>Tech</em></b> are whimsical low-tech illustrations by author, illustrator and award winning creative Scott Bedford. If you want to showcase, explain or demonstrate your company's products or services (and actually have people pay attention) these are for you.</p></div>
         
 
 
@@ -124,91 +201,9 @@
     
 </section>
 
-<!-- SECTION TEXT & IMAGE -->
-
-<section class="section-text-image strip-line full-image no-frame squeeze large-image none no-illo strip-top no-sect-title">
-
-    
-
-    <div class="content-wrapper ">
-
-      
-
-        <div class="col-wrapper col-1">
-        
-        
-        </div>
-
-
-        <div class="col-wrapper col-2">
-
-          
-
-          <div class="frame-wrapper">
-            
-            <div class="frame">
-              
-            </div>
-            
-
-            <div class="img-wrapper">
-              
-              
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-  
-                <picture>
-                  <source media="(min-width: 1150px)" srcset="https://handdrawn.tech/images/content/pages/home/section-images/earth-pipes/2000px.jpg" />
-                  <source media="(min-width: 450px)" srcset="https://handdrawn.tech/images/content/pages/home/section-images/earth-pipes/1500px.jpg" />
-                  <img src="https://handdrawn.tech/images/content/pages/home/section-images/earth-pipes/1000px.jpg" width="100%" height="auto" alt="AI computer with brain analysing social data to predict trends" loading="lazy" />
-                </picture>
-
-            </div> 
-           </div>
-          
-
-        </div>
-
-      
-      <div class="bg-texture-wrapper">
-        <div class="frame show"><div class="top-frame"></div><div class="bottom-frame"></div></div>
-          
-          
-            
-              <div class="bg-texture"></div>
-            
-      </div>
-      
-
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-</section>
-
 <!-- SECTION TEXT -->
 
-<section class="section-text strip-line join none no-illo strip-top">
+<section class="section-text strip-line join black no-illo strip-top">
 
     
 
@@ -217,7 +212,7 @@
       
 
         <div class="sect-title-wrapper">
-          <h2 class="sect-title">Why Should I Pay Attention?</h2>
+          <h2 class="sect-title">Leverage The Latest Trend</h2>
           <div class="underline"></div>
         </div>
 
@@ -226,7 +221,7 @@
       <div class="text-wrapper">    
         
         
-          <p>Consumers are tiring of the impersonal aesthetic of vector illustrations. This quote from the Graphic Artists Guild explains why more authentic styles, particularly those that are hand drawn, are on the rise.</p>
+          <p>Consumers are tiring of the impersonal aesthetic of vector illustrations. This quote from the Graphic Artists Guild explains why authentic styles are on the rise.</p>
         
 
         
@@ -271,7 +266,7 @@
 
 <!-- SECTION QUOTE -->
 
-<section class="section-quote strip-line small no-top-gap none no-illo strip-top">
+<section class="section-quote strip-line small no-top-gap black no-illo strip-top">
     
      
     
@@ -309,7 +304,7 @@
       
 
         <div class="sect-title-wrapper">
-          <h2 class="sect-title">What Makes Them So Effective?</h2>
+          <h2 class="sect-title">Why They're So Effective</h2>
           <div class="underline"></div>
         </div>
 
@@ -318,7 +313,7 @@
       <div class="text-wrapper">    
         
         
-          <p>Hand Drawn <em>Tech</em> illustrations are an extremely powerful communications tool, here's 9 reasons why:</p>
+          <p><b>Hand Drawn <em>Tech</em></b> illustrations are an extremely powerful communications tool, here's 9 reasons why:</p>
         
 
         
@@ -376,11 +371,11 @@
         
           <div class="text-wrapper">
             
-              <h4 class="title uniq-ID-ABC"><em>No. 1:</em> They Are Seductive</h4>
+              <h4 class="title uniq-ID-ABC">1: They Are Seductive</h4>
             
             
             
-              <p class="text uniq-ID-ABC"><em>&#10003;</em> Hand Drawn <em>Tech</em> illustrations, with their low-tech charm,  are disarmingly persuasive.</p>
+              <p class="text uniq-ID-ABC"><b>Hand Drawn <em>Tech</em></b> illustrations, with their low-tech charm,  are disarmingly persuasive.</p>
             
             
 
@@ -474,11 +469,11 @@
         
           <div class="text-wrapper">
             
-              <h4 class="title uniq-ID-ABC"><em>No. 2:</em> They Are Authentic</h4>
+              <h4 class="title uniq-ID-ABC">2: They Are Authentic</h4>
             
             
             
-              <p class="text uniq-ID-ABC"><em>&#10003;</em> Hand Drawn <em>Tech</em> illustrations are drawn by hand, so are not perfect, and scream authenticity.</p>
+              <p class="text uniq-ID-ABC"><b>Hand Drawn <em>Tech</em></b> illustrations are drawn by hand, so are not perfect, and scream authenticity.</p>
             
             
 
@@ -572,11 +567,11 @@
         
           <div class="text-wrapper">
             
-              <h4 class="title uniq-ID-ABC"><em>No. 3:</em> They Are Versatile</h4>
+              <h4 class="title uniq-ID-ABC">3: They Are Versatile</h4>
             
             
             
-              <p class="text uniq-ID-ABC"><em>&#10003;</em> Hand Drawn <em>Tech</em> illustrations can bring-to-life almost any idea or concept, however abstract.</p>
+              <p class="text uniq-ID-ABC"><b>Hand Drawn <em>Tech</em></b> illustrations can bring-to-life almost any idea or concept, however abstract.</p>
             
             
 
@@ -670,11 +665,11 @@
         
           <div class="text-wrapper">
             
-              <h4 class="title slider-1"><em>No. 4:</em> They Are Descriptive</h4>
+              <h4 class="title slider-1">4: They Are Descriptive</h4>
             
             
             
-              <p class="text slider-1"><em>&#10003;</em> Hand Drawn <em>Tech</em> illustrations, with their use of familiar low-tech objects, are easy to understand.</p>
+              <p class="text slider-1"><b>Hand Drawn <em>Tech</em></b> illustrations, with their use of familiar low-tech objects, are easy to understand.</p>
             
             
 
@@ -938,11 +933,11 @@
         
           <div class="text-wrapper">
             
-              <h4 class="title uniq-ID-ABC"><em>No. 5:</em> They Are Unique</h4>
+              <h4 class="title uniq-ID-ABC">5: They Are Unique</h4>
             
             
             
-              <p class="text uniq-ID-ABC"><em>&#10003;</em> Hand Drawn <em>Tech</em> illustrations are bespoke, and ensure you stand apart from the competition.</p>
+              <p class="text uniq-ID-ABC"><b>Hand Drawn <em>Tech</em></b> illustrations are bespoke, and ensure you stand apart from the competition.</p>
             
             
 
@@ -1036,11 +1031,11 @@
         
           <div class="text-wrapper">
             
-              <h4 class="title uniq-ID-ABC"><em>No. 6:</em> They Are Dynamic</h4>
+              <h4 class="title uniq-ID-ABC">6: They Are Dynamic</h4>
             
             
             
-              <p class="text uniq-ID-ABC"><em>&#10003;</em> Hand Drawn <em>Tech</em> illustrations incorporate mechanical elements that can be easily animated.</p>
+              <p class="text uniq-ID-ABC"><b>Hand Drawn <em>Tech</em></b> illustrations incorporate mechanical elements that can be easily animated.</p>
             
             
 
@@ -1141,11 +1136,11 @@
         
           <div class="text-wrapper">
             
-              <h4 class="title uniq-ID-ABC"><em>No. 7:</em> They Are Evergreen</h4>
+              <h4 class="title uniq-ID-ABC">7: They Are Evergreen</h4>
             
             
             
-              <p class="text uniq-ID-ABC"><em>&#10003;</em> Hand Drawn <em>Tech</em> illustrations are not slavish to current trends and will remain fresh indefinitely.</p>
+              <p class="text uniq-ID-ABC"><b>Hand Drawn <em>Tech</em></b> illustrations are not slavish to current trends and will remain fresh indefinitely.</p>
             
             
 
@@ -1239,11 +1234,11 @@
         
           <div class="text-wrapper">
             
-              <h4 class="title uniq-ID-ABC"><em>No. 8:</em> They Are Customisable</h4>
+              <h4 class="title uniq-ID-ABC">8: They Are Customisable</h4>
             
             
             
-              <p class="text uniq-ID-ABC"><em>&#10003;</em> Hand Drawn <em>Tech</em> illustrations work with almost any brand colour, even pink!</p>
+              <p class="text uniq-ID-ABC"><b>Hand Drawn <em>Tech</em></b> illustrations work with almost any brand colour, even pink!</p>
             
             
 
@@ -1337,11 +1332,11 @@
         
           <div class="text-wrapper">
             
-              <h4 class="title uniq-ID-ABC"><em>No. 9:</em> They Are Proven</h4>
+              <h4 class="title uniq-ID-ABC">9: They Are Proven</h4>
             
             
             
-              <p class="text uniq-ID-ABC"><em>&#10003;</em> Hand Drawn <em>Tech</em> illustrations have been successfully used to market products and win business.</p>
+              <p class="text uniq-ID-ABC"><b>Hand Drawn <em>Tech</em></b> illustrations have been successfully used to market products and win business.</p>
             
             
 
@@ -1431,7 +1426,7 @@
       
 
         <div class="sect-title-wrapper">
-          <h2 class="sect-title">Where Can I Use Them?</h2>
+          <h2 class="sect-title">Where You Can Use Them</h2>
           <div class="underline"></div>
         </div>
 
@@ -1562,7 +1557,7 @@
       
 
         <div class="sect-title-wrapper">
-          <h2 class="sect-title">How Do I Get Them?</h2>
+          <h2 class="sect-title">How You Can Get Them</h2>
           <div class="underline"></div>
         </div>
 
@@ -1632,7 +1627,7 @@
       
 
         <div class="sect-title-wrapper">
-          <h2 class="sect-title">Can I Book A Consultation?</h2>
+          <h2 class="sect-title">Book A Consultation</h2>
           <div class="underline"></div>
         </div>
 
@@ -1686,162 +1681,5 @@
     </div>
     
 </section>
-
-<!-- SECTION TEXT -->
-
-<section class="section-text strip-line announcement join black no-illo strip-top">
-
-    
-
-    <div class="content-wrapper">
-
-      
-  
-      <div class="text-wrapper">    
-        
-        
-          <p class="smaller">You'll also find me at the following places.</p>
-        
-
-        
-        
-
-        
-         
-
-        
-         
-
-        
-         
-
-        
-         
-
-        
-         
-
-        
-         
-
-        
-         
-
-
-         
-
-         
-
-      </div>
-
-      <div class="bg-texture-wrapper">
-        <div class="frame show"><div class="top-frame"></div><div class="bottom-frame"></div></div>
-        <div class="bg-texture"></div>
-      </div>
-
-    </div>
-    
-</section>
-
-<!-- SECTION NAV BLOCKS -->
-
-<section class="section-nav-block strip-line plain-button black no-illo strip-top ">
-    
-    
-
-      <div class="content-wrapper item-total-">
-            
-
-
-
-        <div class="col-wrapper col-1">
-            <div class="frame-wrapper">
-
-              <div class="frame show">
-                <div class="top-frame"></div>
-                <div class="left-frame"></div>
-                <div class="right-frame"></div>
-                <div class="bottom-frame"></div>
-              </div>
-
-              <div class="text-wrapper ">
-                <h5 class="title "><a href="https://makefuncreating.com" class="">Make Fun Creating</a></h5>
-                
-                
-                  <div class="desc-wrapper"><p class="smallest">Webby Award Winning craft blog</p></div>
-                
-
-                
-                  <div class="button-wrapper"><a href="https://makefuncreating.com" class="link-button smaller">Visit blog <span class="right-arrow">â€º</span></a></div> 
-                 
-              </div>
-
-            </div>
-            <div class="bg-texture-wrapper "><div class="bg-texture"></div><div class="highlight-bar hide"></div></div>
-        </div>
-
-
-        <div class="col-wrapper col-2">
-            <div class="frame-wrapper">
-
-              <div class="frame show">
-                <div class="top-frame"></div>
-                <div class="left-frame"></div>
-                <div class="right-frame"></div>
-                <div class="bottom-frame"></div>
-              </div>
-
-              <div class="text-wrapper ">
-                <h5 class="title "><a href="https://creativemarket.com/HandDrawnTech" class="">Creative Market</a></h5>
-                
-                
-                  <div class="desc-wrapper"><p class="smallest">Awesome templates and fonts</p></div>
-                
-
-                
-                  <div class="button-wrapper"><a href="https://creativemarket.com/HandDrawnTech" class="link-button smaller">Visit store <span class="right-arrow">â€º</span></a></div> 
-                 
-              </div>
-
-            </div>
-            <div class="bg-texture-wrapper "><div class="bg-texture"></div><div class="highlight-bar hide"></div></div>
-        </div>
-
-
-        <div class="col-wrapper col-3">
-            <div class="frame-wrapper">
-
-              <div class="frame show">
-                <div class="top-frame"></div>
-                <div class="left-frame"></div>
-                <div class="right-frame"></div>
-                <div class="bottom-frame"></div>
-              </div>
-
-              <div class="text-wrapper ">
-                <h5 class="title "><a href="https://dribbble.com/HandDrawnTech" class="">Dribble</a></h5>
-                
-                
-                  <div class="desc-wrapper"><p class="smallest">Snapshots of latest illustrations</p></div>
-                            
-
-                
-                  <div class="button-wrapper"><a href="https://dribbble.com/HandDrawnTech" class="link-button smaller">Visit playbook <span class="right-arrow">â€º</span></a></div> 
-                              
-              </div>
-
-            </div>
-            <div class="bg-texture-wrapper "><div class="bg-texture"></div><div class="highlight-bar hide"></div></div>
-        </div>
-  
-  
-        <div class="bg-texture-wrapper">
-          <div class="frame show"><div class="top-frame"></div><div class="bottom-frame"></div></div>
-          <div class="bg-texture"></div>
-        </div>
-  
-      </div>
-
-  </section>
 
 :ET

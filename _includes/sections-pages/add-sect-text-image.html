@@ -118,7 +118,9 @@
                   {% if src contains "|" %}
                     {% assign src = src | split: "|" %}
                     {% assign controls = src[0] %}
-                    {% assign src = src[1] %}
+                    {% assign src = src[1] | append: "?" %}
+                  {% else %}
+                    {% assign src = src | append: "?controls=0" %}
                   {% endif %}
     
                   {% capture vimeo-src %}{{ src }}{% endcapture %}
@@ -129,10 +131,13 @@
                     {% assign controls-string = "&autoplay=1&muted=1&autopause=0" %}
                   {% endif %}
                   {% if controls contains "loop" %}
-                    {% assign controls-string = controls-string | append: "&loop=1" %}             
+                    {% assign controls-string = controls-string | append: "&loop=1" %}          
                   {% endif %}
                   {% if controls contains "mute" %}
-                    {% assign controls-string = controls-string | append: "&muted=1" %}             
+                    {% assign controls-string = controls-string | append: "&muted=1" %}         
+                  {% endif %}
+                  {% if controls contains "fullscreen" %}
+                    {% assign controls-string = controls-string | append: "&fullscreen" %}    
                   {% endif %}
     
                   {% capture controls-string %}{{ controls-string }}{% endcapture %}
@@ -166,10 +171,10 @@
                     {% assign controls-string = controls-string | append: " autoplay" %}
                   {% endif %}
                   {% if controls contains "loop" %}
-                    {% assign controls-string = controls-string | append: " loop" %}             
+                    {% assign controls-string = controls-string | append: " loop" %}          
                   {% endif %}
                   {% if controls contains "mute" %}
-                    {% assign controls-string = controls-string | append: " muted" %}             
+                    {% assign controls-string = controls-string | append: " muted" %}         
                   {% endif %}
 
                 <div class="video-box vimeo {{ include.video-class }}">

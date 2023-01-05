@@ -1,4 +1,119 @@
-I"?<!-- SECTION LOGOS -->
+I"3<!-- SECTION TEXT -->
+
+<!-- BASED ON: SECTION TEXT -->
+<section class="section-header-alt grey squeeze no-illo-butt strip-top-butt strip-bottom">
+    <div class="content-wrapper">
+        <div class="sect-title-wrapper">
+          <h1 class="sect-title top-pad">Pitches, Presentations and Proposals</h1>
+          <div class="underline"></div>
+        </div>
+      <div class="text-wrapper"> 
+        <!--<h4 class="caps"></h4>-->
+        
+        <p>For more information, timings, and an accurate quote send me a message.</p>        
+      </div>
+      <div class="bg-texture-wrapper">
+        <div class="frame show"><div class="top-frame"></div><div class="bottom-frame"></div></div>
+        <div class="bg-texture"></div>
+      </div>
+    </div>
+</section>
+
+<!-- SECTION FULL BLEED IMAGES -->
+
+<section class="section-full-bleed-images strip-line tall strip-lines none no-illo strip-top no-sect-title">
+
+    
+
+    <div class="content-wrapper ">
+
+
+      
+
+
+
+      
+      
+      
+      
+      
+      
+
+
+      
+
+
+
+      
+        
+
+        <div class="col-wrapper col-1 tall">
+
+           
+           
+           
+           
+
+
+           
+           
+            
+
+
+          
+
+            <div class="frame-wrapper">
+                <div class="top-frame"></div>
+                <div class="left-frame"></div>
+                <div class="right-frame"></div>
+                <div class="bottom-frame"></div>
+
+                <div class="bg-img-wrapper show">
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+  
+                    <picture>
+                      <source media="(min-width: 1200px)" srcset="https://handdrawn.tech/images/content/pages/graphic-design/full-bleed-presentations-3/3200px.jpg" />
+                      <source media="(min-width: 992px)" srcset="https://handdrawn.tech/images/content/pages/graphic-design/full-bleed-presentations-3/3200px.jpg" />
+                        <source media="(min-width: 768px)" srcset="https://handdrawn.tech/images/content/pages/graphic-design/full-bleed-presentations-3/1900px.jpg" />
+                          <source media="(min-width: 650px)" srcset="https://handdrawn.tech/images/content/pages/graphic-design/full-bleed-presentations-3/1000px.jpg" />
+                      <img src="https://handdrawn.tech/images/content/pages/graphic-design/full-bleed-presentations-3/1000px.jpg" alt="" loading="lazy" />
+                    </picture>
+                </div>
+              </div>
+            
+          
+
+        </div>
+
+      
+
+      
+      <div class="bg-texture-wrapper">
+        <div class="bg-texture"></div>
+      </div>
+
+      <div class="top-frame"></div>
+
+    </div>
+      
+
+</section>
+
+<!-- SECTION LOGOS -->
 
 <section class="section-logos strip-line none no-illo strip-top">
   
@@ -8,7 +123,7 @@
 
       
         <div class="sect-title-wrapper">
-          <h2 class="sect-title">Proven Winner</h2>
+          <h2 class="sect-title">Proven New Business Winner</h2>
           <div class="underline"></div>
         </div>
       
@@ -17,7 +132,7 @@
         
   
         
-          <div class="text-top"><p>Business pitches, presentations and proposals featuring Hand Drawn <em>Tech</em> illustrations are a proven new business winner. They look professional, feel human, and communicate ideas in a compelling way. They have been battle tested in many corporte boardrooms and consistently deliver.</p></div>
+          <div class="text-top"><p>Business pitches, presentations and proposals featuring <b>Hand Drawn <em>Tech</em></b> illustrations are a proven new business winner. They look professional, feel human, and communicate ideas in a compelling way. They have been battle tested in many corporte boardrooms and consistently deliver.</p></div>
         
 
 
@@ -139,7 +254,7 @@
       
         
 
-        <div class="col-wrapper col-2 tall">
+        <div class="col-wrapper col-1 tall">
 
            
            
@@ -178,63 +293,8 @@
                     
   
                     <picture>
-                      <source media="(min-width: 1200px)" srcset="https://handdrawn.tech/images/content/pages/graphic-design/full-bleed-presentations-2/1900px.jpg" />
-                      <source media="(min-width: 992px)" srcset="https://handdrawn.tech/images/content/pages/graphic-design/full-bleed-presentations-2/1900px.jpg" />
-                        <source media="(min-width: 768px)" srcset="https://handdrawn.tech/images/content/pages/graphic-design/full-bleed-presentations-2/1900px.jpg" />
-                          <source media="(min-width: 650px)" srcset="https://handdrawn.tech/images/content/pages/graphic-design/full-bleed-presentations-2/1000px.jpg" />
-                      <img src="https://handdrawn.tech/images/content/pages/graphic-design/full-bleed-presentations-2/1000px.jpg" alt="" loading="lazy" />
-                    </picture>
-                </div>
-              </div>
-            
-          
-
-        </div>
-
-      
-        
-
-        <div class="col-wrapper col-2 tall">
-
-           
-           
-           
-           
-
-
-           
-           
-            
-
-
-          
-
-            <div class="frame-wrapper">
-                <div class="top-frame"></div>
-                <div class="left-frame"></div>
-                <div class="right-frame"></div>
-                <div class="bottom-frame"></div>
-
-                <div class="bg-img-wrapper show">
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-  
-                    <picture>
-                      <source media="(min-width: 1200px)" srcset="https://handdrawn.tech/images/content/pages/graphic-design/full-bleed-presentations-4/1900px.jpg" />
-                      <source media="(min-width: 992px)" srcset="https://handdrawn.tech/images/content/pages/graphic-design/full-bleed-presentations-4/1900px.jpg" />
+                      <source media="(min-width: 1200px)" srcset="https://handdrawn.tech/images/content/pages/graphic-design/full-bleed-presentations-4/3200px.jpg" />
+                      <source media="(min-width: 992px)" srcset="https://handdrawn.tech/images/content/pages/graphic-design/full-bleed-presentations-4/3200px.jpg" />
                         <source media="(min-width: 768px)" srcset="https://handdrawn.tech/images/content/pages/graphic-design/full-bleed-presentations-4/1900px.jpg" />
                           <source media="(min-width: 650px)" srcset="https://handdrawn.tech/images/content/pages/graphic-design/full-bleed-presentations-4/1000px.jpg" />
                       <img src="https://handdrawn.tech/images/content/pages/graphic-design/full-bleed-presentations-4/1000px.jpg" alt="" loading="lazy" />
@@ -311,7 +371,7 @@
             
 
           <div class="quote-wrapper"><div class="left-ditto"></div><p class="quote "> We used Scott's services to create a professional looking Investor Proposal - outstanding value and very unique.</p><div class="right-ditto"></div></div>
-          <p class="author smaller">Peter M, Technology Entrepreneur, London</p>
+          <p class="author smaller">- Peter M, Technology Entrepreneur, London</p>
         </div>
 
       <div class="bg-texture-wrapper">
@@ -454,162 +514,5 @@
     </div>
     
 </section>
-
-<!-- SECTION TEXT -->
-
-<section class="section-text strip-line announcement join black no-illo strip-top">
-
-    
-
-    <div class="content-wrapper">
-
-      
-  
-      <div class="text-wrapper">    
-        
-        
-          <p class="smaller">You'll also find me at the following places.</p>
-        
-
-        
-        
-
-        
-         
-
-        
-         
-
-        
-         
-
-        
-         
-
-        
-         
-
-        
-         
-
-        
-         
-
-
-         
-
-         
-
-      </div>
-
-      <div class="bg-texture-wrapper">
-        <div class="frame show"><div class="top-frame"></div><div class="bottom-frame"></div></div>
-        <div class="bg-texture"></div>
-      </div>
-
-    </div>
-    
-</section>
-
-<!-- SECTION NAV BLOCKS -->
-
-<section class="section-nav-block strip-line plain-button black no-illo strip-top ">
-    
-    
-
-      <div class="content-wrapper item-total-">
-            
-
-
-
-        <div class="col-wrapper col-1">
-            <div class="frame-wrapper">
-
-              <div class="frame show">
-                <div class="top-frame"></div>
-                <div class="left-frame"></div>
-                <div class="right-frame"></div>
-                <div class="bottom-frame"></div>
-              </div>
-
-              <div class="text-wrapper ">
-                <h5 class="title "><a href="https://makefuncreating.com" class="">Make Fun Creating</a></h5>
-                
-                
-                  <div class="desc-wrapper"><p class="smallest">Webby Award Winning craft blog</p></div>
-                
-
-                
-                  <div class="button-wrapper"><a href="https://makefuncreating.com" class="link-button smaller">Visit blog <span class="right-arrow">›</span></a></div> 
-                 
-              </div>
-
-            </div>
-            <div class="bg-texture-wrapper "><div class="bg-texture"></div><div class="highlight-bar hide"></div></div>
-        </div>
-
-
-        <div class="col-wrapper col-2">
-            <div class="frame-wrapper">
-
-              <div class="frame show">
-                <div class="top-frame"></div>
-                <div class="left-frame"></div>
-                <div class="right-frame"></div>
-                <div class="bottom-frame"></div>
-              </div>
-
-              <div class="text-wrapper ">
-                <h5 class="title "><a href="https://creativemarket.com/HandDrawnTech" class="">Creative Market</a></h5>
-                
-                
-                  <div class="desc-wrapper"><p class="smallest">Awesome templates and fonts</p></div>
-                
-
-                
-                  <div class="button-wrapper"><a href="https://creativemarket.com/HandDrawnTech" class="link-button smaller">Visit store <span class="right-arrow">›</span></a></div> 
-                 
-              </div>
-
-            </div>
-            <div class="bg-texture-wrapper "><div class="bg-texture"></div><div class="highlight-bar hide"></div></div>
-        </div>
-
-
-        <div class="col-wrapper col-3">
-            <div class="frame-wrapper">
-
-              <div class="frame show">
-                <div class="top-frame"></div>
-                <div class="left-frame"></div>
-                <div class="right-frame"></div>
-                <div class="bottom-frame"></div>
-              </div>
-
-              <div class="text-wrapper ">
-                <h5 class="title "><a href="https://dribbble.com/HandDrawnTech" class="">Dribble</a></h5>
-                
-                
-                  <div class="desc-wrapper"><p class="smallest">Snapshots of latest illustrations</p></div>
-                            
-
-                
-                  <div class="button-wrapper"><a href="https://dribbble.com/HandDrawnTech" class="link-button smaller">Visit playbook <span class="right-arrow">›</span></a></div> 
-                              
-              </div>
-
-            </div>
-            <div class="bg-texture-wrapper "><div class="bg-texture"></div><div class="highlight-bar hide"></div></div>
-        </div>
-  
-  
-        <div class="bg-texture-wrapper">
-          <div class="frame show"><div class="top-frame"></div><div class="bottom-frame"></div></div>
-          <div class="bg-texture"></div>
-        </div>
-  
-      </div>
-
-  </section>
 
 :ET

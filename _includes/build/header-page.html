@@ -16,8 +16,6 @@
   {% unless temp-header-class contains "bottom" or temp-header-class contains "center" %}
       {% assign header-class = header-class | append: " bottom" %}
   {% endunless %}
-{% else %}
-  {% assign header-class = header-class | append: " no-image" %}
 {% endif %}
 
 
@@ -39,7 +37,7 @@
   {% endif %}
 {% endif %}
 
-<header class="{{ header-class | strip }} {% if site.data.announcement.announcement["show"] != false %}{% if page.announcement != false %}announcement{% endif %}{% endif %} down-arrow">
+<header class="{{ header-class | strip }} {% if site.data.announcement.announcement["show"] != false %}{% if page.announcement != false %}announcement{% endif %}{% endif %} {% if page.layout-sub-type contains "ubuntu" %}ubuntu{% endif %} down-arrow">
 
   <div class="content-wrapper">
     {% unless temp-header-class contains "no-title" %}

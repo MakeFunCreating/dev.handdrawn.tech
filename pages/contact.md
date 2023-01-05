@@ -1,8 +1,9 @@
 ---
 
 layout: page
+layout-sub-type: ubuntu
 
-top-bar-class:
+top-bar-class: apple
 
 title: How to Get in Contact
 h1: "How to Get in Contact"
@@ -11,7 +12,7 @@ h1: "How to Get in Contact"
 sub-heading: "Send a Message or Book a Free Consultation"
 
 header-image:
-header-class: no-image
+header-class: no-image no-card ubuntu
 featured-image: content/pages/home/section-images/megaphone/2000px.jpg
 
 tidio-show-on-scroll: false
@@ -26,7 +27,7 @@ meta-description: "I'd love to hear from you! Here's how to get in touch and boo
 
 <!-- SECTION TEXT & IMAGE -->
 {% include sections-pages/add-sect-text-image.html
-	class = "full-image join large-image squeeze no-frame right"
+	class = "full-image join large-image squeeze no-frame right no-top-illo"
 	section-divider = ""
 	ani-triggers = ""
 
@@ -89,52 +90,6 @@ meta-description: "I'd love to hear from you! Here's how to get in touch and boo
 %}
 
 
-
-
-<!-- SECTION TEXT -->
-{% include sections-pages/add-sect-text.html
-  class = "announcement join black"
-  section-divider = ""
-  ani-triggers = ""
-
-  sect-title = ""
-  
-  h1 = ""
-  p1 = "You'll also find me at the following places."
-  
-  h2 = ""
-  p2 = ""
-  
-  link-text = ""
-  link-url = ""
-%}
-
-<!-- SECTION NAV BLOCKS -->
-{% include sections-pages/add-sect-nav-blocks.html
-  class = "plain-button black"
-  box-col = ""
-  section-divider = ""
-  ani-triggers = ""
-
-  sect-title = ""
-
-  hightlight = ""
-  
-  block-1-title = "Make Fun Creating"
-  block-1-text = "Webby Award Winning craft blog"
-  block-1-butt-text = "Visit blog"
-  block-1-butt-url = "https://makefuncreating.com"
-
-  block-2-title = "Creative Market"
-  block-2-text = "Awesome templates and fonts"
-  block-2-butt-text = "Visit store"
-  block-2-butt-url = "https://creativemarket.com/HandDrawnTech"
-
-  block-3-title = "Dribble"
-  block-3-text = "Snapshots of latest illustrations"
-  block-3-butt-text = "Visit playbook"
-  block-3-butt-url = "https://dribbble.com/HandDrawnTech"
-%} 
 
 
 
