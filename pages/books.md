@@ -7,12 +7,12 @@ top-bar-class: apple
 
 title: "Turn Free Time, Into Fun Time: Books by Scott Bedford"
 h1: "Turn Free Time, Into Fun Time"
-#h1: "How To Say Goodbye To Screen Time"
+h1: "Inventive Books & Craft Sets by Scott Bedford"
 #----------------------- H1 LENGTH GUIDE ----------------------------
 
 sub-heading: "Three Creative Books for Dads & Kids"
 sub-heading: "With Inventive Books & Craft Sets by Scott Bedford"
-#sub-heading-link: "/projects"
+sub-heading: "Turn Free Time, Into Fun Time"
 
 announcement:
 
