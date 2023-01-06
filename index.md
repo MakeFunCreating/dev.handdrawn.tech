@@ -357,7 +357,7 @@ meta-description: Hand Drawn Tech is the official home of Scott Bedford's whimsi
 
 <!-- SECTION TEXT & IMAGE -->
 {% include sections-pages/add-sect-text-image.html
-  class = "full-image no-frame large-image"
+  class = "full-image no-frame large-image no-top-illo"
   section-divider = ""
   ani-triggers = ""
   bg-slider-uniq-ID = ""

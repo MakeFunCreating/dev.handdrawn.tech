@@ -1,19 +1,22 @@
 # dev.handdrawn.tech
 
 
-### Sep 6th 2022 - v1.1.9
+### Jan 6th 2022 - v1.2.0
 * UPDATED: Text & spacing tweaks
 
-### Sep 6th 2022 - v1.1.8
+### Jan 6th 2022 - v1.1.9
+* UPDATED: Text & spacing tweaks
+
+### Jan 5th 2022 - v1.1.8
 * UPDATED: Text tweak
 
-### Sep 6th 2022 - v1.1.7
+### Jan 5th 2022 - v1.1.7
 * UPDATED: Header text spacing tweaks
 
-### Sep 6th 2022 - v1.1.6
+### Jan 5th 2022 - v1.1.6
 * UPDATED: Text tweak
 
-### Sep 6th 2022 - v1.1.5
+### Jan 5th 2022 - v1.1.5
 * UPDATED: Ubuntu upgrade
 
 ### Sep 6th 2022 - v1.1.4
