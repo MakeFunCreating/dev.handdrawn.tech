@@ -365,7 +365,7 @@ section h2.sect-title {
 
 // "Ubuntu" Overide
 body.ubuntu section h1.sect-title {
-  padding-bottom: 25px;
+  padding-bottom: 0px;
   padding-top: 65px;
   font-size: 4rem;
   @include breakpoint(TP) {
