@@ -76,7 +76,7 @@ meta-description: ""
 
 <!-- SECTION LOGOS -->
 {% include sections-pages/add-sect-logos.html
-  class = ""
+  class = "bot-pad-cancel"
   section-divider = ""
   ani-triggers = ""
 
@@ -96,6 +96,7 @@ meta-description: ""
   link-text = ""
   link-url = ""
 %}
+
 
 
 
@@ -151,6 +152,9 @@ meta-description: ""
   text = " We used Scott's services to create a professional looking Investor Proposal - outstanding value and very unique."
   author = "- Peter M, Technology Entrepreneur, London"
 %}
+
+
+
 
 
 <!-- SECTION TEXT -->
