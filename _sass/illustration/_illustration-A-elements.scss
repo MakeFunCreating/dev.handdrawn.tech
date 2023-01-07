@@ -23,7 +23,8 @@
 
 //
 
-.section-collection-cat-tag h5.title a  { 
+.section-collection-cat-tag h5.title a  {
+    font-weight: normal;
     font-size: 1.85rem;
     @include breakpoint(TP) {
         font-size: 1.9rem;

@@ -1,9 +1,9 @@
 ---
 
 layout: illustration-details
-layout-sub-type:
+layout-sub-type: ubuntu
 
-top-bar-class:
+top-bar-class: apple
 
 title: Human Assisted Robot Delivering Food Order by Lifting up Roof
 title: Robot Delivering Food to a Women Sitting Inside Her House

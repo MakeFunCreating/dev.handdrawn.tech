@@ -1,9 +1,9 @@
 ---
 
 layout: illustration-details
-layout-sub-type:
+layout-sub-type: ubuntu
 
-top-bar-class:
+top-bar-class: apple
 
 title: Competing Businesses (Represented by Boxing Robots) Fighting
 slug: competing-businesses-represented-by-boxing-robots-fighting

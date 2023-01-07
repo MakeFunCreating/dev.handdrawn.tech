@@ -1,9 +1,9 @@
 ---
 
 layout: illustration-details
-layout-sub-type:
+layout-sub-type: ubuntu
 
-top-bar-class:
+top-bar-class: apple
 
 title: Robot Holding the Earth and Broadcasting to It Using a Megaphone
 slug: robot-holding-the-earth-and-broadcasting-to-it-using-a-megaphone

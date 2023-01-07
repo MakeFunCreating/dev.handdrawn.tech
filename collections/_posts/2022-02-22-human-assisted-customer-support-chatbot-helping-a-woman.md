@@ -1,9 +1,9 @@
 ---
 
 layout: illustration-details
-layout-sub-type:
+layout-sub-type: ubuntu
 
-top-bar-class:
+top-bar-class: apple
 
 title: Human Assisted Customer Support Chatbot Helping a Woman
 title: Women at Home Speaking to a Customer Support Chatbot

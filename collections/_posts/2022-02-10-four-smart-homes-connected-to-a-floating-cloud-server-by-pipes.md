@@ -1,9 +1,9 @@
 ---
 
 layout: illustration-details
-layout-sub-type:
+layout-sub-type: ubuntu
 
-top-bar-class:
+top-bar-class: apple
 
 title: Four Smart Homes Connected to a Floating Cloud Server by Pipes
 slug: four-smart-homes-connected-to-a-floating-cloud-server-by-pipes
