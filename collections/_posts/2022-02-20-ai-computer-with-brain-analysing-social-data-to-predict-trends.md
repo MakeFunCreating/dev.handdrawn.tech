@@ -1,9 +1,9 @@
 ---
 
 layout: illustration-details
-layout-sub-type:
+layout-sub-type: ubuntu
 
-top-bar-class:
+top-bar-class: apple
 
 title: AI Computer (With Brain) Analysing Social Data to Predict Trends
 slug: ai-computer-with-brain-analysing-social-data-to-predict-trends

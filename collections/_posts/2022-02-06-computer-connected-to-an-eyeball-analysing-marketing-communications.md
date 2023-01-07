@@ -1,9 +1,9 @@
 ---
 
 layout: illustration-details
-layout-sub-type:
+layout-sub-type: ubuntu
 
-top-bar-class:
+top-bar-class: apple
 
 title: Computer Connected to an Eyeball Analysing Marketing Communications
 slug: computer-connected-to-an-eyeball-analysing-marketing-communications

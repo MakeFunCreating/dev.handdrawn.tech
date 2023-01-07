@@ -1,9 +1,9 @@
 ---
 
 layout: illustration-details
-layout-sub-type:
+layout-sub-type: ubuntu
 
-top-bar-class:
+top-bar-class: apple
 
 title: Craft Tools and Materials Featuring Toilet Rolls and a Coke Can
 slug: craft-tools-and-materials-featuring-toilet-rolls-and-a-coke-can

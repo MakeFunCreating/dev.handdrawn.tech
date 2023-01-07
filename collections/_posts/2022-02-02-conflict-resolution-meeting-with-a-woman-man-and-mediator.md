@@ -1,9 +1,9 @@
 ---
 
 layout: illustration-details
-layout-sub-type:
+layout-sub-type: ubuntu
 
-top-bar-class:
+top-bar-class: apple
 
 title: Conflict Resolution Meeting With a Woman, Man and Mediator
 slug: conflict-resolution-meeting-with-a-woman-man-and-mediator

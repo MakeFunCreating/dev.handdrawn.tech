@@ -1,9 +1,9 @@
 ---
 
 layout: illustration-details
-layout-sub-type:
+layout-sub-type: ubuntu
 
-top-bar-class:
+top-bar-class: apple
 
 title: Cyber Terrorist Stealing Data From a Highly Secure Data Silo
 slug: cyber-terrorist-stealing-data-from-a-highly-secure-data-silo

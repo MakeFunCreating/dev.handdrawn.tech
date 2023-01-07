@@ -1,9 +1,9 @@
 ---
 
 layout: illustration-details
-layout-sub-type:
+layout-sub-type: ubuntu
 
-top-bar-class:
+top-bar-class: apple
 
 title: Tough-Nut Cracking Machine With Computerised Hydraulic Hammer
 slug: tough-nut-cracking-machine-with-computerised-hydraulic-hammer

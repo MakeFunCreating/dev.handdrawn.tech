@@ -1,9 +1,9 @@
 ---
 
 layout: illustration-details
-layout-sub-type:
+layout-sub-type: ubuntu
 
-top-bar-class:
+top-bar-class: apple
 
 title: Person Wearing a Jet Pack Assembling Pipes Using Robotic Tools
 slug: person-wearing-a-jet-pack-assembling-pipes-using-robotic-tools
