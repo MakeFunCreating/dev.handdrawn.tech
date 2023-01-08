@@ -198,7 +198,7 @@
   }
 }
 
-.section-text-image.full-image.large-image img {
+.section-text-image.full-image img {
   @include breakpoint(D) {
     max-height: 630px;
   }

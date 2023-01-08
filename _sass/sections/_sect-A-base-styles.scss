@@ -360,7 +360,10 @@ section .sect-title {
 }
 
 section h2.sect-title {
-  padding-bottom: 25px;
+ padding-bottom: 15px;
+  @include breakpoint(TP) {
+    padding-bottom: 22px;
+  }
 }
 
 // "Ubuntu" Overide

@@ -64,7 +64,7 @@ meta-description: Hand Drawn Tech is the official home of Scott Bedford's whimsi
 
 <!-- SECTION TEXT & IMAGE -->
 {% include sections-pages/add-sect-text-image.html
-  class = "full-image no-frame join large-image"
+  class = "full-image no-frame join"
   section-divider = ""
   ani-triggers = ""
   bg-slider-uniq-ID = ""
@@ -107,17 +107,6 @@ meta-description: Hand Drawn Tech is the official home of Scott Bedford's whimsi
   link-text = "How to Get Them"
   link-url = "/the-licence-model/"
 %}
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -208,7 +197,7 @@ meta-description: Hand Drawn Tech is the official home of Scott Bedford's whimsi
 
 <!-- SECTION TEXT & IMAGE -->
 {% include sections-pages/add-sect-text-image.html
-  class = "full-image no-frame large-image"
+  class = "full-image no-frame"
   section-divider = ""
   ani-triggers = "robotAni"
   bg-slider-uniq-ID = ""
@@ -239,7 +228,7 @@ meta-description: Hand Drawn Tech is the official home of Scott Bedford's whimsi
 
 <!-- SECTION TEXT & IMAGE -->
 {% include sections-pages/add-sect-text-image.html
-  class = "full-image no-frame large-image"
+  class = "full-image no-frame"
   section-divider = ""
   ani-triggers = ""
   bg-slider-uniq-ID = ""
@@ -270,7 +259,7 @@ meta-description: Hand Drawn Tech is the official home of Scott Bedford's whimsi
 
 <!-- SECTION TEXT & IMAGE -->
 {% include sections-pages/add-sect-text-image.html
-  class = "full-image no-frame large-image"
+  class = "full-image no-frame"
   section-divider = ""
   ani-triggers = ""
   bg-slider-uniq-ID = ""
@@ -299,7 +288,7 @@ meta-description: Hand Drawn Tech is the official home of Scott Bedford's whimsi
 
 <!-- SECTION TEXT & IMAGE -->
 {% include sections-pages/add-sect-text-image.html
-  class = "full-image no-frame black large-image bg-slider"
+  class = "full-image no-frame black bg-slider"
   section-divider = ""
   ani-triggers = ""
   bg-slider-uniq-ID = "slider-1"
@@ -328,7 +317,7 @@ meta-description: Hand Drawn Tech is the official home of Scott Bedford's whimsi
 
 <!-- SECTION TEXT & IMAGE -->
 {% include sections-pages/add-sect-text-image.html
-  class = "full-image no-frame large-image"
+  class = "full-image no-frame"
   section-divider = ""
   ani-triggers = ""
   bg-slider-uniq-ID = ""
@@ -357,7 +346,7 @@ meta-description: Hand Drawn Tech is the official home of Scott Bedford's whimsi
 
 <!-- SECTION TEXT & IMAGE -->
 {% include sections-pages/add-sect-text-image.html
-  class = "full-image no-frame large-image no-top-illo"
+  class = "full-image no-frame no-top-illo"
   section-divider = ""
   ani-triggers = ""
   bg-slider-uniq-ID = ""
@@ -395,7 +384,7 @@ meta-description: Hand Drawn Tech is the official home of Scott Bedford's whimsi
 
 <!-- SECTION TEXT & IMAGE -->
 {% include sections-pages/add-sect-text-image.html
-  class = "full-image no-frame large-image"
+  class = "full-image no-frame"
   section-divider = ""
   ani-triggers = ""
   bg-slider-uniq-ID = ""
@@ -425,7 +414,7 @@ meta-description: Hand Drawn Tech is the official home of Scott Bedford's whimsi
 
 <!-- SECTION TEXT & IMAGE -->
 {% include sections-pages/add-sect-text-image.html
-  class = "full-image no-frame large-image"
+  class = "full-image no-frame"
   section-divider = ""
   ani-triggers = ""
   bg-slider-uniq-ID = ""
@@ -451,7 +440,7 @@ meta-description: Hand Drawn Tech is the official home of Scott Bedford's whimsi
 
 <!-- SECTION TEXT & IMAGE -->
 {% include sections-pages/add-sect-text-image.html
-  class = "full-image no-frame large-image"
+  class = "full-image no-frame"
   section-divider = ""
   ani-triggers = ""
   bg-slider-uniq-ID = ""
