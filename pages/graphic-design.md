@@ -99,7 +99,7 @@ meta-description: ""
   bg-slider-uniq-ID = ""
   bg-slider-classes = ""
 
-  sect-title = "Get the Most of Your Budget"
+  sect-title = "Get the Most From Your Budget"
 
   h3-sub-title = ""
   h4-sub-title = ""
