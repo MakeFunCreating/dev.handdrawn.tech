@@ -199,7 +199,7 @@ meta-description: ""
 
 	h3-sub-title = ""
 	h4-sub-title = ""
-	text = "For use in social media, content marketing, or on brand sites, they can be provided as an animated GIF or conventional video format."
+	text = "Sometimes a short looped animation is all that is required, especially effective on brand sites and social media. Can be provided as an animated GIF or conventional video format."
 	img-src = "content/pages/home/section-images/megaphone/#jpg"
   	img-alt = "Crafts by Scott Bedford"
 
@@ -229,7 +229,7 @@ meta-description: ""
 	sect-title = "Get in Touch"
 	
 	h1 = ""
-	p1 = "For more information, timings, and an accurate quote send me a message."
+	p1 = "For more information, timings, and an idea of costs send Scott a message."
 	
 	h2 = ""
 	p2 = ""
@@ -249,7 +249,7 @@ meta-description: ""
   sect-title = "Book a Free Consultation"
   
   h1 = ""
-  p1 = "If you would like to discuss a project in-person over zoom, please book a 'consultation'."
+  p1 = "If you would like to discuss a project with Scott, over Zoom or Teams, please book a 'consultation'."
 
   h2 = ""
   p2 = ""

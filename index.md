@@ -534,11 +534,15 @@ meta-description: Hand Drawn Tech is the official home of Scott Bedford's whimsi
   p1 = ""
 
   h2 = "Licensing & Commissioning"
-  p2 = "To use one of my illustrations, you can either <a href=\"/how-to-licence-existing-illustrations/\">licence</a> an existing illustration, or <a href=\"/how-to-commission-new-illustrations/\">commission</a> a totally new illustration. To get a quote, or to discuss a project, please use the chat feature to get in touch."
+  p2 = "<b>Hand Drawn <em>Tech</em></b> illustrations can be commissioned as new illustrations, or existing illustrations can be licensed (read <a href=\"/the-licence-model/\">about licensing</a> for more details). To get an idea of costs, please use the chat feature to get in touch."
   
   link-text = "Start chat"
   link-url = "open-chat"
 %}
+
+
+
+
 
 
 
@@ -551,7 +555,7 @@ meta-description: Hand Drawn Tech is the official home of Scott Bedford's whimsi
   sect-title = "Book A Consultation"
   
   h1 = ""
-  p1 = "For impartial advice on how to maximise your brand, marketing or content using my illustrations book a meeting. I'd love to help, and no, you won't be wasting my time."
+  p1 = "For impartial advice on how to maximise your brand, marketing or content using <b>Hand Drawn <em>Tech</em></b> illustrations book a meeting with Scott, he'd love to discuss your project."
 
   h2 = ""
   p2 = ""

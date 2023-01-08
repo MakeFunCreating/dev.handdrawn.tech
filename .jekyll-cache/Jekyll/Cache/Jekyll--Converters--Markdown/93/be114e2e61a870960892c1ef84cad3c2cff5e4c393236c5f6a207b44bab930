@@ -1,6 +1,6 @@
-I"Õ<!-- SECTION TEXT & IMAGE -->
+I"Ö<!-- SECTION TEXT & IMAGE -->
 
-<section class="section-text-image strip-line full-image join large-image squeeze no-frame right no-top-illo none no-illo strip-top no-sect-title">
+<section class="section-text-image strip-line full-image join no-top-illo squeeze no-frame right none no-illo strip-top no-sect-title">
 
     
 
@@ -98,7 +98,7 @@
       
 
         <div class="sect-title-wrapper">
-          <h2 class="sect-title">Send a Message</h2>
+          <h2 class="sect-title">Ingenious illustrations</h2>
           <div class="underline"></div>
         </div>
 
@@ -107,7 +107,7 @@
       <div class="text-wrapper">    
         
         
-          <p>Use the chat function to leave a message, if I am not available you'll be asked to leave an email address. Normally, I reply within 12 hours, often much sooner.</p>
+          <p>Find out why my illustration help win hearts, minds, and new customers</p>
         
 
         
@@ -138,8 +138,8 @@
          
 
         
-          <div class="button-wrapper open-chat disable"><a onclick="tidioChatApi.open()" class="link-button smaller">Start chat <span class="right-arrow">â€º</span></a></div> 
-          <div class="cookie-block-wrapper"><p class="cookie-block-text smallest">Please allow cookies to enable chat</p></div> 
+          <div class="button-wrapper "><a href="/" class="link-button smaller">Show Me <span class="right-arrow">â€º</span></a></div> 
+           
          
 
       </div>
@@ -151,66 +151,6 @@
 
     </div>
     
-</section>
-
-<!-- SECTION CALENDAR -->
-
-<section class="section-calendar strip-line black no-illo strip-top">
-
-    
-
-    <div class="content-wrapper ">
-
-      
-        <div class="sect-title-wrapper">
-          <h2 class="sect-title">Book a Free Consultation</h2>
-          <div class="underline"></div>
-        </div>
-      
-
-        <div class="col-wrapper col-1">
-        
-        
-          <div class="text-wrapper">
-            
-            
-            
-              <p class="text uniq-ID-ABC">For impartial advice on how to maximise your brand, marketing or content using my illustrations book a meeting. I'd love to help, and no, you won't be wasting my time.</p>
-            
-            
-
-          </div>
-        
-        </div>
-
-
-        <div class="col-wrapper col-2">
-          <!-- Calendly inline widget begin -->
-          <div class="calendly-inline-widget" data-url="https://calendly.com/handdrawntech/30min?hide_gdpr_banner=1&amp;background_color=f5f6f5&amp;text_color=373737&amp;primary_color=eb2a85" style="width:100%;min-width:320px;height:100%;"></div>
-          <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async=""></script>
-          <!-- Calendly inline widget end -->
-        </div>
-
-      
-      <div class="bg-texture-wrapper">
-        <div class="frame show"><div class="top-frame"></div><div class="bottom-frame"></div></div>
-          
-          
-            
-              <div class="bg-texture"></div>
-            
-      </div>
-      
-
-    </div>
-
-
-
-
-
-
-
-
 </section>
 
 :ET

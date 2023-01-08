@@ -11,8 +11,8 @@ h1: "Pitches, Presentations and Proposals"
 #----------------------- H1 LENGTH GUIDE ----------------------------
 
 # sub-heading: "Marketing Collateral With A Human Touch"
-# sub-heading: "Designed in the Hand Drawn Tech Style"
 sub-heading: Design With Inventive Hand Drawn Elements
+sub-heading: Graphic Design Incorporating Inventive Hand Drawn Elements
 
 announcement:
 
@@ -93,17 +93,17 @@ meta-description: ""
 
 <!-- SECTION TEXT & IMAGE -->
 {% include sections-pages/add-sect-text-image.html
-  class = "full-image right no-frame no-top-illo black"
+  class = "full-image right no-frame grey"
   section-divider = ""
   ani-triggers = ""
   bg-slider-uniq-ID = ""
   bg-slider-classes = ""
 
-  sect-title = "Unique and Affordable"
+  sect-title = "Get the Most of Your Budget"
 
   h3-sub-title = ""
   h4-sub-title = ""
-  text = "I have a large library of pre-existing illustrations, which when combined with bespoke illustrations, create a unique yet afforable design that maximises your budget."
+  text = "By mixing existing illustrations (from an extensive back catalogue) with bespoke illustrations, unique and distinctive pitches, presentations and proposals can be created to fit most budgets."
   img-src = ""
   img-alt = ""
 
@@ -161,7 +161,7 @@ meta-description: ""
 	sect-title = "Get in Touch"
 	
 	h1 = ""
-	p1 = "For more information, timings, and an accurate quote send me a message."
+	p1 = "For more information, timings, and an idea of costs send Scott a message."
 	
 	h2 = ""
 	p2 = ""
@@ -181,7 +181,7 @@ meta-description: ""
   sect-title = "Book a Free Consultation"
   
   h1 = ""
-  p1 = "If you would like to discuss a project in-person over zoom, please book a 'consultation'."
+  p1 = "If you would like to discuss a project with Scott, over Zoom or Teams, please book a 'consultation'."
 
   h2 = ""
   p2 = ""

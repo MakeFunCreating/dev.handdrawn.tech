@@ -10,6 +10,8 @@ h1: "About Hand Drawn Tech"
 #----------------------- H1 LENGTH GUIDE ----------------------------
 
 sub-heading: "A Life Time in the Making"
+sub-heading: "And Creator, Illustrator Scott Bedford"
+sub-heading: "And Scott Bedford - Creator, Illustrator, Author"
 #sub-heading-link: ""
 
 announcement:
@@ -64,7 +66,7 @@ meta-description: "A life time in the making, here's how, and why, Hand Drawn Te
 	p1 = ""
 	
 	h2 = ""
-	p2 = "I have drawn machines, contraptions and gadgets for as long as I can remember. As a child, the Wacky Races and Catch the Pigeon cartoons left a lasting impression, not because of Dick Dastardly and Mutley, but because of the wacky cars and aeroplanes."
+	p2 = "Scott has drawn machines, contraptions and gadgets for as long as he can remember. As a child, the Wacky Races and Catch the Pigeon cartoons left a lasting impression, not Dick Dastardly and Mutley, but rather the wacky cars and aeroplanes."
 	
 	h3 = ""
 	p3 = ""
@@ -87,7 +89,7 @@ meta-description: "A life time in the making, here's how, and why, Hand Drawn Te
 	sect-title = "Early Accolades"
 
 	h1 = ""
-	p1 = "Aged 8, I entered a national art competition sponsoured by Kraft cheeses. I won my age category with an inventive drawing of a cheese factory, boasting a Rude Goldberg style production line (my prize was a visit to children's TV art icon, Tony Hart, at the BBC's Bristol studios)."
+	p1 = "Aged 8, Scott entered a national art competition sponsored by Kraft cheeses. He won his age category with an inventive drawing of a cheese factory, boasting a Rude Goldberg style production line (his prize was a visit to children's TV art icon, Tony Hart, at the BBC's Bristol studios)."
 	
 	h2 = ""
 	p2 = ""
@@ -111,7 +113,7 @@ meta-description: "A life time in the making, here's how, and why, Hand Drawn Te
 	sect-title = "Professional Accolades"
 
 	h1 = ""
-	p1 = "Alongside a career as a Creative Director, I have authored and illustrated <a href=\"/books\">three books</a> and am currently working on no. 4. I have won many creative awards, and have had one of my signature illustrations published in the prestigious Creative Review Illustration Annual."
+	p1 = "Alongside a career as a Creative Director, Scott authored and illustrated <a href=\"/books\">three books</a> and is currently working on no. 4. He has won many creative awards, and had one of his signature illustrations published in the prestigious Creative Review Illustration Annual."
 	
 	h2 = ""
 	p2 = ""
@@ -136,7 +138,7 @@ meta-description: "A life time in the making, here's how, and why, Hand Drawn Te
 	sect-title = "Hand Drawn Tech"
 
 	h1 = ""
-	p1 = "Encouraged by positive client feedback, I was convinced there was a market for my whimsical low-tech creations. So, in June 2022 I launched <b>Hand Drawn Tech</b>, a place to licence my inventive illustrations or to commission new ones."
+	p1 = "Encouraged by positive client feedback, Scott was convinced there was a market for his whimsical low-tech creations. So, in June 2022 he launched <b>Hand Drawn Tech</b>, a place to licence his inventive illustrations or to commission new ones."
 	
 	h2 = ""
 	p2 = ""
@@ -173,7 +175,7 @@ meta-description: "A life time in the making, here's how, and why, Hand Drawn Te
 	sect-title = "Get in Touch"
 	
 	h1 = ""
-	p1 = "For more information, timings, and an accurate quote send me a message."
+	p1 = "Use the chat function to leave a message, you'll be asked to leave an email address. Scott will normally reply within 12 hours, often much sooner."
 	
 	h2 = ""
 	p2 = ""
