@@ -1,4 +1,4 @@
-I"ß—<!-- SECTION TEXT & IMAGE -->
+I"…˜<!-- SECTION TEXT & IMAGE -->
 
 <section class="section-text-image strip-line full-image no-frame join none no-illo strip-top no-sect-title">
 
@@ -88,6 +88,11 @@
 
     <div class="content-wrapper">
 
+      
+        <div class="sect-title-wrapper">
+          <h2 class="sect-title">What is Hand Drawn Tech</h2>
+          <div class="underline"></div>
+        </div>
       
 
       <div class="text-wrapper">
@@ -304,7 +309,7 @@
       
 
         <div class="sect-title-wrapper">
-          <h2 class="sect-title">Why They're So Effective</h2>
+          <h2 class="sect-title">Why They Are So Effective</h2>
           <div class="underline"></div>
         </div>
 
