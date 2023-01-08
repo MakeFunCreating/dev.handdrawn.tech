@@ -91,7 +91,7 @@ meta-description: Hand Drawn Tech is the official home of Scott Bedford's whimsi
   section-divider = ""
   ani-triggers = ""
 
-  sect-title = ""
+  sect-title = "What is Hand Drawn Tech"
 
   h3-sub-title-top = ""
   h4-sub-title-top = ""
@@ -172,7 +172,7 @@ meta-description: Hand Drawn Tech is the official home of Scott Bedford's whimsi
   section-divider = ""
   ani-triggers = ""
 
-  sect-title = "Why They're So Effective"
+  sect-title = "Why They Are So Effective"
   
   h1 = ""
   p1 = "<b>Hand Drawn <em>Tech</em></b> illustrations are an extremely powerful communications tool, here's 9 reasons why:"
