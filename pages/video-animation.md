@@ -5,7 +5,7 @@ layout-sub-type: ubuntu
 
 top-bar-class: apple
 
-title: "Hand Drawn Tech - Video Animation Service"
+title: "Whiteboard Explainer Videos With a Human Touch"
 h1: "Whiteboard Animation Service"
 h1: "Video Animation With a Human Touch"
 h1: "Explainer Videos With a Human Touch"
@@ -199,7 +199,7 @@ meta-description: ""
 
 	h3-sub-title = ""
 	h4-sub-title = ""
-	text = "I can also create animation loops for use in social media, content marketing, or on brand sites, they can be provided as an animated GIF or conventional video format"
+	text = "For use in social media, content marketing, or on brand sites, they can be provided as an animated GIF or conventional video format."
 	img-src = "content/pages/home/section-images/megaphone/#jpg"
   	img-alt = "Crafts by Scott Bedford"
 

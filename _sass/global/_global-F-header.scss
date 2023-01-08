@@ -490,6 +490,18 @@ header.no-card .page-title {
   }
 }
 
+// If header 'no-image' & 'no-card' with 1st section 'full-bleed image' add bot padding
+header .content-wrapper .title-card .text-wrapper.full-bleed-image-pad {
+  padding-bottom: 10px;
+  @include breakpoint(TP) {
+    padding-bottom: 20px;
+  }
+  @include breakpoint(D) {
+    padding-bottom: 30px;
+  }
+}
+
+
 ////////////////////////////////////////////////
 
 // "Ubuntu" Overide

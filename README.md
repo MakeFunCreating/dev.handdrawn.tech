@@ -1,6 +1,10 @@
 # dev.handdrawn.tech
 
 
+
+### Jan 8th 2022 - v1.2.3
+* UPDATED: Added design carousel
+
 ### Jan 7th 2022 - v1.2.2
 * UPDATED: Text tweaks
 

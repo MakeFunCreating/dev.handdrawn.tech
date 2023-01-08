@@ -5,19 +5,19 @@ layout-sub-type: ubuntu
 
 top-bar-class: apple
 
-title: "Hand Drawn Tech - Graphic Design Service"
+title: "Pitches, Presentations and Proposals Incorporating Hand Drawn Elements"
 h1: "Graphic Design Service"
 h1: "Pitches, Presentations and Proposals"
 #----------------------- H1 LENGTH GUIDE ----------------------------
 
 # sub-heading: "Marketing Collateral With A Human Touch"
 # sub-heading: "Designed in the Hand Drawn Tech Style"
-sub-heading: With a Unique Hand Drawn Aesthetic
+sub-heading: Design With Inventive Hand Drawn Elements
 
 announcement:
 
 header-image: content/pages/graphic-design/full-bleed-presentations-3/#jpg
-header-class: no-header #no-image no-card ubuntu
+header-class: no-card no-image grey #no-image no-card ubuntu
 featured-image: header
 
 author:
@@ -29,22 +29,12 @@ meta-description: ""
 
 
 
-<!-- SECTION TEXT -->
-{% include sections-pages/add-sect-header-alt.html
-  ani-triggers = ""
-
-  sect-title = "Pitches, Presentations and Proposals"
-  sub-title = ""
-  p1 = "For more information, timings, and an accurate quote send me a message."
-  
-%}
-
 
 
 
 <!-- SECTION FULL BLEED IMAGES -->
 {% include sections-pages/add-sect-full-bleed-images.html
-  class = "tall strip-lines"
+  class = "strip-lines grey"
   ani-triggers = ""
 
   img-src-1 = "content/pages/graphic-design/full-bleed-presentations-1/#jpg"
@@ -84,7 +74,7 @@ meta-description: ""
 
   h3-sub-title-top = ""
   h4-sub-title-top = ""
-  text-top = "Business pitches, presentations and proposals featuring <b>Hand Drawn <em>Tech</em></b> illustrations are a proven new business winner. They look professional, feel human, and communicate ideas in a compelling way. They have been battle tested in many corporte boardrooms and consistently deliver."
+  text-top = "Business pitches, presentations and proposals featuring <b>Hand Drawn <em>Tech</em></b> illustrations are a proven new business winner. They look professional, feel human, and communicate ideas in a compelling way. They have been battle tested in many corporate boardrooms and consistently deliver."
 
   logo-png-array = "panasonic,samsung,disney,vodafone,ford,southwest"
   logo-col = "black"
@@ -101,37 +91,40 @@ meta-description: ""
 
 
 
-
-
-
-<!-- SECTION FULL BLEED IMAGES -->
-{% include sections-pages/add-sect-full-bleed-images.html
-  class = "tall strip-lines"
+<!-- SECTION TEXT & IMAGE -->
+{% include sections-pages/add-sect-text-image.html
+  class = "full-image right no-frame no-top-illo black"
+  section-divider = ""
   ani-triggers = ""
+  bg-slider-uniq-ID = ""
+  bg-slider-classes = ""
 
-  img-src-1 = "content/pages/graphic-design/full-bleed-presentations-1/#jpg"
-  img-alt-1 = ""
-  img-txt-1 = ""
+  sect-title = "Unique and Affordable"
 
-  img-src-2 = "content/pages/graphic-design/full-bleed-presentations-2/#jpg"
-  img-alt-2 = ""
-  img-txt-2 = ""
+  h3-sub-title = ""
+  h4-sub-title = ""
+  text = "I have a large library of pre-existing illustrations, which when combined with bespoke illustrations, create a unique yet afforable design that maximises your budget."
+  img-src = ""
+  img-alt = ""
 
-  img-src-3 = "content/pages/graphic-design/full-bleed-presentations-3/#jpg"
-  img-alt-3 = ""
-  img-txt-3 = ""
+  video-active = "false"
+  video-uniqueID = ""
+  video-type = "vimeo"
+  video-src = "https://player.vimeo.com"
+  video-class = "sixteen-nine"
 
-  img-src-4 = "content/pages/graphic-design/full-bleed-presentations-4/#jpg"
-  img-alt-4 = ""
-  img-txt-4 = ""
+  carousel-active = "true"
+  carousel-uniq-ID = "illustrations"
+  carousel-img-dir = "content/pages/graphic-design/carousel"
+  carousel-img-num = 8
 
-  img-src-5 = ""
-  img-alt-5 = ""
-  img-txt-5 = ""
-
-  image-array = "4"
-
+  link-text = ""
+  link-url = ""
 %}
+
+
+
+
 
 
 
@@ -145,13 +138,15 @@ meta-description: ""
   section-divider = ""
   ani-triggers = ""
 
-  sect-title = "What People Say"
+  sect-title = "What Clients Say"
 
   avatar-src = "/images/content/quote-avatars/man.png"
   rating = "5/5"
   text = " We used Scott's services to create a professional looking Investor Proposal - outstanding value and very unique."
   author = "- Peter M, Technology Entrepreneur, London"
 %}
+
+
 
 
 

@@ -4,9 +4,10 @@
 {% assign temp-header-class = page.header-class | downcase %}
 {% assign header-class = temp-header-class %}
 
-{% unless temp-header-class contains "none" or temp-header-class contains "pink" or temp-header-class contains "black" or temp-header-class contains "blue" %}
+{% if header-class contains "pink" or header-class contains "black" or header-class contains "blue" or header-class contains "grey" %}
+{% else%}
   {% assign header-class = header-class | append: " none" %}
-{% endunless %}
+{% endif %}
 
 {% if page.header-image and page.header-image != empty %}
   {% unless temp-header-class contains "tall" or temp-header-class contains "narrow" %}

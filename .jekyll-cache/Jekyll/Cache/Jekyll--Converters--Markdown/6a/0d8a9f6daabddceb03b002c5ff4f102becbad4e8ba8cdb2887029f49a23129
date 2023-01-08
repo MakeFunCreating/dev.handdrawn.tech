@@ -1,116 +1,146 @@
-I")3<!-- SECTION TEXT -->
+I"2<!-- SECTION TEXT & IMAGE -->
 
-<!-- BASED ON: SECTION TEXT -->
-<section class="section-header-alt grey squeeze no-illo-butt strip-top-butt strip-bottom">
-    <div class="content-wrapper">
-        <div class="sect-title-wrapper">
-          <h1 class="sect-title top-pad">Pitches, Presentations and Proposals</h1>
-          <div class="underline"></div>
-        </div>
-      <div class="text-wrapper"> 
-        <!--<h4 class="caps"></h4>-->
-        
-        <p>For more information, timings, and an accurate quote send me a message.</p>        
-      </div>
-      <div class="bg-texture-wrapper">
-        <div class="frame show"><div class="top-frame"></div><div class="bottom-frame"></div></div>
-        <div class="bg-texture"></div>
-      </div>
-    </div>
-</section>
-
-<!-- SECTION FULL BLEED IMAGES -->
-
-<section class="section-full-bleed-images strip-line tall strip-lines none no-illo strip-top no-sect-title">
+<section class="section-text-image strip-line full-image no-frame join no-top-gap none no-illo strip-top no-sect-title">
 
     
 
     <div class="content-wrapper ">
 
-
       
 
-
-
-      
-      
-      
-      
-      
-      
-
-
-      
-
-
-
-      
+        <div class="col-wrapper col-1">
         
-
-        <div class="col-wrapper col-1 tall">
-
-           
-           
-           
-           
+        
+        </div>
 
 
-           
-           
-            
-
+        <div class="col-wrapper col-2">
 
           
 
-            <div class="frame-wrapper">
-                <div class="top-frame"></div>
-                <div class="left-frame"></div>
-                <div class="right-frame"></div>
-                <div class="bottom-frame"></div>
-
-                <div class="bg-img-wrapper show">
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-  
-                    <picture>
-                      <source media="(min-width: 1200px)" srcset="https://handdrawn.tech/images/content/pages/graphic-design/full-bleed-presentations-3/3200px.jpg" />
-                      <source media="(min-width: 992px)" srcset="https://handdrawn.tech/images/content/pages/graphic-design/full-bleed-presentations-3/3200px.jpg" />
-                        <source media="(min-width: 768px)" srcset="https://handdrawn.tech/images/content/pages/graphic-design/full-bleed-presentations-3/1900px.jpg" />
-                          <source media="(min-width: 650px)" srcset="https://handdrawn.tech/images/content/pages/graphic-design/full-bleed-presentations-3/1000px.jpg" />
-                      <img src="https://handdrawn.tech/images/content/pages/graphic-design/full-bleed-presentations-3/1000px.jpg" alt="" loading="lazy" />
-                    </picture>
-                </div>
-              </div>
+          <div class="frame-wrapper">
             
+            <div class="frame">
+              
+            </div>
+            
+
+            <div class="img-wrapper">
+              
+              
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+  
+                <picture>
+                  <source media="(min-width: 1150px)" srcset="https://handdrawn.tech/images/content/pages/branding/section-images/case-study/2000px.png" />
+                  <source media="(min-width: 450px)" srcset="https://handdrawn.tech/images/content/pages/branding/section-images/case-study/1500px.png" />
+                  <img src="https://handdrawn.tech/images/content/pages/branding/section-images/case-study/1000px.png" width="100%" height="auto" alt="Open book mock-up of casestudy" loading="lazy" />
+                </picture>
+
+            </div> 
+           </div>
           
 
         </div>
 
       
+      <div class="bg-texture-wrapper">
+        <div class="frame show"><div class="top-frame"></div><div class="bottom-frame"></div></div>
+          
+          
+            
+              <div class="bg-texture"></div>
+            
+      </div>
+      
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+<!-- SECTION TEXT -->
+
+<section class="section-text strip-line none no-illo strip-top">
+
+    
+
+    <div class="content-wrapper">
 
       
+
+        <div class="sect-title-wrapper">
+          <h2 class="sect-title">Leverage The Latest Trend</h2>
+          <div class="underline"></div>
+        </div>
+
+      
+  
+      <div class="text-wrapper">    
+        
+        
+          <p>Consumers are tiring of the impersonal aesthetic of vector illustrations. This quote from the Graphic Artists Guild explains why authentic styles are on the rise.</p>
+        
+
+        
+        
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+
+
+         
+
+         
+
+      </div>
+
       <div class="bg-texture-wrapper">
+        <div class="frame show"><div class="top-frame"></div><div class="bottom-frame"></div></div>
         <div class="bg-texture"></div>
       </div>
 
-      <div class="top-frame"></div>
-
     </div>
-      
-
+    
 </section>
 
 <!-- SECTION LOGOS -->
@@ -132,7 +162,7 @@
         
   
         
-          <div class="text-top"><p>Business pitches, presentations and proposals featuring <b>Hand Drawn <em>Tech</em></b> illustrations are a proven new business winner. They look professional, feel human, and communicate ideas in a compelling way. They have been battle tested in many corporte boardrooms and consistently deliver.</p></div>
+          <div class="text-top"><p>Business pitches, presentations and proposals featuring <b>Hand Drawn <em>Tech</em></b> illustrations are a proven new business winner. They look professional, feel human, and communicate ideas in a compelling way. They have been battle tested in many corporate boardrooms and consistently deliver.</p></div>
         
 
 
@@ -228,7 +258,7 @@
 
 <!-- SECTION FULL BLEED IMAGES -->
 
-<section class="section-full-bleed-images strip-line tall strip-lines none no-illo strip-top no-sect-title">
+<section class="section-full-bleed-images strip-line strip-lines none no-illo strip-top no-sect-title">
 
     
 
@@ -254,7 +284,7 @@
       
         
 
-        <div class="col-wrapper col-1 tall">
+        <div class="col-wrapper col-1 ">
 
            
            
