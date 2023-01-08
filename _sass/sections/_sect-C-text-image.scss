@@ -575,8 +575,24 @@ section .bg-texture-wrapper .bg-texture.bg-slider.pink-light {
 .section-text-image.right .video-box .img-top-illo-wrapper {
   // Image top illo positioned on left side
   right: auto;
-  left: -148px;
+  width: 270px;
+  height: 130px;
+  top: -58px;
+  left: -117px;
+  @include breakpoint(TP) {
+    width: 280px;
+    height: 130px;
+    top: -61px;
+    left: -131px;
+  }
+  @include breakpoint(D) {
+    left: -128px;
+    width: 280px;
+    height: 130px;
+    top: -61px;
+  }
 }
+
 
 .section-text-image.right .img-top-illo,
 .section-text-image.right .video-box .img-top-illo { // Video
