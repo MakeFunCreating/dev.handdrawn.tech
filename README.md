@@ -1,6 +1,8 @@
 # dev.handdrawn.tech
 
 
+### Jan 8th 2022 - v1.2.4
+* UPDATED: Made copy third person
 
 ### Jan 8th 2022 - v1.2.3
 * UPDATED: Added design carousel

@@ -60,7 +60,7 @@ meta-description: "I'd love to hear from you! Here's how to get in touch and boo
 	sect-title = "Send a Message"
   
 	h1 = ""
-	p1 = "Use the chat function to leave a message, if I am not available you'll be asked to leave an email address. Normally, I reply within 12 hours, often much sooner."
+	p1 = "Use the chat function to leave a message, you'll be asked to leave an email address. Scott will normally reply within 12 hours, often much sooner."
 	
 	h2 = ""
 	p2 = ""
@@ -82,7 +82,7 @@ meta-description: "I'd love to hear from you! Here's how to get in touch and boo
 
   h3-sub-title = ""
   h4-sub-title = ""
-  text = "For impartial advice on how to maximise your brand, marketing or content using my illustrations book a meeting. I'd love to help, and no, you won't be wasting my time."
+  text = "For impartial advice on how to maximise your brand, marketing or content using <b>Hand Drawn <em>Tech</em></b> illustrations book a meeting with Scott, he'd love to discuss your project."
 
 
   link-text = ""
