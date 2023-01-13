@@ -368,12 +368,12 @@ section h2.sect-title {
 
 // "Ubuntu" Overide
 body.ubuntu section h1.sect-title {
-  padding-bottom: 0px;
+  padding-bottom: 21px;
   padding-top: 65px;
   font-size: 4rem;
   @include breakpoint(TP) {
     font-size: 5rem;
-    padding-top: 101px;
+    padding-top: 100px;
   }
   @include breakpoint(D) {
     padding-top: 81px;
@@ -381,20 +381,16 @@ body.ubuntu section h1.sect-title {
   }
 }
 
-
-section h1.sect-title.top-pad {
-  padding-bottom: 0px;
-  margin: 0px;
-  @include breakpoint(TP) {
-    padding-top: 40px;
-  }
-  @include breakpoint(D) {
-    padding-top: 80px;
-  }
+// Overide
+body.ubuntu section.no-content-wrapper-top-pad .content-wrapper {
+  padding-top: 0px !important; 
 }
 
-section .underline {
-  display: none;
+
+
+section .underline,
+header .underline {
+  //display: none;
   background: url(../images/lines/rules/short/black/short-line.png) center center / 120px 4px no-repeat;
   height: 5px;
   width: 150px;

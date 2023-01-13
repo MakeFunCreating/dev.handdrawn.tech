@@ -9,45 +9,62 @@ title: Hand Drawn Tech by Scott Bedford
 title-large: true
 title-nbsp: false
 
+h1: What is Hand&nbsp;Drawn Tech?
+h1: Hand Drawn Illustrations With a Charming Low-Tech Aesthetic
+h1: Add an Authentic Touch to your Marketing & Advertising
+h1: Add an Authentic Touch to Your Marketing & Advertising
+h1: Add an Authentic Touch to Your Communications & Marketing
+h1: Add an Authentic Touch to Your Marketing Communications
+h1: Add an Authentic Touch to Your Communications
+h1: Add Low-Tech Appeal to Your Marketing Communications
+h1: Show Your Customers What You Do In a Way That Makes Them Care
+h1: Win Hearts, Minds & New Business
+h1: Win Hearts, Minds & New Customers
+h1: Explain Stuff In A Way That Makes Your Customers Care
+h1: Hi-Tech Stuff Explained in an Engaging Low-Tech Way
+h1: Add Low-Tech Appeal to Your Marketing Communications
+h1: Show The World What You Do, In a Way That Makes People Care
+h1: Show Your Customers What You Do in a Way That Makes Them Care
+h1: Give your products and services some heart and soul
+h1: Win Hearts, Minds & New Customers
+h1: Add a Human Touch to Your Marketing Communications
+h1: Give Your Marketing Communications a Human Touch
+h1: Explain Stuff in a Way That Makes Your Customers Care
+h1: Add Low-Tech Charm to Your Marketing Communications
+h1: Hi-Tech Stuff Explained in an Engaging Low-Tech Way
+h1: Hi-Tech Stuff Explained in a Seductive Low-Tech Way
+h1: Hi-Tech Stuff Explained in a Whimsical Low-Tech Way
+h1: Hi-Tech Stuff Visualised in an Engaging Low-Tech Way
+h1: Hi-Tech Stuff Visualised in an Ingenious Low-Tech Way
 h1: Hi-Tech Stuff Visualised in a Whimsical Low-Tech Way
 #----------------------- H1 LENGTH GUIDE ----------------------------
 
+# sub-heading: + Why You'll Want Them & How to Get&nbsp;Them
+# sub-heading: + Who They Are For & Why You'll Want&nbsp;Them
+# sub-heading: For Design, Marketing and Publishing
+# sub-heading: Hand Drawn Illustrations With a Low-Tech Aesthetic
+# sub-heading: Hand Drawn Illustrations With Low-Tech Charm
+# sub-heading: With Scott Bedford's Low-Tech Illustrations
+sub-heading: With Scott Bedford's Inventive Illustrations
+# sub-heading: With Scott Bedford's Seductive Low-Tech Illustrations
+# sub-heading: And Win the Hearts & Minds of Your Customers
+# sub-heading: With Scott Bedford's Whimsical Low-Tech Illustrations
+# sub-heading: With Whimsical Hand Drawn Low-Tech Illustrations
+# sub-heading: Hand Drawn Illustrations With a Low-Tech Aesthetic
 sub-heading: Ingenious Hand Drawn Illustrations by Scott Bedford
-sub-heading: Commercial Illustration for Showcasing Technology in a Human Way
 
 announcement:
 
-header-image: content/pages/home/header/robot-drone/#jpg
-header-class: narrow contain no-card no-title none #down-arrow no-header no-card no-title narrow overlay white-text center no-image no-strip
+header-image: content/pages/home/header/how-tweets-made/#jpg
+header-class: no-image no-card #down-arrow no-header no-card no-title narrow overlay white-text center no-image no-strip
 featured-image: header
 
 author:
-permalink:
+permalink: index1/
 footer:
-meta-description: Whimsical hand drawn illustrations for showcasing your business's technology, products and services.
+meta-description: Hand Drawn Tech is the official home of Scott Bedford's whimsical low-tech illustrations, the engaging and authtentic way to explain, demonstrate or market your products and services to your customers and clients.
 
 ---
-
-
-
-<!-- BASED ON: SECTION TEXT -->
-<section class="section-header-alt squeeze no-illo-butt strip-top-butt strip-bottom no-content-wrapper-top-pad">
-    {% assign illo-total = site.posts.size %} 
-    <div class="content-wrapper">
-        <div class="sect-title-wrapper">
-          <h1 class="sect-title">Hi-Tech Stuff Visualised in a Whimsical Low-Tech Way</h1>
-          <div class="underline"></div>
-        </div>
-      <div class="text-wrapper"> 
-        <p class="page-sub-title">Commercial Illustration for Tech Based Businesses by Scott Bedford</p>        
-      </div>
-      <div class="bg-texture-wrapper">
-        <div class="frame show"><div class="top-frame"></div><div class="bottom-frame"></div></div>
-        <div class="bg-texture"></div>
-      </div>
-    </div>
-</section>
-
 
 
 
@@ -84,7 +101,7 @@ meta-description: Whimsical hand drawn illustrations for showcasing your busines
 
   h3-sub-title-top = ""
   h4-sub-title-top = ""
-  text-top = "<b>Hand Drawn <em>Tech</em></b> are whimsical hand drawn illustrations by award winning creator, illustrator and author, Scott Bedford. If you want to explain, demonstrate or showcase your company's technology, products or services (and actually have people pay attention) these are for you."
+  text-top = "<b>Hand Drawn <em>Tech</em></b> are whimsical low-tech illustrations by award winning creative, illustrator and author, Scott Bedford. If you want to showcase, explain or demonstrate your company's products or services (and actually have people pay attention) these are for you."
 
   logo-png-array = "panasonic,samsung,disney,vodafone,ford,southwest"
   logo-col = "black"
