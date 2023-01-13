@@ -1,6 +1,9 @@
 # dev.handdrawn.tech
 
 
+### Jan 13th 2022 - v1.3.0
+* UPDATED: Text changes
+
 ### Jan 13th 2022 - v1.2.9
 * UPDATED: Text changes
 
