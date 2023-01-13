@@ -84,12 +84,12 @@ header.narrow .content-wrapper {
 // 'contain' overide
 
 header.contain.narrow .content-wrapper {
-  height: 450px;
+  height: 380px;
   @include breakpoint(TP) {
     height: auto;
   }
   @include breakpoint(TP) {
-    height: 570px;
+    height: 500px;
   } 
   @include breakpoint(D) {
     height: 570px;
@@ -363,6 +363,18 @@ header .page-sub-title {
   }
 }
 
+// Overide
+.section-header-alt .page-sub-title:not(.small) {
+  font-size: 1.8rem;
+  @include breakpoint(TP) {
+    font-size: 2rem;
+  }
+  @include breakpoint(D) {
+    font-size: 2.3rem;
+  }
+}
+
+
 // Add underline (on cards only)
 header:not(.no-card) .page-sub-title {
  background: url(../images/lines/rules/short/black/short-line.png) no-repeat;
@@ -564,9 +576,9 @@ header.no-card .page-sub-title {
 // "Ubuntu" Overide
 header.no-card.ubuntu .page-sub-title,
 section.section-header-alt .page-sub-title {
-  padding: 3rem 0 0 0;
+  padding: 2.8rem 0 0 0;
   @include breakpoint(D) {
-    padding: 3.25rem 0 0 0;
+    padding: 3.75rem 0 0 0;
   }
   @include breakpoint(D) {
     padding: 4rem 0 0 0;

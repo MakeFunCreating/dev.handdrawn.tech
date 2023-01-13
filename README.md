@@ -1,6 +1,12 @@
 # dev.handdrawn.tech
 
 
+### Jan 13th 2022 - v1.2.8
+* UPDATED: Spacing changes
+
+### Jan 13th 2022 - v1.2.7
+* UPDATED: Homepage robot header size changes
+
 ### Jan 13th 2022 - v1.2.6
 * UPDATED: Homepage robot header image
 
