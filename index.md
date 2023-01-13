@@ -35,11 +35,11 @@ meta-description: Whimsical hand drawn illustrations for showcasing your busines
     {% assign illo-total = site.posts.size %} 
     <div class="content-wrapper">
         <div class="sect-title-wrapper">
-          <h1 class="sect-title">Hi-Tech Stuff Visualised in a Whimsical Low-Tech Way</h1>
+          <h1 class="sect-title">Hi-Tech Stuff Illustrated in a Low-Tech Way</h1>
           <div class="underline"></div>
         </div>
       <div class="text-wrapper"> 
-        <p class="page-sub-title">Commercial Illustration for Tech Based Businesses by Scott Bedford</p>        
+        <p class="page-sub-title">Technology & Complex Ideas Made a Little Less Scary</p>        
       </div>
       <div class="bg-texture-wrapper">
         <div class="frame show"><div class="top-frame"></div><div class="bottom-frame"></div></div>
@@ -53,7 +53,7 @@ meta-description: Whimsical hand drawn illustrations for showcasing your busines
 
 <!-- SECTION TEXT & IMAGE -->
 {% include sections-pages/add-sect-text-image.html
-  class = "full-image no-frame join"
+  class = "full-image no-frame join squeeze"
   section-divider = ""
   ani-triggers = ""
   bg-slider-uniq-ID = ""
