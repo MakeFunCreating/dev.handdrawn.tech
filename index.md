@@ -39,7 +39,7 @@ meta-description: Whimsical hand drawn illustrations for showcasing your busines
           <div class="underline"></div>
         </div>
       <div class="text-wrapper"> 
-        <p class="page-sub-title">Technology & Complex Ideas Made a Little Less Scary</p>        
+        <p class="page-sub-title">Commercial Illustration by Scott Bedford</p>        
       </div>
       <div class="bg-texture-wrapper">
         <div class="frame show"><div class="top-frame"></div><div class="bottom-frame"></div></div>

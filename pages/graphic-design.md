@@ -13,7 +13,11 @@ sub-heading: Distinctive Design Incorporating Hand Drawn Elements
 sub-heading: Incorporating Inventive Hand Drawn Elements
 sub-heading: Seductive Design Incorporating Hand Drawn Elements
 sub-heading: Sales & Marketing Collateral With a Human Touch
-sub-heading: Sales & Marketing Collateral With a Seductive Hand Drawn Aesthetic
+sub-heading: Sales & Marketing Collateral in a <b>Hand Drawn <em>Tech</em></b> Style
+sub-heading: Sales & Marketing Collateral With a Hand Drawn Aesthetic
+sub-heading: Sales & Marketing Collateral that Wins Hearts & Minds
+sub-heading: Sales Collateral that Wins Hearts & Minds
+sub-heading: Sales & Marketing Collateral that Sells
 
 announcement:
 
