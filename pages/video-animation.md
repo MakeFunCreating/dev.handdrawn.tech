@@ -12,11 +12,12 @@ h1: "Explainer Videos With a Human Touch"
 h1: "Whimsical Hand Drawn Whiteboard Animations"
 h1: "Inventive Hand Drawn Whiteboard Animations"
 h1: "Whiteboard Animated Videos"
+h1: "Whiteboard Animation with an Ingenious Twist"
 #----------------------- H1 LENGTH GUIDE ----------------------------
 
 sub-heading: "Whimsical Hand Drawn Whiteboard Animations"
-sub-heading: "Explainer Videos With a Human Touch"
-sub-heading: "Explainer Videos With an Inventive Touch"
+sub-heading: "Explainer Videos in a <b>Hand Drawn <em>Tech</em></b> Style"
+sub-heading: "Explainer Videos That Engage"
 
 announcement:
 
