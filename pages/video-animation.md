@@ -9,10 +9,14 @@ title: "Whiteboard Explainer Videos With a Human Touch"
 h1: "Whiteboard Animation Service"
 h1: "Video Animation With a Human Touch"
 h1: "Explainer Videos With a Human Touch"
+h1: "Whimsical Hand Drawn Whiteboard Animations"
+h1: "Inventive Hand Drawn Whiteboard Animations"
+h1: "Whiteboard Animated Videos"
 #----------------------- H1 LENGTH GUIDE ----------------------------
 
-sub-heading: "Explainer Videos With a Human Touch"
 sub-heading: "Whimsical Hand Drawn Whiteboard Animations"
+sub-heading: "Explainer Videos With a Human Touch"
+sub-heading: "Explainer Videos With an Inventive Touch"
 
 announcement:
 

@@ -70,17 +70,33 @@ header:not(.no-image):not(.narrow).announcement.tall .content-wrapper {
 }
 
 
-// narrow
-
 header.narrow .content-wrapper {
-  height: calc(65vh - 86px); // 86px is size of top bar
+  height: calc(65vh - 40px); // 86px is size of top bar
   @include breakpoint(ML) {
     min-height: 540px;
   }
   @include breakpoint(TP) {
-    height: calc(75vh - 86px); // 86px is size of top bar
+    height: calc(75vh - 42px); // 86px is size of top bar
   } 
 }
+
+
+// 'contain' overide
+
+header.contain.narrow .content-wrapper {
+  height: 450px;
+  @include breakpoint(TP) {
+    height: auto;
+  }
+  @include breakpoint(TP) {
+    height: 570px;
+  } 
+  @include breakpoint(D) {
+    height: 570px;
+  } 
+}
+
+
 
 // no-image
 
@@ -101,7 +117,7 @@ header.center .content-wrapper .title-card-wrapper {
 }
 
 header:not(.no-image).none .content-wrapper > .bg-texture-wrapper .bg-texture {
-  background-color: #e9e9e9; //#dbdeda;
+  //background-color: #e9e9e9; //#dbdeda;
 }
 
 //////////////////// IMG WRAPPER ////////////////////
@@ -137,6 +153,17 @@ header .img-wrapper img {
 	background: url(../images/loader/loader-body-bg.gif) center 30%/55px 55px no-repeat;
 	width: 100%;
 	height: 100%;
+}
+
+// 'contain' overide
+
+header.contain .img-wrapper img {
+  object-fit: contain; //cover
+  font-family: 'object-fit: contain;'; // Polyfill fix for IE/EDGE
+  position: relative;
+  background: url(../images/loader/loader-body-bg.gif) center 30%/55px 55px no-repeat;
+  width: 100%;
+  height: 100%;
 }
 
 header .title-card .bg-texture-wrapper {
@@ -490,7 +517,8 @@ header.no-card .page-title {
   }
 }
 
-// If header 'no-image' & 'no-card' with 1st section 'full-bleed image' add bot padding
+// If header 'no-image no-card' & 1st sect 'full-bleed image'
+// footer script adds full-bleed-image-pad to text-wrapper to add more padding
 header .content-wrapper .title-card .text-wrapper.full-bleed-image-pad {
   padding-bottom: 10px;
   @include breakpoint(TP) {
@@ -506,15 +534,16 @@ header .content-wrapper .title-card .text-wrapper.full-bleed-image-pad {
 
 // "Ubuntu" Overide
 header.no-card.ubuntu .page-title {
-  background-image: none;
+  background-position: center bottom;
   font-size: 4rem;
-  padding: 30px 0 0 0;
+  padding: 30px 0 3rem 0;
   @include breakpoint(TP) {
     font-size: 5rem;
-    padding: 76px 0 0 0;
+    padding: 76px 0 3.25rem 0;
   }
   @include breakpoint(D) {
     font-size: 6.1rem;
+    padding: 76px 0 4rem 0;
   }
 }
 
@@ -531,6 +560,20 @@ header.no-card .page-sub-title {
     padding: 21px 0 0 0;
   }
 }
+
+// "Ubuntu" Overide
+header.no-card.ubuntu .page-sub-title,
+section.section-header-alt .page-sub-title {
+  padding: 3rem 0 0 0;
+  @include breakpoint(D) {
+    padding: 3.25rem 0 0 0;
+  }
+  @include breakpoint(D) {
+    padding: 4rem 0 0 0;
+  }
+}
+
+
 
 // Posts (not pages) without a header image
 body.layout-post header.no-image .content-wrapper {

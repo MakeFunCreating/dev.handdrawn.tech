@@ -5,19 +5,20 @@ layout-sub-type: ubuntu
 
 top-bar-class: apple
 
-title: "Pitches, Presentations and Proposals Incorporating Hand Drawn Elements"
-h1: "Graphic Design Service"
-h1: "Pitches, Presentations and Proposals"
+title: "Pitches, Presentations and Proposals With Hand Drawn Elements"
+h1: "Pitches, Presentations & Proposals"
 #----------------------- H1 LENGTH GUIDE ----------------------------
 
-# sub-heading: "Marketing Collateral With A Human Touch"
-sub-heading: Design With Inventive Hand Drawn Elements
-sub-heading: Graphic Design Incorporating Inventive Hand Drawn Elements
+sub-heading: Distinctive Design Incorporating Hand Drawn Elements
+sub-heading: Incorporating Inventive Hand Drawn Elements
+sub-heading: Seductive Design Incorporating Hand Drawn Elements
+sub-heading: Sales & Marketing Collateral With a Human Touch
+sub-heading: Sales & Marketing Collateral With a Seductive Hand Drawn Aesthetic
 
 announcement:
 
 header-image: content/pages/graphic-design/full-bleed-presentations-3/#jpg
-header-class: no-card no-image grey #no-image no-card ubuntu
+header-class: no-card no-image grey #no-image no-card
 featured-image: header
 
 author:
@@ -99,7 +100,7 @@ meta-description: ""
   bg-slider-uniq-ID = ""
   bg-slider-classes = ""
 
-  sect-title = "Get the Most From Your Budget"
+  sect-title = "Maximise Your Budget"
 
   h3-sub-title = ""
   h4-sub-title = ""

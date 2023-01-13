@@ -31,7 +31,7 @@
 
 .section-header-alt .sect-title-wrapper {
   max-width: 850px;
-  margin: 0px;
+  //margin: 0px;
 }
 
 /////////////////////// TEXT ////////////////////////
@@ -40,7 +40,7 @@
   position: relative;
   z-index: 101;
   width: 94%;
-  padding-top: 21px;
+  //padding-top: 21px;
   @include breakpoint(TP) {
     width: 100%;
   }

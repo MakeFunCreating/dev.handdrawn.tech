@@ -1,6 +1,12 @@
 # dev.handdrawn.tech
 
 
+### Jan 13th 2022 - v1.2.6
+* UPDATED: Homepage robot header image
+
+### Jan 8th 2022 - v1.2.5
+* UPDATED: Text tweaks
+
 ### Jan 8th 2022 - v1.2.4
 * UPDATED: Made copy third person
 
