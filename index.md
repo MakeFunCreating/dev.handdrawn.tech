@@ -13,7 +13,6 @@ h1: Hi-Tech Stuff Visualised in a Whimsical Low-Tech Way
 #----------------------- H1 LENGTH GUIDE ----------------------------
 
 sub-heading: Ingenious Hand Drawn Illustrations by Scott Bedford
-sub-heading: Commercial Illustration for Showcasing Technology in a Human Way
 
 announcement:
 
