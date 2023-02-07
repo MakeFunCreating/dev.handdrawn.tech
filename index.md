@@ -11,6 +11,7 @@ title-nbsp: false
 
 h1: Hi-Tech Stuff Visualised in a Whimsical Low-Tech Way
 h1: Add an Authentic Touch to Your Communications
+h1: Helping Tech Businesses Win Customers & Investment
 #----------------------- H1 LENGTH GUIDE ----------------------------
 
 sub-heading: Ingenious Hand Drawn Illustrations by Scott Bedford
@@ -34,11 +35,11 @@ meta-description: Whimsical hand drawn illustrations for showcasing your busines
 <section class="section-header-alt squeeze no-illo-butt strip-top-butt strip-bottom no-content-wrapper-top-pad">
     <div class="content-wrapper">
         <div class="sect-title-wrapper">
-          <h1 class="sect-title">Helping Tech Businesses Win Customers & Investment</h1>
+          <h1 class="sect-title">Whimsical Hand Drawn Illustrations for Bringing Technology to Life</h1>
           <div class="underline"></div>
         </div>
       <div class="text-wrapper"> 
-        <p class="page-sub-title">Whimsical Hand Drawn Illustrations for Bringing to Life Hi-Tech Ideas</p>        
+        <p class="page-sub-title">Helping Tech Based Businesses to Win Customers & Investment</p>        
       </div>
       <div class="bg-texture-wrapper">
         <div class="frame show"><div class="top-frame"></div><div class="bottom-frame"></div></div>
