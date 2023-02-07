@@ -72,8 +72,8 @@ paginate: 12
 paginate_path: "/illustrations/page:num/"
 
 
-
-
+strip-lines: "strip-lines"
+strip-photo-lines: "strip-photo-lines"
 
 
 

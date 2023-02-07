@@ -9,7 +9,7 @@ title: "Licensing & Commissioning Illustrations: Licensing Existing Illustration
 h1: Licensing & Commissioning Illustrations
 #----------------------- H1 LENGTH GUIDE ----------------------------
 
-sub-heading: Everything You Need to Know
+sub-heading:
 
 header-image:
 header-class: no-card no-image

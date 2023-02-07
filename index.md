@@ -10,6 +10,7 @@ title-large: true
 title-nbsp: false
 
 h1: Hi-Tech Stuff Visualised in a Whimsical Low-Tech Way
+h1: Add an Authentic Touch to Your Communications
 #----------------------- H1 LENGTH GUIDE ----------------------------
 
 sub-heading: Ingenious Hand Drawn Illustrations by Scott Bedford
@@ -31,14 +32,13 @@ meta-description: Whimsical hand drawn illustrations for showcasing your busines
 
 <!-- BASED ON: SECTION TEXT -->
 <section class="section-header-alt squeeze no-illo-butt strip-top-butt strip-bottom no-content-wrapper-top-pad">
-    {% assign illo-total = site.posts.size %} 
     <div class="content-wrapper">
         <div class="sect-title-wrapper">
-          <h1 class="sect-title">Add an Authentic Touch to Your Communications</h1>
+          <h1 class="sect-title">Helping Tech Businesses Win Customers & Investment</h1>
           <div class="underline"></div>
         </div>
       <div class="text-wrapper"> 
-        <p class="page-sub-title">With Scott Bedford's Whimsical Low-Tech Illustrations</p>        
+        <p class="page-sub-title">Whimsical Hand Drawn Illustrations for Bringing to Life Hi-Tech Ideas</p>        
       </div>
       <div class="bg-texture-wrapper">
         <div class="frame show"><div class="top-frame"></div><div class="bottom-frame"></div></div>
@@ -52,7 +52,7 @@ meta-description: Whimsical hand drawn illustrations for showcasing your busines
 
 <!-- SECTION TEXT & IMAGE -->
 {% include sections-pages/add-sect-text-image.html
-  class = "full-image no-frame join squeeze"
+  class = "full-image no-frame no-top-illo no-top-illo join squeeze"
   section-divider = ""
   ani-triggers = ""
   bg-slider-uniq-ID = ""
@@ -73,31 +73,27 @@ meta-description: Whimsical hand drawn illustrations for showcasing your busines
 
 
 
-<!-- SECTION LOGOS -->
-{% include sections-pages/add-sect-logos.html
+
+
+<!-- SECTION TEXT -->
+{% include sections-pages/add-sect-text.html
   class = ""
   section-divider = ""
   ani-triggers = ""
 
   sect-title = "What is Hand Drawn Tech"
+  
+  h1 = ""
+  p1 = "<b>Hand Drawn Tech</b> are whimsical hand drawn illustrations by award winning creative director, illustrator and author, Scott Bedford."
+  
+  h2 = ""
+  p2 = "If you want to explain, demonstrate or showcase your company's technology, products or services in a way that makes customers and investors care, and understand, these are for you."
 
-  h3-sub-title-top = ""
-  h4-sub-title-top = ""
-  text-top = "<b>Hand Drawn <em>Tech</em></b> are whimsical hand drawn illustrations by award winning creator, illustrator and author, Scott Bedford. If you want to explain, demonstrate or showcase your company's technology, products or services (and actually have people pay attention) these are for you."
-
-  logo-png-array = "panasonic,samsung,disney,vodafone,ford,southwest"
-  logo-col = "black"
-
-  h3-sub-title-bot = ""
-  h4-sub-title-bot = ""
-  text-bot = ""
-
+  end-caption = ""
+  
   link-text = "How to Get Them"
   link-url = "/the-licence-model/"
 %}
-
-
-
 
 
 
@@ -160,10 +156,10 @@ meta-description: Whimsical hand drawn illustrations for showcasing your busines
   section-divider = ""
   ani-triggers = ""
 
-  sect-title = "Why They Are So Effective"
+  sect-title = "Why Hand Drawn Tech Is So Effective"
   
   h1 = ""
-  p1 = "<b>Hand Drawn <em>Tech</em></b> illustrations are an extremely powerful communications tool, here's 9 reasons why:"
+  p1 = "<b>Hand Drawn Tech</b> illustrations are an extremely powerful communications tool, here's 9 reasons why:"
   
   h2 = ""
   p2 = ""
@@ -185,7 +181,7 @@ meta-description: Whimsical hand drawn illustrations for showcasing your busines
 
 <!-- SECTION TEXT & IMAGE -->
 {% include sections-pages/add-sect-text-image.html
-  class = "full-image no-frame"
+  class = "full-image no-frame no-top-illo"
   section-divider = ""
   ani-triggers = "robotAni"
   bg-slider-uniq-ID = ""
@@ -195,7 +191,7 @@ meta-description: Whimsical hand drawn illustrations for showcasing your busines
 
   h3-sub-title = ""
   h4-sub-title = "1: They Are Seductive"
-  text = "<b>Hand Drawn <em>Tech</em></b> illustrations, with their low-tech charm,  are disarmingly persuasive."
+  text = "<b>Hand Drawn Tech</b> illustrations, with their low-tech charm,  are disarmingly persuasive."
   img-src = "content/pages/home/section-images/hacker/#jpg"
   img-alt = "Cyber terrorist stealing data from a highly secure data silo"
 
@@ -216,7 +212,7 @@ meta-description: Whimsical hand drawn illustrations for showcasing your busines
 
 <!-- SECTION TEXT & IMAGE -->
 {% include sections-pages/add-sect-text-image.html
-  class = "full-image no-frame"
+  class = "full-image no-frame no-top-illo"
   section-divider = ""
   ani-triggers = ""
   bg-slider-uniq-ID = ""
@@ -226,7 +222,7 @@ meta-description: Whimsical hand drawn illustrations for showcasing your busines
 
   h3-sub-title = ""
   h4-sub-title = "2: They Are Authentic"
-  text = "<b>Hand Drawn <em>Tech</em></b> illustrations are drawn by hand, so are not perfect, and scream authenticity."
+  text = "<b>Hand Drawn Tech</b> illustrations are drawn by hand, so are not perfect, and scream authenticity."
   img-src = "content/pages/home/section-images/delivery-food/#jpg"
   img-alt = "Human assisted robot delivers online food order by lifting off roof"
 
@@ -247,7 +243,7 @@ meta-description: Whimsical hand drawn illustrations for showcasing your busines
 
 <!-- SECTION TEXT & IMAGE -->
 {% include sections-pages/add-sect-text-image.html
-  class = "full-image no-frame"
+  class = "full-image no-frame no-top-illo"
   section-divider = ""
   ani-triggers = ""
   bg-slider-uniq-ID = ""
@@ -257,7 +253,7 @@ meta-description: Whimsical hand drawn illustrations for showcasing your busines
 
   h3-sub-title = ""
   h4-sub-title = "3: They Are Versatile"
-  text = "<b>Hand Drawn <em>Tech</em></b> illustrations can bring-to-life almost any idea or concept, however abstract."
+  text = "<b>Hand Drawn Tech</b> illustrations can bring-to-life almost any idea or concept, however abstract."
   img-src = "content/pages/home/section-images/tough-nut/#jpg"
   img-alt = "Tough-nut cracking machine with computerised hydraulic hammer"
 
@@ -276,7 +272,7 @@ meta-description: Whimsical hand drawn illustrations for showcasing your busines
 
 <!-- SECTION TEXT & IMAGE -->
 {% include sections-pages/add-sect-text-image.html
-  class = "full-image no-frame black bg-slider"
+  class = "full-image no-frame no-top-illo black bg-slider"
   section-divider = ""
   ani-triggers = ""
   bg-slider-uniq-ID = "slider-1"
@@ -286,7 +282,7 @@ meta-description: Whimsical hand drawn illustrations for showcasing your busines
 
   h3-sub-title = ""
   h4-sub-title = "4: They Are Descriptive"
-  text = "<b>Hand Drawn <em>Tech</em></b> illustrations, with their use of familiar low-tech objects, are easy to understand."
+  text = "<b>Hand Drawn Tech</b> illustrations, with their use of low-tech analogue objects, are easy to understand."
   img-src = "content/pages/home/section-images/punch-single/black-and-white/#png"
   img-alt = "Competing businesses (in the form of boxing robots) fight it out"
 
@@ -305,7 +301,7 @@ meta-description: Whimsical hand drawn illustrations for showcasing your busines
 
 <!-- SECTION TEXT & IMAGE -->
 {% include sections-pages/add-sect-text-image.html
-  class = "full-image no-frame"
+  class = "full-image no-frame no-top-illo"
   section-divider = ""
   ani-triggers = ""
   bg-slider-uniq-ID = ""
@@ -315,7 +311,7 @@ meta-description: Whimsical hand drawn illustrations for showcasing your busines
 
   h3-sub-title = ""
   h4-sub-title = "5: They Are Unique"
-  text = "<b>Hand Drawn <em>Tech</em></b> illustrations are bespoke, and ensure you stand apart from the competition."
+  text = "<b>Hand Drawn Tech</b> illustrations are bespoke, and ensure you stand apart from the competition."
   img-src = "content/pages/home/section-images/house-cloud/#jpg"
   img-alt = "Four smart homes connected to a floating cloud server by pipes"
 
@@ -344,7 +340,7 @@ meta-description: Whimsical hand drawn illustrations for showcasing your busines
 
   h3-sub-title = ""
   h4-sub-title = "6: They Are Dynamic"
-  text = "<b>Hand Drawn <em>Tech</em></b> illustrations incorporate mechanical elements that can be easily animated."
+  text = "<b>Hand Drawn Tech</b> illustrations incorporate mechanical elements that can be easily animated."
   img-src = ""
   img-alt = ""
 
@@ -372,7 +368,7 @@ meta-description: Whimsical hand drawn illustrations for showcasing your busines
 
 <!-- SECTION TEXT & IMAGE -->
 {% include sections-pages/add-sect-text-image.html
-  class = "full-image no-frame"
+  class = "full-image no-frame no-top-illo"
   section-divider = ""
   ani-triggers = ""
   bg-slider-uniq-ID = ""
@@ -382,7 +378,7 @@ meta-description: Whimsical hand drawn illustrations for showcasing your busines
 
   h3-sub-title = ""
   h4-sub-title = "7: They Are Evergreen"
-  text = "<b>Hand Drawn <em>Tech</em></b> illustrations are not slavish to current trends and will remain fresh indefinitely."
+  text = "<b>Hand Drawn Tech</b> illustrations are not slavish to current trends and will remain fresh indefinitely."
   img-src = "content/pages/home/section-images/eyeball/#jpg"
   img-alt = "Eyeball connected to a computer analyses marketing communications"
 
@@ -402,7 +398,7 @@ meta-description: Whimsical hand drawn illustrations for showcasing your busines
 
 <!-- SECTION TEXT & IMAGE -->
 {% include sections-pages/add-sect-text-image.html
-  class = "full-image no-frame"
+  class = "full-image no-frame no-top-illo"
   section-divider = ""
   ani-triggers = ""
   bg-slider-uniq-ID = ""
@@ -412,7 +408,7 @@ meta-description: Whimsical hand drawn illustrations for showcasing your busines
 
   h3-sub-title = ""
   h4-sub-title = "8: They Are Customisable"
-  text = "<b>Hand Drawn <em>Tech</em></b> illustrations work with almost any brand colour, even pink!"
+  text = "<b>Hand Drawn Tech</b> illustrations work with almost any brand colour, even pink!"
   img-src = "content/pages/home/section-images/super-maker/pink/#jpg"
   img-alt = "Person wearing a jet pack assembles pipes using robotic tools"
 
@@ -428,7 +424,7 @@ meta-description: Whimsical hand drawn illustrations for showcasing your busines
 
 <!-- SECTION TEXT & IMAGE -->
 {% include sections-pages/add-sect-text-image.html
-  class = "full-image no-frame"
+  class = "full-image no-frame no-top-illo"
   section-divider = ""
   ani-triggers = ""
   bg-slider-uniq-ID = ""
@@ -438,7 +434,7 @@ meta-description: Whimsical hand drawn illustrations for showcasing your busines
 
   h3-sub-title = ""
   h4-sub-title = "9: They Are Proven"
-  text = "<b>Hand Drawn <em>Tech</em></b> illustrations have been successfully used to market products and win business."
+  text = "<b>Hand Drawn Tech</b> illustrations have been successfully used to market products and win business."
   img-src = "content/pages/home/section-images/zoom-meeting/#jpg"
   img-alt = "Conflict resolution meeting between a women, man and mediator"
 
