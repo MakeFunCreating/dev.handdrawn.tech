@@ -87,7 +87,7 @@ meta-description: Whimsical hand drawn illustrations for showcasing your busines
   p1 = "<b>Hand Drawn Tech</b> are whimsical hand drawn illustrations by award winning creative director, illustrator and author, Scott Bedford."
   
   h2 = ""
-  p2 = "If you want to explain, demonstrate or showcase your company's technology, products or services in a way that makes customers and investors care, and understand, these are for you."
+  p2 = "If you want to explain, demonstrate or showcase your company's technology, products or services in a way that makes customers and investors care, these are for you."
 
   end-caption = ""
   
