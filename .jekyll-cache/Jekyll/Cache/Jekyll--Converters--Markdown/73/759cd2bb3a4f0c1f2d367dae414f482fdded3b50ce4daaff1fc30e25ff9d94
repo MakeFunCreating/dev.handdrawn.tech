@@ -1,4 +1,4 @@
-I"ð <!-- SECTION TEXT & IMAGE -->
+I"í <!-- SECTION TEXT & IMAGE -->
 
 <section class="section-text-image strip-line full-image no-frame large-image none no-illo strip-top no-sect-title">
 
@@ -45,9 +45,9 @@
                 
   
                 <picture>
-                  <source media="(min-width: 1150px)" srcset="https://handdrawn.tech/images/content/pages/about/section-images/diaper-sniper/blue/2000px.jpg" />
-                  <source media="(min-width: 450px)" srcset="https://handdrawn.tech/images/content/pages/about/section-images/diaper-sniper/blue/1500px.jpg" />
-                  <img src="https://handdrawn.tech/images/content/pages/about/section-images/diaper-sniper/blue/1000px.jpg" width="100%" height="auto" alt="" loading="lazy" />
+                  <source media="(min-width: 1150px)" srcset="http://localhost:4000/images/content/pages/about/section-images/diaper-sniper/blue/2000px.jpg" />
+                  <source media="(min-width: 450px)" srcset="http://localhost:4000/images/content/pages/about/section-images/diaper-sniper/blue/1500px.jpg" />
+                  <img src="http://localhost:4000/images/content/pages/about/section-images/diaper-sniper/blue/1000px.jpg" width="100%" height="auto" alt="" loading="lazy" />
                 </picture>
 
             </div> 

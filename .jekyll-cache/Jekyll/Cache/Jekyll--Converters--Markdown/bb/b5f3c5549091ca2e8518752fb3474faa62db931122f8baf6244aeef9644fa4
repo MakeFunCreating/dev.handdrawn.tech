@@ -1,4 +1,4 @@
-I"[2<!-- SECTION TEXT & IMAGE -->
+I"A2<!-- SECTION TEXT & IMAGE -->
 
 <section class="section-text-image strip-line full-image no-frame join no-top-gap none no-illo strip-top no-sect-title">
 
@@ -45,9 +45,9 @@
                 
   
                 <picture>
-                  <source media="(min-width: 1150px)" srcset="https://handdrawn.tech/images/content/pages/branding/section-images/case-study/2000px.png" />
-                  <source media="(min-width: 450px)" srcset="https://handdrawn.tech/images/content/pages/branding/section-images/case-study/1500px.png" />
-                  <img src="https://handdrawn.tech/images/content/pages/branding/section-images/case-study/1000px.png" width="100%" height="auto" alt="Open book mock-up of casestudy" loading="lazy" />
+                  <source media="(min-width: 1150px)" srcset="http://localhost:4000/images/content/pages/branding/section-images/case-study/2000px.png" />
+                  <source media="(min-width: 450px)" srcset="http://localhost:4000/images/content/pages/branding/section-images/case-study/1500px.png" />
+                  <img src="http://localhost:4000/images/content/pages/branding/section-images/case-study/1000px.png" width="100%" height="auto" alt="Open book mock-up of casestudy" loading="lazy" />
                 </picture>
 
             </div> 
@@ -177,9 +177,9 @@
 
           <div class="img-wrapper">
               <picture>
-                <source media="(min-width: 1150px)" srcset="https://handdrawn.tech/images/content/logos/black/panasonic.png" />
-                <source media="(min-width: 450px)" srcset="https://handdrawn.tech/images/content/logos/black/panasonic.png" />
-                <img src="https://handdrawn.tech/images/content/logos/black/panasonic.png" alt="" loading="lazy" />
+                <source media="(min-width: 1150px)" srcset="http://localhost:4000/images/content/logos/black/panasonic.png" />
+                <source media="(min-width: 450px)" srcset="http://localhost:4000/images/content/logos/black/panasonic.png" />
+                <img src="http://localhost:4000/images/content/logos/black/panasonic.png" alt="" loading="lazy" />
               </picture>
           </div>
 
@@ -189,9 +189,9 @@
 
           <div class="img-wrapper">
               <picture>
-                <source media="(min-width: 1150px)" srcset="https://handdrawn.tech/images/content/logos/black/samsung.png" />
-                <source media="(min-width: 450px)" srcset="https://handdrawn.tech/images/content/logos/black/samsung.png" />
-                <img src="https://handdrawn.tech/images/content/logos/black/samsung.png" alt="" loading="lazy" />
+                <source media="(min-width: 1150px)" srcset="http://localhost:4000/images/content/logos/black/samsung.png" />
+                <source media="(min-width: 450px)" srcset="http://localhost:4000/images/content/logos/black/samsung.png" />
+                <img src="http://localhost:4000/images/content/logos/black/samsung.png" alt="" loading="lazy" />
               </picture>
           </div>
 
@@ -201,9 +201,9 @@
 
           <div class="img-wrapper">
               <picture>
-                <source media="(min-width: 1150px)" srcset="https://handdrawn.tech/images/content/logos/black/disney.png" />
-                <source media="(min-width: 450px)" srcset="https://handdrawn.tech/images/content/logos/black/disney.png" />
-                <img src="https://handdrawn.tech/images/content/logos/black/disney.png" alt="" loading="lazy" />
+                <source media="(min-width: 1150px)" srcset="http://localhost:4000/images/content/logos/black/disney.png" />
+                <source media="(min-width: 450px)" srcset="http://localhost:4000/images/content/logos/black/disney.png" />
+                <img src="http://localhost:4000/images/content/logos/black/disney.png" alt="" loading="lazy" />
               </picture>
           </div>
 
@@ -213,9 +213,9 @@
 
           <div class="img-wrapper">
               <picture>
-                <source media="(min-width: 1150px)" srcset="https://handdrawn.tech/images/content/logos/black/vodafone.png" />
-                <source media="(min-width: 450px)" srcset="https://handdrawn.tech/images/content/logos/black/vodafone.png" />
-                <img src="https://handdrawn.tech/images/content/logos/black/vodafone.png" alt="" loading="lazy" />
+                <source media="(min-width: 1150px)" srcset="http://localhost:4000/images/content/logos/black/vodafone.png" />
+                <source media="(min-width: 450px)" srcset="http://localhost:4000/images/content/logos/black/vodafone.png" />
+                <img src="http://localhost:4000/images/content/logos/black/vodafone.png" alt="" loading="lazy" />
               </picture>
           </div>
 
@@ -225,9 +225,9 @@
 
           <div class="img-wrapper">
               <picture>
-                <source media="(min-width: 1150px)" srcset="https://handdrawn.tech/images/content/logos/black/ford.png" />
-                <source media="(min-width: 450px)" srcset="https://handdrawn.tech/images/content/logos/black/ford.png" />
-                <img src="https://handdrawn.tech/images/content/logos/black/ford.png" alt="" loading="lazy" />
+                <source media="(min-width: 1150px)" srcset="http://localhost:4000/images/content/logos/black/ford.png" />
+                <source media="(min-width: 450px)" srcset="http://localhost:4000/images/content/logos/black/ford.png" />
+                <img src="http://localhost:4000/images/content/logos/black/ford.png" alt="" loading="lazy" />
               </picture>
           </div>
 
@@ -237,9 +237,9 @@
 
           <div class="img-wrapper">
               <picture>
-                <source media="(min-width: 1150px)" srcset="https://handdrawn.tech/images/content/logos/black/southwest.png" />
-                <source media="(min-width: 450px)" srcset="https://handdrawn.tech/images/content/logos/black/southwest.png" />
-                <img src="https://handdrawn.tech/images/content/logos/black/southwest.png" alt="" loading="lazy" />
+                <source media="(min-width: 1150px)" srcset="http://localhost:4000/images/content/logos/black/southwest.png" />
+                <source media="(min-width: 450px)" srcset="http://localhost:4000/images/content/logos/black/southwest.png" />
+                <img src="http://localhost:4000/images/content/logos/black/southwest.png" alt="" loading="lazy" />
               </picture>
           </div>
 
@@ -325,11 +325,11 @@
                     
   
                     <picture>
-                      <source media="(min-width: 1200px)" srcset="https://handdrawn.tech/images/content/pages/graphic-design/full-bleed-presentations-4/3200px.jpg" />
-                      <source media="(min-width: 992px)" srcset="https://handdrawn.tech/images/content/pages/graphic-design/full-bleed-presentations-4/3200px.jpg" />
-                        <source media="(min-width: 768px)" srcset="https://handdrawn.tech/images/content/pages/graphic-design/full-bleed-presentations-4/1900px.jpg" />
-                          <source media="(min-width: 650px)" srcset="https://handdrawn.tech/images/content/pages/graphic-design/full-bleed-presentations-4/1000px.jpg" />
-                      <img src="https://handdrawn.tech/images/content/pages/graphic-design/full-bleed-presentations-4/1000px.jpg" alt="" loading="lazy" />
+                      <source media="(min-width: 1200px)" srcset="http://localhost:4000/images/content/pages/graphic-design/full-bleed-presentations-4/3200px.jpg" />
+                      <source media="(min-width: 992px)" srcset="http://localhost:4000/images/content/pages/graphic-design/full-bleed-presentations-4/3200px.jpg" />
+                        <source media="(min-width: 768px)" srcset="http://localhost:4000/images/content/pages/graphic-design/full-bleed-presentations-4/1900px.jpg" />
+                          <source media="(min-width: 650px)" srcset="http://localhost:4000/images/content/pages/graphic-design/full-bleed-presentations-4/1000px.jpg" />
+                      <img src="http://localhost:4000/images/content/pages/graphic-design/full-bleed-presentations-4/1000px.jpg" alt="" loading="lazy" />
                     </picture>
                 </div>
               </div>
