@@ -202,9 +202,6 @@
             </div>
           {% elsif include.carousel-active == "true"  %}
             <div class="fotorama-box">
-              {% unless section-class contains "no-frame" %}
-                <div class="img-top-illo-wrapper"><div class="img-top-illo"></div></div>
-              {% endunless %}
               <div class="img-top-illo-wrapper"><div class="img-top-illo"></div></div>
               <div class="frame-wrapper text-image">
                 
@@ -246,9 +243,9 @@
             {% if include.link-url and include.link-url != empty %}</a>{% endif %}
 
             <div class="img-wrapper">
-              {% unless section-class contains "no-frame" %}
+
                 <div class="img-top-illo-wrapper"><div class="img-top-illo"></div></div>
-              {% endunless %}
+
               
                 {% assign imgDirArray = page.image-dir | split: "/" %}
                 {% assign img-file-prepend = null %}

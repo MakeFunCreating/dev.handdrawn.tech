@@ -21,8 +21,9 @@ sub-heading: "Explainer Videos That Engage"
 
 announcement:
 
-header-image: content/pages/pro-draw/header-options/presentation4/#jpg
-header-class: no-image no-card
+header-image: content/pages/video-animation/header/super-maker-no-bg/#jpg
+#header-image: content/pages/video-animation/header/super-maker/#jpg
+header-class: narrow contain no-card no-title none #down-arrow no-header no-card no-title narrow overlay white-text center no-image no-strip
 featured-image: header
 
 author:
@@ -34,11 +35,183 @@ meta-description: ""
 
 
 
+<!-- BASED ON: SECTION TEXT -->
+<section class="section-header-alt no-illo-butt strip-top-butt strip-bottom no-content-wrapper-top-pad">
+    <div class="content-wrapper">
+        <div class="sect-title-wrapper">
+          <h1 class="sect-title">Whiteboard Animation with Inventive Appeal</h1>
+          <div class="underline"></div>
+        </div>
+      <div class="text-wrapper"> 
+        <p class="page-sub-title">Whimsical Explainer Videos for Bringing to Life Hi-Tech Ideas</p>        
+      </div>
+      <div class="bg-texture-wrapper">
+        <div class="frame show"><div class="top-frame"></div><div class="bottom-frame"></div></div>
+        <div class="bg-texture"></div>
+      </div>
+    </div>
+</section>
+
+  
+
+
+
+
+<!-- SECTION TEXT -->
+{% include sections-pages/add-sect-text.html
+  class = "grey join"
+  section-divider = ""
+  ani-triggers = ""
+
+  sect-title = "Latest Case Study"
+  
+  h1 = ""
+  p1 = "Here's a few screen grabs from a product launch video for an innovative technology solution. It was used at a global trade show in Las Vegas 2023 and on the brand website."
+  
+  h2 = ""
+  p2 = ""
+
+  end-caption = ""
+  
+  link-text = ""
+  link-url = ""
+%}
+
+
+
 
 
 <!-- SECTION TEXT & IMAGE -->
 {% include sections-pages/add-sect-text-image.html
-  class = "full-image right no-frame"
+  class = "full-image right no-frame grey join"
+  section-divider = ""
+  ani-triggers = ""
+  bg-slider-uniq-ID = ""
+  bg-slider-classes = ""
+
+  sect-title = ""
+
+  h3-sub-title = ""
+  h4-sub-title = ""
+  text = ""
+  img-src = "content/pages/video-animation/carousel/detail-4"
+  img-alt = ""
+
+  video-active = "false"
+  video-uniqueID = ""
+  video-type = "vimeo"
+  video-src = "https://player.vimeo.com"
+  video-class = "sixteen-nine"
+
+  carousel-active = "false"
+  carousel-uniq-ID = "illustrations"
+  carousel-img-dir = "content/pages/video-animation/carousel"
+  carousel-img-num = 2
+
+  link-text = ""
+  link-url = ""
+%}
+
+
+
+
+
+<!-- SECTION TEXT & IMAGE -->
+{% include sections-pages/add-sect-text-image.html
+  class = "full-image right no-frame no-top-illo grey join"
+  section-divider = ""
+  ani-triggers = ""
+  bg-slider-uniq-ID = ""
+  bg-slider-classes = ""
+
+  sect-title = ""
+
+  h3-sub-title = ""
+  h4-sub-title = ""
+  text = ""
+  img-src = "content/pages/video-animation/carousel/detail-5"
+  img-alt = ""
+
+  video-active = "false"
+  video-uniqueID = ""
+  video-type = "vimeo"
+  video-src = "https://player.vimeo.com"
+  video-class = "sixteen-nine"
+
+  carousel-active = "false"
+  carousel-uniq-ID = "illustrations"
+  carousel-img-dir = "content/pages/video-animation/carousel"
+  carousel-img-num = 2
+
+  link-text = ""
+  link-url = ""
+%}
+
+
+
+
+<!-- SECTION TEXT & IMAGE -->
+{% include sections-pages/add-sect-text-image.html
+  class = "full-image right no-frame no-top-illo grey"
+  section-divider = ""
+  ani-triggers = ""
+  bg-slider-uniq-ID = ""
+  bg-slider-classes = ""
+
+  sect-title = ""
+
+  h3-sub-title = ""
+  h4-sub-title = ""
+  text = ""
+  img-src = "content/pages/video-animation/carousel/detail-6"
+  img-alt = ""
+
+  video-active = "false"
+  video-uniqueID = ""
+  video-type = "vimeo"
+  video-src = "https://player.vimeo.com"
+  video-class = "sixteen-nine"
+
+  carousel-active = "false"
+  carousel-uniq-ID = "illustrations"
+  carousel-img-dir = "content/pages/video-animation/carousel"
+  carousel-img-num = 2
+
+  link-text = ""
+  link-url = ""
+%}
+
+
+
+
+
+<!-- SECTION TEXT -->
+{% include sections-pages/add-sect-text.html
+  class = ""
+  section-divider = ""
+  ani-triggers = ""
+
+  sect-title = "Animated Examples"
+  
+  h1 = ""
+  p1 = "Here's a few complete animations, in black and white, although colour can also be used."
+  
+  h2 = ""
+  p2 = ""
+
+  end-caption = ""
+  
+  link-text = ""
+  link-url = ""
+%}
+
+
+
+
+
+<!-- SECTION TEXT & IMAGE -->
+{% include sections-pages/add-sect-text-image.html
+  class = "full-image right no-frame no-top-illo "
   section-divider = ""
   ani-triggers = ""
   bg-slider-uniq-ID = ""
@@ -147,43 +320,6 @@ meta-description: ""
 
 
 
-
-
-
-
-
-
-<!-- SECTION TEXT & IMAGE -->
-{% include sections-pages/add-sect-text-image.html
-  class = "full-image right no-top-illo no-frame"
-  section-divider = ""
-  ani-triggers = ""
-  bg-slider-uniq-ID = ""
-  bg-slider-classes = ""
-
-  sect-title = ""
-
-  h3-sub-title = ""
-  h4-sub-title = ""
-  caption = ""
-  text = "Explain abstract ideas and tricky concepts in an accessible and memorable way."
-  img-src = ""
-  img-alt = ""
-
-  video-active = "true"
-  video-uniqueID = "123C"
-  video-type = "vimeo-full-bleed"
-  video-src = "https://player.vimeo.com/video/408785168"
-  video-class = "sixteen-nine"
-
-  carousel-active = "false"
-  carousel-uniq-ID = "MBPO"
-  carousel-img-dir = "content/pages/books/made-by-papa-outdoor/carousel/"
-  carousel-img-num = 10
-
-  link-text = ""
-  link-url = ""
-%}
 
 
 

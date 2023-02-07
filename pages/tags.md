@@ -29,11 +29,11 @@ meta-description: "Webby Award winning craft blog, and inspiration behind Made b
 
 <!-- SECTION TEXT -->
 {% include sections-pages/add-sect-header-alt.html
-  ani-triggers = ""
+  class = "grey squeeze"
 
   sect-title = "Keyword Tag Cloud"
   sub-title = ""
-  p1 = "Here you'll find every keyword, all in one place, for your convenience."
+  p1 = "Every keyword, all in one place, for your convenience."
   
 %}
 
