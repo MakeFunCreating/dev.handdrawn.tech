@@ -22,7 +22,7 @@ sub-heading: Sales & Marketing Collateral that Sells
 announcement:
 
 header-image: content/pages/graphic-design/header/how-tweets-made/#jpg
-header-class: no-card narrow no-title #no-image no-card
+header-class: no-card narrow no-title no-header #no-image no-card
 featured-image: header
 
 author:
