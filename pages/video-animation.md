@@ -43,7 +43,7 @@ meta-description: ""
           <div class="underline"></div>
         </div>
       <div class="text-wrapper"> 
-        <p class="page-sub-title">Whimsical Explainer Videos for Bringing to Life Hi-Tech Ideas</p>        
+        <p class="page-sub-title">Whimsical Explainer Videos for Bringing Technology to Life</p>        
       </div>
       <div class="bg-texture-wrapper">
         <div class="frame show"><div class="top-frame"></div><div class="bottom-frame"></div></div>
@@ -78,9 +78,6 @@ meta-description: ""
 %}
 
 
-
-
-
 <!-- SECTION TEXT & IMAGE -->
 {% include sections-pages/add-sect-text-image.html
   class = "full-image right no-frame grey join"
@@ -113,9 +110,6 @@ meta-description: ""
 %}
 
 
-
-
-
 <!-- SECTION TEXT & IMAGE -->
 {% include sections-pages/add-sect-text-image.html
   class = "full-image right no-frame no-top-illo grey join"
@@ -146,8 +140,6 @@ meta-description: ""
   link-text = ""
   link-url = ""
 %}
-
-
 
 
 <!-- SECTION TEXT & IMAGE -->
@@ -185,6 +177,10 @@ meta-description: ""
 
 
 
+
+
+
+
 <!-- SECTION TEXT -->
 {% include sections-pages/add-sect-text.html
   class = ""
@@ -206,12 +202,9 @@ meta-description: ""
 %}
 
 
-
-
-
 <!-- SECTION TEXT & IMAGE -->
 {% include sections-pages/add-sect-text-image.html
-  class = "full-image right no-frame no-top-illo "
+  class = "full-image right no-frame"
   section-divider = ""
   ani-triggers = ""
   bg-slider-uniq-ID = ""
@@ -228,8 +221,8 @@ meta-description: ""
 
   video-active = "true"
   video-uniqueID = "123"
-  video-type = "vimeo-full-bleed"
-  video-src = "https://player.vimeo.com/video/481630637"
+  video-type = "vimeo"
+  video-src = "controls|https://player.vimeo.com/video/481630637"
   video-class = "sixteen-nine"
 
   carousel-active = "false"
@@ -240,9 +233,6 @@ meta-description: ""
   link-text = ""
   link-url = ""
 %}
-
-
-
 
 
 <!-- SECTION TEXT & IMAGE -->
@@ -264,8 +254,8 @@ meta-description: ""
 
   video-active = "true"
   video-uniqueID = "123A"
-  video-type = "vimeo-full-bleed"
-  video-src = "https://player.vimeo.com/video/270131501"
+  video-type = "vimeo"
+  video-src = "controls|https://player.vimeo.com/video/270131501"
   video-class = "sixteen-nine"
 
   carousel-active = "false"
@@ -276,13 +266,6 @@ meta-description: ""
   link-text = ""
   link-url = ""
 %}
-
-
-
-
-
-
-
 
 
 <!-- SECTION TEXT & IMAGE -->
@@ -304,8 +287,8 @@ meta-description: ""
 
   video-active = "true"
   video-uniqueID = "123B"
-  video-type = "vimeo-full-bleed"
-  video-src = "https://player.vimeo.com/video/199146435"
+  video-type = "vimeo"
+  video-src = "controls|https://player.vimeo.com/video/199146435"
   video-class = "sixteen-nine"
 
   carousel-active = "false"

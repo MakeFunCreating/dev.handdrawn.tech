@@ -1,6 +1,9 @@
 # dev.handdrawn.tech
 
 
+### Feb 7th 2022 - v1.3.5
+* UPDATED: Added branding page
+
 ### Feb 7th 2022 - v1.3.4
 * UPDATED: Homepage title change
 

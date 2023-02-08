@@ -35,11 +35,11 @@ meta-description: Whimsical hand drawn illustrations for showcasing your busines
 <section class="section-header-alt squeeze no-illo-butt strip-top-butt strip-bottom no-content-wrapper-top-pad">
     <div class="content-wrapper">
         <div class="sect-title-wrapper">
-          <h1 class="sect-title">Whimsical Hand Drawn Illustrations for Bringing Technology to Life</h1>
+          <h1 class="sect-title">Helping Tech-Based Businesses to Win Customers & Investment</h1>
           <div class="underline"></div>
         </div>
       <div class="text-wrapper"> 
-        <p class="page-sub-title">Helping Tech Based Businesses to Win Customers & Investment</p>        
+        <p class="page-sub-title">Whimsical Hand Drawn Illustrations for Bringing Technology to Life</p>        
       </div>
       <div class="bg-texture-wrapper">
         <div class="frame show"><div class="top-frame"></div><div class="bottom-frame"></div></div>
@@ -102,6 +102,9 @@ meta-description: Whimsical hand drawn illustrations for showcasing your busines
 
 
 
+
+
+
 <!-- SECTION TEXT -->
 {% include sections-pages/add-sect-text.html
   class = "join black"
@@ -149,8 +152,6 @@ meta-description: Whimsical hand drawn illustrations for showcasing your busines
 
 
 
-
-
 <!-- SECTION TEXT -->
 {% include sections-pages/add-sect-text.html
   class = "join"
@@ -170,14 +171,6 @@ meta-description: Whimsical hand drawn illustrations for showcasing your busines
   link-text = ""
   link-url = ""
 %}
-
-
-
-
-
-
-
-
 
 
 <!-- SECTION TEXT & IMAGE -->
@@ -201,16 +194,6 @@ meta-description: Whimsical hand drawn illustrations for showcasing your busines
 %}
 
 
-
-
-
-
-
-
-
-
-
-
 <!-- SECTION TEXT & IMAGE -->
 {% include sections-pages/add-sect-text-image.html
   class = "full-image no-frame no-top-illo"
@@ -230,16 +213,6 @@ meta-description: Whimsical hand drawn illustrations for showcasing your busines
   link-text = ""
   link-url = ""
 %}
-
-
-
-
-
-
-
-
-
-
 
 
 <!-- SECTION TEXT & IMAGE -->
@@ -263,14 +236,6 @@ meta-description: Whimsical hand drawn illustrations for showcasing your busines
 %}
 
 
-
-
-
-
-
-
-
-
 <!-- SECTION TEXT & IMAGE -->
 {% include sections-pages/add-sect-text-image.html
   class = "full-image no-frame no-top-illo black bg-slider"
@@ -292,14 +257,6 @@ meta-description: Whimsical hand drawn illustrations for showcasing your busines
 %}
 
 
-
-
-
-
-
-
-
-
 <!-- SECTION TEXT & IMAGE -->
 {% include sections-pages/add-sect-text-image.html
   class = "full-image no-frame no-top-illo"
@@ -319,14 +276,6 @@ meta-description: Whimsical hand drawn illustrations for showcasing your busines
   link-text = ""
   link-url = ""
 %}
-
-
-
-
-
-
-
-
 
 
 <!-- SECTION TEXT & IMAGE -->
@@ -361,12 +310,6 @@ meta-description: Whimsical hand drawn illustrations for showcasing your busines
 %}
 
 
-
-
-
-
-
-
 <!-- SECTION TEXT & IMAGE -->
 {% include sections-pages/add-sect-text-image.html
   class = "full-image no-frame no-top-illo"
@@ -388,15 +331,6 @@ meta-description: Whimsical hand drawn illustrations for showcasing your busines
 %}
 
 
-
-
-
-
-
-
-
-
-
 <!-- SECTION TEXT & IMAGE -->
 {% include sections-pages/add-sect-text-image.html
   class = "full-image no-frame no-top-illo"
@@ -416,11 +350,6 @@ meta-description: Whimsical hand drawn illustrations for showcasing your busines
   link-text = ""
   link-url = ""
 %}
-
-
-
-
-
 
 
 <!-- SECTION TEXT & IMAGE -->
@@ -450,6 +379,9 @@ meta-description: Whimsical hand drawn illustrations for showcasing your busines
 
 
 
+
+
+
 <!-- SECTION TEXT -->
 {% include sections-pages/add-sect-text.html
   class = "join grey"
@@ -467,6 +399,7 @@ meta-description: Whimsical hand drawn illustrations for showcasing your busines
   link-text = ""
   link-url = ""
 %}
+
 
 <!-- SECTION TEXT -->
 {% include sections-pages/add-sect-text.html

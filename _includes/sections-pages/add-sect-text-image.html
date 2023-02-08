@@ -126,7 +126,9 @@
                   {% capture vimeo-src %}{{ src }}{% endcapture %}
                   {% capture last-five-nums %}{{ src | slice: -5, 5 }}{% endcapture %}
                   
-    
+                  {% if controls contains "controls" %}
+                    {% assign controls-string = controls-string | append: "controls=1&color=eb2a85&pip=0" %}
+                  {% endif %}
                   {% if controls contains "autoplay" %}
                     {% assign controls-string = "&autoplay=1&muted=1&autopause=0" %}
                   {% endif %}
@@ -137,7 +139,9 @@
                     {% assign controls-string = controls-string | append: "&muted=1" %}         
                   {% endif %}
                   {% if controls contains "fullscreen" %}
-                    {% assign controls-string = controls-string | append: "&fullscreen" %}    
+                    {% assign controls-string = controls-string | append: "&fullscreen" %} 
+                  {% else%}   
+                    {% assign controls-string = controls-string | append: "&fullscreen=false" %}
                   {% endif %}
     
                   {% capture controls-string %}{{ controls-string }}{% endcapture %}
