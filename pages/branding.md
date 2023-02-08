@@ -15,8 +15,8 @@ sub-heading: Professional Design Incorporating Hand Drawn Elements
 
 announcement:
 
-header-image: content/pages/graphic-design/full-bleed-presentations-3/#jpg
-header-class: no-card no-image grey #no-image no-card ubuntu
+header-image: content/pages/graphic-design/full-bleed-branding-1/#jpg
+header-class: no-card narrow no-title #no-image no-card ubuntu
 featured-image: header
 
 author:
@@ -30,39 +30,41 @@ meta-description: ""
 
 
 
-<!-- SECTION TEXT & IMAGE -->
-{% include sections-pages/add-sect-text-image.html
-  class = "full-image no-frame join no-top-gap"
-  section-divider = ""
-  ani-triggers = ""
-  bg-slider-uniq-ID = ""
-  bg-slider-classes = ""
 
-  sect-title = ""
+<!-- BASED ON: SECTION TEXT -->
+<section class="section-header-alt grey squeeze no-illo-butt strip-top-butt strip-bottom">
+    {% assign illo-total = site.posts.size %} 
+    <div class="content-wrapper">
+        <div class="sect-title-wrapper">
+          <h1 class="sect-title">Branding That Separates You From Your Competitors</h1>
+          <div class="underline"></div>
+        </div>
+      <div class="text-wrapper"> 
+        <!--<h4 class="caps"></h4
+        <p class="smallest stretch-cap">{{ illo-total }} licensable illustrations</p>>-->
+        <p class="page-sub-title small">Leverage the Trend for a More Artistic & Less Vector Style of Illustration</p>        
+      </div>
+      <div class="bg-texture-wrapper">
+        <div class="frame show"><div class="top-frame"></div><div class="bottom-frame"></div></div>
+        <div class="bg-texture"></div>
+      </div>
+    </div>
+</section>
 
-  h3-sub-title = ""
-  h4-sub-title = ""
-  text = ""
-  img-src = "content/pages/branding/section-images/case-study/#png"
-  img-alt = "Open book mock-up of casestudy"
-
-  link-text = ""
-  link-url = ""
-%}
 
 
 
 
 <!-- SECTION TEXT -->
 {% include sections-pages/add-sect-text.html
-  class = ""
+  class = "join"
   section-divider = ""
   ani-triggers = ""
 
-  sect-title = "Leverage The Latest Trend"
+  sect-title = "Branding & Identity"
   
   h1 = ""
-  p1 = "Consumers are tiring of the impersonal aesthetic of vector illustrations. This quote from the Graphic Artists Guild explains why authentic styles are on the rise."
+  p1 = "<b>Hand Drawn Tech</b> illustrations are an effective way to differentiate your company's brand, especially for technology businesses looking to break away from the <a href=\"https://en.wikipedia.org/wiki/Corporate_Memphis\">'Corporate Memphis'</a> illustration style... read the quote below from the Graphic Artists Guild."
   
   h2 = ""
   p2 = ""
@@ -74,88 +76,185 @@ meta-description: ""
 %}
 
 
-
-
-
-
-<!-- SECTION LOGOS -->
-{% include sections-pages/add-sect-logos.html
-  class = "bot-pad-cancel"
+<!-- SECTION QUOTE -->
+{% include sections-pages/add-sect-quote.html
+  class = "small "
   section-divider = ""
   ani-triggers = ""
 
-  sect-title = "Proven New Business Winner"
+  sect-title = ""
 
-  h3-sub-title-top = ""
-  h4-sub-title-top = ""
-  text-top = "Business pitches, presentations and proposals featuring <b>Hand Drawn <em>Tech</em></b> illustrations are a proven new business winner. They look professional, feel human, and communicate ideas in a compelling way. They have been battle tested in many corporate boardrooms and consistently deliver."
+  avatar-src = "/images/content/quote-avatars/graphic-arts-logo-grey.png"
+  rating = ""
+  text = "As a reaction to the impersonal look of digital illustrations, recently there has been a renewed interest and demand for <em>traditional techniques</em>... originally led by boutique brands... it has now caught on with the big brands..."
+  author = "- Graphic Artists Guild Handbook 16th Edition"
+%}
 
-  logo-png-array = "panasonic,samsung,disney,vodafone,ford,southwest"
-  logo-col = "black"
 
-  h3-sub-title-bot = ""
-  h4-sub-title-bot = ""
-  text-bot = ""
+
+
+
+<!-- SECTION TEXT -->
+{% include sections-pages/add-sect-text.html
+  class = "grey join"
+  section-divider = ""
+  ani-triggers = ""
+
+  sect-title = "Case Study"
+  
+  h1 = ""
+  p1 = "Here's a few images (taken from a presentation) that shows how Scott's illustrations were used as an integral part of the Black Swan Data brand."
+  
+  h2 = ""
+  p2 = ""
+
+  end-caption = ""
+  
+  link-text = ""
+  link-url = ""
+%}
+
+<!-- SECTION TEXT & IMAGE -->
+{% include sections-pages/add-sect-text-image.html
+  class = "full-image no-frame join no-top-illo grey"
+  section-divider = ""
+  ani-triggers = ""
+  bg-slider-uniq-ID = ""
+  bg-slider-classes = ""
+
+  sect-title = ""
+
+  h3-sub-title = ""
+  h4-sub-title = ""
+  text = ""
+  img-src = "content/pages/branding/section-images/black-swan-1/#jpg"
+  img-alt = "Open book mock-up of casestudy"
 
   link-text = ""
   link-url = ""
 %}
 
-
-
-
-
-
-
-
-<!-- SECTION FULL BLEED IMAGES -->
-{% include sections-pages/add-sect-full-bleed-images.html
-  class = "strip-lines"
+<!-- SECTION TEXT & IMAGE -->
+{% include sections-pages/add-sect-text-image.html
+  class = "full-image no-frame join no-top-illo grey"
+  section-divider = ""
   ani-triggers = ""
+  bg-slider-uniq-ID = ""
+  bg-slider-classes = ""
 
-  img-src-1 = "content/pages/graphic-design/full-bleed-presentations-1/#jpg"
-  img-alt-1 = ""
-  img-txt-1 = ""
+  sect-title = ""
 
-  img-src-2 = "content/pages/graphic-design/full-bleed-presentations-2/#jpg"
-  img-alt-2 = ""
-  img-txt-2 = ""
+  h3-sub-title = ""
+  h4-sub-title = ""
+  text = ""
+  img-src = "content/pages/branding/section-images/black-swan-2/#jpg"
+  img-alt = "Open book mock-up of casestudy"
 
-  img-src-3 = "content/pages/graphic-design/full-bleed-presentations-3/#jpg"
-  img-alt-3 = ""
-  img-txt-3 = ""
-
-  img-src-4 = "content/pages/graphic-design/full-bleed-presentations-4/#jpg"
-  img-alt-4 = ""
-  img-txt-4 = ""
-
-  img-src-5 = ""
-  img-alt-5 = ""
-  img-txt-5 = ""
-
-  image-array = "4"
-
+  link-text = ""
+  link-url = ""
 %}
 
+<!-- SECTION TEXT & IMAGE -->
+{% include sections-pages/add-sect-text-image.html
+  class = "full-image no-frame join no-top-illo grey"
+  section-divider = ""
+  ani-triggers = ""
+  bg-slider-uniq-ID = ""
+  bg-slider-classes = ""
 
+  sect-title = ""
 
+  h3-sub-title = ""
+  h4-sub-title = ""
+  text = ""
+  img-src = "content/pages/branding/section-images/black-swan-3/#jpg"
+  img-alt = "Open book mock-up of casestudy"
 
+  link-text = ""
+  link-url = ""
+%}
 
+<!-- SECTION TEXT & IMAGE -->
+{% include sections-pages/add-sect-text-image.html
+  class = "full-image no-frame join no-top-illo grey"
+  section-divider = ""
+  ani-triggers = ""
+  bg-slider-uniq-ID = ""
+  bg-slider-classes = ""
 
+  sect-title = ""
 
-<!-- SECTION QUOTE -->
-{% include sections-pages/add-sect-quote.html
-  class = "small man"
+  h3-sub-title = ""
+  h4-sub-title = ""
+  text = ""
+  img-src = "content/pages/branding/section-images/black-swan-4/#jpg"
+  img-alt = "Open book mock-up of casestudy"
+
+  link-text = ""
+  link-url = ""
+%}
+
+<!-- SECTION TEXT & IMAGE -->
+{% include sections-pages/add-sect-text-image.html
+  class = "full-image no-frame join no-top-illo grey"
+  section-divider = ""
+  ani-triggers = ""
+  bg-slider-uniq-ID = ""
+  bg-slider-classes = ""
+
+  sect-title = ""
+
+  h3-sub-title = ""
+  h4-sub-title = ""
+  text = ""
+  img-src = "content/pages/branding/section-images/black-swan-5/#jpg"
+  img-alt = "Open book mock-up of casestudy"
+
+  link-text = ""
+  link-url = ""
+%}
+
+<!-- SECTION TEXT & IMAGE -->
+{% include sections-pages/add-sect-text-image.html
+  class = "full-image no-frame no-top-illo grey"
+  section-divider = ""
+  ani-triggers = ""
+  bg-slider-uniq-ID = ""
+  bg-slider-classes = ""
+
+  sect-title = ""
+
+  h3-sub-title = ""
+  h4-sub-title = ""
+  text = ""
+  img-src = "content/pages/branding/section-images/black-swan-6/#jpg"
+  img-alt = "Open book mock-up of casestudy"
+
+  link-text = ""
+  link-url = ""
+%}
+
+<!-- SECTION TEXT -->
+{% include sections-pages/add-sect-text.html
+  class = ""
   section-divider = ""
   ani-triggers = ""
 
-  sect-title = "What People Say"
+  sect-title = "Breaking News"
+  
+  h1 = ""
+  p1 = "A Californian based technology and education business have commisoned a suite of Scott's illustrations as part of their re-brand, more details to follow."
+  
+  h2 = ""
+  p2 = ""
 
-  avatar-src = "/images/content/quote-avatars/man.png"
-  rating = "5/5"
-  text = " We used Scott's services to create a professional looking Investor Proposal - outstanding value and very unique."
-  author = "- Peter M, Technology Entrepreneur, London"
+  end-caption = ""
+  
+  link-text = ""
+  link-url = ""
 %}
+
+
 
 
 

@@ -81,7 +81,7 @@ if ( document.getElementById("testPatternBg{{ include.uniqueID }}").id  !== null
 	// Cookiehub - blocks vimeo embed until analytic cokkies allowed
 
 	var tag = document.createElement('iframe');
-	tag.src = "{{ include.src }}";
+	tag.src = "{{ include.src }}{{ include.extra-controls }}";
 	tag.width = 640;
 	tag.height = 360;
 	tag.frameBorder = 0;

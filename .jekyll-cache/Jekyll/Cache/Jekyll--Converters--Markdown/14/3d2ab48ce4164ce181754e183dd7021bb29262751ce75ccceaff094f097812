@@ -1,6 +1,23 @@
-I"2›<!-- SECTION TEXT & IMAGE -->
+I"ð’<!-- BASED ON: SECTION TEXT -->
+<section class="section-header-alt squeeze no-illo-butt strip-top-butt strip-bottom no-content-wrapper-top-pad">
+    <div class="content-wrapper">
+        <div class="sect-title-wrapper">
+          <h1 class="sect-title">Helping Tech-Based Businesses to Win Customers &amp; Investment</h1>
+          <div class="underline"></div>
+        </div>
+      <div class="text-wrapper"> 
+        <p class="page-sub-title">Whimsical Hand Drawn Illustrations for Bringing Technology to Life</p>        
+      </div>
+      <div class="bg-texture-wrapper">
+        <div class="frame show"><div class="top-frame"></div><div class="bottom-frame"></div></div>
+        <div class="bg-texture"></div>
+      </div>
+    </div>
+</section>
 
-<section class="section-text-image strip-line full-image no-frame join none no-illo strip-top no-sect-title">
+<!-- SECTION TEXT & IMAGE -->
+
+<section class="section-text-image strip-line full-image no-frame no-top-illo no-top-illo join squeeze none no-illo strip-top no-sect-title">
 
     
 
@@ -82,128 +99,70 @@
 
 </section>
 
-<!-- SECTION LOGOS -->
+<!-- SECTION TEXT -->
 
-<section class="section-logos strip-line none no-illo strip-top">
-  
+<section class="section-text strip-line none no-illo strip-top">
+
     
 
     <div class="content-wrapper">
 
       
+
         <div class="sect-title-wrapper">
           <h2 class="sect-title">What is Hand Drawn Tech</h2>
           <div class="underline"></div>
         </div>
+
       
-
-      <div class="text-wrapper">
-        
   
+      <div class="text-wrapper">    
         
-          <div class="text-top"><p><b>Hand Drawn <em>Tech</em></b> are whimsical low-tech illustrations by award winning creative, illustrator and author, Scott Bedford. If you want to showcase, explain or demonstrate your company's products or services (and actually have people pay attention) these are for you.</p></div>
+        
+          <p><b>Hand Drawn Tech</b> are whimsical hand drawn illustrations by award winning creative director, illustrator and author, Scott Bedford.</p>
         
 
+        
+        
+          <p>If you want to explain, demonstrate or showcase your company's technology, products or services in a way that makes customers and investors care, these are for you.</p>
+        
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+
+
+         
+
+        
+          <div class="button-wrapper "><a href="/the-licence-model/" class="link-button smaller">How to Get Them <span class="right-arrow">â€º</span></a></div> 
+           
+         
 
       </div>
-
-      
-      
-        
-        
-
-          <div class="img-wrapper">
-              <picture>
-                <source media="(min-width: 1150px)" srcset="https://handdrawn.tech/images/content/logos/black/panasonic.png" />
-                <source media="(min-width: 450px)" srcset="https://handdrawn.tech/images/content/logos/black/panasonic.png" />
-                <img src="https://handdrawn.tech/images/content/logos/black/panasonic.png" alt="" loading="lazy" />
-              </picture>
-          </div>
-
-      
-        
-        
-
-          <div class="img-wrapper">
-              <picture>
-                <source media="(min-width: 1150px)" srcset="https://handdrawn.tech/images/content/logos/black/samsung.png" />
-                <source media="(min-width: 450px)" srcset="https://handdrawn.tech/images/content/logos/black/samsung.png" />
-                <img src="https://handdrawn.tech/images/content/logos/black/samsung.png" alt="" loading="lazy" />
-              </picture>
-          </div>
-
-      
-        
-        
-
-          <div class="img-wrapper">
-              <picture>
-                <source media="(min-width: 1150px)" srcset="https://handdrawn.tech/images/content/logos/black/disney.png" />
-                <source media="(min-width: 450px)" srcset="https://handdrawn.tech/images/content/logos/black/disney.png" />
-                <img src="https://handdrawn.tech/images/content/logos/black/disney.png" alt="" loading="lazy" />
-              </picture>
-          </div>
-
-      
-        
-        
-
-          <div class="img-wrapper">
-              <picture>
-                <source media="(min-width: 1150px)" srcset="https://handdrawn.tech/images/content/logos/black/vodafone.png" />
-                <source media="(min-width: 450px)" srcset="https://handdrawn.tech/images/content/logos/black/vodafone.png" />
-                <img src="https://handdrawn.tech/images/content/logos/black/vodafone.png" alt="" loading="lazy" />
-              </picture>
-          </div>
-
-      
-        
-        
-
-          <div class="img-wrapper">
-              <picture>
-                <source media="(min-width: 1150px)" srcset="https://handdrawn.tech/images/content/logos/black/ford.png" />
-                <source media="(min-width: 450px)" srcset="https://handdrawn.tech/images/content/logos/black/ford.png" />
-                <img src="https://handdrawn.tech/images/content/logos/black/ford.png" alt="" loading="lazy" />
-              </picture>
-          </div>
-
-      
-        
-        
-
-          <div class="img-wrapper">
-              <picture>
-                <source media="(min-width: 1150px)" srcset="https://handdrawn.tech/images/content/logos/black/southwest.png" />
-                <source media="(min-width: 450px)" srcset="https://handdrawn.tech/images/content/logos/black/southwest.png" />
-                <img src="https://handdrawn.tech/images/content/logos/black/southwest.png" alt="" loading="lazy" />
-              </picture>
-          </div>
-
-      
-
-      
-        <div class="text-wrapper bottom">
-          
-          
-          
-
-          
-            <div class="button-wrapper "><a href="/the-licence-model/" class="link-button smaller">How to Get Them <span class="right-arrow">â€º</span></a></div> 
-             
-           
-
-        </div>
-
-      
-
-
 
       <div class="bg-texture-wrapper">
         <div class="frame show"><div class="top-frame"></div><div class="bottom-frame"></div></div>
         <div class="bg-texture"></div>
       </div>
-      
+
     </div>
     
 </section>
@@ -311,7 +270,7 @@
       
 
         <div class="sect-title-wrapper">
-          <h2 class="sect-title">Why They Are So Effective</h2>
+          <h2 class="sect-title">Why Hand Drawn Tech Is So Effective</h2>
           <div class="underline"></div>
         </div>
 
@@ -320,7 +279,7 @@
       <div class="text-wrapper">    
         
         
-          <p><b>Hand Drawn <em>Tech</em></b> illustrations are an extremely powerful communications tool, here's 9 reasons why:</p>
+          <p><b>Hand Drawn Tech</b> illustrations are an extremely powerful communications tool, here's 9 reasons why:</p>
         
 
         
@@ -365,7 +324,7 @@
 
 <!-- SECTION TEXT & IMAGE -->
 
-<section class="section-text-image strip-line full-image no-frame none no-illo strip-top no-sect-title robotAni">
+<section class="section-text-image strip-line full-image no-frame no-top-illo none no-illo strip-top no-sect-title robotAni">
 
     
 
@@ -382,7 +341,7 @@
             
             
             
-              <p class="text uniq-ID-ABC"><b>Hand Drawn <em>Tech</em></b> illustrations, with their low-tech charm,  are disarmingly persuasive.</p>
+              <p class="text uniq-ID-ABC"><b>Hand Drawn Tech</b> illustrations, with their low-tech charm,  are disarmingly persuasive.</p>
             
             
 
@@ -465,7 +424,7 @@
 
 <!-- SECTION TEXT & IMAGE -->
 
-<section class="section-text-image strip-line full-image no-frame none no-illo strip-top no-sect-title">
+<section class="section-text-image strip-line full-image no-frame no-top-illo none no-illo strip-top no-sect-title">
 
     
 
@@ -482,7 +441,7 @@
             
             
             
-              <p class="text uniq-ID-ABC"><b>Hand Drawn <em>Tech</em></b> illustrations are drawn by hand, so are not perfect, and scream authenticity.</p>
+              <p class="text uniq-ID-ABC"><b>Hand Drawn Tech</b> illustrations are drawn by hand, so are not perfect, and scream authenticity.</p>
             
             
 
@@ -565,7 +524,7 @@
 
 <!-- SECTION TEXT & IMAGE -->
 
-<section class="section-text-image strip-line full-image no-frame none no-illo strip-top no-sect-title">
+<section class="section-text-image strip-line full-image no-frame no-top-illo none no-illo strip-top no-sect-title">
 
     
 
@@ -582,7 +541,7 @@
             
             
             
-              <p class="text uniq-ID-ABC"><b>Hand Drawn <em>Tech</em></b> illustrations can bring-to-life almost any idea or concept, however abstract.</p>
+              <p class="text uniq-ID-ABC"><b>Hand Drawn Tech</b> illustrations can bring-to-life almost any idea or concept, however abstract.</p>
             
             
 
@@ -665,7 +624,7 @@
 
 <!-- SECTION TEXT & IMAGE -->
 
-<section class="section-text-image strip-line full-image no-frame black bg-slider slider-1 no-illo strip-top no-sect-title">
+<section class="section-text-image strip-line full-image no-frame no-top-illo black bg-slider slider-1 no-illo strip-top no-sect-title">
 
     
 
@@ -682,7 +641,7 @@
             
             
             
-              <p class="text slider-1"><b>Hand Drawn <em>Tech</em></b> illustrations, with their use of familiar low-tech objects, are easy to understand.</p>
+              <p class="text slider-1"><b>Hand Drawn Tech</b> illustrations, with their use of low-tech analogue objects, are easy to understand.</p>
             
             
 
@@ -935,7 +894,7 @@
 
 <!-- SECTION TEXT & IMAGE -->
 
-<section class="section-text-image strip-line full-image no-frame none no-illo strip-top no-sect-title">
+<section class="section-text-image strip-line full-image no-frame no-top-illo none no-illo strip-top no-sect-title">
 
     
 
@@ -952,7 +911,7 @@
             
             
             
-              <p class="text uniq-ID-ABC"><b>Hand Drawn <em>Tech</em></b> illustrations are bespoke, and ensure you stand apart from the competition.</p>
+              <p class="text uniq-ID-ABC"><b>Hand Drawn Tech</b> illustrations are bespoke, and ensure you stand apart from the competition.</p>
             
             
 
@@ -1052,7 +1011,7 @@
             
             
             
-              <p class="text uniq-ID-ABC"><b>Hand Drawn <em>Tech</em></b> illustrations incorporate mechanical elements that can be easily animated.</p>
+              <p class="text uniq-ID-ABC"><b>Hand Drawn Tech</b> illustrations incorporate mechanical elements that can be easily animated.</p>
             
             
 
@@ -1140,7 +1099,7 @@
 
 <!-- SECTION TEXT & IMAGE -->
 
-<section class="section-text-image strip-line full-image no-frame none no-illo strip-top no-sect-title">
+<section class="section-text-image strip-line full-image no-frame no-top-illo none no-illo strip-top no-sect-title">
 
     
 
@@ -1157,7 +1116,7 @@
             
             
             
-              <p class="text uniq-ID-ABC"><b>Hand Drawn <em>Tech</em></b> illustrations are not slavish to current trends and will remain fresh indefinitely.</p>
+              <p class="text uniq-ID-ABC"><b>Hand Drawn Tech</b> illustrations are not slavish to current trends and will remain fresh indefinitely.</p>
             
             
 
@@ -1240,7 +1199,7 @@
 
 <!-- SECTION TEXT & IMAGE -->
 
-<section class="section-text-image strip-line full-image no-frame none no-illo strip-top no-sect-title">
+<section class="section-text-image strip-line full-image no-frame no-top-illo none no-illo strip-top no-sect-title">
 
     
 
@@ -1257,7 +1216,7 @@
             
             
             
-              <p class="text uniq-ID-ABC"><b>Hand Drawn <em>Tech</em></b> illustrations work with almost any brand colour, even pink!</p>
+              <p class="text uniq-ID-ABC"><b>Hand Drawn Tech</b> illustrations work with almost any brand colour, even pink!</p>
             
             
 
@@ -1340,7 +1299,7 @@
 
 <!-- SECTION TEXT & IMAGE -->
 
-<section class="section-text-image strip-line full-image no-frame none no-illo strip-top no-sect-title">
+<section class="section-text-image strip-line full-image no-frame no-top-illo none no-illo strip-top no-sect-title">
 
     
 
@@ -1357,7 +1316,7 @@
             
             
             
-              <p class="text uniq-ID-ABC"><b>Hand Drawn <em>Tech</em></b> illustrations have been successfully used to market products and win business.</p>
+              <p class="text uniq-ID-ABC"><b>Hand Drawn Tech</b> illustrations have been successfully used to market products and win business.</p>
             
             
 

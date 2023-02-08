@@ -223,13 +223,13 @@
 .section-text-image.full-image .video-wrapper-constrain.sixteen-nine {
   width: 100%;
   @include breakpoint(TP) {
-    width: 93%;
+    width: 100%; //93%;
   }
   @include breakpoint(TL) {
-    width: 90%;
+    width: 100%; //90%;
   }
   @include breakpoint(D) {
-    width: 76%;
+    width: 100%; // 76%;
   } 
 }
 

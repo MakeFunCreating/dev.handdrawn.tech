@@ -7,14 +7,15 @@ main-nav:
 - title: Illustration ›
   url: /illustrations
   mega-menu: #"build/mega-menu-pro-draw.html"
+- title: Branding ›
+  url: /branding
+  mega-menu:
 - title: Design ›
   url: /graphic-design
   mega-menu: #"build/mega-menu-crafts.html"
 - title: Video ›
   url: /video-animation
   mega-menu:
-- title: Contact ›
-  url: /contact
 
 
 footer-nav:
