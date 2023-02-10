@@ -35,7 +35,7 @@ meta-description: Whimsical hand drawn illustrations for showcasing your busines
 <section class="section-header-alt squeeze no-illo-butt strip-top-butt strip-bottom no-content-wrapper-top-pad">
     <div class="content-wrapper">
         <div class="sect-title-wrapper">
-          <h1 class="sect-title">Helping Tech-Based Businesses to Win Customers & Investment</h1>
+          <h1 class="sect-title">Helping Tech Businesses Win Customers & Investment</h1>
           <div class="underline"></div>
         </div>
       <div class="text-wrapper"> 
@@ -114,7 +114,7 @@ meta-description: Whimsical hand drawn illustrations for showcasing your busines
   sect-title = "Leverage The Latest Trend"
   
   h1 = ""
-  p1 = "Consumers are tiring of the impersonal aesthetic of vector illustrations. This quote from the Graphic Artists Guild explains why authentic styles are on the rise."
+  p1 = " Artistic illustration styles are on the rise, as consumers tire of the impersonal aesthetic of vector illustrations. This quote from the Graphic Artists Guild explains more."
   
   h2 = ""
   p2 = ""

@@ -29,20 +29,20 @@ footer-nav:
       url: /contact
 - heading: Illustration
   subfolderitems:
-    - title: On-Demand
+    - title: Stock library
       url: /illustrations
-    - title: Tag Cloud
-      url: /illustrations/tags
+    - title: Concept Illustration
+      url: /concept-illustration
     - title: About Licensing
       url: /the-licence-model
 - heading: Other Services
   subfolderitems:
-    - title: Graphic Design 
+    - title: Branding
+      url: /branding
+    - title: Design 
       url: /graphic-design
-    - title: Video Animation
+    - title: Video
       url: /video-animation
-    - title: Books
-      url: /books
 
 
 

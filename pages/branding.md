@@ -5,7 +5,7 @@ layout-sub-type: ubuntu
 
 top-bar-class: apple
 
-title: "Pitches, Presentations and Proposals Incorporating Hand Drawn Elements"
+title: "Branding That Separates You From Your Competitors"
 h1: "Branding"
 #----------------------- H1 LENGTH GUIDE ----------------------------
 
@@ -42,7 +42,7 @@ meta-description: ""
       <div class="text-wrapper"> 
         <!--<h4 class="caps"></h4
         <p class="smallest stretch-cap">{{ illo-total }} licensable illustrations</p>>-->
-        <p class="page-sub-title small">Leverage the Trend for a More Artistic & Less Vector Style of Illustration</p>        
+        <p class="page-sub-title">Leverage the Trend for a More Artistic Style of Illustration</p>        
       </div>
       <div class="bg-texture-wrapper">
         <div class="frame show"><div class="top-frame"></div><div class="bottom-frame"></div></div>
@@ -78,7 +78,7 @@ meta-description: ""
 
 <!-- SECTION QUOTE -->
 {% include sections-pages/add-sect-quote.html
-  class = "small "
+  class = "small"
   section-divider = ""
   ani-triggers = ""
 
@@ -103,7 +103,7 @@ meta-description: ""
   sect-title = "Case Study"
   
   h1 = ""
-  p1 = "Here's a few images (taken from a presentation) that shows how Scott's illustrations were used as an integral part of the Black Swan Data brand."
+  p1 = "Working directly with the founders of an innovative trend prediction start-up, Scott delivered a set of bespoke illustrations that brough-to-life the technology, culture and ethos of the business."
   
   h2 = ""
   p2 = ""
@@ -234,26 +234,28 @@ meta-description: ""
   link-url = ""
 %}
 
+
+
+
+
+
 <!-- SECTION TEXT -->
 {% include sections-pages/add-sect-text.html
-  class = ""
+  class = "pink"
   section-divider = ""
   ani-triggers = ""
 
-  sect-title = "Breaking News"
+  sect-title = "New Service"
   
-  h1 = ""
-  p1 = "A Californian based technology and education business have commisoned a suite of Scott's illustrations as part of their re-brand, more details to follow."
-  
-  h2 = ""
-  p2 = ""
+  h1 = "Product Visions, User Journeys & More"
+  p1 = "Looking to sell your vision? Scott's concept illustrations will help do that. Whether you are looking to visualise user journeys, use cases, UI concepts or advertising concepts, this service is for you."
+
 
   end-caption = ""
   
-  link-text = ""
-  link-url = ""
+  link-text = "Concept Illustration"
+  link-url = "/concept-illustration"
 %}
-
 
 
 

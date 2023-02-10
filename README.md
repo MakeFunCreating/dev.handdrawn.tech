@@ -1,6 +1,9 @@
 # dev.handdrawn.tech
 
 
+### Feb 10th 2022 - v1.3.6
+* UPDATED: Added concept illustrations
+
 ### Feb 7th 2022 - v1.3.5
 * UPDATED: Added branding page
 

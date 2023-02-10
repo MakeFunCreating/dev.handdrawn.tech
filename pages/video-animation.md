@@ -12,12 +12,13 @@ h1: "Explainer Videos With a Human Touch"
 h1: "Whimsical Hand Drawn Whiteboard Animations"
 h1: "Inventive Hand Drawn Whiteboard Animations"
 h1: "Whiteboard Animated Videos"
-h1: "Whiteboard Animation with an Ingenious Twist"
+h1: "Whiteboard Animation with Inventive Appeal"
 #----------------------- H1 LENGTH GUIDE ----------------------------
 
 sub-heading: "Whimsical Hand Drawn Whiteboard Animations"
 sub-heading: "Explainer Videos in a <b>Hand Drawn <em>Tech</em></b> Style"
 sub-heading: "Explainer Videos That Engage"
+sub-heading: "Whimsical Explainer Videos for Bringing Technology to Life"
 
 announcement:
 
@@ -43,7 +44,7 @@ meta-description: ""
           <div class="underline"></div>
         </div>
       <div class="text-wrapper"> 
-        <p class="page-sub-title">Whimsical Explainer Videos for Bringing Technology to Life</p>        
+        <p class="page-sub-title">What You Do Told in a Way That Makes People Care</p>        
       </div>
       <div class="bg-texture-wrapper">
         <div class="frame show"><div class="top-frame"></div><div class="bottom-frame"></div></div>
@@ -66,7 +67,7 @@ meta-description: ""
   sect-title = "Latest Work"
   
   h1 = ""
-  p1 = "Here's a few screen grabs from a product launch video for an innovative technology solution. It was used at a global trade show in Las Vegas 2023 and on the brand website."
+  p1 = "In March 2023 Scott's distinctive whiteboard animations helped launch an innovative supply chain solution at a global trade show. Here's a few screengrabs."
   
   h2 = ""
   p2 = ""
@@ -76,6 +77,7 @@ meta-description: ""
   link-text = ""
   link-url = ""
 %}
+
 
 
 <!-- SECTION TEXT & IMAGE -->
@@ -144,7 +146,7 @@ meta-description: ""
 
 <!-- SECTION TEXT & IMAGE -->
 {% include sections-pages/add-sect-text-image.html
-  class = "full-image right no-frame no-top-illo grey"
+  class = "full-image right no-frame no-top-illo grey join"
   section-divider = ""
   ani-triggers = ""
   bg-slider-uniq-ID = ""
@@ -174,6 +176,29 @@ meta-description: ""
 %}
 
 
+<!-- SECTION TEXT -->
+{% include sections-pages/add-sect-text.html
+  class = "grey"
+  section-divider = ""
+  ani-triggers = ""
+
+  sect-title = ""
+  
+  h1 = "Aligning With Your Brand"
+  p1 = "Whiteboard style animations can easily be customised to reflect a businesses brand identity. In the example above, the border, font, and colours used in the illustrations, were all 'on-brand'."
+  
+  h2 = ""
+  p2 = ""
+
+  end-caption = ""
+  
+  link-text = ""
+  link-url = ""
+%}
+
+
+
+
 
 
 
@@ -190,7 +215,7 @@ meta-description: ""
   sect-title = "From The Vault"
   
   h1 = ""
-  p1 = "Here's a few complete animations, in black and white, although colour can also be used."
+  p1 = "Even without the use of colour, or other brand cues, whiteboard animations like the following three examples, are still able to create strong emotional connection."
   
   h2 = ""
   p2 = ""
@@ -339,6 +364,28 @@ meta-description: ""
 
 
 
+
+
+
+
+
+<!-- SECTION TEXT -->
+{% include sections-pages/add-sect-text.html
+  class = "pink"
+  section-divider = ""
+  ani-triggers = ""
+
+  sect-title = "New Service"
+  
+  h1 = "Product Visions, User Journeys & More"
+  p1 = "Looking to sell your vision? Scott's concept illustrations will help do that. Whether you are looking to visualise user journeys, use cases, UI concepts or advertising concepts, this service is for you."
+
+
+  end-caption = ""
+  
+  link-text = "Concept Illustration"
+  link-url = "/concept-illustration"
+%}
 
 
 
