@@ -5,7 +5,7 @@ layout-sub-type: ubuntu
 
 top-bar-class: apple
 
-title: "Pitches, Presentations and Proposals With Hand Drawn Elements"
+title: "Graphic Design With an Authentic Human Touch"
 h1: "Pitches, Presentations & Proposals"
 #----------------------- H1 LENGTH GUIDE ----------------------------
 
@@ -39,13 +39,13 @@ meta-description: ""
     {% assign illo-total = site.posts.size %} 
     <div class="content-wrapper">
         <div class="sect-title-wrapper">
-          <h1 class="sect-title">Graphic Design Incorporating Hand Drawn Elements</h1>
+          <h1 class="sect-title">Graphic Design With an Authentic Human Touch</h1>
           <div class="underline"></div>
         </div>
       <div class="text-wrapper"> 
         <!--<h4 class="caps"></h4
         <p class="smallest stretch-cap">{{ illo-total }} licensable illustrations</p>>-->
-        <p class="page-sub-title small">Design That Brings Your Technology & Solutions to Life</p>        
+        <p class="page-sub-title">Professional Design Incorporating Hand Drawn Elements</p>        
       </div>
       <div class="bg-texture-wrapper">
         <div class="frame show"><div class="top-frame"></div><div class="bottom-frame"></div></div>
@@ -97,7 +97,7 @@ meta-description: ""
   sect-title = "Presentations & Proposals"
   
   h1 = ""
-  p1 = "Pitches, presentations and proposals featuring <b>Hand Drawn Tech</b> illustrations are a proven new business winner. They look professional, feel human, and communicate ideas in a compelling way. They have been battle tested in many boardrooms and consistently deliver."
+  p1 = "Pitches, presentations and proposals with a <b>Hand Drawn Tech</b> aesthetic are a proven new business winner. They look professional, feel human, and communicate ideas in a compelling way. Scott can design and deliver the entire document, so don't miss out, they have been battle tested in many boardrooms and consistently deliver."
   
   h2 = "Multi Media"
   p2 = "Scott can also create animation for use within a presentation or as a standalone video."
@@ -164,6 +164,25 @@ meta-description: ""
 
 
 
+
+
+<!-- SECTION TEXT -->
+{% include sections-pages/add-sect-text.html
+  class = "pink"
+  section-divider = ""
+  ani-triggers = ""
+
+  sect-title = "New Service"
+  
+  h1 = "Product Visions, User Journeys & More"
+  p1 = "Looking to sell your vision? Scott's concept illustrations will help do that. Whether you are looking to visualise user journeys, use cases, UI concepts or advertising concepts, this service is for you."
+
+
+  end-caption = ""
+  
+  link-text = "Concept Illustration"
+  link-url = "/concept-illustration"
+%}
 
 
 

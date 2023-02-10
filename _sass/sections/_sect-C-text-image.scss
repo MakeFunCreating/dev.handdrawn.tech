@@ -34,6 +34,21 @@
 }
 
 
+// super-big overide
+
+.section-text-image.super-big .content-wrapper{
+  left: calc( (94vw - 100%) / -2);
+  width: 94vw;
+  @include breakpoint(TP) {
+    left: calc( (84vw - 100%) / -2);
+    width: 84vw;
+  }
+  @include breakpoint(TL) {
+    left: calc( (72vw - 100%) / -2);
+    width: 72vw;
+  }
+}
+
 /////////////////////////////////////////////////////
 //////////////////// COLUMN ONE /////////////////////
 /////////////////////////////////////////////////////
@@ -159,6 +174,11 @@
   }
 }
 
+// super-big overide
+
+.section-text-image.super-big .col-2 {
+  width: 100%;
+}
 
 ////////////////// IMAGE WRAPPER ////////////////////
 
@@ -203,6 +223,11 @@
     max-height: 630px;
   }
 }
+
+.section-text-image.super-big img {
+    max-height: 100vw;
+}
+
 
 // Video wrapper sizing
 

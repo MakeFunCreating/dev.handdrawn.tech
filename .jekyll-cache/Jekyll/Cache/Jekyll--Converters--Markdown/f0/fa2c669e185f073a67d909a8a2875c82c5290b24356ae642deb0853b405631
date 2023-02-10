@@ -147,7 +147,7 @@
 
 <!-- SECTION TEXT -->
 
-<section class="section-text strip-line blue">
+<section class="section-text strip-line grey">
 
     
       <div class="sect-illo-wrapper pipe-gauge"><div class="sect-illo"></div></div>
@@ -277,7 +277,7 @@
 
 <!-- SECTION TEXT -->
 
-<section class="section-text strip-line blue join">
+<section class="section-text strip-line grey join">
 
     
       <div class="sect-illo-wrapper pipe-whistle"><div class="sect-illo"></div></div>
@@ -342,7 +342,7 @@
 
 <!-- SECTION QUOTE -->
 
-<section class="section-quote strip-line small blue no-top-gap no-illo strip-top">
+<section class="section-quote strip-line small grey no-top-gap no-illo strip-top">
     
      
     

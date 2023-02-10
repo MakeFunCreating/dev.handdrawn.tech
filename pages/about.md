@@ -82,7 +82,7 @@ meta-description: "A life time in the making, here's how, and why, Hand Drawn Te
 
 <!-- SECTION TEXT -->
 {% include sections-pages/add-sect-text.html
-	class = "blue"
+	class = "grey"
 	section-divider = "pipe-gauge"
 	ani-triggers = ""
 
@@ -131,7 +131,7 @@ meta-description: "A life time in the making, here's how, and why, Hand Drawn Te
 
 <!-- SECTION TEXT -->
 {% include sections-pages/add-sect-text.html
-	class = "blue join"
+	class = "grey join"
 	section-divider = "pipe-whistle"
 	ani-triggers = ""
 
@@ -151,7 +151,7 @@ meta-description: "A life time in the making, here's how, and why, Hand Drawn Te
 
 <!-- SECTION QUOTE -->
 {% include sections-pages/add-sect-quote.html
-  class = "small blue no-top-gap"
+  class = "small grey no-top-gap"
   section-divider = ""
   ani-triggers = ""
 
